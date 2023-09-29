@@ -99,7 +99,9 @@
       background-color: #3c3c3c00;
       color: white;
       margin-bottom: 1rem;
-      border: 2px white solid;
+      box-shadow: 0 0 10px 0px  rgb(255, 255, 255);
+      outline: none;
+      border: solid 1px rgb(34, 34, 34);
       display: block;
       margin: 0 auto;
     }
@@ -195,7 +197,7 @@
       document.execCommand("copy");
       document.body.removeChild(tempInput);
       document.getElementById("copyLinks").innerHTML = "Copied!";
-      document.getElementById("copyLinks").style.boxShadow = "0 0 20px 0 white";
+      document.getElementById("copyLinks").style.boxShadow = "0 0 20px 0 rgb(17, 173, 147)";
     }
 
     function setCookie(name, value) {
