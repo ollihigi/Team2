@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark" />
+    <title>Inside GET Academy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fjerne i prod -->
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/scheduleController.js"></script>
+    <script src="js/scheduleView.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@13.0.1/dist/markdown-it.min.js"></script>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/atom-one-light.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/languages/go.min.js"></script> -->
+</head>
+
+<body>
+    <main class="container" id="app">
+    </main>
+
+    <script>
+        const model = {
+            selectedContentIds: [],
+            contentCache: {},
+            history: [],
+            schedule: {},
+        };
+
+        window.onload = initPage;
+        window.addEventListener('popstate', showSelected, false);
+
+        async function initPage() {
+            initSchedule();
+            if (!hasSession()) {
+                updateView();
+                return;
+            }
+            await getContentTocFromApi();
+            showSelected();
+        }
+
+        function showSelected() {
+            const selectedId = location.hash ? Number(location.hash.substr(1)) : model.content.find(c => c.isLession).id;
+            selectContent(selectedId);
+        }
+    </script>
+</body>
+
+</html>
