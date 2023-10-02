@@ -1,10 +1,10 @@
 const model = {
     app: {
-        currentPage: 'addOrEditTask',
+        currentPage: 'currentPage',
     },
     inputs: {
-        dayPage: {
-            currentDate: '2023-09-28',
+        todayPage: {
+            currentDate: 'currentDate',
         },
         weekPage: {
             fromDate: '2023-09-25',
