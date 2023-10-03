@@ -1,0 +1,48 @@
+/* [data-theme="dark"] {
+    --primary: white;
+    --primary-hover: white;
+    --primary-inverse: #FFF;
+} */
+
+img.logo{
+    width: 9rem;
+}
+
+div.inline {
+    display: inline;
+}
+
+div.enkel {
+    text-align: left;
+}
+
+div.normal {
+    text-align: center;
+}
+
+div.bonus {
+    text-align: right;
+}
+
+div.myGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+div.myGrid>div {
+    text-align: center;
+}
+
+p.heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+article {
+    margin: 1rem 0;
+}
+
+main.container {
+    padding: 2rem 1rem;
+}

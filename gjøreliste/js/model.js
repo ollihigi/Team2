@@ -1,6 +1,6 @@
 const model = {
     app: {
-        currentPage: 'addOrEditTask',
+        currentPage: 'detailTask',
     },
     inputs: {
         dayPage: {
@@ -10,7 +10,6 @@ const model = {
             fromDate: '2023-09-25',
         },
         addTaskPage: {
-            id: 2,
             title: null,
             description: null,
             duration: 30,
@@ -26,6 +25,9 @@ const model = {
             recurring: 'Gjentas ikke',
             priority: 'Vanlig',
             duedate: null,
+        },
+        detailTaskPage: {
+            id: 2,
         },
     },
     // data
