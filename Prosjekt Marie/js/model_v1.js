@@ -1,24 +1,37 @@
 const model = {
     app: {
-        currentPage: 'Gul',
+        currentPage: 'startPage',
     },
     inputs: {
-        gradePage: {
-            id: 1, 
-            currentGrade: 'myGrade',
+        startPage: {
+            id: 1,
+            loggedIn: false,
+
         },
-        M: {
+
+        registrationPage: {
             id: 2, 
-            fromDate: '2023-09-25',
+            date: '2023-09-25',
+            name: '',
+            email: '',
+            password: '',
+
         },
-        profilePage: {
+        loginPage: {
             id: 3,
+            email: '',
+            password: '',
+
+        },
+        userPage: {
+            id: 4 ,
+            myGrade: "Gult belte",
             title: null,
             description: null,
 
         },
-        loginPage: {
-            id: 4 ,
+        pensumPage: {
+            id: 5 ,
             title: null,
             description: null,
 
@@ -27,3 +40,4 @@ const model = {
     // data
 ?Yelllow_Syllabus?
     
+
