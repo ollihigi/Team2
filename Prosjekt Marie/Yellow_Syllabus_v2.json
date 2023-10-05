@@ -1,0 +1,512 @@
+{
+  "beltGraduation": [
+    {
+      "gradeColor": "Yellow",
+      "id": "5000",
+      "KyuCount": "5",
+      "nameNorwegian": "Gult belte",
+      "nameJapanese": null,
+      "graduationStatus": "false",
+      "graduationDate": "24.12.2024",
+      "requirements": [
+        {
+          "type": "Del A - Grunnteknikker",
+          "id": "5100",
+          "subtypes": [
+            {
+              "id": "5110",
+              "nameNorwegian": "Guardstillinger / Benstillinger",
+              "nameJapanese": "Kamae / Ashi-Tachi",
+              "subtypes": [
+                {
+                  "id": "5111",
+                  "nameNorwegian": "Forsvarsguard, åpne hender",
+                  "nameJapanese": "Shuto",
+                  "videoURL": "https://...FILLM",
+                  "picturePath": "/picture.jpg",
+                  "pictureURL": "https://BILDE.jpg"
+                },
+                {
+                  "id": "5112",
+                  "nameNorwegian": "Angrepsguard, lukkede hender",
+                  "nameJapanese": "Seiken",
+                  "videoURL": "https://...FILLM",
+                  "picturePath": "/picture.jpg",
+                  "pictureURL": "https://BILDE.jpg"
+                },
+                {
+                  "id": "5113",
+                  "nameNorwegian": "Grunnleggende stilling",
+                  "nameJapanese": "Zenkutsu-dachi",
+                  "videoURL": "https://...FILLM",
+                  "picturePath": "/picture.jpg",
+                  "pictureURL": "https://BILDE.jpg"
+                }
+              ]
+            },
+            "subtypes", [
+              {
+                "id": "5120",
+                "nameNorwegian": "Forflytninger",
+                "nameJapanese": "Tai-sabaki",
+                "subtypes": [
+                  {
+                    "id": "5121",
+                    "nameNorwegian": "Sideforflytning",
+                    "nameJapanese": "Yoko-ashi",
+                    "videoURL": "https://...FILLM",
+                    "picturePath": "/picture.jpg",
+                    "pictureURL": "https://BILDE.jpg"
+                  },
+                  {
+                    "id": "5122",
+                    "nameNorwegian": "Kroppsvending",
+                    "nameJapanese": "Sha-tenkan",
+                    "videoURL": "https://...FILLM",
+                    "picturePath": "/picture.jpg",
+                    "pictureURL": "https://BILDE.jpg"
+                  },
+                  {
+                    "id": "5123",
+                    "nameNorwegian": "90 grader dreining",
+                    "nameJapanese": "Han-tenkan",
+                    "videoURL": "https://...FILLM",
+                    "picturePath": "/picture.jpg",
+                    "pictureURL": "https://BILDE.jpg"
+                  },
+                  {
+                    "id": "5124",
+                    "nameNorwegian": "180 grader dreining",
+                    "nameJapanese": "Zen-tenkan",
+                    "videoURL": "https://...FILLM",
+                    "picturePath": "/picture.jpg",
+                    "pictureURL": "https://BILDE.jpg"
+                  }
+                ]
+              }
+            ]
+        ,
+              "subtypes", [
+                {
+                  "id": "5130",
+                  "nameNorwegian": "Fallteknikk",
+                  "nameJapanese": "Ukemi-waza",
+                  "subtypes": [
+                    {
+                      "id": "5131",
+                      "nameNorwegian": "Sideveis fall",
+                      "nameJapanese": "Yoko ukemi",
+                      "videoURL": "https://...FILLM",
+                      "picturePath": "/picture.jpg",
+                      "pictureURL": "https://BILDE.jpg"
+                    },
+                    {
+                      "id": "5132",
+                      "nameNorwegian": "Forover fall",
+                      "nameJapanese": "Mae ukemi",
+                      "videoURL": "https://...FILLM",
+                      "picturePath": "/picture.jpg",
+                      "pictureURL": "https://BILDE.jpg"
+                    },
+                    {
+                      "id": "5133",
+                      "nameNorwegian": "Bakover fall",
+                      "nameJapanese": "Ushiro ukemi",
+                      "videoURL": "https://...FILLM",
+                      "picturePath": "/picture.jpg",
+                      "pictureURL": "https://BILDE.jpg"
+                    },
+                    {
+                      "id": "5134",
+                      "nameNorwegian": "Forover volt",
+                      "nameJapanese": "Kaiten mae ukemi",
+                      "videoURL": "https://...FILLM",
+                      "picturePath": "/picture.jpg",
+                      "pictureURL": "https://BILDE.jpg"
+                    },
+                    {
+                      "id": "5135",
+                      "nameNorwegian": "Bakover volt",
+                      "nameJapanese": "Kaiten ushiro ukemi",
+                      "videoURL": "https://...FILLM",
+                      "picturePath": "/picture.jpg",
+                      "pictureURL": "https://BILDE.jpg"
+                    }
+                  ]
+                },
+                "subtypes", [
+                  {
+                    "id": "5140",
+                    "nameNorwegian": "Kast / Fellinger",
+                    "nameJapanese": "Nage waza",
+                    "subtypes": [
+                      {
+                        "id": "5141",
+                        "nameNorwegian": "Stor ytre benfelling",
+                        "nameJapanese": "O soto o toshi",
+                        "videoURL": "https://...FILLM",
+                        "picturePath": "/picture.jpg",
+                        "pictureURL": "https://BILDE.jpg"
+                      },
+                      {
+                        "id": "5142",
+                        "nameNorwegian": "Stort hoftekast",
+                        "nameJapanese": "O goshi",
+                        "videoURL": "https://...FILLM",
+                        "picturePath": "/picture.jpg",
+                        "pictureURL": "https://BILDE.jpg"
+                      }
+                    ]
+                  },
+                  "subtypes", [
+                    {
+                      "id": "5150",
+                      "nameNorwegian": "Slag",
+                      "nameJapanese": "Tsuki waza",
+                      "subtypes": [
+                        {
+                          "id": "5151",
+                          "nameNorwegian": "Rett slag med fremste hånd",
+                          "nameJapanese": "Tobikomi zuki",
+                          "videoURL": "https://...FILLM",
+                          "picturePath": "/picture.jpg",
+                          "pictureURL": "https://BILDE.jpg"
+                        },
+                        {
+                          "id": "5152",
+                          "nameNorwegian": "Rett slag med bakerste hånd",
+                          "nameJapanese": "Gyaku zuki",
+                          "videoURL": "https://...FILLM",
+                          "picturePath": "/picture.jpg",
+                          "pictureURL": "https://BILDE.jpg"
+                        },
+                        {
+                          "id": "5153",
+                          "nameNorwegian": "Slagkombinasjon med rette slag",
+                          "nameJapanese": "Tobikomi zuki / Gyaku zuki",
+                          "videoURL": "https://...FILLM",
+                          "picturePath": "/picture.jpg",
+                          "pictureURL": "https://BILDE.jpg"
+                        }
+                      ]
+                    },
+                    "subtypes", [
+                      {
+                        "id": "5160",
+                        "nameNorwegian": "Spark",
+                        "nameJapanese": "Keri waza",
+                        "subtypes": [
+                          {
+                            "id": "5161",
+                            "nameNorwegian": "Grunnleggende rett spark med bakerste ben",
+                            "nameJapanese": "Gyaku mae geri",
+                            "videoURL": "https://...FILLM",
+                            "picturePath": "/picture.jpg",
+                            "pictureURL": "https://BILDE.jpg"
+                          },
+                          {
+                            "id": "5162",
+                            "nameNorwegian": "Grunnleggende rett spark med fremste ben",
+                            "nameJapanese": "Tsurikomi mae geri",
+                            "videoURL": "https://...FILLM",
+                            "picturePath": "/picture.jpg",
+                            "pictureURL": "https://BILDE.jpg"
+                          }
+                        ]
+                      },
+                      "subtypes", [
+                        {
+                          "id": "5170",
+                          "nameNorwegian": "Mønster",
+                          "nameJapanese": "Kata",
+                          "subtypes": [
+                            {
+                              "id": "5171",
+                              "nameNorwegian": "Go kyu kata - Guard, fem retninger",
+                              "nameJapanese": "Zenkutsu-dachi / Shuto",
+                              "videoURL": "https://...FILLM",
+                              "picturePath": "/picture.jpg",
+                              "pictureURL": "https://BILDE.jpg"
+                            },
+                        "subtypes", [
+                          {
+                            "id": "5180",
+                            "nameNorwegian": "Blokkeringer",
+                            "nameJapanese": "Uke waza",
+                            "description": "Trenes inn som serie:",
+                            "subtypes": [
+                              {
+                                "id": "5181",
+                                "nameNorwegian": "Lav blokk, innenfra og ut",
+                                "nameJapanese": "Gedan barai",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5182",
+                                "nameNorwegian": "Mellom blokk, innenfra og ut",
+                                "nameJapanese": "Uchi-uke",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5183",
+                                "nameNorwegian": "Høy blokk, nedenfra og opp",
+                                "nameJapanese": "Age-uke",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5184",
+                                "nameNorwegian": "Mellom blokk, utenfra og inn",
+                                "nameJapanese": "Soto-uke",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5185",
+                                "nameNorwegian": "Lav blokk, unenfra og inn",
+                                "nameJapanese": "Sukui-uke",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5186",
+                                "nameNorwegian": "Lav kryssblokk, ovenfra og ned",
+                                "nameJapanese": "Gedan juji-uke",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5187",
+                                "nameNorwegian": "Høy kryssblokk, nedenfra og opp",
+                                "nameJapanese": "Jodan juji-uke",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              }
+                            ]
+                          }
+                        ]]
+                      },
+                      {
+                        "type": "Del B - Teknikktrening",
+                        "id": "5200",
+                        "subtypes": [
+                          {
+                            "id": "5201",
+                            "nameNorwegian": "Forfra",
+                            "subtypes": [
+                              {
+                                "id": "5202",
+                                "nameNorwegian": "Forsvar mot hårtak",
+                                "numberTJK": "511a",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5203",
+                                "nameNorwegian": "Forsvar mot klestak",
+                                "numberTJK": "511b",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5204",
+                                "nameNorwegian": "Forsvar mot håndleddstak nedenfra",
+                                "numberTJK": "511d",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5205",
+                                "nameNorwegian": "Forsvar mot håndleddstak ovenfra",
+                                "numberTJK": "511e",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5206",
+                                "nameNorwegian": "Forsvar mot strupetak",
+                                "numberTJK": "512a",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5207",
+                                "nameNorwegian": "Forsvar mot strupetak mot vegg",
+                                "numberTJK": "512b",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5208",
+                                "nameNorwegian": "Forsvar mot omfavning over armene (stor ytre benfelling)",
+                                "numberTJK": "513a",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5209",
+                                "nameNorwegian": "Forsvar mot omfavning over armene (stort hoftekast)",
+                                "numberTJK": "513A",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5210",
+                                "nameNorwegian": "Forsvar mot rett slag, kroppsvending",
+                                "numberTJK": "514a",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5211",
+                                "nameNorwegian": "Forsvar mot rett salg, sideforflytning",
+                                "numberTJK": "514A",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5212",
+                                "nameNorwegian": "Forsvar mot rett spark, kroppsvending",
+                                "numberTJK": "515a",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5213",
+                                "nameNorwegian": "Forsvar mot rett spark, sideforflytning",
+                                "numberTJK": "515A",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              }
+                            ]
+                          },
+                          {
+                            "id": "5220",
+                            "nameNorwegian": "Siden",
+                            "subtypes": [
+                              {
+                                "id": "5221",
+                                "nameNorwegian": "Forsvar mot strupetak",
+                                "numberTJK": "522a",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              }
+                            ]
+                          },
+                          {
+                            "id": "5230",
+                            "nameNorwegian": "Bakfra",
+                            "subtypes": [
+                              {
+                                "id": "5231",
+                                "nameNorwegian": "Forsvar mot hårtak",
+                                "numberTJK": "531a",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5232",
+                                "nameNorwegian": "Forsvar mot håndleddstak",
+                                "numberTJK": "531e",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5233",
+                                "nameNorwegian": "Forsvar mot strupetak",
+                                "numberTJK": "532a",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5234",
+                                "nameNorwegian": "Forsvar mot strangulering med armen",
+                                "numberTJK": "532c",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5235",
+                                "nameNorwegian": "Forsvar mot omfavning over armene",
+                                "numberTJK": "533a",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              }
+                            ]
+                          },
+                          {
+                            "id": "5240",
+                            "nameNorwegian": "Bakketeknikker",
+                            "subtypes": [
+                              {
+                                "id": "5241",
+                                "nameNorwegian": "Forsvar mot håndleddstak, sittende skrevs over",
+                                "numberTJK": "541f",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5242",
+                                "nameNorwegian": "Forsvar mot strupetak, på kne ved siden av",
+                                "numberTJK": "542e",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5243",
+                                "nameNorwegian": "Forsvar mot strupetak, sittende skrevs over",
+                                "numberTJK": "542f",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              },
+                              {
+                                "id": "5244",
+                                "nameNorwegian": "Forsvar mot strupetak, sittende mellom bena",
+                                "numberTJK": "542g",
+                                "videoURL": "https://...FILLM",
+                                "picturePath": "/picture.jpg",
+                                "pictureURL": "https://BILDE.jpg"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "Del C - Selvforsvarstrening",
+                        "id": "5300",
+                        "nameNorwegian": "Forsvar under press",
+                        "subtypes": [
+                          {
+                            "id": "5301",
+                            "nameNorwegian": "Sirkeltrening: Forsvar mot uavtalte kontaktgrep fra"
+}]}]]]]]]}]}]}
