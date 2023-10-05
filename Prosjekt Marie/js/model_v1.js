@@ -1,61 +1,29 @@
 const model = {
     app: {
-        currentPage: 'currentPage',
+        currentPage: 'Gul',
     },
     inputs: {
-        todayPage: {
-            currentDate: 'currentDate',
+        gradePage: {
+            id: 1, 
+            currentGrade: 'myGrade',
         },
-        weekPage: {
+        M: {
+            id: 2, 
             fromDate: '2023-09-25',
         },
-        addTaskPage: {
-            id: 2,
+        profilePage: {
+            id: 3,
             title: null,
             description: null,
-            duration: 30,
-            recurring: 'Gjentas ikke',
-            priority: 'Vanlig',
-            duedate: null,
+
         },
-        editTaskPage: {
-            id: 2,
+        loginPage: {
+            id: 4 ,
             title: null,
             description: null,
-            duration: 30,
-            recurring: 'Gjentas ikke',
-            priority: 'Vanlig',
-            duedate: null,
+
         },
     },
     // data
-    tasks: [
-        {
-            id: 1,
-            title: 'Vask',
-            description: 'Vask bad første etasje',
-            duration: 30,
-            recurring: 'Gjentas ikke',
-            priority: 'Vanlig',
-            duedate: "2023-09-27",
-        },
-        {
-            id: 2,
-            title: 'Vask',
-            description: 'Vask bad andre etasje',
-            duration: 30,
-            recurring: 'Gjentas ikke',
-            priority: 'Vanlig',
-            duedate: "2023-09-28",
-        },
-        {
-            id: 3,
-            title: 'Vask',
-            description: 'Vask bad tredje etasje',
-            duration: 30,
-            recurring: 'Gjentas ikke',
-            priority: 'Vanlig',
-            duedate: "2023-09-29",
-        },
-    ],
-};
+?Yelllow_Syllabus?
+    
