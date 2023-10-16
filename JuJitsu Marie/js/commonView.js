@@ -1,7 +1,20 @@
-function createMenuHtml(){
-    return /*HTML*/`        
-        <button onclick="goToPage('day')">Dag</button>
-        <button onclick="goToPage('week')">Uke</button>
-        <button onclick="goToPage('addTask')">Legge til ny oppgave</button>
-    `;
+
+function navBar(){
+    document.getElementById('app').innerHTML += /*HTML*/`
+    <header>
+    <img class="logo" src="images/logo.png" alt="logo">
+    <nav>
+        <ul class="nav__links">
+            <li>
+                <a href="#">Øvelser</a>
+                <a href="#">Trening</a>
+                <a href="#">Min Side</a>
+            </li>
+        </ul>
+    </nav>
+    <a href="#" class="regLogBtn">
+        <button>Bli Medlem</button>
+    </a>
+</header>
+`;
 }
