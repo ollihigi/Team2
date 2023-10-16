@@ -37,7 +37,4 @@ const model = {
 
         },
     },
-    // data
-?Yelllow_Syllabus?
-    
-
+}

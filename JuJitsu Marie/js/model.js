@@ -12,18 +12,18 @@ const model = {
     
     
 
-    // registrationPage: {
-    //   pageId: 2,
-    //   date: '',
-    //   name: '',
-    //   email: '',
-    //   password: '',
-    // },
-    // loginPage: {
-    //   pageId: 3,
-    //   email: '',
-    //   password: '',
-    // },
+    registrationPage: {
+      pageId: 2,
+      date: '',
+      name: '',
+      email: '',
+      password: '',
+    },
+    loginPage: {
+      pageId: 3,
+      email: '',
+      password: '',
+    },
     
     
     
