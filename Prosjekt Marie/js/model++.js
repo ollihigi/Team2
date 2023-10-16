@@ -1,6 +1,6 @@
 const model = {
 
-    // INPUTS
+    //? INPUTS
     app: {
       currentPage: 'startPage',
     },
@@ -40,7 +40,7 @@ const model = {
     },
 
 
-    // DATA
+    //* DATA
     belts: [
       { id: 1, name: 'Gult belte' },
       { id: 2, name: 'Oransje belte' },
