@@ -10,7 +10,7 @@ const model = {
       exercisePreference: '',
     },
     user: {
-      id: 1,
+      id: null,
       loggedIn: false,
     },
     
