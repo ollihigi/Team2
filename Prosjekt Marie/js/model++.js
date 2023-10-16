@@ -1,16 +1,39 @@
+model.user.pensumPage.currentBelt = model.user.userPage.currentBelt;
+
+
+
 const model = {
-  
-  
-  
-  //? INPUTS
-  app: {
-    currentPage: 'startPage',
-  },
-  user: {
-    id: 1,
-    loggedIn: false,
+    //? INPUTS
+    app: {
+      currentPage: 1,
+    },
+    user: {
+      id: 1,
+      loggedIn: false,
+      landingPage: {
+        pageId: 1,
+      },
+    },
+    
+    
+
+    registrationPage: {
+      pageId: 2,
+      date: '',
+      name: '',
+      email: '',
+      password: '',
+    },
+    loginPage: {
+      pageId: 3,
+      email: '',
+      password: '',
+    },
+    
+    
+    
     userPage: {
-      pageId: 1,
+      pageId: 4,
       currentBelt: "Gult belte",
       categoryStatus: false,
       subtypeStatus: false,
@@ -18,12 +41,11 @@ const model = {
       exercisePreference: 1,
     },
     pensumPage: {
-      pageId: 2,
+      pageId: 5,
       currentBelt: '',
+      exercisePreference: '',
+
     },
-  },
-
-
 
   //* DATA
   belts: [
@@ -60,6 +82,3 @@ const model = {
   ],
 
 };
-
-
-model.user.pensumPage.currentBelt = model.user.userPage.currentBelt;
