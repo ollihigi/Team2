@@ -6,13 +6,12 @@ const model = {
     //? INPUTS
     app: {
       currentPage: 1,
+      currentBelt: '',
+      exercisePreference: '',
     },
     user: {
       id: 1,
       loggedIn: false,
-      landingPage: {
-        pageId: 1,
-      },
     },
     
     
@@ -35,16 +34,8 @@ const model = {
     userPage: {
       pageId: 4,
       currentBelt: "Gult belte",
-      categoryStatus: false,
-      subtypeStatus: false,
-      exercisesStatus: false,
-      exercisePreference: 1,
-    },
-    pensumPage: {
-      pageId: 5,
-      currentBelt: '',
-      exercisePreference: '',
-
+      exercisesFinished: [],
+      trainingPreference: [],
     },
 
   //* DATA
@@ -107,15 +98,10 @@ const model = {
 // Katagori 3 har 1 subtyper med totalt 1 øvelse med id 50
     { id: 50, subtypeId: 13, name: "Sirkeltrening" , description: ": Forsvar mot uavtalte kontaktgrep fra gult pensum." }, 
   ],
-  images: [
-    { id: 1, exerciseId: 1, caption: '511a', fileName: 'guard1.png' },
-    { id: 2, exerciseId: 2, caption: 'Guard2', fileName: 'guard2.png' },
-    { id: 3, exerciseId: 3, caption: 'Guard3', fileName: 'guard3.png' },
+  media: [
+    { id: 1, exerciseId: 1, caption: '511a', type:'img', detail:'guard2.png'},
+
   ],
-  videos: [
-    { id: 1, exerciseId: 1, caption: 'Guard1', fileName: 'guard1.mp4' },
-    { id: 2, exerciseId: 2, caption: 'Guard2', fileName: 'guard2.mp4' },
-    { id: 3, exerciseId: 3, caption: 'Guard3', fileName: 'guard3.mp4' },
-  ],
+
 };
 
