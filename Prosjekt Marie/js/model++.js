@@ -82,14 +82,14 @@ const model = {
     // 3 øvelser under Guard/benstilling
     { id: 1, subtypeId: 1, name: "Forsvarsguard, åpne hender", nameJapanese: "Shuto", description:  },
     // Neste to bare for nummerering
-    { id: 2, subtypeId: 1, name: , nameJapanese: , description:  },
+    { id: 2, subtypeId: 1, name: "Angrepsguard, lukkede hender" , nameJapanese: "Seiken" , description:  },
     { id: 3, subtypeId: 1, name: , nameJapanese: , description:  },
 
     // 4 Øvelser under Forflytninger 
     { id: 4, subtypeId: 1, name: "Sideforflytning", nameJapanese: "Yoko-ashi", description:  },
     { id: 5, subtypeId: 1, name: "Kroppsvending", nameJapanese: "Sha-tenkan", description:  },
-    { id: 6, subtypeId: 1, name: "Sideforflytning", nameJapanese: "Yoko-ashi", description:  },
-    { id: 7, subtypeId: 1, name: "Sideforflytning", nameJapanese: "Yoko-ashi", description:  },
+    { id: 6, subtypeId: 1, name: , nameJapanese: , description:  },
+    { id: 7, subtypeId: 1, name: , nameJapanese: , description:  },
 
     // osv for alle 8 subtypene under kategori 1, med totalt 27 øvelser . 
 
@@ -98,7 +98,7 @@ const model = {
 
     { id: 28, subtypeId: 9, name: "Forsvar mot hårtak", nameJapanese: null, description: "Høyre hånd holder motstanders høyre hånd +++ " }, 
     // + 11 øvelser til 
-    { id: 40, subtypeId: 20, name: "Forsvar mot rett spark, sideforflytning", nameJapanese: null, description: "Kun forflytninger med god avstand. Knyttneve ved spark-blokk" }, 
+    { id: 40, subtypeId: 12, name: "Forsvar mot strupetak", nameJapanese: null, description: "Kun forflytninger med god avstand. Knyttneve ved spark-blokk" }, 
    
 
 
