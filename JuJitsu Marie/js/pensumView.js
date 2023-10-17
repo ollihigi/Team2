@@ -49,7 +49,74 @@ function pensumView(){
 <section class="about_section layout_padding-bottom">
 <div class="pensumSelect">
 <ul class="pensumSelect">
-  <li><a href="#">Del A - Grunnteknikker</a></li>
+<li><a href="#">Del A - Grunnteknikker</a>
+<ul>
+  <li><a href="#">Guardstillinger / Benstillinger <br> (Kamae / Ashi-Tachi) ></a>
+    <ul>
+      <li><a href="#">Forsvarsguard, åpne hender (Shuto)</a></li>
+      <li><a href="#">Angrepsguard, lukkede hender (Seiken)</a></li>
+      <li><a href="#">Grunnleggende stilling (Zenkutsu-dachi)</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Forflytninger <br> (Tai-sabaki) ></a>
+    <ul>
+      <li><a href="#">Sideforflytning (Yoko-ashi) </a></li>
+      <li><a href="#">Kroppsvending (Sha-tenkan)</a></li>
+      <li><a href="#">90 grader dreining (Han-tenkan)</a></li>
+      <li><a href="#">180 grader dreining (Zen-tenkan)</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Fallteknikk <br> (Ukemi-waza) ></a>
+    <ul>
+      <li><a href="https://youtu.be/K64QVhaTY4g">Sideveis fall (Yoko ukemi)</a></li>
+      <li><a href="#">Forover fall (Mae ukemi) </a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Kast / Fellinger<br> (Nage waza) ></a>
+    <ul>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Slag<br> (Tsuki waza) ></a>
+    <ul>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Spark<br> (Keri waza) ></a>
+    <ul>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Mønster<br> (Kata) ></a>
+    <ul>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Blokkeringer<br> (Uke waza) ></a>
+    <ul>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+    </ul>
+  </li>
+</ul>
+</li>
+
   <li><a href="#">Del B - Teknikktrening</a>
     <ul>
       <li><a href="#">1</a></li>
