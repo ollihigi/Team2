@@ -1,4 +1,5 @@
 function init() {
   navBar();
-  pensumView();
+  // userView();
+  userGradeView(200);
 }

@@ -1,5 +1,5 @@
 function pensumView(){
-    document.getElementById('app').innerHTML += /*HTML*/`
+    document.getElementById('app').innerHTML = /*HTML*/`
 <section class="slider_section ">
 <div class="container ">
   <div class="row">
@@ -57,25 +57,10 @@ function pensumView(){
         <ul>
           <li><a href="#">1</a></li>
           <li><a href="#">2</a></li>
-          <li><a href="#">3 ></a>
-          	<ul>
-	          <li><a href="#">1</a></li>
-	          <li><a href="#">2</a></li>
-	          <li><a href="#">3</a>
-	          <li><a href="#">4</a></li>
-	          <li><a href="#">5</a></li>
-	          <li><a href="#">6</a></li>
-	        </ul>
-          </li>
+          <li><a href="#">3</a>
           <li><a href="#">4</a></li>
           <li><a href="#">5</a></li>
           <li><a href="#">6</a></li>
-        </ul>
-      </li>
-      <li><a href="#">3 ></a>
-        <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
         </ul>
       </li>
     </ul>
@@ -90,9 +75,6 @@ function pensumView(){
           <li><a href="#">2</a></li>
         </ul>
       </li>
-      <li><a href="#">4</a></li>
-    </ul>
-  </li>
 </ul>
 </div>
 <div class="container">

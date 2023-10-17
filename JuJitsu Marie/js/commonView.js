@@ -1,15 +1,15 @@
 
 function navBar(){
-    document.getElementById('app').innerHTML += /*HTML*/`
+    document.getElementById('header').innerHTML += /*HTML*/`
     <header>
     <img class="logo" src="images/logo.png" alt="logo">
     <nav>
         <ul class="nav__links">
             <li>
                 <a href="#">Startside</a>
-                <a href="#">Øvelser</a>
+                <a onclick="pensumView()">Øvelser</a>
                 <a href="#">Trening</a>
-                <a href="#">Min Side</a>
+                <a onclick="userGradeView()">Min Side</a>
             </li>
         </ul>
     </nav>
