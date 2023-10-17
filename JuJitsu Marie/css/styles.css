@@ -393,11 +393,12 @@ img {
   text-decoration: none;
   color: #fff;
   background-color: rgb(36,37,42);
-  border: 1px solid white;
+  border: 5px solid rgb(40,44,51);
 }
 
 .pensumSelect ul li a:hover {
   border: 1px solid white;
+  filter: brightness(1.4);
 }
 
 .pensumSelect li:hover > ul {
@@ -410,7 +411,7 @@ img {
 }
 
 .pensumSelect li:hover a {
-  border: 1px solid white;
+  border: 1px solid rgb(40,44,51);
 }
 
 .pensumSelect ul ul ul {
