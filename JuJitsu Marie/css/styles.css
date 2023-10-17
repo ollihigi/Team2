@@ -69,7 +69,6 @@ button {
   font-size: 16px;
   color: #edf0f1;
   text-decoration: none;
-  background-color: var(--body-color);
 }
 
 header {
@@ -78,7 +77,6 @@ header {
   align-items: center;
   padding: 1% 5%;
   border-bottom: white solid 2px;
-  background-color: var(--body-color);
 }
 
 .logo {
@@ -100,7 +98,6 @@ header {
 .nav__links li a {
   transition: all 0.3s ease 0s;
   padding: 0 20px;
-  background-color: var(--body-color);
 }
 
 .nav__links li a:hover {
