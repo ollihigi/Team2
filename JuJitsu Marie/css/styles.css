@@ -47,7 +47,6 @@ h2 {
 }
 
 body {
-  background-color: var(--body-color);
   color: white;
   font-size: 14px;
 }
@@ -70,6 +69,7 @@ button {
   font-size: 16px;
   color: #edf0f1;
   text-decoration: none;
+  background-color: var(--body-color);
 }
 
 header {
@@ -78,6 +78,7 @@ header {
   align-items: center;
   padding: 1% 5%;
   border-bottom: white solid 2px;
+  background-color: var(--body-color);
 }
 
 .logo {
@@ -89,6 +90,7 @@ header {
 
 .nav__links {
   list-style: none;
+  
 }
 
 .nav__links li {
@@ -98,6 +100,7 @@ header {
 .nav__links li a {
   transition: all 0.3s ease 0s;
   padding: 0 20px;
+  background-color: var(--body-color);
 }
 
 .nav__links li a:hover {
@@ -129,7 +132,6 @@ button:hover {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 5rem;
 }
 
 .row {
@@ -279,6 +281,7 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  
 }
 
 .feature_section .feature_container .box {
@@ -298,7 +301,7 @@ button:hover {
   text-align: center;
   margin: 0 10px;
   padding: 45px 15px;
-  background-color: var(--body-color);
+  background-color: inherit;
   border: solid 5px var(--body-color);
   color: #ffffff;
   -webkit-transition: all 0.3s;
@@ -330,7 +333,7 @@ img {
 .feature_section .feature_container .box:hover,
 .feature_section .feature_container .box.active {
   border: 5px solid #ff8a1d;
-  background-color: var(--body-color);
+  background-color: inherit;
   color: #ffffff;
 }
 
@@ -388,11 +391,12 @@ img {
   padding: 1em;
   text-decoration: none;
   color: #fff;
-  background: var(--body-color);
+  background-color: rgb(36,37,42);
+  border: 1px solid white;
 }
 
 .pensumSelect ul li a:hover {
-  opacity: 0.5;
+  border: 1px solid white;
 }
 
 .pensumSelect li:hover > ul {
@@ -405,7 +409,7 @@ img {
 }
 
 .pensumSelect li:hover a {
-  background: var(--body-color)
+  border: 1px solid white;
 }
 
 .pensumSelect ul ul ul {
