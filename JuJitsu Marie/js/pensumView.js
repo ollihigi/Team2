@@ -47,7 +47,56 @@ function pensumView(){
 </div>
 </section>
 <section class="about_section layout_padding-bottom">
+<div class="pensumSelect">
+<ul class="pensumSelect">
+  <li><a href="#">Del A - Grunnteknikker</a></li>
+  <li><a href="#">Del B - Teknikktrening</a>
+    <ul>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2 ></a>
+        <ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3 ></a>
+          	<ul>
+	          <li><a href="#">1</a></li>
+	          <li><a href="#">2</a></li>
+	          <li><a href="#">3</a>
+	          <li><a href="#">4</a></li>
+	          <li><a href="#">5</a></li>
+	          <li><a href="#">6</a></li>
+	        </ul>
+          </li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+        </ul>
+      </li>
+      <li><a href="#">3 ></a>
+        <ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#">Del C - Selvforsvarstrening</a>
+    <ul>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3 ></a>
+        <ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">4</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
 <div class="container">
+
 <div class="row">
   <div class="col-lg-5 col-md-6">
     <div class="detail-box">
