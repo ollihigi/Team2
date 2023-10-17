@@ -6,6 +6,7 @@ function navBar(){
     <nav>
         <ul class="nav__links">
             <li>
+                <a href="#">Startside</a>
                 <a href="#">Øvelser</a>
                 <a href="#">Trening</a>
                 <a href="#">Min Side</a>
