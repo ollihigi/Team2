@@ -12,6 +12,9 @@ function checkboxHtml(start, end) {
 
     return /*HTML*/` <ul>${optionsHtml}</ul>`
 }
+
+// Forsøk på å tegne hele slik at vi bare trenger å kalle funksjonen en gang :)
+
 // function checkboxHtml() {
 //     let subType = model.subtypes;
 //     let trainingCategory = model.categories;
