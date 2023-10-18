@@ -572,4 +572,9 @@ li {
   }
 }
 
+.rightSideExercise {
+  display: flex;
+  flex-direction: row;
+}
+
 
