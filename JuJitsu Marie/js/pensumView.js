@@ -81,23 +81,3 @@ function pensumView() {
 </section>
     `;
 }
-
-function guardStillinger() {
-  document.getElementById('exerciseContent').innerHTML = /*HTML*/`
-        <h2>Angrep</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-        </p>
-    `;
-}
-
-function updateExercise(title, description, media) {
-  document.getElementById('exerciseContent').innerHTML = /*HTML*/`
-        <h2>${title}</h2>
-        <p>${description}</p>
-        <img src="${media}">
-    `;
-}
-
-
