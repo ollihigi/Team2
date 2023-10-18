@@ -45,16 +45,36 @@ function userGradeView() {
                     </svg>
            </div>
            <div id="checklist">
-           <h2>${trainingCategory[0].name}</h2>
-           ${checkboxHtml(0, 5)}
-           <h2>${trainingCategory[1].name}</h2>
-           ${checkboxHtml(8, 1)}
-           <h2>${trainingCategory[2].name}</h2>
-           ${checkboxHtml(12, 0)}
-       </div>
-   </div>
-   `;
-    }
+           <h2>Del A - Grunnteknikker</h2>
+           <ul>
+               <!-- Apply the "disabled-checkbox" class to make the checkbox unclickable -->
+               <li><input type="checkbox" class="subtype" id="subtype1">Guardstillinger / Benstillinger</li>
+               <li><input type="checkbox" class="subtype" id="subtype2">Forflytninger</li>
+               <li><input type="checkbox" class="subtype" id="subtype3">Fallteknikk</li>
+               <li><input type="checkbox" class="subtype" id="subtype4">Kast / Fellinger</li>
+               <li><input type="checkbox" class="subtype" id="subtype5">Slag</li>
+               <li><input type="checkbox" class="subtype" id="subtype6">Spark</li>
+               <li><input type="checkbox" class="subtype" id="subtype7">Mønster</li>
+               <li><input type="checkbox" class="subtype" id="subtype8">Forflytninger</li>
+               <li><input type="checkbox" class="subtype" id="subtype9">Blokkeringer</li>
+           </ul>
+           <h2>Guardstillinger / Benstillinger</h2>
+           <ul>
+               <li><input type="checkbox" class="exercise subtype1" checked>1</li>
+               <li><input type="checkbox" class="exercise subtype1">2</li>
+               <li><input type="checkbox" class="exercise subtype1" checked>3</li>
+               <li><input type="checkbox" class="exercise subtype1" checked>4</li>
+           </ul>
+           <h2>Del C - Selvforsvarstrening</h2>
+           <ul>
+               <li><input type="checkbox" class="exercise subtype1" >1</li>
+            </ul>
+           
+           </div>
+           </div>
+           `;
+           }
+           
 
 
     // Function to update the bottom checkboxes based on the top checkboxes
