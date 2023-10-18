@@ -4,11 +4,11 @@
   }
   
   .trackProgress {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-  }
+    /* Optional styles for the progress container */
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+}
   
   ul {
     list-style: none;
@@ -29,7 +29,12 @@
   }
   
   .circular-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
     margin: 20px;
+    max-width: 20rem;
   }
   
   .circle {
@@ -47,6 +52,22 @@
   #progressPercentage {
     font-size: 0.4rem;
   }
+
+/* CSS for organizing items */
+.pensumList {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Create two columns */
+    width: 50%;
+    margin: 0 auto; /* Horizontally center the container */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Add some spacing between items */
+  }
+  
+  .circular-chart {
+    margin: 20px auto; /* Center the circular chart in its container */
+  }
+  
 
 
   

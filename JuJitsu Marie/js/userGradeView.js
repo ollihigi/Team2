@@ -26,23 +26,24 @@ function userGradeView() {
                 </div>
             </div>
         </div>
-       <div class="trackProgress">
-       <div id="checklist">
-           <div id="progress">
-        
-               <svg viewBox="0 0 36 36" class="circular-chart">
-                   <path class="circle"
+
+
+
+
+        <div class="pensumList">
+                <div id="progress">
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                        <path class="circle"
                        stroke-dasharray="0, 100"
                        d="M18 2.0845
                        a 15.9155 15.9155 0 0 1 0 31.831
-                       a 15.9155 15.9155 0 0 1 0 -31.831"
-                   />
-                   <!-- SVG text element to display percentage -->
-                   <text class="percentage-text" id="progressPercentage" x="50%" y="50%" fill="white">
-                       <tspan x="50%" dy="0" >0%</tspan>
-                   </text>
-               </svg>
+                       a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text class="percentage-text" id="progressPercentage" x="50%" y="50%" fill="white">
+                        <tspan x="50%" dy="0" >0%</tspan>
+                        </text>
+                    </svg>
            </div>
+           <div id="checklist">
            <h2>Del A - Grunnteknikker</h2>
            <ul>
                <!-- Apply the "disabled-checkbox" class to make the checkbox unclickable -->
@@ -58,13 +59,13 @@ function userGradeView() {
            </ul>
            <h2>Guardstillinger / Benstillinger</h2>
            <ul>
-               <li><input type="checkbox" class="exercise subtype1">1</li>
+               <li><input type="checkbox" class="exercise subtype1" checked>1</li>
                <li><input type="checkbox" class="exercise subtype1">2</li>
-               <li><input type="checkbox" class="exercise subtype1">3</li>
-               <li><input type="checkbox" class="exercise subtype1">4</li>
+               <li><input type="checkbox" class="exercise subtype1" checked>3</li>
+               <li><input type="checkbox" class="exercise subtype1" checked>4</li>
            </ul>
            
-           <!-- Add more exercises here -->
+  
        </div>
    </div>
    `;
