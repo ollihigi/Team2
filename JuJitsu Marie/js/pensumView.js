@@ -1,5 +1,6 @@
-function pensumView(){
-    document.getElementById('app').innerHTML = /*HTML*/`
+function pensumView() {
+  let trainingCategory = model.categories;
+  document.getElementById('app').innerHTML = /*HTML*/`
 <section class="slider_section ">
 <div class="container ">
   <div class="row">
@@ -49,13 +50,15 @@ function pensumView(){
 <section class="about_section layout_padding-bottom">
 <div class="container">
 <div class="pensumSelect">
-      
-      <li><a>Del A - Grunnteknikker</a>
-      <li><a onclick="guardStillinger()">Guardstillinger / Benstillinger</a>
-      <li><a onclick="guardStillinger()">Forsvarsguard, åpne hender (Shuto)</a></li>
-      <li><a onclick="guardStillinger()">Angrepsguard, lukkede hender (Seiken)</a></li>
-      <li><a onclick="guardStillinger()">Grunnleggende stilling (Zenkutsu-dachi)</a></li>
+  <h2>${trainingCategory[0].name}</h2><br/>
+  ${techniqueTraining(0, 5)}
+  <h2>${trainingCategory[1].name}</h2>
+  ${techniqueTraining(8, 1)}
+  <div id="techniqueInfo"></div>
+  <h2>${trainingCategory[2].name}</h2>
+  ${techniqueTraining(12, 0)}
 </div>
+
 
 <div class="row">
   <div class="col-lg-5 col-md-6">
@@ -80,7 +83,7 @@ function pensumView(){
 }
 
 function guardStillinger() {
-    document.getElementById('exerciseContent').innerHTML = /*HTML*/`
+  document.getElementById('exerciseContent').innerHTML = /*HTML*/`
         <h2>Angrep</h2>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
@@ -90,7 +93,7 @@ function guardStillinger() {
 }
 
 function updateExercise(title, description, media) {
-    document.getElementById('exerciseContent').innerHTML = /*HTML*/`
+  document.getElementById('exerciseContent').innerHTML = /*HTML*/`
         <h2>${title}</h2>
         <p>${description}</p>
         <img src="${media}">
