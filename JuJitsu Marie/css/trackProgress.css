@@ -39,7 +39,7 @@
   
   .circle {
     fill: none;
-    stroke: #007BFF;
+    stroke: #eeff00;
     stroke-width: 3.8;
     animation: progress 1s ease-out forwards;
   }
