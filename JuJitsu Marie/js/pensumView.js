@@ -59,7 +59,7 @@ function pensumView(){
 
 <div class="row">
   <div class="col-lg-5 col-md-6">
-    <div class="detail-box" id="detail-box">
+    <div class="detail-box" id="exerciseContent">
       <h2>
         Guard
       </h2>
@@ -69,7 +69,7 @@ function pensumView(){
     </div>
   </div>
   <div class="col-lg-7 col-md-6">
-    <div class="img-box">
+    <div class="img-box" id="exerciseImg">
       <img src="images/guard.png" alt="">
     </div>
   </div>
@@ -80,7 +80,7 @@ function pensumView(){
 }
 
 function guardStillinger() {
-    document.getElementById('detail-box').innerHTML = /*HTML*/`
+    document.getElementById('exerciseContent').innerHTML = /*HTML*/`
         <h2>Angrep</h2>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
@@ -90,7 +90,7 @@ function guardStillinger() {
 }
 
 function updateExercise(title, description, media) {
-    document.getElementById('detail-box').innerHTML = /*HTML*/`
+    document.getElementById('exerciseContent').innerHTML = /*HTML*/`
         <h2>${title}</h2>
         <p>${description}</p>
         <img src="${media}">
