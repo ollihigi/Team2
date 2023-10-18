@@ -47,108 +47,19 @@ function pensumView(){
 </div>
 </section>
 <section class="about_section layout_padding-bottom">
-<div class="pensumSelect">
-<ul class="pensumSelect">
-<li><a href="#">Del A - Grunnteknikker</a>
-<ul>
-  <li><a href="#">Guardstillinger / Benstillinger <br> (Kamae / Ashi-Tachi) ></a>
-    <ul>
-      <li><a href="#">Forsvarsguard, åpne hender (Shuto)</a></li>
-      <li><a href="#">Angrepsguard, lukkede hender (Seiken)</a></li>
-      <li><a href="#">Grunnleggende stilling (Zenkutsu-dachi)</a></li>
-    </ul>
-  </li>
-  <li><a href="#">Forflytninger <br> (Tai-sabaki) ></a>
-    <ul>
-      <li><a href="#">Sideforflytning (Yoko-ashi) </a></li>
-      <li><a href="#">Kroppsvending (Sha-tenkan)</a></li>
-      <li><a href="#">90 grader dreining (Han-tenkan)</a></li>
-      <li><a href="#">180 grader dreining (Zen-tenkan)</a></li>
-    </ul>
-  </li>
-  <li><a href="#">Fallteknikk <br> (Ukemi-waza) ></a>
-    <ul>
-      <li><a href="https://youtu.be/K64QVhaTY4g">Sideveis fall (Yoko ukemi)</a></li>
-      <li><a href="#">Forover fall (Mae ukemi) </a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-    </ul>
-  </li>
-  <li><a href="#">Kast / Fellinger<br> (Nage waza) ></a>
-    <ul>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-    </ul>
-  </li>
-  <li><a href="#">Slag<br> (Tsuki waza) ></a>
-    <ul>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-    </ul>
-  </li>
-  <li><a href="#">Spark<br> (Keri waza) ></a>
-    <ul>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-    </ul>
-  </li>
-  <li><a href="#">Mønster<br> (Kata) ></a>
-    <ul>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-    </ul>
-  </li>
-  <li><a href="#">Blokkeringer<br> (Uke waza) ></a>
-    <ul>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-    </ul>
-  </li>
-</ul>
-</li>
-
-  <li><a href="#">Del B - Teknikktrening</a>
-    <ul>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2 ></a>
-        <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">6</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="#">Del C - Selvforsvarstrening</a>
-    <ul>
-      <li><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3 ></a>
-        <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-        </ul>
-      </li>
-</ul>
-</div>
 <div class="container">
+<div class="pensumSelect">
+      
+      <li><a>Del A - Grunnteknikker</a>
+      <li><a onclick="guardStillinger()">Guardstillinger / Benstillinger</a>
+      <li><a onclick="guardStillinger()">Forsvarsguard, åpne hender (Shuto)</a></li>
+      <li><a onclick="guardStillinger()">Angrepsguard, lukkede hender (Seiken)</a></li>
+      <li><a onclick="guardStillinger()">Grunnleggende stilling (Zenkutsu-dachi)</a></li>
+</div>
 
 <div class="row">
   <div class="col-lg-5 col-md-6">
-    <div class="detail-box">
+    <div class="detail-box" id="detail-box">
       <h2>
         Guard
       </h2>
@@ -165,5 +76,29 @@ function pensumView(){
 </div>
 </div>
 </section>
-`;
+<button type="button" class="collapsible">Open Collapsible</button>
+<div class="content">
+  <p>Lorem ipsum...</p>
+</div>
+    `;
 }
+
+function guardStillinger() {
+    document.getElementById('detail-box').innerHTML = /*HTML*/`
+        <h2>Angrep</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+        </p>
+    `;
+}
+
+function updateExercise(title, description, media) {
+    document.getElementById('detail-box').innerHTML = /*HTML*/`
+        <h2>${title}</h2>
+        <p>${description}</p>
+        <img src="${media}">
+    `;
+}
+
+

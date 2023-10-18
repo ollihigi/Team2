@@ -1,5 +1,7 @@
 function userGradeView() {
-  document.getElementById("app").innerHTML = /*HTML*/ `
+    const app = document.getElementById("app");
+    if (app) {
+      app.innerHTML = /*HTML*/ `
     <section class="profile">
         <!-- Sidenav -->
         <div class="sidenav">
@@ -24,176 +26,90 @@ function userGradeView() {
                 </div>
             </div>
         </div>
-        <!-- End -->
-
-        <!-- main_grade -->
-        <div class="main_grade">
-   
-            <div class="card_grade">
-                <div class="card_grade-body">
-                <div class="trackers">
-               
-                <svg viewBox="0 0 36 36" class="circular-chart">
-                <path class="circle"
-                  stroke-dasharray="80, 100"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-              </svg>
-
-              <svg viewBox="0 0 36 36" class="circular-chart">
-              <path class="circle"
-                stroke-dasharray="30, 100"
-                d="M18 2.0845
-                  a 15.9155 15.9155 0 0 1 0 31.831
-                  a 15.9155 15.9155 0 0 1 0 -31.831"
-              />
-            </svg>
+       <div class="trackProgress">
+       <div id="checklist">
+           <div id="progress">
+        
+               <svg viewBox="0 0 36 36" class="circular-chart">
+                   <path class="circle"
+                       stroke-dasharray="0, 100"
+                       d="M18 2.0845
+                       a 15.9155 15.9155 0 0 1 0 31.831
+                       a 15.9155 15.9155 0 0 1 0 -31.831"
+                   />
+                   <!-- SVG text element to display percentage -->
+                   <text class="percentage-text" id="progressPercentage" x="50%" y="50%" fill="white">
+                       <tspan x="50%" dy="0" >0%</tspan>
+                   </text>
+               </svg>
            </div>
-           <div class="card_grade">
-           <div class="card_grade-body">
-               <div class="beltGrade">
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoWhite" name="check" checked />
-                       <label for="roundedTwoWhite"></label>
-                       <p>Hvitt</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoYellow" name="check" />
-                       <label for="roundedTwoYellow"></label>
-                       <p>Gult</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoOrange" name="check" />
-                       <label for="roundedTwoOrange"></label>
-                       <p>Orange</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoGreen" name="check" />
-                       <label for="roundedTwoGreen"></label>
-                       <p>Grønt</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoBlue" name="check" />
-                       <label for="roundedTwoBlue"></label>
-                       <p>Blått</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoBrown" name="check" />
-                       <label for="roundedTwoBrown"></label>
-                       <p>Brunt</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoBlack" name="check" />
-                       <label for="roundedTwoBlack"></label>
-                       <p>Svart</p>
-                   </div>
-               </div>
-           </div>
+           <h2>Del A - Grunnteknikker</h2>
+           <ul>
+               <!-- Apply the "disabled-checkbox" class to make the checkbox unclickable -->
+               <li><input type="checkbox" class="subtype" id="subtype1">Guardstillinger / Benstillinger</li>
+               <li><input type="checkbox" class="subtype" id="subtype2">Forflytninger</li>
+               <li><input type="checkbox" class="subtype" id="subtype3">Fallteknikk</li>
+               <li><input type="checkbox" class="subtype" id="subtype4">Kast / Fellinger</li>
+               <li><input type="checkbox" class="subtype" id="subtype5">Slag</li>
+               <li><input type="checkbox" class="subtype" id="subtype6">Spark</li>
+               <li><input type="checkbox" class="subtype" id="subtype7">Mønster</li>
+               <li><input type="checkbox" class="subtype" id="subtype8">Forflytninger</li>
+               <li><input type="checkbox" class="subtype" id="subtype9">Blokkeringer</li>
+           </ul>
+           <h2>Guardstillinger / Benstillinger</h2>
+           <ul>
+               <li><input type="checkbox" class="exercise subtype1">1</li>
+               <li><input type="checkbox" class="exercise subtype1">2</li>
+               <li><input type="checkbox" class="exercise subtype1">3</li>
+               <li><input type="checkbox" class="exercise subtype1">4</li>
+           </ul>
+           
+           <!-- Add more exercises here -->
        </div>
-       <div class="card_grade">
-           <div class="card_grade-body">
-               <div class="categoryGrade">
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoGrunnteknikker" name="check" checked />
-                       <label for="roundedTwoGrunnteknikker"></label>
-                       <p>Grunnteknikker</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoTeknikktrening" name="check" />
-                       <label for="roundedTwoTeknikktrening"></label>
-                       <p>Teknikktrening</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoSelvforsvarstrening" name="check" />
-                       <label for="roundedTwoSelvforsvarstrening"></label>
-                       <p>Selvforsvar</p>
-                   </div>
-               </div>
-           </div>
-       </div>
-       <div class="card_grade">
-           <div class="card_grade-body">
-               <div class="subtypeGrade">
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoGuardstillinger" name="check" checked />
-                       <label for="roundedTwoGuardstillinger"></label>
-                       <p>Guardstillinger</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoForflytninger" name="check" checked />
-                       <label for="roundedTwoForflytninger"></label>
-                       <p>Forflytninger</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoOther" name="check" checked />
-                       <label for="roundedTwoOther"></label>
-                       <p>--</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoAnother" name="check" checked />
-                       <label for="roundedTwoAnother"></label>
-                       <p>--</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoYetAnother" name="check" checked />
-                       <label for="roundedTwoYetAnother"></label>
-                       <p>--</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoLastOne" name="check" />
-                       <label for="roundedTwoLastOne"></label>
-                       <p>--</p>
-                   </div>
-               </div>
-           </div>
-       </div>
-
-           </div>
-           </div>
-           <div class="card_grade">
-           <div class="card-body">
-               <div class="exerciseGrade">
-                   <div class="roundedTwo">
-                   
-                       <input type="checkbox" value="None" id="roundedTwoWhite" name="check" checked />
-                       <label for="roundedTwoWhite"></label>
-                       <p>Forsvarsguard</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoYellow" name="check" />
-                       <label for="roundedTwoYellow"></label>
-                       <p>Angrepsguard</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoOrange" name="check" />
-                       <label for="roundedTwoOrange"></label>
-                       <p>--</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoGreen" name="check" />
-                       <label for="roundedTwoGreen"></label>
-                       <p>--</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoBlue" name="check" />
-                       <label for="roundedTwoBlue"></label>
-                       <p>--</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoBrown" name="check" />
-                       <label for="roundedTwoBrown"></label>
-                       <p>--</p>
-                   </div>
-                   <div class="roundedTwo">
-                       <input type="checkbox" value="None" id="roundedTwoBlack" name="check" />
-                       <label for="roundedTwoBlack"></label>
-                       <p>--</p>
-                   </div>
-               </div>
-           </div>
-       </div>
-       
-        `;
+   </div>
+   `;
 }
+
+
+       // Function to update the bottom checkboxes based on the top checkboxes
+       function updateCheckboxes() {
+        const exerciseCheckboxes = document.querySelectorAll('.exercise');
+        const subtype1 = document.getElementById('subtype1');
+
+        // Check if all exercise checkboxes are checked
+        const areAllExercisesChecked = Array.from(exerciseCheckboxes).every(checkbox => checkbox.checked);
+        
+        // Check or uncheck subtype1 based on all exercise checkboxes
+        subtype1.checked = areAllExercisesChecked;
+
+        // Recalculate the progress
+        updateProgress();
+    }
+
+    // Add event listeners to exercise checkboxes to update subtype1
+    const exerciseCheckboxes = document.querySelectorAll('.exercise');
+    exerciseCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', updateCheckboxes);
+    });
+
+    // Function to calculate progress percentage and update the circular chart
+    function updateProgress() {
+        const exerciseCheckboxes = document.querySelectorAll('.subtype');
+        const checkedCount = Array.from(exerciseCheckboxes).filter(checkbox => checkbox.checked).length;
+        const totalCount = exerciseCheckboxes.length;
+        const percentage = (checkedCount / totalCount) * 100;
+
+
+
+        // Update the circular chart
+        const circle = document.querySelector('.circle');
+        circle.style.strokeDasharray = percentage + ', 100';
+        
+        // Update the percentage text in the SVG
+        const percentageText = document.querySelector('.percentage-text tspan');
+        percentageText.textContent = Math.round(percentage) + '%';
+    }
+}
+
+  
+       
