@@ -1,7 +1,7 @@
 function userGradeView() {
     const app = document.getElementById("app");
     if (app) {
-      app.innerHTML = /*HTML*/ `
+        app.innerHTML = /*HTML*/ `
     <section class="profile">
         <!-- Sidenav -->
         <div class="sidenav">
@@ -64,22 +64,25 @@ function userGradeView() {
                <li><input type="checkbox" class="exercise subtype1" checked>3</li>
                <li><input type="checkbox" class="exercise subtype1" checked>4</li>
            </ul>
-           
+           <h2>Del C - Selvforsvarstrening</h2>
+           <ul>
+               <li><input type="checkbox" class="exercise subtype1" >1</li>
+            </ul>
   
        </div>
    </div>
    `;
-}
+    }
 
 
-       // Function to update the bottom checkboxes based on the top checkboxes
-       function updateCheckboxes() {
+    // Function to update the bottom checkboxes based on the top checkboxes
+    function updateCheckboxes() {
         const exerciseCheckboxes = document.querySelectorAll('.exercise');
         const subtype1 = document.getElementById('subtype1');
 
         // Check if all exercise checkboxes are checked
         const areAllExercisesChecked = Array.from(exerciseCheckboxes).every(checkbox => checkbox.checked);
-        
+
         // Check or uncheck subtype1 based on all exercise checkboxes
         subtype1.checked = areAllExercisesChecked;
 
@@ -105,12 +108,12 @@ function userGradeView() {
         // Update the circular chart
         const circle = document.querySelector('.circle');
         circle.style.strokeDasharray = percentage + ', 100';
-        
+
         // Update the percentage text in the SVG
         const percentageText = document.querySelector('.percentage-text tspan');
         percentageText.textContent = Math.round(percentage) + '%';
     }
 }
 
-  
-       
+
+

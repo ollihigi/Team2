@@ -69,16 +69,16 @@ const model = {
     // 1 / 1 Guardstillinger / Benstillinger (Kamae / Ashi-Tachi)
     {
       id: 1,
-      subtypes: 1,
+      subtypesId: 1,
       CategoryId: 1,
       name: 'Forsvarsguard, åpne hender',
       nameJapanese: 'Shuto',
       withPartner: '',
-      description: ''
+      description: 'Bare prøv deg din, fitte'
     },
     {
       id: 2,
-      subtypes: 1,
+      subtypesId: 1,
       CategoryId: 1,
       name: 'Angrepsguard, lukkede hender',
       nameJapanese: 'Seiken',
@@ -87,7 +87,7 @@ const model = {
     },
     {
       id: 3,
-      subtypes: 1,
+      subtypesId: 1,
       CategoryId: 1,
       name: 'Grunnleggende stilling',
       nameJapanese: 'Zenkutsu-dachi',
@@ -97,7 +97,7 @@ const model = {
     // 2 / 1 Forflytninger (Tai-sabaki)
     {
       id: 4,
-      subtypes: 2,
+      subtypesId: 2,
       CategoryId: 1,
       name: 'Sideforflytning',
       nameJapanese: 'Yoko-ashi',
@@ -106,7 +106,7 @@ const model = {
     },
     {
       id: 5,
-      subtypes: 2,
+      subtypesId: 2,
       CategoryId: 1,
       name: 'Kroppsvending',
       nameJapanese: 'Sha-tenkan',
@@ -115,7 +115,7 @@ const model = {
     },
     {
       id: 6,
-      subtypes: 2,
+      subtypesId: 2,
       CategoryId: 1,
       name: '90 grader dreining',
       nameJapanese: 'Han-tenkan',
@@ -124,7 +124,7 @@ const model = {
     },
     {
       id: 7,
-      subtypes: 2,
+      subtypesId: 2,
       CategoryId: 1,
       name: '180 grader dreining',
       nameJapanese: 'Zen-tenkan',
@@ -134,7 +134,7 @@ const model = {
     // 3 / 1 Fallteknikk (Ukemi-waza)
     {
       id: 8,
-      subtypes:3,
+      subtypesId:3,
       CategoryId: 1,
       name: 'Sideveis fall',
       nameJapanese: 'Yoko ukemi',
@@ -143,7 +143,7 @@ const model = {
     },
     {
       id: 9,
-      subtypes: 3,
+      subtypesId: 3,
       CategoryId: 1,
       name: 'Forover fall',
       nameJapanese: 'Mae ukemi',
@@ -152,7 +152,7 @@ const model = {
     },
     {
       id: 10,
-      subtypes: 3,
+      subtypesId: 3,
       CategoryId: 1,
       name: 'Bakover fall',
       nameJapanese: 'Ushiro ukemi',
@@ -161,7 +161,7 @@ const model = {
     },
     {
       id: 11,
-      subtypes: 3,
+      subtypesId: 3,
       CategoryId: 1,
       name: 'Forover volt',
       nameJapanese: 'Kaiten mae ukemi',
@@ -170,7 +170,7 @@ const model = {
     },
     {
       id: 12,
-      subtypes: 3,
+      subtypesId: 3,
       CategoryId: 1,
       name: 'Bakover volt',
       nameJapanese: 'Kaiten ushiro ukemi',
@@ -180,7 +180,7 @@ const model = {
     // 4 / 1 Kast / Fellinger (Nage waza)
     {
       id: 13,
-      subtypes: 4,
+      subtypesId: 4,
       CategoryId: 1,
       name: 'Stor ytre benfelling',
       nameJapanese: 'O soto o toshi',
@@ -189,7 +189,7 @@ const model = {
     },
     {
       id: 14,
-      subtypes: 4,
+      subtypesId: 4,
       CategoryId: 1,
       name: 'Stort hoftekast',
       nameJapanese: 'O goshi',
@@ -199,7 +199,7 @@ const model = {
     // 5 / 1 Slag (Tsuki waza)
     {
       id: 15,
-      subtypes: 5,
+      subtypesId: 5,
       CategoryId: 1,
       name: 'Rett slag med fremste hånd',
       nameJapanese: 'Tobikomi zuki',
@@ -208,7 +208,7 @@ const model = {
     },
     {
       id: 16,
-      subtypes: 5,
+      subtypesId: 5,
       CategoryId: 1,
       name: 'Rett slag med bakerste hånd',
       nameJapanese: 'Gyaku zuki',
@@ -217,7 +217,7 @@ const model = {
     },
     {
       id: 17,
-      subtypes: 5,
+      subtypesId: 5,
       CategoryId: 1,
       name: 'Slagkombinasjon med rette slag',
       nameJapanese: 'Tobikomi zuki / Gyaku zuki',
@@ -227,7 +227,7 @@ const model = {
     // 6 / 1 Spark (Keri waza)
     {
       id: 18,
-      subtypes: 6,
+      subtypesId: 6,
       CategoryId: 1,
       name: 'Grunnleggende rett spark med bakerste ben',
       nameJapanese: 'Gyaku mae geri',
@@ -236,7 +236,7 @@ const model = {
     },
     {
       id: 19,
-      subtypes: 6,
+      subtypesId: 6,
       CategoryId: 1,
       name: 'Grunnleggende rett spark med fremste ben',
       nameJapanese: 'Tsurikomi mae geri',
@@ -246,7 +246,7 @@ const model = {
     // 7 / 1 Mønster (Kata)
     {
       id: 20,
-      subtypes: 7,
+      subtypesId: 7,
       CategoryId: 1,
       name: 'Go kyu kata - Guard, fem retninger',
       nameJapanese: 'Zenkutsu-dachi / Shuto',
