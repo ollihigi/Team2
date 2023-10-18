@@ -1,4 +1,3 @@
-
 function navBar(){
     document.getElementById('header').innerHTML += /*HTML*/`
     <header>
