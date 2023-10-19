@@ -442,9 +442,11 @@ img {
 }
 
 .url a:hover, .url .active {
-    color: #ffffff;
-    margin-left: 17%;
-    width: 65%;
+  color: black;
+    margin-left: 25%;
+    width: 50%;
+    background-color: #ffffff;
+    border-radius: 20px;
 }
 
 /* End */
