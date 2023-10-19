@@ -54,7 +54,7 @@ function pensumView() {
   <h2>${trainingCategory[0].name}</h2><br/>
   ${techniqueTraining(0, 5)}
   <h2>${trainingCategory[1].name}</h2>
-  ${techniqueTraining(8, 1)}
+  <!${techniqueTraining(8, 1)}
   <div id="techniqueInfo"></div>
   <h2>${trainingCategory[2].name}</h2>
   ${techniqueTraining(12, 0)}

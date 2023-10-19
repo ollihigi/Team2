@@ -33,30 +33,47 @@ function userGradeView() {
 
         <div class="pensumList">
                 <div id="progress">
+                <svg viewBox="0 0 36 36" class="circular-chart">
+                <path class="circleBelt"
+               stroke-dasharray="0, 100"
+               d="M18 2.0845
+               a 15.9155 15.9155 0 0 1 0 31.831
+               a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                <text class="percentage-text" id="progressPercentage" x="50%" y="50%" fill="white">
+                <tspan x="50%" dy="0" >0%</tspan>
+                </text>
+            </svg>
                     <svg viewBox="0 0 36 36" class="circular-chart">
-                        <path class="circle"
+                        <path class="circleCategory"
                        stroke-dasharray="0, 100"
                        d="M18 2.0845
                        a 15.9155 15.9155 0 0 1 0 31.831
                        a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                        <text class="percentage-text" id="progressPercentage" x="50%" y="50%" fill="white">
+                        <text class="percentage-text-category" id="progressPercentage" x="50%" y="50%" fill="white">
                         <tspan x="50%" dy="0" >0%</tspan>
                         </text>
                     </svg>
            </div>
            <div id="checklist">
+           <h2>Kategori</h2>
+           <ul>
+           <li><input type="checkbox" class="category">${trainingCategory[0].name}</li>
+           <li><input type="checkbox" class="category">${trainingCategory[1].name}</li>
+           <li><input type="checkbox" class="category">${trainingCategory[2].name}</li>
+           </ul>
            <h2>${trainingCategory[0].name}</h2><br/>
            ${checkboxHtml(0, 5)}
-           <h2>${trainingCategory[1].name}</h2>
+           <!--<h2>${trainingCategory[1].name}</h2>
            ${checkboxHtml(8, 1)}
            <h2>${trainingCategory[2].name}</h2>
-           ${checkboxHtml(12, 0)}
-           <h2>Exercise</h2>
+           ${checkboxHtml(12, 0)}-->
+           
+           <h2>Guardstillinger</h2>
            <ul>
            <li><input type="checkbox" class="exercise subtype1" checked>Exercise 1</li>
            <li><input type="checkbox" class="exercise subtype1"checked>Exercise 2</li>
-           <li><input type="checkbox" class="exercise subtype1" checked>Exercise3</li>
-           <li><input type="checkbox" class="exercise subtype1">Exercise4</li>
+           <li><input type="checkbox" class="exercise subtype1" checked>Exercise 3</li>
+           <li><input type="checkbox" class="exercise subtype1">Exercise 4</li>
        </ul>
          </div>
    
@@ -68,7 +85,7 @@ function userGradeView() {
     // Function to update the bottom checkboxes based on the top checkboxes
     function updateCheckboxes() {
         const exerciseCheckboxes = document.querySelectorAll('.exercise');
-        const subtype1 = document.getElementById('subtype1');
+        const subtype1 = document.getElementById('subtype0');
 
         // Check if all exercise checkboxes are checked
         const areAllExercisesChecked = Array.from(exerciseCheckboxes).every(checkbox => checkbox.checked);
@@ -96,11 +113,11 @@ function userGradeView() {
 
 
         // Update the circular chart
-        const circle = document.querySelector('.circle');
+        const circle = document.querySelector('.circleCategory');
         circle.style.strokeDasharray = percentage + ', 100';
 
         // Update the percentage text in the SVG
-        const percentageText = document.querySelector('.percentage-text tspan');
+        const percentageText = document.querySelector('.percentage-text-category tspan');
         percentageText.textContent = Math.round(percentage) + '%';
     }
 }
