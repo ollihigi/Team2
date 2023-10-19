@@ -545,6 +545,7 @@ ul {
 
 li {
   margin: 10px 0;
+  cursor: pointer;
 }
 
 #progressPercentage {
@@ -596,6 +597,7 @@ li {
   margin-top: 3rem;
   padding: 2rem;
   color: white;
+  cursor: pointer;
 }
 
 .exerciseImg {
