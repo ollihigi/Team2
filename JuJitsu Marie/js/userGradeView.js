@@ -72,8 +72,8 @@ function userGradeView() {
            <ul>
            <li><input type="checkbox" class="exercise subtype1" checked>Exercise 1</li>
            <li><input type="checkbox" class="exercise subtype1"checked>Exercise 2</li>
-           <li><input type="checkbox" class="exercise subtype1" checked>Exercise3</li>
-           <li><input type="checkbox" class="exercise subtype1">Exercise4</li>
+           <li><input type="checkbox" class="exercise subtype1" checked>Exercise 3</li>
+           <li><input type="checkbox" class="exercise subtype1">Exercise 4</li>
        </ul>
          </div>
    
@@ -85,7 +85,7 @@ function userGradeView() {
     // Function to update the bottom checkboxes based on the top checkboxes
     function updateCheckboxes() {
         const exerciseCheckboxes = document.querySelectorAll('.exercise');
-        const subtype1 = document.getElementById('subtype1');
+        const subtype1 = document.getElementById('subtype0');
 
         // Check if all exercise checkboxes are checked
         const areAllExercisesChecked = Array.from(exerciseCheckboxes).every(checkbox => checkbox.checked);
