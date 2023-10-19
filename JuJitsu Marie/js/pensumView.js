@@ -69,16 +69,13 @@ function pensumView() {
       </h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-        <div class="img-box" id="exerciseImg">
-          <img src="images/guard.png" alt="">
-        </div>
+   
 
     </div>
   </div>
   <div class="col-lg-7 col-md-6">
-  </div>
-  </div>
-</div>
+  <div class="img-box" id="exerciseImg">
+  <img src="images/guard.png" alt="">
 </div>
 </section>
     `;
