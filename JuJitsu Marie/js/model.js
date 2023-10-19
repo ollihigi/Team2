@@ -329,7 +329,7 @@ const model = {
       name: 'Forsvar mot hårtak',
       nameTJK: '511a',
       withPartner: true,
-      img: "images/Exercises/511a.png"
+      img: "images/Exercises/511a.png",
       description: '511a Forsvar mot hårtak Høyre hånd holder motstanders høyre hånd. Venstre hånd på motstanders høyre albue. Gå først fram og så til siden. slik at motstander står bøyd framover. NB: Forsvarer står ikke med bøyd rygg!  Frigjøring her og gå deretter et steg fram og i fra. '
     },
     
@@ -341,7 +341,7 @@ const model = {
       name: "Forsvar mot strupetak",
       nameTJK: '511a',
       withPartner: true,
-      img: "images/Exercises/511a.png"
+      img: "images/Exercises/511a.png",
       description: "522a Høyre hånd på skrått over bryst/skuldre. Venstre hånd frigjør luftveiene. Glid i fra"
     },
     {
@@ -351,7 +351,7 @@ const model = {
       name: "Forsvar mot strupetak",
       nameTJK: '511a',
       withPartner: true,
-      img: "images/Exercises/511a.png"
+      img: "images/Exercises/511a.png",
       description: "522a Høyre hånd på skrått over bryst/skuldre. Venstre hånd frigjør luftveiene. Glid i fra"
     },
     {
@@ -361,7 +361,7 @@ const model = {
       name: "Forsvar mot strupetak",
       nameTJK: '511a',
       withPartner: true,
-      img: "images/Exercises/511a.png"
+      img: "images/Exercises/511a.png",
       description: "522a Høyre hånd på skrått over bryst/skuldre. Venstre hånd frigjør luftveiene. Glid i fra"
     },
    
