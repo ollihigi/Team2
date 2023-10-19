@@ -7,7 +7,7 @@ function navBar(){
             <li>
                 <a href="#">Startside</a>
                 <a onclick="pensumView()">Øvelser</a>
-                <a href="#">Trening</a>
+                <a onclick="trainingView()">Trening</a>
                 <a onclick="userGradeView()">Min Side</a>
             </li>
         </ul>
