@@ -61,21 +61,13 @@ function pensumView() {
 </div>
 
 
-<div class="row">
-  <div class="col-lg-5 col-md-6">
-    <div class="detail-box" id="exerciseContent">
-      <h2>
-        Guard
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-   
+    <div class="pensumContent" id="exerciseContent">
+      <h2>Guard</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+      <img class="exerciseImg" id="exerciseImg" src="images/guard.png" alt="">
 
     </div>
   </div>
-  <div class="col-lg-7 col-md-6">
-  <div class="img-box" id="exerciseImg">
-  <img src="images/guard.png" alt="">
 </div>
 </section>
     `;
