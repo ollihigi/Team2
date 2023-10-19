@@ -17,7 +17,7 @@ function techniqueTraining(start, end) {
 
     let optionsHtml = '';
     for (let i = 0; i < partsABC.length; i++) {
-        optionsHtml += `<li onclick="clickedTrainingInfo(${i})">${partsABC[i]}</li>`;
+        optionsHtml += `<li><onclick="clickedTrainingInfo(${i})">${partsABC[i]}</a></li>`;
     }
 
     return /*HTML*/` <ul>${optionsHtml}</ul>`
@@ -26,7 +26,7 @@ function clickedTrainingInfo(exerciseName) {
     let exerciseContentHtml = '';
     const infoHtml = model.exercises[exerciseName]
     exerciseContentHtml = [
-        infoHtml.name || '',
+        `<h2>${infoHtml.name || ''}</h2>`,
         infoHtml.nameJapanese || '',
         infoHtml.description || '',
     ]
