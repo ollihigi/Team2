@@ -17,7 +17,7 @@ function techniqueTraining(start, end) {
 
     let optionsHtml = '';
     for (let i = 0; i < partsABC.length; i++) {
-        optionsHtml += `<li><a href="#" onclick="clickedTrainingInfo(${i})">${partsABC[i]}</a></li>`;
+        optionsHtml += `<li onclick="clickedTrainingInfo(${i})">${partsABC[i]}</li>`;
     }
 
     return /*HTML*/` <ul>${optionsHtml}</ul>`
