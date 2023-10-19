@@ -24,13 +24,13 @@ function techniqueTraining(start, end) {
 }
 function clickedTrainingInfo(exerciseName) {
     let exerciseContentHtml = '';
-    const infoHtml = model.exercises[exerciseName]
+    const infoHtml = model.exercises[exerciseName];
     exerciseContentHtml = [
         `<h2>${infoHtml.name || ''}</h2>`,
-        infoHtml.nameJapanese || '',
-        infoHtml.description || '',
-    ]
-    document.getElementById('exerciseContent').innerHTML = exerciseContentHtml;
+        `<h4>${infoHtml.nameJapanese || ''}</h4>`,
+        `<p>${infoHtml.description || ''}</p>`,
+    ];
+    document.getElementById('exerciseContent').innerHTML = exerciseContentHtml.join('');
 }
 function template(){
     `
