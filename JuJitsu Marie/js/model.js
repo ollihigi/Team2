@@ -326,10 +326,10 @@ const model = {
       id: 28,
       subtypeId: 9,
       CategoryId: 2,
-      name: '',
-      nameTJK: '',
-      withPartner: '',
-      description: ''
+      name: 'Forsvar mot hårtak',
+      nameTJK: '511a',
+      withPartner: true,
+      description: '511a Forsvar mot hårtak Høyre hånd holder motstanders høyre hånd. Venstre hånd på motstanders høyre albue. Gå først fram og så til siden. slik at motstander står bøyd framover. NB: Forsvarer står ikke med bøyd rygg!  Frigjøring her og gå deretter et steg fram og i fra. '
     },
 
     { id: 28, subtypeId: 9, name: "Forsvar mot hårtak", nameJapanese: null, WithPartner: true, description: "Høyre hånd holder motstanders høyre hånd +++ " }, 
@@ -344,7 +344,7 @@ const model = {
     { id: 50, subtypeId: 13, name: "Sirkeltrening", WithPartner: true, description: ": Forsvar mot uavtalte kontaktgrep fra gult pensum." }, 
   ],
   media: [
-    { id: 1, exerciseId: 1, caption: '511a', type:'img', detail:'guard2.png'},
+    { id: 1, exerciseId: 1, caption: '511a', type:'img', detail:'JuJitsu Marie\images\Exercises\511a.png'},
 
   ],
 
