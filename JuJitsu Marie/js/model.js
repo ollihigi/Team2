@@ -74,7 +74,7 @@ const model = {
       name: 'Forsvarsguard, åpne hender',
       nameJapanese: 'Shuto',
       withPartner: '',
-      description: 'Bare prøv deg din, fitte'
+      description: ''
     },
     {
       id: 2,
