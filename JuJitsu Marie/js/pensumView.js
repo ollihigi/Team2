@@ -61,14 +61,12 @@ function pensumView() {
 </div>
 
 
-    <div class="pensumContent" id="exerciseContent">
+  <div class="pensumContent" id="exerciseContent">
       <h2>Guard</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
       <img class="exerciseImg" id="exerciseImg" src="images/guard.png" alt="">
-
-    </div>
   </div>
-</div>
+
 </section>
-    `;
+`;
 }

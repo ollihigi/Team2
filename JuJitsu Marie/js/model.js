@@ -344,7 +344,31 @@ const model = {
     { id: 50, subtypeId: 13, name: "Sirkeltrening", WithPartner: true, description: ": Forsvar mot uavtalte kontaktgrep fra gult pensum." }, 
   ],
   media: [
-    { id: 1, exerciseId: 1, caption: '511a', type:'img', detail:'JuJitsu Marie\images\Exercises\511a.png'},
+    // 12 øvelser under katagori 2, subtype 1 FORFRA med id fra 1 til 12, med ExerciseID 28 til 39
+    { id: 1, exerciseId: 28, 
+      caption: '511a', type:'img', 
+      src: "images/Exercises/511a.png"},
+
+    // + 11 øvelser til 
+
+    //1 øvelse under katagori 2, subtype 2 SIDEN med id 13
+    {
+      id: 13, exerciseId: 40,
+      caption: '522a', type: 'img',
+      src: "images/Exercises/522a.png"
+    },
+     // 5 øvelser under katagori 2, subtype 3 BAKFRA med id fra 14 til 18 og ExerciseID fra 41 til 45
+    {
+      id: 14, exerciseId: 41,
+      caption: '531a', type: 'img',
+      src: "images/Exercises/531a.png"
+    },
+     // 4 øvelser under katagori 2, subtype 4 BAKKETEKNIKKER med id fra 1 til 12
+    {
+      id: 19, exerciseId: 46,
+      caption: '541f', type: 'img',
+      src: "images/Exercises/541f.png"
+    },
 
   ],
 
