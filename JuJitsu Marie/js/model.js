@@ -329,12 +329,41 @@ const model = {
       name: 'Forsvar mot hårtak',
       nameTJK: '511a',
       withPartner: true,
+      img: "images/Exercises/511a.png",
       description: '511a Forsvar mot hårtak Høyre hånd holder motstanders høyre hånd. Venstre hånd på motstanders høyre albue. Gå først fram og så til siden. slik at motstander står bøyd framover. NB: Forsvarer står ikke med bøyd rygg!  Frigjøring her og gå deretter et steg fram og i fra. '
     },
-
-    { id: 28, subtypeId: 9, name: "Forsvar mot hårtak", nameJapanese: null, WithPartner: true, description: "Høyre hånd holder motstanders høyre hånd +++ " }, 
+    
     // + 11 øvelser til 
-    { id: 40, subtypeId: 12, name: "Forsvar mot strupetak", nameJapanese: null, WithPartner: true, description: "Kun forflytninger med god avstand. Knyttneve ved spark-blokk" }, 
+    {
+      id: 40,
+      subtypeId: 10,
+      CategoryId: 2,
+      name: "Forsvar mot strupetak",
+      nameTJK: '511a',
+      withPartner: true,
+      img: "images/Exercises/511a.png",
+      description: "522a Høyre hånd på skrått over bryst/skuldre. Venstre hånd frigjør luftveiene. Glid i fra"
+    },
+    {
+      id: 41,
+      subtypeId: 10,
+      CategoryId: 2,
+      name: "Forsvar mot strupetak",
+      nameTJK: '511a',
+      withPartner: true,
+      img: "images/Exercises/511a.png",
+      description: "522a Høyre hånd på skrått over bryst/skuldre. Venstre hånd frigjør luftveiene. Glid i fra"
+    },
+    {
+      id: 49,
+      subtypeId: 10,
+      CategoryId: 2,
+      name: "Forsvar mot strupetak",
+      nameTJK: '511a',
+      withPartner: true,
+      img: "images/Exercises/511a.png",
+      description: "522a Høyre hånd på skrått over bryst/skuldre. Venstre hånd frigjør luftveiene. Glid i fra"
+    },
    
 
 
@@ -369,7 +398,6 @@ const model = {
       caption: '541f', type: 'img',
       src: "images/Exercises/541f.png"
     },
-
   ],
 
 };
