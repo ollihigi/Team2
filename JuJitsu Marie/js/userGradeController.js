@@ -7,7 +7,7 @@ function checkboxHtml(start, end) {
 
     let optionsHtml = '';
     for (let i = 0; i < partsABC.length; i++) {
-        optionsHtml += `<li><input type="checkbox" class="subtype" id="subtype1"(${i})>${partsABC[i]}</a></li>`;
+        optionsHtml += `<li><input type="checkbox" class="subtype" id="subtype${i}"(${i})>${partsABC[i]}</a></li>`;
     }
 
     return /*HTML*/` <ul>${optionsHtml}</ul>`

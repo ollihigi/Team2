@@ -37,14 +37,21 @@
     max-width: 20rem;
   }
   
-  .circle {
+  .circleBelt {
+    fill: none;
+    stroke: #eeff00;
+    stroke-width: 3.8;
+    animation: progress 1s ease-out forwards;
+  }
+
+  .circleCategory {
     fill: none;
     stroke: #eeff00;
     stroke-width: 3.8;
     animation: progress 1s ease-out forwards;
   }
   
-  .percentage-text {
+  .percentage-text-category,  .percentage-text-belt {
     font-size: 10px;
     text-anchor: middle;
   }
