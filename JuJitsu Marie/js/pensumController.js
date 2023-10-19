@@ -26,19 +26,11 @@ function clickedTrainingInfo(exerciseName) {
     let exerciseContentHtml = '';
     const infoHtml = model.exercises[exerciseName];
     exerciseContentHtml = [
-<<<<<<< HEAD
         `<h2>${infoHtml.name || ''}</h2>`,
         `<h4>${infoHtml.nameJapanese || ''}</h4>`,
         `<p>${infoHtml.description || ''}</p>`,
     ];
     document.getElementById('exerciseContent').innerHTML = exerciseContentHtml.join('');
-=======
-        infoHtml.name || '',
-        infoHtml.nameJapanese || '',
-        infoHtml.description || '',
-    ]
-    document.getElementById('exerciseContent').innerHTML = exerciseContentHtml;
->>>>>>> c787f0f2b90c353d01700f64f8e88f615e4120c0
 }
 function template(){
     `
