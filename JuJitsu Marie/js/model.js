@@ -355,7 +355,7 @@ const model = {
       description: "522a Høyre hånd på skrått over bryst/skuldre. Venstre hånd frigjør luftveiene. Glid i fra"
     },
     {
-      id: 40,
+      id: 49,
       subtypeId: 10,
       CategoryId: 2,
       name: "Forsvar mot strupetak",
