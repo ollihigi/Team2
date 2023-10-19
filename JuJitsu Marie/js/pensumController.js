@@ -17,20 +17,20 @@ function techniqueTraining(start, end) {
 
     let optionsHtml = '';
     for (let i = 0; i < partsABC.length; i++) {
-        optionsHtml += `<li><onclick="clickedTrainingInfo(${i})">${partsABC[i]}</a></li>`;
+        optionsHtml += `<li><a onclick="clickedTrainingInfo(${i}); return false;">${partsABC[i]}</a></li>`;
     }
 
     return /*HTML*/` <ul>${optionsHtml}</ul>`
 }
 function clickedTrainingInfo(exerciseName) {
     let exerciseContentHtml = '';
-    const infoHtml = model.exercises[exerciseName]
+    const infoHtml = model.exercises[exerciseName];
     exerciseContentHtml = [
         `<h2>${infoHtml.name || ''}</h2>`,
-        infoHtml.nameJapanese || '',
-        infoHtml.description || '',
-    ]
-    document.getElementById('exerciseContent').innerHTML = exerciseContentHtml;
+        `<h4>${infoHtml.nameJapanese || ''}</h4>`,
+        `<p>${infoHtml.description || ''}</p>`,
+    ];
+    document.getElementById('exerciseContent').innerHTML = exerciseContentHtml.join('');
 }
 function template(){
     `
