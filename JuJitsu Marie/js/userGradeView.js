@@ -51,7 +51,15 @@ function userGradeView() {
            ${checkboxHtml(8, 1)}
            <h2>${trainingCategory[2].name}</h2>
            ${checkboxHtml(12, 0)}
+           <h2>Exercise</h2>
+           <ul>
+           <li><input type="checkbox" class="exercise subtype1" checked>Exercise 1</li>
+           <li><input type="checkbox" class="exercise subtype1"checked>Exercise 2</li>
+           <li><input type="checkbox" class="exercise subtype1" checked>Exercise3</li>
+           <li><input type="checkbox" class="exercise subtype1">Exercise4</li>
+       </ul>
          </div>
+   
            `;
            }
            
