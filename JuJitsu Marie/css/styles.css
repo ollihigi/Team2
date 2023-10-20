@@ -556,7 +556,6 @@ img {
 
  #startside-banner {
   display: flex;
-  background-color:rgb(23,23,23);
   overflow: hidden;
 }
 
@@ -565,7 +564,6 @@ img {
   height: 800px; /* You can adjust the height as needed */
   width: 100%;
   object-fit: cover;
-  background-color: rgb(23,23,23);
   display: flex;
   border: none;
 }
