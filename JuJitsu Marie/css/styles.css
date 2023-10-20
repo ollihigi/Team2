@@ -175,10 +175,6 @@ img {
     padding: 2px;
     position: relative;
 }
-
-
-
-
 .pensumContent {
   display: flex;
   flex-direction: column;
@@ -209,33 +205,13 @@ img {
 
 #startside-banner svg {
   min-width: 1920px;
-  height: 800px; /* You can adjust the height as needed */
+  height: 800px;
   width: 100%;
   object-fit: cover;
   display: flex;
   border: none;
 }
 
-
-/* width */
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #201f1f;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #e27a04;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
 
 
 

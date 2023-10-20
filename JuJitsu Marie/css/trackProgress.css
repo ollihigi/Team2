@@ -44,15 +44,14 @@
     font-size: 0.4rem;
   }
 
-/* CSS for organizing items */
 .pensumList {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Create two columns */
+    grid-template-columns: 1fr 1fr; 
     width: 50%;
-    margin: 0 auto; /* Horizontally center the container */
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Add some spacing between items */
+    gap: 20px;
     
   }
   
@@ -68,15 +67,10 @@
     flex: 1;
   }
   
-  /* Style to make the checkbox unclickable */
   .subtype {
     pointer-events: none;
   }
 
-  
-  
-  
-  
   @keyframes progress {
     from {
         stroke-dasharray: 0, 100;

@@ -57,8 +57,6 @@
     background-color: #24252a;
   }
   
-  /*! ---------------------- */
-  
   .container {
     width: 100%;
     padding-right: 15px;
@@ -142,5 +140,24 @@
   
   .layout_padding-bottom {
     padding-bottom: 120px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #201f1f;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #e27a04;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
   }
   
