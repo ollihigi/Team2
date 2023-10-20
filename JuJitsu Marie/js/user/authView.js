@@ -59,4 +59,5 @@ function authView() {
       </div>
     </div>
   `;
+  initializeFormEvents() ;
 }
