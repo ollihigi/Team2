@@ -1,4 +1,4 @@
 function init() {
   navBar();
-  authView();
+  landingView();
 }

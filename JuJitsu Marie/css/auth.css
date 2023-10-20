@@ -73,7 +73,7 @@
     color: #ffffff;
   }
   
-  input, textarea {
+  form input, textarea {
     font-size: 22px;
     display: block;
     width: 100%;

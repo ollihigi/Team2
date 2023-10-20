@@ -12,7 +12,7 @@ function navBar(){
             </li>
         </ul>
     </nav>
-    <a href="#" class="regLogBtn">
+    <a href="#logginn" class="regLogBtn">
         <button onclick="authView()">Logg inn</button>
     </a>
 </header>

@@ -2,11 +2,11 @@ function authView() {
   document.getElementById("app").innerHTML = /*HTML*/ `
     <div class="form">
       <ul class="tab-group">
-        <li class="tab active"><a href="#signup">Lag Bruker</a></li>
-        <li class="tab"><a href="#login">Logg Inn</a></li>
+        <li class="tab active"><a href="#lagbruker">Lag Bruker</a></li>
+        <li class="tab"><a href="#logginn">Logg Inn</a></li>
       </ul>
       <div class="tab-content">
-        <div id="signup">
+        <div id="lagbruker">
           <br>
           <form action="/" method="post">
             <div class="top-row">
@@ -38,7 +38,7 @@ function authView() {
             <button type="submit" class="buttonForm buttonForm-block">Bli Medlem</button>
           </form>
         </div>
-        <div id="login">
+        <div id="logginn">
           <form action="/" method="post">
             <div class="field-wrap">
               <label>
