@@ -529,52 +529,6 @@ img {
   text-align: left;
 }
 
-.trackProgress {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
-}
-
-#progressPercentage {
-  font-weight: bold;
-}
-
-/* Style to make the checkbox unclickable */
-.subtype {
-  pointer-events: none;
-}
-
-.circular-chart {
-  margin: 20px;
-}
-
-.circle {
-  fill: none;
-  stroke: #007BFF;
-  stroke-width: 3.8;
-  animation: progress 1s ease-out forwards;
-}
-
-.percentage-text {
-  font-size: 10px;
-  text-anchor: middle;
-}
-
-#progressPercentage {
-  font-size: 0.4rem;
-}
-
-@keyframes progress {
-  from {
-      stroke-dasharray: 0, 100;
-  }
-}
-
-.rightSideExercise {
-  display: flex;
-  flex-direction: row;
-}
 
 .pensumContent {
   display: flex;

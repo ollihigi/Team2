@@ -1,8 +1,8 @@
 function userGradeView() {
-    let trainingCategory = model.categories;
-    const app = document.getElementById("app");
-    if (app) {
-        app.innerHTML = /*HTML*/ `
+  let trainingCategory = model.categories;
+  const app = document.getElementById("app");
+  if (app) {
+    app.innerHTML = /*HTML*/ `
     <section class="profile">
         <!-- Sidenav -->
         <div class="sidenav">
@@ -34,21 +34,24 @@ function userGradeView() {
         <div class="pensumList">
                 <div id="progress">
                 <svg viewBox="0 0 36 36" class="circular-chart">
-                <path class="circleBelt"
-               stroke-dasharray="0, 100"
-               d="M18 2.0845
-               a 15.9155 15.9155 0 0 1 0 31.831
-               a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                <text class="percentage-text" id="progressPercentage" x="50%" y="50%" fill="white">
-                <tspan x="50%" dy="0" >0%</tspan>
-                </text>
-            </svg>
+    <path class="circleBelt"
+        stroke-width="3.8"
+        stroke="black"
+        d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"/>
+    <text class="percentage-text" id="progressPercentage" x="50%" y="50%" fill="white">
+        <tspan x="50%" dy="0" >0%</tspan>
+    </text>
+</svg>
                     <svg viewBox="0 0 36 36" class="circular-chart">
                         <path class="circleCategory"
-                       stroke-dasharray="0, 100"
-                       d="M18 2.0845
-                       a 15.9155 15.9155 0 0 1 0 31.831
-                       a 15.9155 15.9155 0 0 1 0 -31.831"/>
+
+        stroke-width="3.8"
+        stroke="black"
+        d="M18 2.0845
+        a 15.9155 15.9155 0 0 1 0 31.831
+        a 15.9155 15.9155 0 0 1 0 -31.831"/>
                         <text class="percentage-text-category" id="progressPercentage" x="50%" y="50%" fill="white">
                         <tspan x="50%" dy="0" >0%</tspan>
                         </text>
@@ -57,9 +60,15 @@ function userGradeView() {
            <div id="checklist">
            <h2>Kategori</h2>
            <ul>
-           <li><input type="checkbox" class="category">${trainingCategory[0].name}</li>
-           <li><input type="checkbox" class="category">${trainingCategory[1].name}</li>
-           <li><input type="checkbox" class="category">${trainingCategory[2].name}</li>
+           <li><input type="checkbox" class="category">${
+             trainingCategory[0].name
+           }</li>
+           <li><input type="checkbox" class="category">${
+             trainingCategory[1].name
+           }</li>
+           <li><input type="checkbox" class="category">${
+             trainingCategory[2].name
+           }</li>
            </ul>
            <h2>${trainingCategory[0].name}</h2><br/>
            ${checkboxHtml(0, 5)}
@@ -78,51 +87,64 @@ function userGradeView() {
          </div>
    
            `;
-           }
-           
+  }
 
+  // Function to update the bottom checkboxes based on the top checkboxes
+  function updateCheckboxes() {
+    const exerciseCheckboxes = document.querySelectorAll(".exercise");
+    const subtype1 = document.getElementById("subtype0");
 
-    // Function to update the bottom checkboxes based on the top checkboxes
-    function updateCheckboxes() {
-        const exerciseCheckboxes = document.querySelectorAll('.exercise');
-        const subtype1 = document.getElementById('subtype0');
+    // Check if all exercise checkboxes are checked
+    const areAllExercisesChecked = Array.from(exerciseCheckboxes).every(
+      (checkbox) => checkbox.checked
+    );
 
-        // Check if all exercise checkboxes are checked
-        const areAllExercisesChecked = Array.from(exerciseCheckboxes).every(checkbox => checkbox.checked);
+    // Check or uncheck subtype1 based on all exercise checkboxes
+    subtype1.checked = areAllExercisesChecked;
 
-        // Check or uncheck subtype1 based on all exercise checkboxes
-        subtype1.checked = areAllExercisesChecked;
+    // Recalculate the progress
+    updateProgress();
+  }
 
-        // Recalculate the progress
-        updateProgress();
-    }
+  // Add event listeners to exercise checkboxes to update subtype1
+  const exerciseCheckboxes = document.querySelectorAll(".exercise");
+  exerciseCheckboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", updateCheckboxes);
+  });
 
-    // Add event listeners to exercise checkboxes to update subtype1
-    const exerciseCheckboxes = document.querySelectorAll('.exercise');
-    exerciseCheckboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', updateCheckboxes);
-    });
+  // Function to calculate progress percentage and update the circular chart
+  function updateProgress() {
+    const exerciseCheckboxes = document.querySelectorAll(".subtype");
+    const checkedCount = Array.from(exerciseCheckboxes).filter(
+      (checkbox) => checkbox.checked
+    ).length;
+    const totalCount = exerciseCheckboxes.length;
+    const percentage = (checkedCount / totalCount) * 100;
 
-    // Function to calculate progress percentage and update the circular chart
-    function updateProgress() {
-        const exerciseCheckboxes = document.querySelectorAll('.subtype');
-        const checkedCount = Array.from(exerciseCheckboxes).filter(checkbox => checkbox.checked).length;
-        const totalCount = exerciseCheckboxes.length;
-        const percentage = (checkedCount / totalCount) * 100;
+    // Update the circular chart
+    const circle = document.querySelector(".circleCategory");
 
+    // Calculate the stroke-dasharray values
+    const progressValue = percentage * 0.01 * (2 * Math.PI * 15.9155); // Radius is 15.9155
+    const dasharray = `${progressValue}, ${
+      2 * Math.PI * 15.9155 - progressValue
+    }`;
 
+    circle.style.strokeDasharray = dasharray;
 
-        // Update the circular chart
-        const circle = document.querySelector('.circleCategory');
-        circle.style.strokeDasharray = percentage + ', 100';
+    // Set the stroke color to your desired color
+    circle.style.stroke = "#0fa8d6";
 
-        // Update the percentage text in the SVG
-        const percentageText = document.querySelector('.percentage-text-category tspan');
-        percentageText.textContent = Math.round(percentage) + '%';
-    }
+    // Update the percentage text in the SVG
+    const percentageText = document.querySelector(
+      ".percentage-text-category tspan"
+    );
+    percentageText.textContent = Math.round(percentage) + "%";
+  }
 }
 
-{/* <h2>Del A - Grunnteknikker</h2>
+
+/* <h2>Del A - Grunnteknikker</h2>
 <ul>
     <!-- Apply the "disabled-checkbox" class to make the checkbox unclickable -->
     <li><input type="checkbox" class="subtype" id="subtype1">Guardstillinger / Benstillinger</li>
@@ -150,6 +172,4 @@ function userGradeView() {
 </div>
 </div>
 `;
-} */}
-
-
+} */

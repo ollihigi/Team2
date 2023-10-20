@@ -3,12 +3,6 @@
     text-align: left;
   }
   
-  .trackProgress {
-    /* Optional styles for the progress container */
-    padding: 20px;
-    border-radius: 5px;
-    flex: 1;
-}
   
   ul {
     list-style: none;
@@ -17,15 +11,6 @@
   
   li {
     margin: 10px 0;
-  }
-  
-  #progressPercentage {
-    font-weight: bold;
-  }
-  
-  /* Style to make the checkbox unclickable */
-  .subtype {
-    pointer-events: none;
   }
   
   .circular-chart {
@@ -38,21 +23,19 @@
   }
   
   .circleBelt {
-    fill: none;
-    stroke: #eeff00;
-    stroke-width: 3.8;
-    animation: progress 1s ease-out forwards;
-  }
 
-  .circleCategory {
-    fill: none;
-    stroke: #00bbff;
     stroke-width: 3.8;
-    animation: progress 1s ease-out forwards;
-    
+    fill: none;
   }
   
-  .percentage-text-category,  .percentage-text-belt {
+  .circleCategory {
+    stroke-width: 3.8;
+    fill: none;
+  }
+  
+  .percentage-text-category,
+  .percentage-text-belt,
+  .percentage-text {
     font-size: 10px;
     text-anchor: middle;
   }
@@ -73,15 +56,33 @@
     
   }
   
-  .circular-chart {
-    margin: 20px auto; /* Center the circular chart in its container */
 
+
+  .trackProgress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+  }
+  
+  /* Style to make the checkbox unclickable */
+  .subtype {
+    pointer-events: none;
   }
 
+  
+  
+  
   
   @keyframes progress {
     from {
         stroke-dasharray: 0, 100;
     }
   }
+  
+
+
   
