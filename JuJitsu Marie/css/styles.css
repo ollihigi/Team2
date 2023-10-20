@@ -547,6 +547,10 @@ img {
   align-items: center;
   width: 20rem;
 }
+.exerciseContent {
+  display: flex;
+  flex-direction: row;
+}
 
 
 
