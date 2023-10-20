@@ -8,20 +8,7 @@
 //       `;
 //     }
 //   }
-function techniqueTraining(start, end) {
-    let subType = model.subtypes;
-    let partsABC = [];
-    for (let i = start; i < subType.length - end; i++) {
-        partsABC.push(subType[i].name)
-    }
 
-    let optionsHtml = '';
-    for (let i = 0; i < partsABC.length; i++) {
-        optionsHtml += `<li><a onclick="clickedTrainingInfo(${i}); return false;">${partsABC[i]}</a></li>`;
-    }
-
-    return /*HTML*/` <ul>${optionsHtml}</ul>`
-}
 function clickedTrainingInfo(exerciseName) {
     let exerciseContentHtml = '';
     const infoHtml = model.exercises[exerciseName];

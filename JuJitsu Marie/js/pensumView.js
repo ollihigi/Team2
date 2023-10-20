@@ -1,7 +1,7 @@
 function pensumView() {
   let trainingCategory = model.categories;
   document.getElementById('app').innerHTML = /*HTML*/`
-<section class="main_section ">
+<section class="slider_section ">
 <div class="container ">
   <div class="row">
     <div class="col-md-6 ">
@@ -26,10 +26,10 @@ function pensumView() {
 <!-- end slider section -->
 </div>
 
-<!-- pensum section -->
-<section class="pensum_section">
+<!-- feature section -->
+<section class="feature_section">
 <div class="container">
-<div class="pensum_container">
+<div class="feature_container">
   <div class="box active">
     <div class="img-box">
     <img src="images/yellowBelt.png" alt="">
@@ -53,11 +53,11 @@ function pensumView() {
 <div class="exerciseContent">
 <div class="pensumSelect">
   <h2>${trainingCategory[0].name}</h2><br/>
-  ${techniqueTraining(0, 5)}
+  ${techniqueTraining(0, 8)}
   <h2>${trainingCategory[1].name}</h2>
-  ${techniqueTraining(8, 1)}
+  ${techniqueTraining(8, 12)}
   <h2>${trainingCategory[2].name}</h2>
-  ${techniqueTraining(12, 0)}
+  ${techniqueTraining(12, 13)}
 </div>
 
 
@@ -69,4 +69,19 @@ function pensumView() {
 </div>
 </section>
 `;
+}
+// categories and subtypes
+function techniqueTraining(start, end) {
+  let subType = model.subtypes;
+  let partsABC = [];
+  for (let i = start; i < end; i++) {
+      partsABC.push(subType[i].name)
+  }
+
+  let optionsHtml = '';
+  for (let i = 0; i < partsABC.length; i++) {
+      optionsHtml += `<li><a onclick="clickedTrainingInfo(${i}); return false;">${partsABC[i]}</a></li>`;
+  }
+
+  return /*HTML*/` <ul>${optionsHtml}</ul>`
 }
