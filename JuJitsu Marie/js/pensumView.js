@@ -1,7 +1,7 @@
 function pensumView() {
   let trainingCategory = model.categories;
   document.getElementById('app').innerHTML = /*HTML*/`
-<section class="slider_section ">
+<section class="main_section ">
 <div class="container ">
   <div class="row">
     <div class="col-md-6 ">
@@ -26,10 +26,10 @@ function pensumView() {
 <!-- end slider section -->
 </div>
 
-<!-- feature section -->
-<section class="feature_section">
+<!-- pensum section -->
+<section class="pensum_section">
 <div class="container">
-<div class="feature_container">
+<div class="pensum_container">
   <div class="box active">
     <div class="img-box">
     <img src="images/yellowBelt.png" alt="">

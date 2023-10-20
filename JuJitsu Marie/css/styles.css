@@ -210,7 +210,7 @@ button:hover {
   padding-bottom: 120px;
 }
 
-.slider_section {
+.main_section {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -220,42 +220,43 @@ button:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: center;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 
-.slider_section .row {
+.main_section .row {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.slider_section #customCarousel1 {
+.main_section #customCarousel1 {
   width: 100%;
   position: unset;
 }
 
-.slider_section .detail-box {
+.main_section .detail-box {
   padding-bottom: 90px;
 }
 
-.slider_section .detail-box h1 {
+.main_section .detail-box h1 {
   font-weight: bold;
   margin-bottom: 25px;
   color: #ffffff;
 }
 
-.slider_section .detail-box p {
+.main_section .detail-box p {
   color: #ffffff;
   font-size: 15px;
 }
 
-.slider_section .detail-box img {
+.main_section .detail-box img {
   color: #ffffff;
   font-size: 15px;
 }
 
-.slider_section .detail-box a {
+.main_section .detail-box a {
   display: inline-block;
   font-family: "Merriweather Sans", sans-serif;
   text-transform: uppercase;
@@ -267,28 +268,28 @@ button:hover {
   margin-top: 15px;
 }
 
-.slider_section .detail-box a:hover {
+.main_section .detail-box a:hover {
   background-color: transparent;
   color: #ffffff;
 }
 
-.slider_section .img-box img {
+.main_section .img-box img {
   width: 100%;
 }
 
-.feature_section {
+.pensum_section {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
-.feature_section .feature_container {
+.pensum_section .pensum_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   
 }
 
-.feature_section .feature_container .box {
+.pensum_section .pensum_container .box {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -312,17 +313,17 @@ button:hover {
   transition: all 0.3s;
 }
 
-.feature_section .feature_container .box .img-box {
+.pensum_section .pensum_container .box .img-box {
   width: 90px;
   height: 90px;
   background-color: inherit;
 }
 
-.feature_section img {
+.pensum_section img {
   width: 100%;
 }
 
-.feature_section .feature_container .box .name {
+.pensum_section .pensum_container .box .name {
   margin-top: 20px;
   text-transform: uppercase;
   font-family: "Merriweather Sans", sans-serif;
@@ -334,8 +335,8 @@ img {
   background-color: inherit;
 }
 
-.feature_section .feature_container .box:hover,
-.feature_section .feature_container .box.active {
+.pensum_section .pensum_container .box:hover,
+.pensum_section .pensum_container .box.active {
   border: 5px solid #ff8a1d;
   background-color: inherit;
   color: #ffffff;
@@ -551,7 +552,37 @@ img {
   display: flex;
   flex-direction: row;
 }
-.trainingPlan
+
+
+ #startside-banner {
+  display: flex;
+  background-color:rgb(23,23,23);
+}
+
+#startside-banner img {
+  display: flex;
+  background-color: black;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #201f1f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e27a04;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 
 

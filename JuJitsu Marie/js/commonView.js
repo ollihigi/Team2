@@ -5,7 +5,7 @@ function navBar(){
     <nav>
         <ul class="nav__links">
             <li>
-                <a href="#">Startside</a>
+                <a onclick="landingView()">Startside</a>
                 <a onclick="pensumView()">Øvelser</a>
                 <a onclick="trainingView()">Trening</a>
                 <a onclick="userGradeView()">Min Side</a>
