@@ -1,5 +1,5 @@
 function init() {
   navBar();
-  landingView();
+  userGradeView();
   // userGradeView();
 }

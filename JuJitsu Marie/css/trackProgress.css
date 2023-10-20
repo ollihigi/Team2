@@ -1,3 +1,8 @@
+#progress{
+  display: flex;
+  flex-direction: row;
+}
+
 #checklist {
     margin: 20px;
     text-align: left;
@@ -47,13 +52,19 @@
 .pensumList {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
     
   }
+
+.beltCol{
+  grid-column: 1;
+}
+
+.categoryCol{
+  grid-column: 2;
+}
   
 
 
