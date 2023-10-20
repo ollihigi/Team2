@@ -13,7 +13,7 @@ function navBar(){
         </ul>
     </nav>
     <a href="#" class="regLogBtn">
-        <button>Logg inn</button>
+        <button onclick="authView()">Logg inn</button>
     </a>
 </header>
 `;
