@@ -24,9 +24,9 @@ const model = {
       email: '',
       password: '',
     },
+
     
-    
-    
+         
     userPage: {
       pageId: 4,
       currentBelt: "Gult belte",
@@ -46,6 +46,7 @@ const model = {
     { id: 1, name: 'Del A - Grunnteknikker' },
     { id: 2, name: 'Del B - Teknikktrening' },
     { id: 3, name: 'Del C - Selvforsvarstrening' },
+    { id: 4, name: 'Skadeforebyggende øvelser' },
   ],
   subtypes: [
     { id: 1, categoryId: 1, beltId: 1, name: "Guardstillinger / Benstillinger", nameJapanese: "Kamae / Ashi-Tachi" },
@@ -63,6 +64,10 @@ const model = {
     { id: 12, categoryId: 2, beltId: 1, name: 'Bakketeknikker' },
 
     { id: 13, categoryId: 3, beltId: 1, name: "Forsvar under press" }, 
+
+    { id: 14, categoryId: 4, name: "Nivå 1" }, 
+    { id: 15, categoryId: 4, name: "Nivå 2" }, 
+    { id: 16, categoryId: 4, name: "Nivå 3" }, 
   ],
   exercises: [
 // Katagori 1 har 8 subtyper med totalt 27 øvelser: id 1 til 27
@@ -327,51 +332,341 @@ const model = {
       subtypeId: 9,
       CategoryId: 2,
       name: 'Forsvar mot hårtak',
-      nameTJK: '511a',
+      numberTJK: '511a',
       withPartner: true,
-      img: "images/Exercises/511a.png",
-      description: '511a Forsvar mot hårtak Høyre hånd holder motstanders høyre hånd. Venstre hånd på motstanders høyre albue. Gå først fram og så til siden. slik at motstander står bøyd framover. NB: Forsvarer står ikke med bøyd rygg!  Frigjøring her og gå deretter et steg fram og i fra. '
+      description: '511a Forsvar mot hårtak Høyre hånd holder motstanders høyre hånd. Venstre hånd på motstanders høyre albue. Gå først fram og så til siden. slik at motstander står bøyd framover. NB: Forsvarer står ikke med bøyd rygg!  Frigjøring her og gå deretter et steg fram og i fra.',
+      medialink: 'images/Exercises/511a.png'
     },
-    
-    // + 11 øvelser til 
+    {
+      id: 29,
+      subtypeId: 9,
+      CategoryId: 2,
+      name: 'Forsvar mot klestak',
+      numberTJK: '511b',
+      withPartner: true,
+      description: '511b Forsvar mot klestak Venstre hånd på albue. Høyre hånd mot kroppen. Samtidig balansebrytning ut mot siden. Hoftene svinges bort fra Motstander (beskyttelse). Felling med Stor ytre benfelling.',
+      medialink: ''
+    },
+    {
+      id: 30,
+      subtypeId: 9,
+      CategoryId: 2,
+      name: 'Forsvar mot håndleddstak nedenfra',
+      numberTJK: '511d',
+      withPartner: true,
+      description: '511d Forsvar mot handleddstak nedenfra Strekk ut armene og vri hendene utover mens du går ifra. Siden til. Husk å være avslappet i handledd.',
+      medialink: ''
+    },
+    {
+      id: 31,
+      subtypeId: 9,
+      CategoryId: 2,
+      name: 'Forsvar mot håndleddstak ovenfra',
+      numberTJK: '511e',
+      withPartner: true,
+      description: '511e Forsvar mot håndleddstak ovenfra Høyre hånd over motstanders høyre håndledd, frigjør venstre hånd v.h.a. minste motstands vei • vektstangprinsippet. Venstre hånd holder igjen motstanders venstre hånd og frigjør høyre hånd v.h.a. minste motstands vei.',
+      medialink: ''
+    },
+    {
+      id: 32,
+      subtypeId: 9,
+      CategoryId: 2,
+      name: 'Forsvar mot strupetak',
+      numberTJK: '512a',
+      withPartner: true,
+      description: '512a Forsvar mot strupetak Begge hender mot motstanders håndledd og press i sammen mens høyre bein på tå frem (beskyttelse) for så å skyve egen kropp i fra.',
+      medialink: ''
+    },
+    {
+      id: 33,
+      subtypeId: 9,
+      CategoryId: 2,
+      name: 'Forsvar mot strupetak mot vegg',
+      numberTJK: '512b',
+      withPartner: true,
+      description: '512b Forsvar mot strupetak mot vegg Høyre hånd går over motstanders venstre hånd og under Motstanders høyre hånd. Kroppsvending samtidig som en vipper med begge armer. Avstand.',
+      medialink: ''
+    },
+    {
+      id: 34,
+      subtypeId: 9,
+      CategoryId: 2,
+      name: 'Forsvar mot omfavning over armene (stor ytre benfelling)',
+      numberTJK: '513a',
+      withPartner: true,
+      description: '513a Hendene på hoftene, skyv i fra 45 grader til siden. Balansebrytning. Gå inn med stor ytre benfelling.',
+      medialink: ''
+    },
+    {
+      id: 35,
+      subtypeId: 9,
+      CategoryId: 2,
+      name: 'Forsvar mot omfavning over armene (stort hoftekast)',
+      numberTJK: '513A',
+      withPartner: true,
+      description: '513 A Hendene på hoftene, skyv ifra 90 grader bakover. Balansebrytning. Inn og fell med stort hoftekast.',
+      medialink: ''
+    },
+    {
+      id: 36,
+      subtypeId: 9,
+      CategoryId: 2,
+      name: 'Forsvar mot rett slag, kroppsvending',
+      numberTJK: '514a',
+      withPartner: true,
+      description: '514 a Rett slag, kroppsvending',
+      medialink: ''
+    },
+    {
+      id: 37,
+      subtypeId: 9,
+      CategoryId: 2,
+      name: 'Forsvar mot rett salg, sideforflytning',
+      numberTJK: '514A',
+      withPartner: true,
+      description: '514 A Rett slag, sideforflytning',
+      medialink: ''
+    },
+    {
+      id: 38,
+      subtypeId: 9,
+      CategoryId: 2,
+      name: 'Forsvar mot rett spark, kroppsvending',
+      numberTJK: '515a',
+      withPartner: true,
+      description: '515 a Rett spark, kroppsvending. Kun forflytninger med god avstand. Knyttneve ved spark-blokk.',
+      medialink: ''
+    },
+    {
+      id: 39,
+      subtypeId: 9,
+      CategoryId: 2,
+      name: 'Forsvar mot rett spark, sideforflytning',
+      numberTJK: '515A',
+      withPartner: true,
+      description: '515 A Rett spark, sideforflyttning. Kun forflytninger med god avstand. Knyttneve ved spark-blokk.',
+      medialink: ''
+    },
     {
       id: 40,
       subtypeId: 10,
       CategoryId: 2,
-      name: "Forsvar mot strupetak",
-      nameTJK: '511a',
+      name: 'Forsvar mot strupetak',
+      numberTJK: '522a',
       withPartner: true,
-      img: "images/Exercises/511a.png",
-      description: "522a Høyre hånd på skrått over bryst/skuldre. Venstre hånd frigjør luftveiene. Glid i fra"
+      description: '522a Høyre hånd på skrått over bryst/skuldrer. Venstre hånd frigjør luftveiene. Glid i fra.',
+      medialink: ''
     },
     {
       id: 41,
-      subtypeId: 10,
+      subtypeId: 11,
       CategoryId: 2,
-      name: "Forsvar mot strupetak",
-      nameTJK: '511a',
+      name: 'Forsvar mot hårtak',
+      numberTJK: '531a',
       withPartner: true,
-      img: "images/Exercises/511a.png",
-      description: "522a Høyre hånd på skrått over bryst/skuldre. Venstre hånd frigjør luftveiene. Glid i fra"
+      description: '531a Begge hender på Motstanders hånd, samtidig gå frem med venstre fot, bøy ned og rundt skarpt og raskt bend i Motstanders håndledd. og gå ifra.',
+      medialink: ''
+    },
+    {
+      id: 42,
+      subtypeId: 11,
+      CategoryId: 2,
+      name: 'Forsvar mot håndleddstak',
+      numberTJK: '531e',
+      withPartner: true,
+      description: '531e Gå fram til siden. Frigjør høyre hånd og gå videre mens en frigjør venstre hånd.',
+      medialink: ''
+    },
+    {
+      id: 43,
+      subtypeId: 11,
+      CategoryId: 2,
+      name: 'Forsvar mot strupetak',
+      numberTJK: '532a',
+      withPartner: true,
+      description: '532a Høyre hånd høyt opp samtidig en slags kroppsvending fram (45°) til siden.',
+      medialink: ''
+    },
+    {
+      id: 44,
+      subtypeId: 11,
+      CategoryId: 2,
+      name: 'Forsvar mot strangulering med armen',
+      numberTJK: '532c',
+      withPartner: true,
+      description: '532c Få luft med begge hender. Albuene inn til kroppen (ikke synke ned!) Ta med motstanders albue/skulder 180° ut til siden i tre halvsirkler, avstand.',
+      medialink: ''
+    },
+    {
+      id: 45,
+      subtypeId: 11,
+      CategoryId: 2,
+      name: 'Forsvar mot omfavning over armene',
+      numberTJK: '533a',
+      withPartner: true,
+      description: '533a Synke ned og samtidig låse med begge hender. Så smyge bakover og samtidig holde Motstanders høyre arm. Avstand.',
+      medialink: ''
+    },
+    {
+      id: 46,
+      subtypeId: 12,
+      CategoryId: 2,
+      name: 'Forsvar mot håndleddstak, sittende skrevs over',
+      numberTJK: '541f',
+      withPartner: true,
+      description: '541f Hoftestøt samtidig som armene frigjør seg ved en sirkelbevegelse. Begge hendene på hoftene for å ta imot, ansiktet til siden. 1) Skyv Motstander direkte til siden med begge under, eller 2) Skyv kneet ned med en hånd og dytt til siden med den andre hånden, samtidig med hoftestøt.',
+      medialink: ''
+    },
+    {
+      id: 47,
+      subtypeId: 12,
+      CategoryId: 2,
+      name: 'Forsvar mot strupetak, på kne ved siden av',
+      numberTJK: '542e',
+      withPartner: true,
+      description: '542e Venstre hånd pa motstanders høyre hånd. Høyre hånd i motsatt armhule, samtidig skyver knærne til motstanderen oppover og ned til siden (45°), stå opp og avstand.',
+      medialink: ''
+    },
+    {
+      id: 48,
+      subtypeId: 12,
+      CategoryId: 2,
+      name: 'Forsvar mot strupetak, sittende skrevs over',
+      numberTJK: '542f',
+      withPartner: true,
+      description: '542f Høyre hånd under Motstanders hender. Venstre hånd pa albue. Hoftestøt og skyv. Venstre hånd på hofte og høyre hånd på håndledd og et nytt hoftestøt mens en skyver og trekker',
+      medialink: ''
     },
     {
       id: 49,
-      subtypeId: 10,
+      subtypeId: 12,
       CategoryId: 2,
-      name: "Forsvar mot strupetak",
-      nameTJK: '511a',
+      name: 'Forsvar mot strupetak, sittende mellom bena',
+      numberTJK: '542g',
       withPartner: true,
-      img: "images/Exercises/511a.png",
-      description: "522a Høyre hånd på skrått over bryst/skuldre. Venstre hånd frigjør luftveiene. Glid i fra"
+      description: '542g  Venstre hånd på Motstanders høyre hånd. Høyre hand i motsatt armhule. samtidig hoftene til side og enten: 1) Sakse med beina eller 2) Venstre fot på Motstanders høyre kne og strekk ut mens høyre fot skyver over',
+      medialink: ''
     },
-   
 
+// Kategori 3 har 1 subtyper med totalt 1 øvelse med id 50
+    { id: 50, subtypeId: 13, name: "Sirkeltrening", WithPartner: true, description: ": Forsvar mot uavtalte kontaktgrep fra gult pensum." },
 
-
-
-// Katagori 3 har 1 subtyper med totalt 1 øvelse med id 50
-    { id: 50, subtypeId: 13, name: "Sirkeltrening", WithPartner: true, description: ": Forsvar mot uavtalte kontaktgrep fra gult pensum." }, 
+    
+    // Kategori 4 "Skadeforebyggende,( eller basisøvelser, generelle øvelser...) -> SubtypeID 4 indikerer "nivå 1"
+    // Hentet fra to pdf på skadefri.no -> judo + Taekwondo. 
+    // 
+    {
+      id: 51,
+      subtypeID: 14,
+      categoryID: 4,
+      name: 'Knebøy',
+      //https://skadefri.no/idretter/judo/skadefri-judo/
+      medialink: '',
+      repetitions: '3 x 8-16 repetisjoner',
+      purpose: 'Innarbeide god knebøyteknikk',
+      instructions: [
+        'Ha hoftebreddes avstand mellom føttene',
+        'Start bevegelsen fra hofta',
+        'Ha kne over tå',
+        'Tenk at du skal sette deg på en stol',
+        'Hold ryggen rett',
+      ],
+    },
+    {
+      id: 52,
+      subtypeID: 14,
+      categoryID: 4,
+      name: 'Utfall forover',
+      repetitions: '3 x 8-16 repetisjoner',
+      purpose: 'Bedre stabiliteten i bena',
+      instructions: [
+        'Gjør utfall forover',
+        'Ha kne over tå',
+        'Hold en oppreist stilling gjennom hele øvelsen',
+      ],
+    },
+    {
+      id: 53,
+      subtypeID: 14,
+      categoryID: 4,
+      name: 'Utfall bakover',
+      repetitions: '3 x 8-16 repetisjoner',
+      purpose: 'Bedre stabiliteten i bena',
+      instructions: [
+        'Gjør utfall bakover',
+        'Ha kne over tå',
+        'Hold en oppreist stilling gjennom hele øvelsen',
+      ],
+    },
+    {
+      id: 54,
+      subtypeID: 14,
+      categoryID: 4,
+      name: 'Utfall sideveis',
+      repetitions: '3 x 8-16 repetisjoner',
+      purpose: 'Bedre forflytninger og stabiliteten i bena',
+      instructions: [
+        'Gjør dype sidesteg til hver side',
+        'Ha kne over tå',
+      ],
+    },
+    {
+      id: 55,
+      subtypeID: 14,
+      categoryID: 4,
+      name: 'Stående roing',
+      repetitions: '3 x 8-16 repetisjoner',
+      purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
+      instructions: [
+        'Dra strikken bakover',
+        'Ha lave skuldre',
+        'Albuene inntil kroppen',
+        'Klem skulderbladene sammen',
+      ],
+    },
+    {
+      id: 56,
+      subtypeID: 14,
+      categoryID: 4,
+      name: 'Y oppover',
+      repetitions: '3 x 8-16 repetisjoner',
+      purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
+      instructions: [
+        'Hev armene i Y-mønster',
+        'Hold armene strake',
+        'Hold overkroppen rett og skulderbuen lav',
+        'Press skulderbladene sammen og ned i sluttstilling',
+      ],
+    },
+    {
+      id: 57,
+      subtypeID: 14,
+      categoryID: 4,
+      name: 'Utadrotasjon skulder',
+      repetitions: '3 x 8-16 repetisjoner',
+      purpose: 'Bedre kraft og kontroll i rotatorcuffen',
+      instructions: [
+        'Albue og skulder i 90 grader',
+        'Beveg armene rolig nedover og oppover',
+        'Utfordre deg med ulike typer baller og vekter',
+      ],
+    },
+    {
+      id: 58,
+      subtypeID: 14,
+      categoryID: 4,
+      name: 'Nordic Hamstrings',
+      repetitions: '3 x 3-5 repetisjoner',
+      purpose: 'Styrke baksiden av lårene',
+      instructions: [
+        'Stå på knærne på en matte eller pute',
+        'Hold kroppen rett',
+        'Senk deg fremover, brems bevegelsen med baksiden av lårene',
+        'Bruk armene for å skyve deg tilbake til utgangsstillingen',
+      ],
+    },
   ],
+  // Trolig fjerner vi hele model.media, og legger media (video > img) under hver exercise
   media: [
     // 12 øvelser under katagori 2, subtype 1 FORFRA med id fra 1 til 12, med ExerciseID 28 til 39
     { id: 1, exerciseId: 28, 
@@ -399,6 +694,5 @@ const model = {
       src: "images/Exercises/541f.png"
     },
   ],
-
 };
 
