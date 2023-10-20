@@ -15,7 +15,7 @@ function trainingView() {
         ]
     }
     document.getElementById('app').innerHTML = /*HTML*/`
-        <div>
+        <div class="trainingPlan>
             <h1>Trening</h1>
             <div>${treningsopplegg.bein[0].knebøy}</div>
             <div>${treningsopplegg.bein[0].knebøyMVekt}</div>
@@ -46,6 +46,6 @@ function trainingView() {
             </ul>
 
             <p>Husk å utføre øvelsene med riktig teknikk og ta pauser mellom settene ved behov. Du kan justere antall repetisjoner og sett etter ditt ferdighetsnivå.</p>
-</div>
+        </div>
     `;
 }
