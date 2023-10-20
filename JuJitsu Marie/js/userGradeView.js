@@ -57,6 +57,7 @@ function userGradeView() {
            <li><input type="checkbox" class="category" checked>Hvitt</li>
            <li><input type="checkbox" class="category">Gult</li>
            <li><input type="checkbox" class="category">Orange</li>
+           <li><input type="checkbox" class="category">Grønt</li>
            </ul>
            <br>
            <h2>Kategori</h2>
@@ -82,6 +83,7 @@ function userGradeView() {
            <li><input type="checkbox" class="exercise subtype1" checked>Exercise 3</li>
            <li><input type="checkbox" class="exercise subtype1">Exercise 4</li>
        </ul>
+       <br>
            <h2>${trainingCategory[0].name}</h2><br/>
            ${checkboxHtml(0, 5)}
            <!--<h2>${trainingCategory[1].name}</h2>
