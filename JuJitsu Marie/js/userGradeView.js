@@ -29,36 +29,39 @@ function userGradeView() {
         </div>
 
 
-
-
-        <div class="pensumList">
+        <div class="main_settings">
+        <div class="card_settings">
+            <div class="card-body">
                 <div id="progress">
-                <svg viewBox="0 0 36 36" class="circular-chart">
-    <path class="circleBelt"
-        stroke-width="3.8"
-        stroke="black"
-        d="M18 2.0845
-        a 15.9155 15.9155 0 0 1 0 31.831
-        a 15.9155 15.9155 0 0 1 0 -31.831"/>
-    <text class="percentage-text" id="progressPercentage" x="50%" y="50%" fill="white">
-        <tspan x="50%" dy="0" >0%</tspan>
-    </text>
-</svg>
-                    <svg viewBox="0 0 36 36" class="circular-chart">
-                        <path class="circleCategory"
-
-        stroke-width="3.8"
-        stroke="black"
-        d="M18 2.0845
-        a 15.9155 15.9155 0 0 1 0 31.831
-        a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                        <text class="percentage-text-category" id="progressPercentage" x="50%" y="50%" fill="white">
-                        <tspan x="50%" dy="0" >0%</tspan>
-                        </text>
+                  <svg viewBox="0 0 36 36" class="circular-chart">
+                  <path class="circle" stroke-width="3.8" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="gray" />
+                    <path class="circleBelt" stroke-width="3.8" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" />
+                    <text class="percentage-text-belt" x="50%" y="55%" fill="white">
+                    <tspan x="50%" dy="0">0%</tspan>
                     </svg>
+                    <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path class="circle" stroke-width="3.8" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="gray" />
+                    <path class="circleCategory" stroke-width="3.8" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" />
+                    <text class="percentage-text-category" x="50%" y="55%" fill="white">
+                    <tspan x="50%" dy="0">0%</tspan>
+                      
+                    </text>
+                  </svg>   
+       
            </div>
-           <div id="checklist">
+           <div class="pensumList">
+           <div class="beltCol" id="checklist">
+           <h2>Beltegrad</h2>
+           <br>
+           <ul>
+           <li><input type="checkbox" class="category" checked>Hvitt</li>
+           <li><input type="checkbox" class="category">Gult</li>
+           <li><input type="checkbox" class="category">Orange</li>
+           <li><input type="checkbox" class="category">Grønt</li>
+           </ul>
+           <br>
            <h2>Kategori</h2>
+           <br>
            <ul>
            <li><input type="checkbox" class="category">${
              trainingCategory[0].name
@@ -70,6 +73,17 @@ function userGradeView() {
              trainingCategory[2].name
            }</li>
            </ul>
+           </div>
+           <div class="categoryCol" id="checklist">
+           <h2>Guardstillinger</h2>
+           <br>
+           <ul>
+           <li><input type="checkbox" class="exercise subtype1" checked>Exercise 1</li>
+           <li><input type="checkbox" class="exercise subtype1"checked>Exercise 2</li>
+           <li><input type="checkbox" class="exercise subtype1" checked>Exercise 3</li>
+           <li><input type="checkbox" class="exercise subtype1">Exercise 4</li>
+       </ul>
+       <br>
            <h2>${trainingCategory[0].name}</h2><br/>
            ${checkboxHtml(0, 5)}
            <!--<h2>${trainingCategory[1].name}</h2>
@@ -77,13 +91,6 @@ function userGradeView() {
            <h2>${trainingCategory[2].name}</h2>
            ${checkboxHtml(12, 0)}-->
            
-           <h2>Guardstillinger</h2>
-           <ul>
-           <li><input type="checkbox" class="exercise subtype1" checked>Exercise 1</li>
-           <li><input type="checkbox" class="exercise subtype1"checked>Exercise 2</li>
-           <li><input type="checkbox" class="exercise subtype1" checked>Exercise 3</li>
-           <li><input type="checkbox" class="exercise subtype1">Exercise 4</li>
-       </ul>
          </div>
    
            `;

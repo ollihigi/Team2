@@ -29,7 +29,6 @@ function userSettingsView(){
 
 <!-- Main -->
 <div class="main_settings">
- <h2>Innstilinger</h2>
  <div class="card_settings">
      <div class="card-body">
          <i class="fa fa-pen fa-xs edit"></i>
