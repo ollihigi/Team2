@@ -34,13 +34,13 @@ function userGradeView() {
             <div class="card-body">
                 <div id="progress">
                   <svg viewBox="0 0 36 36" class="circular-chart">
-                  <path class="circle" stroke-width="3.8" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="white" />
+                  <path class="circle" stroke-width="3.8" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="gray" />
                     <path class="circleBelt" stroke-width="3.8" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" />
                     <text class="percentage-text-belt" x="50%" y="55%" fill="white">
                     <tspan x="50%" dy="0">0%</tspan>
                     </svg>
                     <svg viewBox="0 0 36 36" class="circular-chart">
-                    <path class="circle" stroke-width="3.8" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="white" />
+                    <path class="circle" stroke-width="3.8" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="gray" />
                     <path class="circleCategory" stroke-width="3.8" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" />
                     <text class="percentage-text-category" x="50%" y="55%" fill="white">
                     <tspan x="50%" dy="0">0%</tspan>
@@ -74,14 +74,6 @@ function userGradeView() {
            </ul>
            </div>
            <div class="categoryCol" id="checklist">
-           <h2>${trainingCategory[0].name}</h2><br/>
-           ${checkboxHtml(0, 5)}
-           <!--<h2>${trainingCategory[1].name}</h2>
-           ${checkboxHtml(8, 1)}
-           <h2>${trainingCategory[2].name}</h2>
-           ${checkboxHtml(12, 0)}-->
-           
-           <br>
            <h2>Guardstillinger</h2>
            <br>
            <ul>
@@ -90,6 +82,13 @@ function userGradeView() {
            <li><input type="checkbox" class="exercise subtype1" checked>Exercise 3</li>
            <li><input type="checkbox" class="exercise subtype1">Exercise 4</li>
        </ul>
+           <h2>${trainingCategory[0].name}</h2><br/>
+           ${checkboxHtml(0, 5)}
+           <!--<h2>${trainingCategory[1].name}</h2>
+           ${checkboxHtml(8, 1)}
+           <h2>${trainingCategory[2].name}</h2>
+           ${checkboxHtml(12, 0)}-->
+           
          </div>
    
            `;
