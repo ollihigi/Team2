@@ -74,6 +74,7 @@ function pensumView() {
 function techniqueTraining(start, end) {
   let subType = model.subtypes;
   let optionsHtml = '';
+  let i = 1;
   for (let i = start; i < end; i++) {
       optionsHtml += `<li><a onclick="selectSubtype(${i}); return false;">${subType[i].name}</a></li>`;
   }

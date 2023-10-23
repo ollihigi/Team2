@@ -75,7 +75,7 @@ const model = {
 // medialink: "https://www.youtube.com/embed/+video ID",
 // 1 / 1 Guardstillinger / Benstillinger (Kamae / Ashi-Tachi)
 {
-  id: 1,
+  id: 0,
   subtypesId: 0,
   CategoryId: 1,
   name: 'Forsvarsguard, åpne hender',
@@ -86,7 +86,7 @@ const model = {
   medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
     },
     {
-      id: 2,
+      id: 1,
       subtypesId: 1,
       CategoryId: 1,
       name: 'Angrepsguard, lukkede hender',
@@ -95,7 +95,7 @@ const model = {
       description: ''
     },
     {
-      id: 3,
+      id: 2,
       subtypesId: 1,
       CategoryId: 1,
       name: 'Grunnleggende stilling',
@@ -105,7 +105,7 @@ const model = {
     },
     // 2 / 1 Forflytninger (Tai-sabaki)
     {
-      id: 4,
+      id: 3,
       subtypesId: 2,
       CategoryId: 1,
       name: 'Sideforflytning',
@@ -114,7 +114,7 @@ const model = {
       description: ''
     },
     {
-      id: 5,
+      id: 4,
       subtypesId: 2,
       CategoryId: 1,
       name: 'Kroppsvending',
@@ -123,7 +123,7 @@ const model = {
       description: ''
     },
     {
-      id: 6,
+      id: 5,
       subtypesId: 2,
       CategoryId: 1,
       name: '90 grader dreining',
@@ -132,7 +132,7 @@ const model = {
       description: ''
     },
     {
-      id: 7,
+      id: 6,
       subtypesId: 2,
       CategoryId: 1,
       name: '180 grader dreining',
@@ -142,7 +142,7 @@ const model = {
     },
     // 3 / 1 Fallteknikk (Ukemi-waza)
     {
-      id: 8,
+      id: 7,
       subtypesId:3,
       CategoryId: 1,
       name: 'Sideveis fall',
@@ -151,7 +151,7 @@ const model = {
       description: ''
     },
     {
-      id: 9,
+      id: 8,
       subtypesId: 3,
       CategoryId: 1,
       name: 'Forover fall',
@@ -160,7 +160,7 @@ const model = {
       description: ''
     },
     {
-      id: 10,
+      id: 9,
       subtypesId: 3,
       CategoryId: 1,
       name: 'Bakover fall',
@@ -169,7 +169,7 @@ const model = {
       description: ''
     },
     {
-      id: 11,
+      id: 10,
       subtypesId: 3,
       CategoryId: 1,
       name: 'Forover volt',
@@ -179,7 +179,7 @@ const model = {
       medialink: "https://www.youtube.com/embed/0glU6Qu06kU",
     },
     {
-      id: 12,
+      id: 11,
       subtypesId: 3,
       CategoryId: 1,
       name: 'Bakover volt',
@@ -190,7 +190,7 @@ const model = {
     },
     // 4 / 1 Kast / Fellinger (Nage waza)
     {
-      id: 13,
+      id: 12,
       subtypesId: 4,
       CategoryId: 1,
       name: 'Stor ytre benfelling',
@@ -199,7 +199,7 @@ const model = {
       description: ''
     },
     {
-      id: 14,
+      id: 13,
       subtypesId: 4,
       CategoryId: 1,
       name: 'Stort hoftekast',
@@ -209,7 +209,7 @@ const model = {
     },
     // 5 / 1 Slag (Tsuki waza)
     {
-      id: 15,
+      id: 14,
       subtypesId: 5,
       CategoryId: 1,
       name: 'Rett slag med fremste hånd',
@@ -218,7 +218,7 @@ const model = {
       description: ''
     },
     {
-      id: 16,
+      id: 15,
       subtypesId: 5,
       CategoryId: 1,
       name: 'Rett slag med bakerste hånd',
@@ -227,7 +227,7 @@ const model = {
       description: ''
     },
     {
-      id: 17,
+      id: 16,
       subtypesId: 5,
       CategoryId: 1,
       name: 'Slagkombinasjon med rette slag',
@@ -237,7 +237,7 @@ const model = {
     },
     // 6 / 1 Spark (Keri waza)
     {
-      id: 18,
+      id: 17,
       subtypesId: 6,
       CategoryId: 1,
       name: 'Grunnleggende rett spark med bakerste ben',
@@ -246,7 +246,7 @@ const model = {
       description: ''
     },
     {
-      id: 19,
+      id: 18,
       subtypesId: 6,
       CategoryId: 1,
       name: 'Grunnleggende rett spark med fremste ben',
@@ -256,7 +256,7 @@ const model = {
     },
     // 7 / 1 Mønster (Kata)
     {
-      id: 20,
+      id: 19,
       subtypesId: 7,
       CategoryId: 1,
       name: 'Go kyu kata - Guard, fem retninger',
@@ -266,7 +266,7 @@ const model = {
     },
     // 8 / 1 Blokkeringer (Uke waza)
     {
-      id: 21,
+      id: 20,
       subtypeId: 8, 
       CategoryId: 1,
       name: 'Lav blokk, innenfra og ut',
@@ -275,7 +275,7 @@ const model = {
       description: ''
     },
     {
-      id: 22,
+      id: 21,
       subtypesId: 8, 
       CategoryId: 1,
       name: 'Mellom blokk, innenfra og ut',
@@ -284,7 +284,7 @@ const model = {
       description: ''
     },
     {
-      id: 23,
+      id: 22,
       subtypeId: 8, 
       CategoryId: 1,
       name: 'Høy blokk, nedenfra og opp',
@@ -293,7 +293,7 @@ const model = {
       description: ''
     },
     {
-      id: 24,
+      id: 23,
       subtypeId: 8, 
       CategoryId: 1,
       name: 'Mellom blokk, utenfra og inn',
@@ -302,7 +302,7 @@ const model = {
       description: ''
     },
     {
-      id: 25,
+      id: 24,
       subtypeId: 8, 
       CategoryId: 1,
       name: 'Lav blokk, unenfra og inn',
@@ -311,7 +311,7 @@ const model = {
       description: ''
     },
     {
-      id: 26,
+      id: 25,
       subtypeId: 8, 
       CategoryId: 1,
       name: 'Lav kryssblokk, ovenfra og ned',
@@ -320,7 +320,7 @@ const model = {
       description: ''
     },
     {
-      id: 27,
+      id: 26,
       subtypeId: 8,
       CategoryId: 1,
       name: 'Høy kryssblokk, nedenfra and opp',
@@ -334,7 +334,7 @@ const model = {
 // Kategori 2 har 4 subtyper med totalt 22 øvelser: id 28 til 49
     // 4 subtyper 
     {
-      id: 28,
+      id: 27,
       subtypeId: 9,
       CategoryId: 2,
       name: 'Forsvar mot hårtak',
@@ -344,7 +344,7 @@ const model = {
       medialink: 'images/Exercises/511a.png'
     },
     {
-      id: 29,
+      id: 28,
       subtypeId: 9,
       CategoryId: 2,
       name: 'Forsvar mot klestak',
@@ -354,7 +354,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 30,
+      id: 29,
       subtypeId: 9,
       CategoryId: 2,
       name: 'Forsvar mot håndleddstak nedenfra',
@@ -364,7 +364,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 31,
+      id: 30,
       subtypeId: 9,
       CategoryId: 2,
       name: 'Forsvar mot håndleddstak ovenfra',
@@ -374,7 +374,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 32,
+      id: 31,
       subtypeId: 9,
       CategoryId: 2,
       name: 'Forsvar mot strupetak',
@@ -384,7 +384,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 33,
+      id: 32,
       subtypeId: 9,
       CategoryId: 2,
       name: 'Forsvar mot strupetak mot vegg',
@@ -394,7 +394,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 34,
+      id: 33,
       subtypeId: 9,
       CategoryId: 2,
       name: 'Forsvar mot omfavning over armene (stor ytre benfelling)',
@@ -404,7 +404,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 35,
+      id: 34,
       subtypeId: 9,
       CategoryId: 2,
       name: 'Forsvar mot omfavning over armene (stort hoftekast)',
@@ -414,7 +414,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 36,
+      id: 35,
       subtypeId: 9,
       CategoryId: 2,
       name: 'Forsvar mot rett slag, kroppsvending',
@@ -424,7 +424,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 37,
+      id: 36,
       subtypeId: 9,
       CategoryId: 2,
       name: 'Forsvar mot rett salg, sideforflytning',
@@ -434,7 +434,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 38,
+      id: 37,
       subtypeId: 9,
       CategoryId: 2,
       name: 'Forsvar mot rett spark, kroppsvending',
@@ -444,7 +444,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 39,
+      id: 38,
       subtypeId: 9,
       CategoryId: 2,
       name: 'Forsvar mot rett spark, sideforflytning',
@@ -454,7 +454,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 40,
+      id: 39,
       subtypeId: 10,
       CategoryId: 2,
       name: 'Forsvar mot strupetak',
@@ -464,7 +464,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 41,
+      id: 40,
       subtypeId: 11,
       CategoryId: 2,
       name: 'Forsvar mot hårtak',
@@ -474,7 +474,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 42,
+      id: 41,
       subtypeId: 11,
       CategoryId: 2,
       name: 'Forsvar mot håndleddstak',
@@ -484,7 +484,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 43,
+      id: 42,
       subtypeId: 11,
       CategoryId: 2,
       name: 'Forsvar mot strupetak',
@@ -494,7 +494,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 44,
+      id: 43,
       subtypeId: 11,
       CategoryId: 2,
       name: 'Forsvar mot strangulering med armen',
@@ -504,7 +504,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 45,
+      id: 44,
       subtypeId: 11,
       CategoryId: 2,
       name: 'Forsvar mot omfavning over armene',
@@ -514,7 +514,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 46,
+      id: 45,
       subtypeId: 12,
       CategoryId: 2,
       name: 'Forsvar mot håndleddstak, sittende skrevs over',
@@ -524,7 +524,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 47,
+      id: 46,
       subtypeId: 12,
       CategoryId: 2,
       name: 'Forsvar mot strupetak, på kne ved siden av',
@@ -534,7 +534,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 48,
+      id: 47,
       subtypeId: 12,
       CategoryId: 2,
       name: 'Forsvar mot strupetak, sittende skrevs over',
@@ -544,7 +544,7 @@ const model = {
       medialink: ''
     },
     {
-      id: 49,
+      id: 48,
       subtypeId: 12,
       CategoryId: 2,
       name: 'Forsvar mot strupetak, sittende mellom bena',
@@ -555,14 +555,14 @@ const model = {
     },
 
 // Kategori 3 har 1 subtyper med totalt 1 øvelse med id 50
-    { id: 50, subtypeId: 13, name: "Sirkeltrening", WithPartner: true, description: ": Forsvar mot uavtalte kontaktgrep fra gult pensum." },
+    { id: 49, subtypeId: 13, name: "Sirkeltrening", WithPartner: true, description: ": Forsvar mot uavtalte kontaktgrep fra gult pensum." },
 
     
     // Kategori 4 "Skadeforebyggende,( eller basisøvelser, generelle øvelser...) -> SubtypeID 4 indikerer "nivå 1"
     // Hentet fra to pdf på skadefri.no -> judo + Taekwondo. 
     // 
     {
-      id: 51,
+      id: 50,
       subtypeID: 14,
       categoryID: 4,
       name: 'Knebøy',
@@ -584,7 +584,7 @@ const model = {
       ],
     },
     {
-      id: 52,
+      id: 51,
       subtypeID: 14,
       categoryID: 4,
       name: 'Utfall forover',
@@ -600,7 +600,7 @@ const model = {
       ],
     },
     {
-      id: 53,
+      id: 52,
       subtypeID: 14,
       categoryID: 4,
       name: 'Utfall bakover',
@@ -616,7 +616,7 @@ const model = {
       ],
     },
     {
-      id: 54,
+      id: 53,
       subtypeID: 14,
       categoryID: 4,
       name: 'Utfall sideveis',
@@ -631,7 +631,7 @@ const model = {
       ],
     },
     {
-      id: 55,
+      id: 54,
       subtypeID: 14,
       categoryID: 4,
       name: 'Stående roing',
@@ -648,7 +648,7 @@ const model = {
       ],
     },
     {
-      id: 56,
+      id: 55,
       subtypeID: 14,
       categoryID: 4,
       name: 'Y oppover',
@@ -665,7 +665,7 @@ const model = {
       ],
     },
     {
-      id: 57,
+      id: 56,
       subtypeID: 14,
       categoryID: 4,
       name: 'Utadrotasjon skulder',
@@ -681,7 +681,7 @@ const model = {
       ],
     },
     {
-      id: 58,
+      id: 57,
       subtypeID: 14,
       categoryID: 4,
       name: 'Nordic Hamstrings',
@@ -700,7 +700,7 @@ const model = {
     },
     {
       // Tawkwondo nivå 1
-      id: 59,
+      id: 58,
       subtypeID: 14,
       categoryID: 4,
       name: 'Stående rotasjon',
@@ -717,7 +717,7 @@ const model = {
       ],
     },
     {
-      id: 60,
+      id: 59,
       subtypeID: 14,
       categoryID: 4,
       name: 'Nedtrekk',
@@ -734,7 +734,7 @@ const model = {
       ],
     },
     {
-      id: 61,
+      id: 60,
       subtypeID: 14,
       categoryID: 4,
       name: 'Y oppover',
@@ -751,7 +751,7 @@ const model = {
       ],
     },
     {
-      id: 62,
+      id: 61,
       subtypeID: 14,
       categoryID: 4,
       name: 'Pil og bue',
@@ -766,7 +766,7 @@ const model = {
       ],
     },
     {
-      id: 63,
+      id: 62,
       subtypeID: 14,
       categoryID: 4,
       name: 'Knebøy',
@@ -784,7 +784,7 @@ const model = {
       ],
     },
     {
-      id: 64,
+      id: 63,
       subtypeID: 14,
       categoryID: 4,
       name: 'Dyp sumo-knebøy',
@@ -802,7 +802,7 @@ const model = {
     {
     //Judo nivå 2
     // Y 66 + Utad 65 + Nordic 70 finnes på nivå 1 
-      id: 65,
+      id: 64,
       subtypeID: 15,
       categoryID: 4,
       name: 'Utadrotasjon skulder',
@@ -818,7 +818,7 @@ const model = {
       ],
     },
     {
-      id: 66,
+      id: 65,
       subtypeID: 15,
       categoryID: 4,
       name: 'Y oppover',
@@ -835,7 +835,7 @@ const model = {
       ],
     },
     {
-      id: 67,
+      id: 66,
       subtypeID: 15,
       categoryID: 4,
       name: 'Stående roing',
@@ -852,7 +852,7 @@ const model = {
       ],
     },
     {
-      id: 68,
+      id: 67,
       subtypeID: 15,
       categoryID: 4,
       name: 'Tobens innhopp',
@@ -868,7 +868,7 @@ const model = {
       ],
     },
     {
-      id: 69,
+      id: 68,
       subtypeID: 15,
       categoryID: 4,
       name: 'Push up +',
@@ -884,7 +884,7 @@ const model = {
       ],
     },
     {
-      id: 70,
+      id: 69,
       subtypeID: 15,
       categoryID: 4,
       name: 'Nordic Hamstrings',
@@ -901,7 +901,7 @@ const model = {
       ],
     },
     {
-      id: 71,
+      id: 70,
       subtypeID: 15,
       categoryID: 4,
       name: 'Nedtrekk',
@@ -918,7 +918,7 @@ const model = {
       ],
     },
     {
-      id: 72,
+      id: 71,
       subtypeID: 15,
       categoryID: 4,
       name: 'Y oppover',
@@ -935,7 +935,7 @@ const model = {
       ],
     },
     {
-      id: 73,
+      id: 72,
       subtypeID: 15,
       categoryID: 4,
       name: 'Pil og bue',
@@ -950,7 +950,7 @@ const model = {
       ],
     },
     {
-      id: 74,
+      id: 73,
       subtypeID: 15,
       categoryID: 4,
       name: 'Knebøy',
@@ -968,7 +968,7 @@ const model = {
       ],
     },
     {
-      id: 75,
+      id: 74,
       subtypeID: 15,
       categoryID: 4,
       name: 'Dyp sumo-knebøy',
@@ -984,7 +984,7 @@ const model = {
       ],
     },
     {
-      id: 76,
+      id: 75,
       subtypeID: 15,
       categoryID: 4,
       name: 'Utfall i forskjellige retninger',
@@ -1000,7 +1000,7 @@ const model = {
       ],
     },
     {
-      id: 77,
+      id: 76,
       subtypeID: 15,
       categoryID: 4,
       name: 'Stuperen',
@@ -1019,7 +1019,7 @@ const model = {
     },
     {
       // Judo nivå 3
-      id: 78,
+      id: 77,
       subtypeID: 16,
       categoryID: 4,
       name: 'Knebøy +',
@@ -1038,7 +1038,7 @@ const model = {
     },
     {
       // kopi på nivå 1 og 2 og 3
-      id: 79,
+      id: 78,
       subtypeID: 16,
       categoryID: 4,
       name: 'Y oppover',
@@ -1055,7 +1055,7 @@ const model = {
     },
     {
       //kopi nivå 2
-      id: 80,
+      id: 79,
       subtypeID: 16,
       categoryID: 4,
       name: 'Push up +',
@@ -1072,7 +1072,7 @@ const model = {
     },
     {
       //kopi nivå 2
-      id: 81,
+      id: 80,
       subtypeID: 16,
       categoryID: 4,
       name: 'Tobens innhopp',
@@ -1088,7 +1088,7 @@ const model = {
       ],
     },
     {
-      id: 82,
+      id: 81,
       subtypeID: 16,
       categoryID: 4,
       name: 'Firkanthopp',
@@ -1105,7 +1105,7 @@ const model = {
     },
     {
       // kopi nivå 1 og 2 og 3
-      id: 83,
+      id: 82,
       subtypeID: 16,
       categoryID: 4,
       name: 'Nordic Hamstrings',
@@ -1122,7 +1122,7 @@ const model = {
       ],
     },
     {
-      id: 84,
+      id: 83,
       subtypeID: 16,
       categoryID: 4,
       name: 'Planke med rotasjon',
@@ -1139,7 +1139,7 @@ const model = {
       ],
     },
     {
-      id: 85,
+      id: 84,
       subtypeID: 16,
       categoryID: 4,
       name: 'Utfall med rotasjon',
@@ -1154,7 +1154,7 @@ const model = {
       ],
     },
     {
-      id: 86,
+      id: 85,
       subtypeID: 16,
       categoryID: 4,
       name: 'Ettbens knebøy',
@@ -1170,7 +1170,7 @@ const model = {
       ],
     },
     {
-      id: 87,
+      id: 86,
       subtypeID: 16,
       categoryID: 4,
       name: 'Sidehopp',
@@ -1186,7 +1186,7 @@ const model = {
       ],
     },
     {
-      id: 88,
+      id: 87,
       subtypeID: 16,
       categoryID: 4,
       name: 'Vendinger',
