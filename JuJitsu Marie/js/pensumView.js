@@ -52,11 +52,11 @@ function pensumView() {
 <div class="pensumSelect">
 <pre>selectedSubType = ${model.selectedSubtype}</pre>
   <h2>${trainingCategory[0].name}</h2><br/>
-  ${techniqueTraining(0, 8)}
+  ${techniqueTraining(0,7)}
   <h2>${trainingCategory[1].name}</h2>
-  ${techniqueTraining(8, 12)}
+  ${techniqueTraining(8,11)}
   <h2>${trainingCategory[2].name}</h2>
-  ${techniqueTraining(12, 13)}
+  ${techniqueTraining(12,12)}
 </div>
 
 
