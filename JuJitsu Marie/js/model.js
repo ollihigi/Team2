@@ -48,6 +48,7 @@ const model = {
     { id: 3, name: 'Del C - Selvforsvarstrening' },
     { id: 4, name: 'Skadeforebyggende øvelser' },
   ],
+  selectedSubtype: null,
   subtypes: [
     { id: 1, categoryId: 1, beltId: 1, name: "Guardstillinger / Benstillinger", nameJapanese: "Kamae / Ashi-Tachi" },
     { id: 2, categoryId: 1, beltId: 1, name: "Forflytninger", nameJapanese: "Tai-sabaki" },
@@ -75,7 +76,7 @@ const model = {
 // 1 / 1 Guardstillinger / Benstillinger (Kamae / Ashi-Tachi)
 {
   id: 1,
-  subtypesId: 1,
+  subtypesId: 0,
   CategoryId: 1,
   name: 'Forsvarsguard, åpne hender',
   nameJapanese: 'Shuto',
@@ -275,7 +276,7 @@ const model = {
     },
     {
       id: 22,
-      subtypeId: 8, 
+      subtypesId: 8, 
       CategoryId: 1,
       name: 'Mellom blokk, innenfra og ut',
       nameJapanese: 'Uchi-uke',

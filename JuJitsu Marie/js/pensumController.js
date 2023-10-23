@@ -1,16 +1,3 @@
-// function guardStillinger(){
-//     const detailBox = document.querySelector('.detail-box'); // Find the element with class 'detail-box'
-
-//     if (detailBox) {
-//       detailBox.innerHTML = /*HTML*/`
-//         <h2>Angrep</h2>
-//         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-//       `;
-//     }
-//   }
-
-
-//<iframe src="https://www.youtube.com/embed/0glU6Qu06kU" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 
 function clickedTrainingInfo(exerciseName) {
@@ -25,11 +12,20 @@ function clickedTrainingInfo(exerciseName) {
     ];
     document.getElementById('exerciseContent').innerHTML = exerciseContentHtml.join('');
 }
-function template(){
-    `
-    <h2>{name}</h2>
-    <h4>{nameJapanese}</h4>
-    <p>{desciption}</p>
-    <div>{media}</div>
-    `;
+
+function selectSubtype(id) {
+    model.selectedSubtype = id;
+    pensumView();
+}
+
+function createExerciseHtml() {
+    if(model.selectedSubtype == null) return '';
+
+    let html = '';
+    for (let exercise of model.exercises) {
+        if (exercise.subtypesId == model.selectedSubtype) {
+            html += /*HTML*/` <li>${exercise.name}</li>`;
+        }
+    }
+    return html;
 }

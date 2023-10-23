@@ -50,6 +50,7 @@ function pensumView() {
 <div class="rightSideExercise">
 <div class="exerciseContent">
 <div class="pensumSelect">
+<pre>selectedSubType = ${model.selectedSubtype}</pre>
   <h2>${trainingCategory[0].name}</h2><br/>
   ${techniqueTraining(0, 8)}
   <h2>${trainingCategory[1].name}</h2>
@@ -63,7 +64,8 @@ function pensumView() {
       <h2>Guard</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
       <img class="exerciseImg" id="exerciseImg" src="images/guard.png" alt="">
-  </div>
+      ${createExerciseHtml()}
+      </div>
 </div>
 </section>
 `;
@@ -71,15 +73,11 @@ function pensumView() {
 // categories and subtypes
 function techniqueTraining(start, end) {
   let subType = model.subtypes;
-  let partsABC = [];
-  for (let i = start; i < end; i++) {
-      partsABC.push(subType[i].name)
-  }
-
   let optionsHtml = '';
-  for (let i = 0; i < partsABC.length; i++) {
-      optionsHtml += `<li><a onclick="clickedTrainingInfo(${i}); return false;">${partsABC[i]}</a></li>`;
+  for (let i = start; i < end; i++) {
+      optionsHtml += `<li><a onclick="selectSubtype(${i}); return false;">${subType[i].name}</a></li>`;
   }
 
   return /*HTML*/` <ul>${optionsHtml}</ul>`
 }
+
