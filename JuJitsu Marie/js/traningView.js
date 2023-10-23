@@ -3,8 +3,9 @@ function trainingView() {
         bein: [
             {
                 knebøy: 'Knebøy 10 x 3',
-                knebøyMVekt: 'Knebøy 10 x 3',
-                knebøySumo: 'Knebøy med ben spredt 10 x 3',
+                knebøyMedialink: "https://player.vimeo.com/video/222059954", 
+                knebøyMVekt: 'Knebøy 8 x 2',
+                knebøySumo: 'Knebøy med ben spredt 12 x 3',
             }
         ],
         Kjerne: [
@@ -15,13 +16,14 @@ function trainingView() {
         ]
     }
     document.getElementById('app').innerHTML = /*HTML*/`
-        <div class="trainingPlan>
+        <div class="trainingPlan">
             <h1>Trening</h1>
             <div>${treningsopplegg.bein[0].knebøy}</div>
+            <iframe src="${treningsopplegg.bein[0].knebøyMedialink}" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             <div>${treningsopplegg.bein[0].knebøyMVekt}</div>
             <div><input type="checkbox"${treningsopplegg.bein[0].knebøySumo}/></div>
             <h1>Kroppsvekt Treningsopplegg</h1>
-
+         
             <h2>Oppvarming</h2>
             <ul>
                 <li>5-10 minutters lett jogging eller hopping på stedet</li>

@@ -8,20 +8,11 @@
 //       `;
 //     }
 //   }
-function techniqueTraining(start, end) {
-    let subType = model.subtypes;
-    let partsABC = [];
-    for (let i = start; i < subType.length - end; i++) {
-        partsABC.push(subType[i].name)
-    }
 
-    let optionsHtml = '';
-    for (let i = 0; i < partsABC.length; i++) {
-        optionsHtml += `<li><a onclick="clickedTrainingInfo(${i}); return false;">${partsABC[i]}</a></li>`;
-    }
 
-    return /*HTML*/` <ul>${optionsHtml}</ul>`
-}
+//<iframe src="https://www.youtube.com/embed/0glU6Qu06kU" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+
 function clickedTrainingInfo(exerciseName) {
     let exerciseContentHtml = '';
     const infoHtml = model.exercises[exerciseName];
@@ -29,6 +20,8 @@ function clickedTrainingInfo(exerciseName) {
         `<h2>${infoHtml.name || ''}</h2>`,
         `<h4>${infoHtml.nameJapanese || ''}</h4>`,
         `<p>${infoHtml.description || ''}</p>`,
+        `<p><iframe src="${infoHtml.medialink}" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </p>`,
     ];
     document.getElementById('exerciseContent').innerHTML = exerciseContentHtml.join('');
 }

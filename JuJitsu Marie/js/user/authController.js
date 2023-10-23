@@ -1,47 +1,70 @@
 function initializeFormEvents() {
-    // Define your function for handling input, textarea events
-    $(".form")
-      .find("input, textarea")
-      .on("keyup blur focus", function (e) {
-        var $this = $(this),
-          label = $this.prev("label");
-  
-        if (e.type === "keyup") {
-          if ($this.val() === "") {
-            label.removeClass("active highlight");
-          } else {
-            label.addClass("active highlight");
-          }
-        } else if (e.type === "blur") {
-          if ($this.val() === "") {
-            label.removeClass("active highlight");
-          } else {
-            label.removeClass("highlight");
-          }
-        } else if (e.type === "focus") {
-          if ($this.val() === "") {
-            label.removeClass("highlight");
-          } else if ($this.val() !== "") {
-            label.addClass("highlight");
-          }
+  const form = document.querySelector(".form");
+  const formElements = form.querySelectorAll("input, textarea");
+
+  formElements.forEach(function (element) {
+    element.addEventListener("keyup", function (e) {
+      const label = element.previousElementSibling;
+
+      if (e.type === "keyup") {
+        if (element.value === "") {
+          label.classList.remove("active", "highlight");
+        } else {
+          label.classList.add("active", "highlight");
+        }
+      }
+    });
+
+    element.addEventListener("blur", function () {
+      const label = element.previousElementSibling;
+
+      if (element.value === "") {
+        label.classList.remove("active", "highlight");
+      } else {
+        label.classList.remove("highlight");
+      }
+    });
+
+    element.addEventListener("focus", function () {
+      const label = element.previousElementSibling;
+
+      if (element.value === "") {
+        label.classList.remove("highlight");
+      } else if (element.value !== "") {
+        label.classList.add("highlight");
+      }
+    });
+  });
+
+  const tabLinks = document.querySelectorAll(".form .tab a");
+
+  tabLinks.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const parent = link.parentElement;
+      parent.classList.add("active");
+
+      const siblings = parent.parentElement.querySelectorAll("li.tab");
+      siblings.forEach(function (sibling) {
+        if (sibling !== parent) {
+          sibling.classList.remove("active");
         }
       });
-  
-    // Define your function for handling tab click events
-    $(".form .tab a").on("click", function (e) {
-      e.preventDefault();
-  
-      $(this).parent().addClass("active");
-      $(this).parent().siblings().removeClass("active");
-  
-      target = $(this).attr("href");
-  
-      $(".form .tab-content > div").not(target).hide();
-  
-      $(target).fadeIn(600);
+
+      const target = document.querySelector(link.getAttribute("href"));
+      const tabContents = form.querySelectorAll(".form .tab-content > div");
+
+      tabContents.forEach(function (content) {
+        if (content !== target) {
+          content.style.display = "none";
+        }
+      });
+
+      target.style.display = "block";
     });
-  }
-  
-  // Call the function to initialize the events within the .form container
-  initializeFormEvents();
-  
+  });
+}
+
+
+

@@ -10,9 +10,7 @@ function pensumView() {
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum voluptatem adipisci. Quos molestiae saepe dicta nobis pariatur, tempora iusto, ad possimus soluta hic praesentium mollitia consequatur beatae, aspernatur culpa.
         </p>
-        <a href="">
-          Min Side
-        </a>
+        <a onclick="userGradeView()">Min Side</a>
       </div>
     </div>
     <div class="col-md-6">
@@ -23,10 +21,10 @@ function pensumView() {
   </div>
 </div>
 </section>
-<!-- end slider section -->
+<!-- end main section -->
 </div>
 
-<!-- pensum section -->
+<!-- feature section -->
 <section class="pensum_section">
 <div class="container">
 <div class="pensum_container">
@@ -47,17 +45,17 @@ function pensumView() {
 </div>
 </div>
 </section>
-<section class="about_section layout_padding-bottom">
+<section class="display_section layout_padding-bottom">
 <div class="container">
 <div class="rightSideExercise">
 <div class="exerciseContent">
 <div class="pensumSelect">
   <h2>${trainingCategory[0].name}</h2><br/>
-  ${techniqueTraining(0, 5)}
+  ${techniqueTraining(0, 8)}
   <h2>${trainingCategory[1].name}</h2>
-  ${techniqueTraining(8, 1)}
+  ${techniqueTraining(8, 12)}
   <h2>${trainingCategory[2].name}</h2>
-  ${techniqueTraining(12, 0)}
+  ${techniqueTraining(12, 13)}
 </div>
 
 
@@ -69,4 +67,19 @@ function pensumView() {
 </div>
 </section>
 `;
+}
+// categories and subtypes
+function techniqueTraining(start, end) {
+  let subType = model.subtypes;
+  let partsABC = [];
+  for (let i = start; i < end; i++) {
+      partsABC.push(subType[i].name)
+  }
+
+  let optionsHtml = '';
+  for (let i = 0; i < partsABC.length; i++) {
+      optionsHtml += `<li><a onclick="clickedTrainingInfo(${i}); return false;">${partsABC[i]}</a></li>`;
+  }
+
+  return /*HTML*/` <ul>${optionsHtml}</ul>`
 }
