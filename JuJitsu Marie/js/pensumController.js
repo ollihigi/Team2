@@ -25,11 +25,3 @@ function clickedTrainingInfo(exerciseName) {
     ];
     document.getElementById('exerciseContent').innerHTML = exerciseContentHtml.join('');
 }
-function template(){
-    `
-    <h2>{name}</h2>
-    <h4>{nameJapanese}</h4>
-    <p>{desciption}</p>
-    <div>{media}</div>
-    `;
-}
