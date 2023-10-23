@@ -73,17 +73,17 @@ const model = {
   exercises: [
 // Katagori 1 har 8 subtyper med totalt 27 øvelser: id 1 til 27
 // medialink: "https://www.youtube.com/embed/+video ID",
-// 1 / 1 Guardstillinger / Benstillinger (Kamae / Ashi-Tachi)
-{
-  id: 0,
-  subtypesId: 0,
-  CategoryId: 1,
-  name: 'Forsvarsguard, åpne hender',
-  nameJapanese: 'Shuto',
-  withPartner: '',
-  description: 'medialenke er feil, men er med for å illustrere funksjonen med film',
-  //Denne peker til en øvelse som ikke finnnes i TJK gult pensum
-  medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
+// 0 / 1 Guardstillinger / Benstillinger (Kamae / Ashi-Tachi)
+    {
+    id: 0,
+    subtypesId: 0,
+    CategoryId: 1,
+    name: 'Forsvarsguard, åpne hender',
+    nameJapanese: 'Shuto',
+    withPartner: '',
+    description: 'medialenke er feil, men er med for å illustrere funksjonen med film',
+    //Denne peker til en øvelse som ikke finnnes i TJK gult pensum
+    medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
     },
     {
       id: 1,
@@ -103,10 +103,10 @@ const model = {
       withPartner: '',
       description: ''
     },
-    // 2 / 1 Forflytninger (Tai-sabaki)
+    // 1 / 1 Forflytninger (Tai-sabaki)
     {
       id: 3,
-      subtypesId: 2,
+      subtypesId: 1,
       CategoryId: 1,
       name: 'Sideforflytning',
       nameJapanese: 'Yoko-ashi',
@@ -115,7 +115,7 @@ const model = {
     },
     {
       id: 4,
-      subtypesId: 2,
+      subtypesId: 1,
       CategoryId: 1,
       name: 'Kroppsvending',
       nameJapanese: 'Sha-tenkan',
@@ -124,7 +124,7 @@ const model = {
     },
     {
       id: 5,
-      subtypesId: 2,
+      subtypesId: 1,
       CategoryId: 1,
       name: '90 grader dreining',
       nameJapanese: 'Han-tenkan',
@@ -133,17 +133,17 @@ const model = {
     },
     {
       id: 6,
-      subtypesId: 2,
+      subtypesId: 1,
       CategoryId: 1,
       name: '180 grader dreining',
       nameJapanese: 'Zen-tenkan',
       withPartner: '',
       description: ''
     },
-    // 3 / 1 Fallteknikk (Ukemi-waza)
+    // 2 / 1 Fallteknikk (Ukemi-waza)
     {
       id: 7,
-      subtypesId:3,
+      subtypesId: 2,
       CategoryId: 1,
       name: 'Sideveis fall',
       nameJapanese: 'Yoko ukemi',
@@ -152,7 +152,7 @@ const model = {
     },
     {
       id: 8,
-      subtypesId: 3,
+      subtypesId: 2,
       CategoryId: 1,
       name: 'Forover fall',
       nameJapanese: 'Mae ukemi',
@@ -161,7 +161,7 @@ const model = {
     },
     {
       id: 9,
-      subtypesId: 3,
+      subtypesId: 2,
       CategoryId: 1,
       name: 'Bakover fall',
       nameJapanese: 'Ushiro ukemi',
@@ -170,7 +170,7 @@ const model = {
     },
     {
       id: 10,
-      subtypesId: 3,
+      subtypesId: 2,
       CategoryId: 1,
       name: 'Forover volt',
       nameJapanese: 'Kaiten mae ukemi',
@@ -180,7 +180,7 @@ const model = {
     },
     {
       id: 11,
-      subtypesId: 3,
+      subtypesId: 2,
       CategoryId: 1,
       name: 'Bakover volt',
       nameJapanese: 'Kaiten ushiro ukemi',
@@ -188,10 +188,10 @@ const model = {
       description: '',
       medialink: "https://www.youtube.com/embed/yPmA8yhNSVY",
     },
-    // 4 / 1 Kast / Fellinger (Nage waza)
+    // 3 / 1 Kast / Fellinger (Nage waza)
     {
       id: 12,
-      subtypesId: 4,
+      subtypesId: 3,
       CategoryId: 1,
       name: 'Stor ytre benfelling',
       nameJapanese: 'O soto o toshi',
@@ -200,17 +200,17 @@ const model = {
     },
     {
       id: 13,
-      subtypesId: 4,
+      subtypesId: 3,
       CategoryId: 1,
       name: 'Stort hoftekast',
       nameJapanese: 'O goshi',
       withPartner: true,
       description: ''
     },
-    // 5 / 1 Slag (Tsuki waza)
+    // 4 / 1 Slag (Tsuki waza)
     {
       id: 14,
-      subtypesId: 5,
+      subtypesId: 4,
       CategoryId: 1,
       name: 'Rett slag med fremste hånd',
       nameJapanese: 'Tobikomi zuki',
@@ -219,7 +219,7 @@ const model = {
     },
     {
       id: 15,
-      subtypesId: 5,
+      subtypesId: 4,
       CategoryId: 1,
       name: 'Rett slag med bakerste hånd',
       nameJapanese: 'Gyaku zuki',
@@ -228,17 +228,17 @@ const model = {
     },
     {
       id: 16,
-      subtypesId: 5,
+      subtypesId: 4,
       CategoryId: 1,
       name: 'Slagkombinasjon med rette slag',
       nameJapanese: 'Tobikomi zuki / Gyaku zuki',
       withPartner: '',
       description: ''
     },
-    // 6 / 1 Spark (Keri waza)
+    // 5 / 1 Spark (Keri waza)
     {
       id: 17,
-      subtypesId: 6,
+      subtypesId: 5,
       CategoryId: 1,
       name: 'Grunnleggende rett spark med bakerste ben',
       nameJapanese: 'Gyaku mae geri',
@@ -247,27 +247,27 @@ const model = {
     },
     {
       id: 18,
-      subtypesId: 6,
+      subtypesId: 5,
       CategoryId: 1,
       name: 'Grunnleggende rett spark med fremste ben',
       nameJapanese: 'Tsurikomi mae geri',
       withPartner: '',
       description: ''
     },
-    // 7 / 1 Mønster (Kata)
+    // 6 / 1 Mønster (Kata)
     {
       id: 19,
-      subtypesId: 7,
+      subtypesId: 6,
       CategoryId: 1,
       name: 'Go kyu kata - Guard, fem retninger',
       nameJapanese: 'Zenkutsu-dachi / Shuto',
       withPartner: '',
       description: ''
     },
-    // 8 / 1 Blokkeringer (Uke waza)
+    // 7 / 1 Blokkeringer (Uke waza)
     {
       id: 20,
-      subtypeId: 8, 
+      subtypesId: 7, 
       CategoryId: 1,
       name: 'Lav blokk, innenfra og ut',
       nameJapanese: 'Gedan barai',
@@ -276,7 +276,7 @@ const model = {
     },
     {
       id: 21,
-      subtypesId: 8, 
+      subtypesId: 7, 
       CategoryId: 1,
       name: 'Mellom blokk, innenfra og ut',
       nameJapanese: 'Uchi-uke',
@@ -285,7 +285,7 @@ const model = {
     },
     {
       id: 22,
-      subtypeId: 8, 
+      subtypesId: 7, 
       CategoryId: 1,
       name: 'Høy blokk, nedenfra og opp',
       nameJapanese: 'Age-uke',
@@ -294,7 +294,7 @@ const model = {
     },
     {
       id: 23,
-      subtypeId: 8, 
+      subtypesId: 7, 
       CategoryId: 1,
       name: 'Mellom blokk, utenfra og inn',
       nameJapanese: 'Soto-uke',
@@ -303,7 +303,7 @@ const model = {
     },
     {
       id: 24,
-      subtypeId: 8, 
+      subtypesId: 7, 
       CategoryId: 1,
       name: 'Lav blokk, unenfra og inn',
       nameJapanese: 'Sukui-uke',
@@ -312,7 +312,7 @@ const model = {
     },
     {
       id: 25,
-      subtypeId: 8, 
+      subtypesId: 7, 
       CategoryId: 1,
       name: 'Lav kryssblokk, ovenfra og ned',
       nameJapanese: 'Gedan juji-uke',
@@ -321,7 +321,7 @@ const model = {
     },
     {
       id: 26,
-      subtypeId: 8,
+      subtypesId: 7,
       CategoryId: 1,
       name: 'Høy kryssblokk, nedenfra and opp',
       nameJapanese: 'Jodan juji-uke',
@@ -335,7 +335,7 @@ const model = {
     // 4 subtyper 
     {
       id: 27,
-      subtypeId: 9,
+      subtypesId: 8,
       CategoryId: 2,
       name: 'Forsvar mot hårtak',
       numberTJK: '511a',
@@ -345,7 +345,7 @@ const model = {
     },
     {
       id: 28,
-      subtypeId: 9,
+      subtypesId: 8,
       CategoryId: 2,
       name: 'Forsvar mot klestak',
       numberTJK: '511b',
@@ -355,7 +355,7 @@ const model = {
     },
     {
       id: 29,
-      subtypeId: 9,
+      subtypesId: 8,
       CategoryId: 2,
       name: 'Forsvar mot håndleddstak nedenfra',
       numberTJK: '511d',
@@ -365,7 +365,7 @@ const model = {
     },
     {
       id: 30,
-      subtypeId: 9,
+      subtypesId: 8,
       CategoryId: 2,
       name: 'Forsvar mot håndleddstak ovenfra',
       numberTJK: '511e',
@@ -375,7 +375,7 @@ const model = {
     },
     {
       id: 31,
-      subtypeId: 9,
+      subtypesId: 8,
       CategoryId: 2,
       name: 'Forsvar mot strupetak',
       numberTJK: '512a',
@@ -385,7 +385,7 @@ const model = {
     },
     {
       id: 32,
-      subtypeId: 9,
+      subtypesId: 8,
       CategoryId: 2,
       name: 'Forsvar mot strupetak mot vegg',
       numberTJK: '512b',
@@ -395,7 +395,7 @@ const model = {
     },
     {
       id: 33,
-      subtypeId: 9,
+      subtypesId: 8,
       CategoryId: 2,
       name: 'Forsvar mot omfavning over armene (stor ytre benfelling)',
       numberTJK: '513a',
@@ -405,7 +405,7 @@ const model = {
     },
     {
       id: 34,
-      subtypeId: 9,
+      subtypesId: 8,
       CategoryId: 2,
       name: 'Forsvar mot omfavning over armene (stort hoftekast)',
       numberTJK: '513A',
@@ -415,7 +415,7 @@ const model = {
     },
     {
       id: 35,
-      subtypeId: 9,
+      subtypesId: 8,
       CategoryId: 2,
       name: 'Forsvar mot rett slag, kroppsvending',
       numberTJK: '514a',
@@ -425,7 +425,7 @@ const model = {
     },
     {
       id: 36,
-      subtypeId: 9,
+      subtypesId: 8,
       CategoryId: 2,
       name: 'Forsvar mot rett salg, sideforflytning',
       numberTJK: '514A',
@@ -435,7 +435,7 @@ const model = {
     },
     {
       id: 37,
-      subtypeId: 9,
+      subtypesId: 8,
       CategoryId: 2,
       name: 'Forsvar mot rett spark, kroppsvending',
       numberTJK: '515a',
@@ -445,7 +445,7 @@ const model = {
     },
     {
       id: 38,
-      subtypeId: 9,
+      subtypesId: 8,
       CategoryId: 2,
       name: 'Forsvar mot rett spark, sideforflytning',
       numberTJK: '515A',
@@ -455,7 +455,7 @@ const model = {
     },
     {
       id: 39,
-      subtypeId: 10,
+      subtypesId: 9,
       CategoryId: 2,
       name: 'Forsvar mot strupetak',
       numberTJK: '522a',
@@ -465,7 +465,7 @@ const model = {
     },
     {
       id: 40,
-      subtypeId: 11,
+      subtypesId: 10,
       CategoryId: 2,
       name: 'Forsvar mot hårtak',
       numberTJK: '531a',
@@ -475,7 +475,7 @@ const model = {
     },
     {
       id: 41,
-      subtypeId: 11,
+      subtypesId: 10,
       CategoryId: 2,
       name: 'Forsvar mot håndleddstak',
       numberTJK: '531e',
@@ -485,7 +485,7 @@ const model = {
     },
     {
       id: 42,
-      subtypeId: 11,
+      subtypesId: 10,
       CategoryId: 2,
       name: 'Forsvar mot strupetak',
       numberTJK: '532a',
@@ -495,7 +495,7 @@ const model = {
     },
     {
       id: 43,
-      subtypeId: 11,
+      subtypesId: 10,
       CategoryId: 2,
       name: 'Forsvar mot strangulering med armen',
       numberTJK: '532c',
@@ -505,7 +505,7 @@ const model = {
     },
     {
       id: 44,
-      subtypeId: 11,
+      subtypesId: 10,
       CategoryId: 2,
       name: 'Forsvar mot omfavning over armene',
       numberTJK: '533a',
@@ -515,7 +515,7 @@ const model = {
     },
     {
       id: 45,
-      subtypeId: 12,
+      subtypesId: 11,
       CategoryId: 2,
       name: 'Forsvar mot håndleddstak, sittende skrevs over',
       numberTJK: '541f',
@@ -525,7 +525,7 @@ const model = {
     },
     {
       id: 46,
-      subtypeId: 12,
+      subtypesId: 11,
       CategoryId: 2,
       name: 'Forsvar mot strupetak, på kne ved siden av',
       numberTJK: '542e',
@@ -535,7 +535,7 @@ const model = {
     },
     {
       id: 47,
-      subtypeId: 12,
+      subtypesId: 11,
       CategoryId: 2,
       name: 'Forsvar mot strupetak, sittende skrevs over',
       numberTJK: '542f',
@@ -545,7 +545,7 @@ const model = {
     },
     {
       id: 48,
-      subtypeId: 12,
+      subtypesId: 11,
       CategoryId: 2,
       name: 'Forsvar mot strupetak, sittende mellom bena',
       numberTJK: '542g',
@@ -555,7 +555,11 @@ const model = {
     },
 
 // Kategori 3 har 1 subtyper med totalt 1 øvelse med id 50
-    { id: 49, subtypeId: 13, name: "Sirkeltrening", WithPartner: true, description: ": Forsvar mot uavtalte kontaktgrep fra gult pensum." },
+    { id: 49,
+      subtypesId: 12,
+      name: "Sirkeltrening", 
+      WithPartner: true, 
+      description: ": Forsvar mot uavtalte kontaktgrep fra gult pensum." },
 
     
     // Kategori 4 "Skadeforebyggende,( eller basisøvelser, generelle øvelser...) -> SubtypeID 4 indikerer "nivå 1"
