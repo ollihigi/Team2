@@ -87,7 +87,7 @@ const model = {
     },
     {
       id: 1,
-      subtypesId: 1,
+      subtypesId: 0,
       CategoryId: 1,
       name: 'Angrepsguard, lukkede hender',
       nameJapanese: 'Seiken',
@@ -96,7 +96,7 @@ const model = {
     },
     {
       id: 2,
-      subtypesId: 1,
+      subtypesId: 0,
       CategoryId: 1,
       name: 'Grunnleggende stilling',
       nameJapanese: 'Zenkutsu-dachi',
