@@ -19,7 +19,7 @@ function selectSubtype(id) {
 }
 
 function createExerciseHtml() {
-    if(model.selectedSubtype == null) return '';
+    if(model.selectedSubtype == null) return startingExercise();
 
     let html = '';
     for (let exercise of model.exercises) {
@@ -27,5 +27,14 @@ function createExerciseHtml() {
             html += /*HTML*/` <li>${exercise.name}</li>`;
         }
     }
+    return html;
+}
+
+function startingExercise() {
+    html = /*HTML*/`
+        <li>${model.exercises[0].name}</li>
+        <li>${model.exercises[0].nameJapanese}</li>
+        <li>${model.exercises[0].description}</li>
+    `;
     return html;
 }

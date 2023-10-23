@@ -52,18 +52,15 @@ function pensumView() {
 <div class="pensumSelect">
 <pre>selectedSubType = ${model.selectedSubtype}</pre>
   <h2>${trainingCategory[0].name}</h2><br/>
-  ${techniqueTraining(0,7)}
+  ${techniqueTraining(0,8)}
   <h2>${trainingCategory[1].name}</h2>
-  ${techniqueTraining(8,11)}
+  ${techniqueTraining(8,12)}
   <h2>${trainingCategory[2].name}</h2>
-  ${techniqueTraining(12,12)}
+  ${techniqueTraining(12,13)}
 </div>
 
 
   <div class="pensumContent" id="exerciseContent">
-      <h2>Guard</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-      <img class="exerciseImg" id="exerciseImg" src="images/guard.png" alt="">
       ${createExerciseHtml()}
       </div>
 </div>
