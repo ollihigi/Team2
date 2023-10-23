@@ -1,4 +1,5 @@
 function init() {
   navBar();
-  landingView();
+  pensumView();
+ // landingView();
 }

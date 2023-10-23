@@ -51,11 +51,11 @@ function pensumView() {
 <div class="exerciseContent">
 <div class="pensumSelect">
   <h2>${trainingCategory[0].name}</h2><br/>
-  ${techniqueTraining(0, 8)}
+  ${techniqueTraining(0,7)}
   <h2>${trainingCategory[1].name}</h2>
-  ${techniqueTraining(8, 12)}
+  ${techniqueTraining(8,11)}
   <h2>${trainingCategory[2].name}</h2>
-  ${techniqueTraining(12, 13)}
+  ${techniqueTraining(12,12)}
 </div>
 
 
@@ -72,7 +72,7 @@ function pensumView() {
 function techniqueTraining(start, end) {
   let subType = model.subtypes;
   let partsABC = [];
-  for (let i = start; i < end; i++) {
+  for (let i = start; i <= end; i++) {
       partsABC.push(subType[i].name)
   }
 
