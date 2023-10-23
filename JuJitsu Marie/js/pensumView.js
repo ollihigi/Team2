@@ -1,5 +1,5 @@
 function pensumView() {
-  let trainingCategory = model.categories;
+  let trainingCategoryHtml = model.categories;
   document.getElementById('app').innerHTML = /*HTML*/`
 <section class="main_section ">
 <div class="container ">
@@ -51,14 +51,13 @@ function pensumView() {
 <div class="exerciseContent">
 <div class="pensumSelect">
 <pre>selectedSubType = ${model.selectedSubtype}</pre>
-  <h2>${trainingCategory[0].name}</h2><br/>
-  ${techniqueTraining(0,8)}
-  <h2>${trainingCategory[1].name}</h2>
-  ${techniqueTraining(8,12)}
-  <h2>${trainingCategory[2].name}</h2>
-  ${techniqueTraining(12,13)}
+  <h2>${trainingCategoryHtml[0].name}</h2><br/>
+  ${createSubtypeHtml(0,8)}
+  <h2>${trainingCategoryHtml[1].name}</h2>
+  ${createSubtypeHtml(8,12)}
+  <h2>${trainingCategoryHtml[2].name}</h2>
+  ${createSubtypeHtml(12,13)}
 </div>
-
 
   <div class="pensumContent" id="exerciseContent">
       ${createExerciseHtml()}
@@ -68,7 +67,7 @@ function pensumView() {
 `;
 }
 // categories and subtypes
-function techniqueTraining(start, end) {
+function createSubtypeHtml(start, end) {
   let subType = model.subtypes;
   let optionsHtml = '';
   let i = 1;
@@ -79,3 +78,27 @@ function techniqueTraining(start, end) {
   return /*HTML*/` <ul>${optionsHtml}</ul>`
 }
 
+function createExerciseHtml() {
+  if(model.selectedSubtype == null) return startingExercise();
+  let html = '';
+  for (let exercise of model.exercises) {
+      if (exercise.subtypesId == model.selectedSubtype) {
+          html += /*HTML*/` 
+          <h2>${exercise.name}</h2>
+          <h3>${exercise.nameJapanese}</h3>
+          <p>${exercise.description}</p>
+          `;
+      }
+  }
+  return html;
+}
+
+function startingExercise() {
+  let html = '';
+  for (let exercise of model.exercises) {
+      if (exercise.subtypesId == 0) {
+          html += /*HTML*/` <li>${exercise.name}</li>`;
+      }
+  }
+  return html;
+}
