@@ -79,7 +79,7 @@ function createSubtypeHtml(start, end) {
 }
 
 function createExerciseHtml() {
-  if(model.selectedSubtype == null) return startingExercise();
+  if(model.selectedSubtype == null) return '';
   let html = '';
   for (let exercise of model.exercises) {
       if (exercise.subtypesId == model.selectedSubtype) {

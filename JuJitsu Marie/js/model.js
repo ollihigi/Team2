@@ -48,7 +48,7 @@ const model = {
     { id: 3, name: 'Del C - Selvforsvarstrening' },
     { id: 4, name: 'Skadeforebyggende øvelser' },
   ],
-  selectedSubtype: null,
+  selectedSubtype: 0,
   subtypes: [
     { id: 1, categoryId: 1, beltId: 1, name: "Guardstillinger / Benstillinger", nameJapanese: "Kamae / Ashi-Tachi" },
     { id: 2, categoryId: 1, beltId: 1, name: "Forflytninger", nameJapanese: "Tai-sabaki" },
