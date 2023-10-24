@@ -92,13 +92,3 @@ function createExerciseHtml() {
   }
   return html;
 }
-
-function startingExercise() {
-  let html = '';
-  for (let exercise of model.exercises) {
-      if (exercise.subtypesId == 0) {
-          html += /*HTML*/` <li>${exercise.name}</li>`;
-      }
-  }
-  return html;
-}
