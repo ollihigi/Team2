@@ -18,14 +18,3 @@ function selectSubtype(id) {
     pensumView();
 }
 
-function createExerciseHtml() {
-    if(model.selectedSubtype == null) return '';
-
-    let html = '';
-    for (let exercise of model.exercises) {
-        if (exercise.subtypesId == model.selectedSubtype) {
-            html += /*HTML*/` <li>${exercise.name}</li>`;
-        }
-    }
-    return html;
-}
