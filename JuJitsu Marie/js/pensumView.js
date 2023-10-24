@@ -87,6 +87,7 @@ function createExerciseHtml() {
           <h2>${exercise.name}</h2>
           <h3>${exercise.nameJapanese}</h3>
           <p>${exercise.description}</p>
+          <iframe src="${exercise.medialink}" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
           `;
       }
   }
