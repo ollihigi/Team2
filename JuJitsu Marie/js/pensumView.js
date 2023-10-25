@@ -91,9 +91,10 @@ function createExerciseHtml() {
         `;
       }
       html += /*HTML*/`
+        
         <h2 >${exercise.name}</h2>
         <h3>${exercise.nameJapanese || ''}</h3>
-        <div><input type="checkbox" class="${exercise.id}"></div>
+        <div><input type="checkbox" ${exercise.checkboxChecked ? 'checked' : ''} onclick="toggleCheckbox(${exercise.id})"></div>
         ${medialinkHtml}
         <div class = "marginBottom">${exercise.description || ''}</div>
       `;

@@ -3,3 +3,8 @@ function selectSubtype(id) {
     pensumView();
 }
 
+function toggleCheckbox(exerciseId) {
+    model.exercises[exerciseId].checkboxChecked = !model.exercises[exerciseId].checkboxChecked;
+    pensumView();
+}
+

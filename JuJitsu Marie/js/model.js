@@ -84,6 +84,7 @@ const model = {
     description: 'medialenke er feil, men er med for å illustrere funksjonen med film',
     //Denne peker til en øvelse som ikke finnnes i TJK gult pensum
     medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
+    checkboxChecked: false,
     },
     {
       id: 1,
