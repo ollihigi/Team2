@@ -453,7 +453,7 @@ const model = {
       numberTJK: '513A',
       withPartner: true,
       description: '513 A Hendene på hoftene, skyv ifra 90 grader bakover. Balansebrytning. Inn og fell med stort hoftekast.',
-      medialink: 'images/Exercises/513A.png',
+      medialink: 'images/Exercises/513bigA.png',
       checkboxChecked: false,
     },
     {
@@ -475,7 +475,7 @@ const model = {
       numberTJK: '514A',
       withPartner: true,
       description: '514 A Rett slag, sideforflytning',
-      medialink: 'images/Exercises/514A.png',
+      medialink: 'images/Exercises/514bigA.png',
       checkboxChecked: false,
     },
     {
@@ -497,7 +497,7 @@ const model = {
       numberTJK: '515A',
       withPartner: true,
       description: '515 A Rett spark, sideforflyttning. Kun forflytninger med god avstand. Knyttneve ved spark-blokk.',
-      medialink: 'images/Exercises/515A.png',
+      medialink: 'images/Exercises/515bigA.png',
       checkboxChecked: false,
     },
     {
