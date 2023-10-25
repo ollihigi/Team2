@@ -178,7 +178,7 @@ img {
   display: flex;
   flex-direction: column;
   margin: 20px;
-  text-align: left;
+  align-items: flex-start;
   width: 45rem;
   margin-top: 3rem;
   padding: 2rem;
