@@ -342,7 +342,7 @@ const model = {
       numberTJK: '511a',
       withPartner: true,
       description: '511a Forsvar mot hårtak Høyre hånd holder motstanders høyre hånd. Venstre hånd på motstanders høyre albue. Gå først fram og så til siden. slik at motstander står bøyd framover. NB: Forsvarer står ikke med bøyd rygg!  Frigjøring her og gå deretter et steg fram og i fra.',
-      medialink: 'images/Exercises/511a.png'
+      medialink: 'images/Exercises/511a.png',
     },
     {
       id: 28,
@@ -352,7 +352,7 @@ const model = {
       numberTJK: '511b',
       withPartner: true,
       description: '511b Forsvar mot klestak Venstre hånd på albue. Høyre hånd mot kroppen. Samtidig balansebrytning ut mot siden. Hoftene svinges bort fra Motstander (beskyttelse). Felling med Stor ytre benfelling.',
-      medialink: ''
+      medialink: 'images/Exercises/511b.png',
     },
     {
       id: 29,
@@ -362,7 +362,7 @@ const model = {
       numberTJK: '511d',
       withPartner: true,
       description: '511d Forsvar mot handleddstak nedenfra Strekk ut armene og vri hendene utover mens du går ifra. Siden til. Husk å være avslappet i handledd.',
-      medialink: ''
+      medialink: 'images/Exercises/511d.png',
     },
     {
       id: 30,
@@ -372,7 +372,7 @@ const model = {
       numberTJK: '511e',
       withPartner: true,
       description: '511e Forsvar mot håndleddstak ovenfra Høyre hånd over motstanders høyre håndledd, frigjør venstre hånd v.h.a. minste motstands vei • vektstangprinsippet. Venstre hånd holder igjen motstanders venstre hånd og frigjør høyre hånd v.h.a. minste motstands vei.',
-      medialink: ''
+      medialink: 'images/Exercises/511e.png',
     },
     {
       id: 31,
@@ -382,7 +382,7 @@ const model = {
       numberTJK: '512a',
       withPartner: true,
       description: '512a Forsvar mot strupetak Begge hender mot motstanders håndledd og press i sammen mens høyre bein på tå frem (beskyttelse) for så å skyve egen kropp i fra.',
-      medialink: ''
+      medialink: 'images/Exercises/512a.png',
     },
     {
       id: 32,
@@ -392,7 +392,7 @@ const model = {
       numberTJK: '512b',
       withPartner: true,
       description: '512b Forsvar mot strupetak mot vegg Høyre hånd går over motstanders venstre hånd og under Motstanders høyre hånd. Kroppsvending samtidig som en vipper med begge armer. Avstand.',
-      medialink: ''
+      medialink: 'images/Exercises/512b.png',
     },
     {
       id: 33,
@@ -402,7 +402,7 @@ const model = {
       numberTJK: '513a',
       withPartner: true,
       description: '513a Hendene på hoftene, skyv i fra 45 grader til siden. Balansebrytning. Gå inn med stor ytre benfelling.',
-      medialink: ''
+      medialink: 'images/Exercises/513a.png',
     },
     {
       id: 34,
@@ -412,7 +412,7 @@ const model = {
       numberTJK: '513A',
       withPartner: true,
       description: '513 A Hendene på hoftene, skyv ifra 90 grader bakover. Balansebrytning. Inn og fell med stort hoftekast.',
-      medialink: ''
+      medialink: 'images/Exercises/513A.png',
     },
     {
       id: 35,
@@ -422,7 +422,7 @@ const model = {
       numberTJK: '514a',
       withPartner: true,
       description: '514 a Rett slag, kroppsvending',
-      medialink: ''
+      medialink: 'images/Exercises/514a.png',
     },
     {
       id: 36,
@@ -432,7 +432,7 @@ const model = {
       numberTJK: '514A',
       withPartner: true,
       description: '514 A Rett slag, sideforflytning',
-      medialink: ''
+      medialink: 'images/Exercises/514A.png',
     },
     {
       id: 37,
@@ -442,7 +442,7 @@ const model = {
       numberTJK: '515a',
       withPartner: true,
       description: '515 a Rett spark, kroppsvending. Kun forflytninger med god avstand. Knyttneve ved spark-blokk.',
-      medialink: ''
+      medialink: 'images/Exercises/515a.png',
     },
     {
       id: 38,
@@ -452,7 +452,7 @@ const model = {
       numberTJK: '515A',
       withPartner: true,
       description: '515 A Rett spark, sideforflyttning. Kun forflytninger med god avstand. Knyttneve ved spark-blokk.',
-      medialink: ''
+      medialink: 'images/Exercises/515A.png',
     },
     {
       id: 39,
@@ -462,7 +462,7 @@ const model = {
       numberTJK: '522a',
       withPartner: true,
       description: '522a Høyre hånd på skrått over bryst/skuldrer. Venstre hånd frigjør luftveiene. Glid i fra.',
-      medialink: ''
+      medialink: 'images/Exercises/522a.png',
     },
     {
       id: 40,
@@ -472,7 +472,7 @@ const model = {
       numberTJK: '531a',
       withPartner: true,
       description: '531a Begge hender på Motstanders hånd, samtidig gå frem med venstre fot, bøy ned og rundt skarpt og raskt bend i Motstanders håndledd. og gå ifra.',
-      medialink: ''
+      medialink: 'images/Exercises/531a.png',
     },
     {
       id: 41,
@@ -482,7 +482,7 @@ const model = {
       numberTJK: '531e',
       withPartner: true,
       description: '531e Gå fram til siden. Frigjør høyre hånd og gå videre mens en frigjør venstre hånd.',
-      medialink: ''
+      medialink: 'images/Exercises/531e.png',
     },
     {
       id: 42,
@@ -492,7 +492,7 @@ const model = {
       numberTJK: '532a',
       withPartner: true,
       description: '532a Høyre hånd høyt opp samtidig en slags kroppsvending fram (45°) til siden.',
-      medialink: ''
+      medialink: 'images/Exercises/532a.png',
     },
     {
       id: 43,
@@ -502,7 +502,7 @@ const model = {
       numberTJK: '532c',
       withPartner: true,
       description: '532c Få luft med begge hender. Albuene inn til kroppen (ikke synke ned!) Ta med motstanders albue/skulder 180° ut til siden i tre halvsirkler, avstand.',
-      medialink: ''
+      medialink: 'images/Exercises/532c.png',
     },
     {
       id: 44,
@@ -512,7 +512,7 @@ const model = {
       numberTJK: '533a',
       withPartner: true,
       description: '533a Synke ned og samtidig låse med begge hender. Så smyge bakover og samtidig holde Motstanders høyre arm. Avstand.',
-      medialink: ''
+      medialink: 'images/Exercises/533a.png',
     },
     {
       id: 45,
@@ -522,7 +522,7 @@ const model = {
       numberTJK: '541f',
       withPartner: true,
       description: '541f Hoftestøt samtidig som armene frigjør seg ved en sirkelbevegelse. Begge hendene på hoftene for å ta imot, ansiktet til siden. 1) Skyv Motstander direkte til siden med begge under, eller 2) Skyv kneet ned med en hånd og dytt til siden med den andre hånden, samtidig med hoftestøt.',
-      medialink: ''
+      medialink: 'images/Exercises/541f.png',
     },
     {
       id: 46,
@@ -532,7 +532,7 @@ const model = {
       numberTJK: '542e',
       withPartner: true,
       description: '542e Venstre hånd pa motstanders høyre hånd. Høyre hånd i motsatt armhule, samtidig skyver knærne til motstanderen oppover og ned til siden (45°), stå opp og avstand.',
-      medialink: ''
+      medialink: 'images/Exercises/542e.png',
     },
     {
       id: 47,
@@ -542,7 +542,7 @@ const model = {
       numberTJK: '542f',
       withPartner: true,
       description: '542f Høyre hånd under Motstanders hender. Venstre hånd pa albue. Hoftestøt og skyv. Venstre hånd på hofte og høyre hånd på håndledd og et nytt hoftestøt mens en skyver og trekker',
-      medialink: ''
+      medialink: 'images/Exercises/542f.png',
     },
     {
       id: 48,
@@ -552,7 +552,7 @@ const model = {
       numberTJK: '542g',
       withPartner: true,
       description: '542g  Venstre hånd på Motstanders høyre hånd. Høyre hand i motsatt armhule. samtidig hoftene til side og enten: 1) Sakse med beina eller 2) Venstre fot på Motstanders høyre kne og strekk ut mens høyre fot skyver over',
-      medialink: ''
+      medialink: 'images/Exercises/542g.png',
     },
 
 // Kategori 3 har 1 subtyper med totalt 1 øvelse med id 50
