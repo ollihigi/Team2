@@ -452,6 +452,7 @@ const model = {
       withPartner: true,
       description: '515 A Rett spark, sideforflyttning. Kun forflytninger med god avstand. Knyttneve ved spark-blokk.',
       medialink: 'images/Exercises/515A.png',
+    },
     {
       id: 39,
       subtypesId: 9,
