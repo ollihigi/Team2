@@ -185,7 +185,6 @@ img {
   color: white;
   cursor: pointer;
 }
-
 .exerciseImg {
   justify-content: center;
   align-items: center;
@@ -195,8 +194,9 @@ img {
   display: flex;
   flex-direction: row;
 }
-
-
+.marginBottom {
+  margin-bottom: 3vh;
+}
  #startside-banner {
   display: flex;
   overflow: hidden;

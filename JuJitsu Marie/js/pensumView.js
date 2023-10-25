@@ -52,11 +52,11 @@ function pensumView() {
 <div class="pensumSelect">
 <pre>selectedSubType = ${model.selectedSubtype}</pre>
   <h2>${trainingCategoryHtml[0].name}</h2><br/>
-  ${createSubtypeHtml(0,8)}
+  ${createSubtypeHtml(0, 8)}
   <h2>${trainingCategoryHtml[1].name}</h2>
-  ${createSubtypeHtml(8,12)}
+  ${createSubtypeHtml(8, 12)}
   <h2>${trainingCategoryHtml[2].name}</h2>
-  ${createSubtypeHtml(12,13)}
+  ${createSubtypeHtml(12, 13)}
 </div>
 
   <div class="pensumContent" id="exerciseContent">
@@ -71,23 +71,33 @@ function createSubtypeHtml(start, end) {
   let subType = model.subtypes;
   let optionsHtml = '';
   for (let i = start; i < end; i++) {
-      optionsHtml += `<li><a onclick="selectSubtype(${i}); return false;">${subType[i].name}</a></li>`;
+    optionsHtml += `<li><a onclick="selectSubtype(${i}); return false;">${subType[i].name}</a></li>`;
   }
 
   return /*HTML*/` <ul>${optionsHtml}</ul>`
 }
 
 function createExerciseHtml() {
-  if(model.selectedSubtype == null) return '';
+  if (model.selectedSubtype == null) return '';
   let html = '';
   for (let exercise of model.exercises) {
-      if (exercise.subtypesId == model.selectedSubtype) {
-          html += /*HTML*/` 
-          <h2>${exercise.name}</h2>
-          <h3>${exercise.nameJapanese}</h3>
-          <p>${exercise.description}</p>
-          `;
+    if (exercise.subtypesId == model.selectedSubtype) {
+      let medialinkHtml = '';
+      if (exercise.medialink) {
+        medialinkHtml = `
+          <div class="video-container">
+            <iframe width="560" height="315" src="${exercise.medialink}" frameborder="0" allowfullscreen></iframe>
+          </div>
+        `;
       }
+      html += /*HTML*/`
+        <h2 >${exercise.name}</h2>
+        <h3>${exercise.nameJapanese || ''}</h3>
+        <div><input type="checkbox" class="${exercise.id}"></div>
+        ${medialinkHtml}
+        <div class = "marginBottom">${exercise.description || ''}</div>
+      `;
+    }
   }
   return html;
 }

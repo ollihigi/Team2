@@ -92,7 +92,8 @@ const model = {
       name: 'Angrepsguard, lukkede hender',
       nameJapanese: 'Seiken',
       withPartner: '',
-      description: ''
+      description: '',
+      medalink: null,
     },
     {
       id: 2,
