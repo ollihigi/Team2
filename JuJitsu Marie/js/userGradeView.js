@@ -28,17 +28,11 @@ function userGradeView() {
             </div>
         </div>
 
-
+        <!-- Main -->
         <div class="main_settings">
         <div class="card_settings">
             <div class="card-body">
                 <div id="progress">
-                  <!--<svg viewBox="0 0 36 36" class="circular-chart">
-                  <path class="circle" stroke-width="3.8" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="gray" />
-                    <path class="circleBelt" stroke-width="3.8" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" />
-                    <text class="percentage-text-belt" x="50%" y="55%" fill="white">
-                    <tspan x="50%" dy="0">0%</tspan>
-                    </svg>!-->
                     <svg viewBox="0 0 36 36" class="circular-chart">
                     <path class="circle" stroke-width="3.8" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="gray" />
                     <path class="circleCategory" stroke-width="3.8" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" />
@@ -51,43 +45,70 @@ function userGradeView() {
            </div>
            <div class="pensumList">
            <div class="categoryAll">
-           <h2>Kategori</h2>
-           <ul>
-           <li><input type="checkbox" class="category">${trainingCategory[0].name}</li>
-           <li><input type="checkbox" class="category">${trainingCategory[1].name}</li>
-           <li><input type="checkbox" class="category">${trainingCategory[2].name}</li>
-           </ul>
            </div>
            <div class="category1" id="checklist">
-           <h2>${trainingCategory[0].name}</h2>
+           <h2>${trainingCategory[0].name} - 0/8</h2>
            ${createSubtypeHtml2(0, 8)}
            </div>
            
            <div class="category2" id="checklist">
-           <h2>${trainingCategory[1].name}</h2>
+           <h2>${trainingCategory[1].name} - 0/4</h2>
            ${createSubtypeHtml2(8, 12)}
            </div>
            
            <div class="category3" id="checklist">
-           <h2>${trainingCategory[2].name}</h2>
+           <h2>${trainingCategory[2].name} - 0/1</h2>
            ${createSubtypeHtml2(12, 13)}
            </div>
            
          </div>
-   
            `;
+           
   }
-  // <!--<h2>${trainingCategory[1].name}</h2>
-  // ${checkboxHtml(8, 1)}
-  // <h2>${trainingCategory[2].name}</h2>
-  // ${checkboxHtml(12, 0)}-->
-//   <!-- <ul>
-//   <li><input type="checkbox" class="exercise subtype1" checked>Exercise 1</li>
-//   <li><input type="checkbox" class="exercise subtype1"checked>Exercise 2</li>
-//   <li><input type="checkbox" class="exercise subtype1" checked>Exercise 3</li>
-//   <li><input type="checkbox" class="exercise subtype1">Exercise 4</li>
-// </ul>-->
 
+  function createSubtypeHtml2(start, end) {
+    let subType = model.subtypes;
+    let state = model.exercises.areAllExercisesChecked;
+    let optionsHtml = '';
+    for (let i = start; i < end; i++) {
+      optionsHtml += `<li><input type="radio" id="subtype${i}">${subType[i].name}</li>`;
+    }
+  
+    return /*HTML*/` <ul>${optionsHtml}</ul>`
+  }
+
+  function returnState() {
+    value = model.exercises
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //-----------------Visuelt------------------
   // Function to update the bottom checkboxes based on the top checkboxes
   function updateCheckboxes() {
     const exerciseCheckboxes = document.querySelectorAll(".exercise"); //
@@ -135,45 +156,4 @@ function userGradeView() {
     );
     percentageText.textContent = Math.round(percentage) + "%";
   }
-}
-
-
-/* <h2>Del A - Grunnteknikker</h2>
-<ul>
-    <!-- Apply the "disabled-checkbox" class to make the checkbox unclickable -->
-    <li><input type="checkbox" class="subtype" id="subtype1">Guardstillinger / Benstillinger</li>
-    <li><input type="checkbox" class="subtype" id="subtype2">Forflytninger</li>
-    <li><input type="checkbox" class="subtype" id="subtype3">Fallteknikk</li>
-    <li><input type="checkbox" class="subtype" id="subtype4">Kast / Fellinger</li>
-    <li><input type="checkbox" class="subtype" id="subtype5">Slag</li>
-    <li><input type="checkbox" class="subtype" id="subtype6">Spark</li>
-    <li><input type="checkbox" class="subtype" id="subtype7">Mønster</li>
-    <li><input type="checkbox" class="subtype" id="subtype8">Forflytninger</li>
-    <li><input type="checkbox" class="subtype" id="subtype9">Blokkeringer</li>
-</ul>
-<h2>Guardstillinger / Benstillinger</h2>
-<ul>
-    <li><input type="checkbox" class="exercise subtype1" checked>1</li>
-    <li><input type="checkbox" class="exercise subtype1">2</li>
-    <li><input type="checkbox" class="exercise subtype1" checked>3</li>
-    <li><input type="checkbox" class="exercise subtype1" checked>4</li>
-</ul>
-<h2>Del C - Selvforsvarstrening</h2>
-<ul>
-    <li><input type="checkbox" class="exercise subtype1" >1</li>
- </ul>
-
-</div>
-</div>
-`;
-} */
-
-function createSubtypeHtml2(start, end) {
-  let subType = model.subtypes;
-  let optionsHtml = '';
-  for (let i = start; i < end; i++) {
-    optionsHtml += `<li id="subtype${i}">${subType[i].name}</li>`;
-  }
-
-  return /*HTML*/` <ul>${optionsHtml}</ul>`
 }
