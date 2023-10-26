@@ -75,16 +75,19 @@ function userGradeView() {
            </ul>
            </div>
            <div class="categoryCol" id="checklist">
-           <h2>Guardstillinger</h2>
-           <br>
-           <ul>
+        
+          <!-- <ul>
            <li><input type="checkbox" class="exercise subtype1" checked>Exercise 1</li>
            <li><input type="checkbox" class="exercise subtype1"checked>Exercise 2</li>
            <li><input type="checkbox" class="exercise subtype1" checked>Exercise 3</li>
            <li><input type="checkbox" class="exercise subtype1">Exercise 4</li>
-       </ul>
+       </ul>-->
        <br>
            <h2>${trainingCategory[0].name}</h2><br/>
+           ${checkboxHtml(0, 5)}
+           <h2>${trainingCategory[1].name}</h2><br/>
+           ${checkboxHtml(0, 5)}
+           <h2>${trainingCategory[2].name}</h2><br/>
            ${checkboxHtml(0, 5)}
            <!--<h2>${trainingCategory[1].name}</h2>
            ${checkboxHtml(8, 1)}
@@ -98,8 +101,8 @@ function userGradeView() {
 
   // Function to update the bottom checkboxes based on the top checkboxes
   function updateCheckboxes() {
-    const exerciseCheckboxes = document.querySelectorAll(".exercise");
-    const subtype1 = document.getElementById("subtype0");
+    const exerciseCheckboxes = document.querySelectorAll(".exercise"); //
+    const subtype1 = document.getElementById("subtype0"); //
 
     // Check if all exercise checkboxes are checked
     const areAllExercisesChecked = Array.from(exerciseCheckboxes).every(
@@ -112,25 +115,20 @@ function userGradeView() {
     // Recalculate the progress
     updateProgress();
   }
-
   // Add event listeners to exercise checkboxes to update subtype1
   const exerciseCheckboxes = document.querySelectorAll(".exercise");
   exerciseCheckboxes.forEach((checkbox) => {
     checkbox.addEventListener("change", updateCheckboxes);
   });
-
   // Function to calculate progress percentage and update the circular chart
   function updateProgress() {
     const exerciseCheckboxes = document.querySelectorAll(".subtype");
-    const checkedCount = Array.from(exerciseCheckboxes).filter(
-      (checkbox) => checkbox.checked
-    ).length;
+    const checkedCount = Array.from(exerciseCheckboxes).filter((checkbox) => checkbox.checked).length;
     const totalCount = exerciseCheckboxes.length;
     const percentage = (checkedCount / totalCount) * 100;
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Update the circular chart
     const circle = document.querySelector(".circleCategory");
-
     // Calculate the stroke-dasharray values
     const progressValue = percentage * 0.01 * (2 * Math.PI * 15.9155); // Radius is 15.9155
     const dasharray = `${progressValue}, ${
