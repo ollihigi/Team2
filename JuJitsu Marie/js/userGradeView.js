@@ -200,3 +200,19 @@ function createSubtypeHtml2(start, end) {
 
   return /*HTML*/` <ul>${optionsHtml}</ul>`
 }
+
+function updateSubtypeCheckboxState() {
+  // Loop through each subtype
+  for (let i = 0; i < model.subtypes.length; i++) {
+    // Get the exercises related to this subtype
+    let relatedExercises = model.exercises.filter(exercise => exercise.subtypeId === model.subtypes[i].id);
+
+    // Check if all related exercises are checked
+    let allExercisesChecked = relatedExercises.every(exercise => exercise.checkboxChecked);
+
+    // If all related exercises are checked, check the subtype checkbox
+    if (allExercisesChecked) {
+      model.subtypes[i].checkboxChecked = true;
+    }
+  }
+}
