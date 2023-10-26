@@ -81,24 +81,23 @@ function createExerciseHtml() {
   if (model.selectedSubtype == null) return '';
   let html = '';
   for (let exercise of model.exercises) {
-    if (exercise.subtypesId == model.selectedSubtype) {
-      let medialinkHtml = '';
-      if (exercise.medialink) {
-        medialinkHtml = `
-          <div class="video-container">
-            <iframe width="560" height="315" src="${exercise.medialink}" frameborder="0" allowfullscreen></iframe>
-          </div>
-        `;
+      if (exercise.subtypesId == model.selectedSubtype) {
+          let medialinkHtml = '';
+          if (exercise.medialink) {
+              medialinkHtml = `
+                  <div class="video-container">
+                      <iframe width="560" height="315" src="${exercise.medialink}" frameborder="0" allowfullscreen></iframe>
+                  </div>
+              `;
+          }
+          html += /*HTML*/`
+              <h2>${exercise.name}</h2>
+              <h3>${exercise.nameJapanese || ''}</h3>
+              <input type="checkbox" class="custom-checkbox" id="${exercise.id}checkbox" ${exercise.checkboxChecked ? 'checked' : ''} onclick="toggleCheckbox(${exercise.id})">
+              ${medialinkHtml}
+              <div class="marginBottom">${exercise.description || ''}</div>
+          `;
       }
-      html += /*HTML*/`
-        
-        <h2 >${exercise.name}</h2>
-        <h3>${exercise.nameJapanese || ''}</h3>
-        <input type="checkbox" class="custom-checkbox" id="${exercise.id}checkbox" ${exercise.checkboxChecked ? 'checked' : ''} onclick="toggleCheckbox(${exercise.id})">
-        ${medialinkHtml}
-        <div class = "marginBottom">${exercise.description || ''}</div>
-      `;
-    }
   }
   return html;
 }

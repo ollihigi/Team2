@@ -48,17 +48,17 @@ function userGradeView() {
            </div>
            <div class="category1" id="checklist">
            <h2>${trainingCategory[0].name} - 0/8</h2>
-           ${createSubtypeHtml2(0, 8)}
+           ${createSubtypeCheckbox(0, 8)}
            </div>
            
            <div class="category2" id="checklist">
            <h2>${trainingCategory[1].name} - 0/4</h2>
-           ${createSubtypeHtml2(8, 12)}
+           ${createSubtypeCheckbox(8, 12)}
            </div>
            
            <div class="category3" id="checklist">
            <h2>${trainingCategory[2].name} - 0/1</h2>
-           ${createSubtypeHtml2(12, 13)}
+           ${createSubtypeCheckbox(12, 13)}
            </div>
            
          </div>
@@ -66,20 +66,20 @@ function userGradeView() {
            
   }
 
-  function createSubtypeHtml2(start, end) {
+  function createSubtypeCheckbox(start, end) {
     let subType = model.subtypes;
-    let state = model.exercises.areAllExercisesChecked;
-    let optionsHtml = '';
-    for (let i = start; i < end; i++) {
-      optionsHtml += `<li><input type="radio" id="subtype${i}">${subType[i].name}</li>`;
-    }
-  
-    return /*HTML*/` <ul>${optionsHtml}</ul>`
-  }
+    let checkboxesHtml = '';
 
-  function returnState() {
-    value = model.exercises
-  }
+    for (let i = start; i < end; i++) {
+        let subTypeCheckbox = /*HTML*/`
+        <input type="checkbox" id="subtype${i}" ${model.subtypes[i].checkboxChecked ? 'checked' : ''}> ${subType[i].name}<br>
+        `;
+
+        checkboxesHtml += subTypeCheckbox;
+    }
+
+    return checkboxesHtml;
+}
 
 
 
