@@ -1,3 +1,4 @@
+updateSubtypeCheckboxState();
 function userGradeView() {
   let trainingCategory = model.categories;
   const app = document.getElementById("app");

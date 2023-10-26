@@ -8,7 +8,7 @@ function pensumView() {
       <div class="detail-box">
         <h1>5 KYU GULT BELTE</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui harum voluptatem adipisci. Quos molestiae saepe dicta nobis pariatur, tempora iusto, ad possimus soluta hic praesentium mollitia consequatur beatae, aspernatur culpa.
+         Oversikt over gult pensum
         </p>
         <a onclick="userGradeView()">Min Side</a>
       </div>
