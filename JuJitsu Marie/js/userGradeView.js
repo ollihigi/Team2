@@ -172,7 +172,8 @@ function createSubtypeHtml2(start, end) {
   let subType = model.subtypes;
   let optionsHtml = '';
   for (let i = start; i < end; i++) {
-    optionsHtml += `<li id="subtype${i}">${subType[i].name}</li>`;
+    let subTypeCheckbox = /*HTML*/`<input type="checkbox" ${subType[i].checkboxChecked ? 'checked' : ''} onclick="toggleSubtypeCheckbox(${i})">`;
+    optionsHtml += `<li id="subtype${i}">${subTypeCheckbox}${subType[i].name}</li>`;
   }
 
   return /*HTML*/` <ul>${optionsHtml}</ul>`
