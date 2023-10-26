@@ -51,7 +51,7 @@
 
 .pensumList {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr; 
     width: 100%;
     margin: 0 auto;
     gap: 20px;
@@ -62,10 +62,30 @@
   grid-column: 1;
 }
 
-.categoryCol{
+.categoryAll{
   grid-column: 2;
 }
-  
+
+.category1{
+  grid-column: 1;
+}
+
+.category2{
+  grid-column: 2;
+}
+
+.category3{
+  grid-column: 3;
+}
+
+#progress{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding: 20px;
+  border-radius: 5px;
+}
 
 
   .trackProgress {
@@ -75,7 +95,6 @@
     text-align: left;
     padding: 20px;
     border-radius: 5px;
-    flex: 1;
   }
   
   .subtype {
