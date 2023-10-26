@@ -60,17 +60,17 @@ function userGradeView() {
            </div>
            <div class="category1" id="checklist">
            <h2>${trainingCategory[0].name}</h2>
-           ${checkboxHtml(0, 5)}
+           ${createSubtypeHtml2(0, 8)}
            </div>
            
            <div class="category2" id="checklist">
            <h2>${trainingCategory[1].name}</h2>
-           ${checkboxHtml(0, 5)}
+           ${createSubtypeHtml2(8, 12)}
            </div>
            
            <div class="category3" id="checklist">
            <h2>${trainingCategory[2].name}</h2>
-           ${checkboxHtml(0, 5)}
+           ${createSubtypeHtml2(12, 13)}
            </div>
            
          </div>
@@ -167,3 +167,13 @@ function userGradeView() {
 </div>
 `;
 } */
+
+function createSubtypeHtml2(start, end) {
+  let subType = model.subtypes;
+  let optionsHtml = '';
+  for (let i = start; i < end; i++) {
+    optionsHtml += `<li id="subtype${i}">${subType[i].name}</li>`;
+  }
+
+  return /*HTML*/` <ul>${optionsHtml}</ul>`
+}
