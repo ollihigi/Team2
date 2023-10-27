@@ -6,11 +6,11 @@ function pensumView() {
   <div class="row">
     <div class="col-md-6 ">
       <div class="detail-box">
-        <h1>5 KYU GULT BELTE</h1>
-        <p>
+        <h1 id="pensumTitle">5 KYU GULT BELTE</h1>
+        <p id="pensumText">
          Oversikt over gult pensum
         </p>
-        <a onclick="userGradeView()">Min Side</a>
+        <a onclick="userGradeView()" id="pensumMyPage">Min Side</a>
       </div>
     </div>
     <div class="col-md-6">
@@ -35,11 +35,11 @@ function pensumView() {
     <h5 class="name">Gult Belte</h5>
   </div>
   <div class="box">
-    <div class="img-box"></div>
+  <div class="img-box"><img src="images/orangeBelt.png" alt=""></div>
     <h5 class="name">Orange Belte</h5>
   </div>
   <div class="box">
-    <div class="img-box"></div>
+    <div class="img-box"><img src="images/greenBelt.png" alt=""></div>
     <h5 class="name">Grønt Belte</h5>
   </div>
 </div>

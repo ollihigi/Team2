@@ -211,6 +211,23 @@ img {
   border: none;
 }
 
+#pensumTitle {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1rem;
+}
+
+#pensumText {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+#pensumMyPage {
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+
 
 
 
