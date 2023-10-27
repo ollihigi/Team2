@@ -149,7 +149,7 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-self: center;
+  align-items: flex-start;
   margin-bottom: 3rem;
   margin-right: 2rem;
   margin-top: 5rem;
