@@ -64,27 +64,32 @@ function userGradeView() {
            
          </div>
            `;
-           
+
   }
 
   function createSubtypeCheckbox(start, end) {
-    let subType = model.subtypes;
-    let checkboxesHtml = '';
-
+    let html = '<h3>Subtypes</h3>';
     for (let i = start; i < end; i++) {
-        let subTypeCheckbox = /*HTML*/`
-        <input type="checkbox" id="subtype${i}" ${model.subtypes[i].checkboxChecked ? 'checked' : ''}> ${subType[i].name}<br>
-        `;
-
-        checkboxesHtml += subTypeCheckbox;
+      html += /*HTML*/`
+                    <span style="font-size:300%; user-select: none">
+                            ${isDoneSubtype(model.subtypes[i].id) ? '☑' : '□'}
+                    </span>                
+                    ${model.subtypes[i].name}
+                    <br/>
+                `;
     }
-
-    return checkboxesHtml;
-}
-
+    return html;
+  }
 
 
-
+  function isDoneSubtype(subtypeId) {
+    for (let exercise of model.exercises) {
+      if (exercise.subtypesId == subtypeId && !exercise.isDone) {
+        return false;
+      }
+    }
+    return true;
+  }
 
 
 
@@ -137,14 +142,13 @@ function userGradeView() {
     const checkedCount = Array.from(exerciseCheckboxes).filter((checkbox) => checkbox.checked).length;
     const totalCount = exerciseCheckboxes.length;
     const percentage = (checkedCount / totalCount) * 100;
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Update the circular chart
     const circle = document.querySelector(".circleCategory");
     // Calculate the stroke-dasharray values
     const progressValue = percentage * 0.01 * (2 * Math.PI * 15.9155); // Radius is 15.9155
-    const dasharray = `${progressValue}, ${
-      2 * Math.PI * 15.9155 - progressValue
-    }`;
+    const dasharray = `${progressValue}, ${2 * Math.PI * 15.9155 - progressValue
+      }`;
 
     circle.style.strokeDasharray = dasharray;
 
