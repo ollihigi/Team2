@@ -50,7 +50,7 @@ function pensumView() {
 <div class="rightSideExercise">
 <div class="exerciseContent">
 <div class="pensumSelect">
-<pre>selectedSubType = ${model.selectedSubtype}</pre>
+<pre hidden>selectedSubType = ${model.selectedSubtype}</pre>
   <h2>${trainingCategoryHtml[0].name}</h2><br/>
   ${createSubtypeHtml(0, 8)}
   <h2>${trainingCategoryHtml[1].name}</h2>
@@ -67,15 +67,29 @@ function pensumView() {
 `;
 }
 // categories and subtypes
+
 function createSubtypeHtml(start, end) {
   let subType = model.subtypes;
   let optionsHtml = '';
   for (let i = start; i < end; i++) {
-    optionsHtml += `<li><a onclick="selectSubtype(${i}); return false;">${subType[i].name}</a></li>`;
+    optionsHtml += `<li><a href="#" class="subtypeLink" data-subtype-index="${i}">${subType[i].name}</a></li>`;
   }
 
-  return /*HTML*/` <ul>${optionsHtml}</ul>`
+  return /*HTML*/` <ul>${optionsHtml}</ul>`;
 }
+
+document.addEventListener('click', function (event) {
+  if (event.target.classList.contains('subtypeLink')) {
+    event.preventDefault(); 
+    const subtypeIndex = event.target.getAttribute('data-subtype-index');
+    if (subtypeIndex !== null) {
+      selectSubtype(parseInt(subtypeIndex, 10)); 
+    }
+  }
+});
+
+
+
 
 function createExerciseHtml() {
   if (model.selectedSubtype == null) return '';
@@ -93,9 +107,7 @@ function createExerciseHtml() {
           html += /*HTML*/`
               <h2>${exercise.name}</h2>
               <h3>${exercise.nameJapanese || ''}</h3>
-              <span style="font-size:300%; user-select: none" onclick="setExerciseIsDone(${exercise.id})">
-              ${exercise.isDone ? '☑' : '□'}
-              </span>                 
+              <h style="font-size:300%; user-select: none" onclick="setExerciseIsDone(${exercise.id})">Status:${exercise.isDone ? '☑' : '☐'}</h>             
               ${medialinkHtml}
               <div class="marginBottom">${exercise.description || ''}</div>
           `;
