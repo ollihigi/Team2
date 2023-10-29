@@ -80,8 +80,8 @@ const model = {
       name: 'Forsvarsguard, åpne hender',
       nameJapanese: 'Shuto',
       withPartner: '',
-      description: 'medialenke er kanskje feil, men er med for å illustrere funksjonen med film',
-      //Denne peker til en øvelse som ikke finnnes i TJK gult pensum
+      description: 
+      "<br>Posisjon: Lær å ta en god posisjon i guarden, med beina godt plantet i bakken og armene beskyttende for hodet og halsen. Lær å bruke beina til å kontrollere motstanderen.<br><br>Bevegelser: Lær å blokkere og avverge angrep fra motstanderen. Lær å bruke bevegelser for å komme deg ut av guarden.<br><br>Teknikker:<br><br>Armbar: En armbar er en teknikk der du bøyer motstanderens arm bak ryggen.<br><br>Ezekiel choke: En Ezekiel choke er en teknikk der du plasserer armen din rundt motstanderens hals og kveler ham.<br><br>Guillotine choke: En guillotine choke er en teknikk der du plasserer armen din rundt motstanderens hals og kveler ham.",
       medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
       
     },

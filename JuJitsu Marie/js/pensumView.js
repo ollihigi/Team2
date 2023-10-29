@@ -99,17 +99,20 @@ function createExerciseHtml() {
           let medialinkHtml = '';
           if (exercise.medialink) {
               medialinkHtml = `
+            
                   <div class="video-container">
                       <iframe width="560" height="315" src="${exercise.medialink}" frameborder="0" allowfullscreen></iframe>
                   </div>
               `;
           }
           html += /*HTML*/`
+          <h3 class="setExerciseState" onclick="setExerciseIsDone(${exercise.id})">Kan du dette? ${exercise.isDone ? '☑' : '☐'}</h3> 
               <h2>${exercise.name}</h2>
-              <h3>${exercise.nameJapanese || ''}</h3>
-              <h style="font-size:300%; user-select: none" onclick="setExerciseIsDone(${exercise.id})">Status:${exercise.isDone ? '☑' : '☐'}</h>             
-              ${medialinkHtml}
+              <h3>"${exercise.nameJapanese || ''}"</h3>          
+              ${medialinkHtml} 
               <div class="marginBottom">${exercise.description || ''}</div>
+              
+ 
           `;
       }
   }
