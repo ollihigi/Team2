@@ -22,6 +22,7 @@ header {
   width: 100%; /* Make it 100% width to span the entire viewport */
   z-index: 100; /* Add a z-index to ensure it's above other content */
   height: 8rem;
+  opacity: 0.99;
 }
 
 .logo {

@@ -63,6 +63,7 @@ function pensumView() {
       ${createExerciseHtml()}
       </div>
 </div>
+</div>
 </section>
 `;
 }
@@ -100,18 +101,31 @@ function createExerciseHtml() {
           if (exercise.medialink) {
               medialinkHtml = `
             
-                  <div class="video-container">
-                      <iframe width="560" height="315" src="${exercise.medialink}" frameborder="0" allowfullscreen></iframe>
+                  <div class="card_video">
+                      <iframe width="600" height="315" src="${exercise.medialink}" frameborder="0" allowfullscreen></iframe>
                   </div>
               `;
           }
           html += /*HTML*/`
-          <h3 class="setExerciseState" onclick="setExerciseIsDone(${exercise.id})">Kan du dette? ${exercise.isDone ? '☑' : '☐'}</h3> 
+          <div class="card-container">
+          <div class="card">
+              <div class="card_title"> 
               <h2>${exercise.name}</h2>
-              <h3>"${exercise.nameJapanese || ''}"</h3>          
-              ${medialinkHtml} 
-              <div class="marginBottom">${exercise.description || ''}</div>
-              
+              <h3>"${exercise.nameJapanese || ''}"</h3>   
+              </div>
+              <div class="card_media">
+              ${medialinkHtml}
+              </div>
+              <div class="card_body">
+              <p align="justify">${exercise.description || ''} </p>
+              </div>
+              <div class="card_footer"><br><h3 onclick="setExerciseIsDone(${exercise.id})">${exercise.isDone ? '☑' : '☐'}</h3>
+
+              </div>
+              </div>
+              </div>
+              <br>
+              <br>
  
           `;
       }
