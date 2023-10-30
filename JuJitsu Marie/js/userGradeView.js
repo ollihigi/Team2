@@ -47,17 +47,17 @@ function userGradeView() {
            <div class="categoryAll">
            </div>
            <div class="category1" id="checklist">
-           <h2>${trainingCategory[0].name} - 0/8</h2>
+           <h2>${trainingCategory[0].name}</h2>
            ${createSubtypeCheckbox(0, 8)}
            </div>
            
            <div class="category2" id="checklist">
-           <h2>${trainingCategory[1].name} - 0/4</h2>
+           <h2>${trainingCategory[1].name}</h2>
            ${createSubtypeCheckbox(8, 12)}
            </div>
            
            <div class="category3" id="checklist">
-           <h2>${trainingCategory[2].name} - 0/1</h2>
+           <h2>${trainingCategory[2].name}</h2>
            ${createSubtypeCheckbox(12, 13)}
            </div>
            
@@ -67,7 +67,7 @@ function userGradeView() {
   }
 
   function createSubtypeCheckbox(start, end) {
-    let html = '<h3>Subtypes</h3>';
+    let html = '<hr>';
     for (let i = start; i < end; i++) {
       html += /*HTML*/`
                     <span style="font-size:300%; user-select: none">
