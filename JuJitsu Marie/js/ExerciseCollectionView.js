@@ -25,7 +25,7 @@ Torsdag 2023.09.10 || Lister med objekter (KPI)video
 Del 2
 22:00 Når vi skal sortere en liste med objekter så må vi sende med en sorteringsfunksjon.
 .sort krever at vi sammenligner to parametere A og B, og returnerer:
-Sorteringfunksjonen skal sammenligne to parametere A og B, så skal den returnere:
+(Sorteringfunksjonen skal sammenligne to parametere A og B, så skal den returnere:)
 1) 0 hvis de to parameterne er like -> A==B
 2) 1 hvis A skal sorteres før B OG -1 hvis B skal sorteres før A
 */
