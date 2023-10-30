@@ -4,37 +4,25 @@
 
 .pensum_section .pensum_container {
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+
 }
 
 .pensum_section .pensum_container .box {
   -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   text-align: center;
   margin: 0 10px;
-  padding: 45px 15px;
+  padding: 1rem 1rem;
   background-color: inherit;
   border: solid 5px var(--body-color);
   color: #ffffff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 .pensum_section .pensum_container .box .img-box {
-  width: 90px;
-  height: 90px;
+  width: 10rem;
   background-color: inherit;
 }
 
@@ -49,6 +37,23 @@
   color: #ffffff;
 }
 
+#pensumTitle {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1rem;
+  }
+  
+  #pensumText {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+  }
+  
+  #pensumMyPage {
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-top: 3rem;
+  }
+
 .pensumSelect {
   position: sticky;
   top: 15rem;
@@ -58,7 +63,7 @@
   margin-bottom: 3rem;
   margin-right: 2rem;
   padding: 2rem;
-  border: 1px solid white;
+  border: 5px solid var(--body-color);
   height: 100%;
   overflow: hidden;
   border-radius: 0.5rem;
@@ -88,7 +93,7 @@
   height: 100%;
   border-radius: 0.5rem;
   padding: 1rem;
-  border: 1px solid white;
+  border: 5px solid var(--body-color);
 }
 
 .card-img {
