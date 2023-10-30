@@ -46,9 +46,8 @@
 
 .pensum_section .pensum_container .box:hover,
 .pensum_section .pensum_container .box.active {
-  border: 5px double #ff8a1d;
+  filter: brightness(1.2);
   background-color: inherit;
-  color: #ffffff;
 }
 
 #pensumTitle {
