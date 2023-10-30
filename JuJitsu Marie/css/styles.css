@@ -5,6 +5,9 @@ html{
 
 .main_section .row {
   align-items: center;
+  border: 5px solid var(--body-color);
+  width: 100%;
+  margin: 9rem 0;
 }
 
 
