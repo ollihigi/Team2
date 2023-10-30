@@ -67,13 +67,15 @@ function userGradeView() {
   }
 
   function createSubtypeCheckbox(start, end) {
-    let html = '<hr>';
+    let html = '<h3>Subtypes</h3>';
     for (let i = start; i < end; i++) {
+      let subtype = model.subtypes[i];
       html += /*HTML*/`
                     <span style="font-size:300%; user-select: none">
-                            ${isDoneSubtype(model.subtypes[i].id) ? '☑' : '□'}
+                            ${isDoneSubtype(subtype.id) ? '☑' : '□'}
                     </span>                
-                    ${model.subtypes[i].name}
+                    ${subtype.name}
+                    ${createExerciseProgressHtml(subtype.id)}
                     <br/>
                 `;
     }
@@ -88,6 +90,22 @@ function userGradeView() {
       }
     }
     return true;
+  }
+
+  function createExerciseProgressHtml(subtypeId) {
+    let html = '';
+    let exerciseDoneCount = 0;
+    let exerciseTotalCount = 0;
+    for (let exercise of model.exercises) {
+      if (exercise.subtypesId != subtypeId) continue
+      exerciseTotalCount ++;
+      if (exercise.isDone){
+        exerciseDoneCount++;
+      }
+      // console.log(exerciseTotalCount,exerciseDoneCount,exercise)
+    }
+    html = exerciseDoneCount + '/' + exerciseTotalCount;
+    return html;
   }
 
 
