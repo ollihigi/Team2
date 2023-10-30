@@ -52,12 +52,14 @@
 
 #pensumTitle {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 1rem;
+    letter-spacing: 0.5rem;
+    font-weight: bolder;
+    padding: 1rem;
   }
   
   #pensumText {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
+    padding: 1rem;
     font-size: 2rem;
   }
   

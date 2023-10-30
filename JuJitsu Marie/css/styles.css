@@ -42,7 +42,7 @@ th > span{
 }
 
 
-.main_section .detail-box a {
+.main_section .landing_section .detail-box a {
   display: inline-block;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
@@ -60,6 +60,39 @@ th > span{
 
 .main_section .img-box img {
   width: 100%;
+}
+
+.landing_section .detail-box {
+  position: fixed;
+  width: 40rem;
+  top:5;
+  right:50%;
+
+
+}
+
+
+.landing_section .detail-box a {
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  padding: 15px 100px;
+  background-color: transparent;
+  border: 1px solid #ff8a1d;
+  border-radius: 5px;
+  color: #ff8a1d;
+}
+
+.landing_section .detail-box a:hover {
+  border: solid white 1px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.landing_section .img-box img {
+position: fixed;
+bottom:-3rem;
+right:0;
 }
 
 .exerciseImg {

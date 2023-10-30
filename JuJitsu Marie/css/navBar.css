@@ -19,8 +19,8 @@ header {
   filter: drop-shadow(rgb(107, 107, 107) 10px 0px 10px);
   position: fixed; /* Change to "fixed" */
   top: 0;
-  width: 100%; /* Make it 100% width to span the entire viewport */
-  z-index: 100; /* Add a z-index to ensure it's above other content */
+  width: 100%;
+  z-index: 100;
   height: 8rem;
   opacity: 0.99;
 }
