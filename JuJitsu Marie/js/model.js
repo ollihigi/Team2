@@ -34,6 +34,11 @@ const model = {
     trainingPreference: [],
   },
 
+  sort: {
+    field: null,
+    direction: null,
+  },
+
   //* DATA
   belts: [
     { id: 1, name: 'Gult belte' },
