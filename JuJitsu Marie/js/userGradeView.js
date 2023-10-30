@@ -35,6 +35,8 @@ function userGradeView() {
             <div class="card-body">
                 <div id="progress">
                 <div class="progress">
+                <div class="knot"></div>
+                <div class="knot-center"></div>
                   <div class="progress-done" data-done="10">
                   10%               
                   </div>
