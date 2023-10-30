@@ -1,4 +1,3 @@
-updateSubtypeCheckboxState();
 function userGradeView() {
   let trainingCategory = model.categories;
   const app = document.getElementById("app");
@@ -105,8 +104,25 @@ function userGradeView() {
       // console.log(exerciseTotalCount,exerciseDoneCount,exercise)
     }
     html = exerciseDoneCount + '/' + exerciseTotalCount;
+    if ( exerciseDoneCount === exerciseTotalCount){
+      html = '';
+    }
     return html;
   }
+
+  function isSubtypeDone(subtypeId) {
+    let exerciseDoneCount = 0;
+    let exerciseTotalCount = 0;
+    for (let exercise of model.exercises) {
+      if (exercise.subtypesId != subtypeId) continue
+      exerciseTotalCount++;
+      if (exercise.isDone) {
+        exerciseDoneCount++;
+      }
+   
+    return exerciseDoneCount == exerciseTotalCount;
+  }
+}
 
 
   const progress = document.querySelector('.progress-done');
