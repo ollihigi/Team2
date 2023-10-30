@@ -8,7 +8,7 @@ function pensumView() {
       <div class="detail-box">
         <h1 id="pensumTitle">5 KYU GULT BELTE PENSUM</h1>
         <p id="pensumText">
-         Oversikt over hva du må mestre før du kan gå opp til prøve i gult belte.<br><br>  Kryss av hva du mestrer<br> Oversikt over på "Min Side"
+         Oversikt over hva du må mestre før du kan gå opp til prøve i gult belte.<br><br>  Kryss av hva du mestrer
         </p>
         <a onclick="userGradeView()" id="pensumMyPage">Min Side</a>
       </div>
