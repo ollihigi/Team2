@@ -34,14 +34,11 @@ function userGradeView() {
         <div class="card_settings">
             <div class="card-body">
                 <div id="progress">
-                    <svg viewBox="0 0 36 36" class="circular-chart">
-                    <path class="circle" stroke-width="3.8" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="gray" />
-                    <path class="circleCategory" stroke-width="3.8" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" />
-                    <text class="percentage-text-category" x="50%" y="55%" fill="white">
-                    <tspan x="50%" dy="0">0%</tspan>
-                      
-                    </text>
-                  </svg>   
+                <div class="progress">
+                  <div class="progress-done" data-done="10">
+                  10%               
+                  </div>
+                </div>
        
            </div>
            <div class="pensumList">
@@ -92,8 +89,10 @@ function userGradeView() {
   }
 
 
-
-
+  const progress = document.querySelector('.progress-done');
+  progress.style.width = progress.getAttribute('data-done') + '%';
+  progress.style.opacity = 1;
+}
 
 
 
@@ -116,52 +115,52 @@ function userGradeView() {
 
   //-----------------Visuelt------------------
   // Function to update the bottom checkboxes based on the top checkboxes
-  function updateCheckboxes() {
-    const exerciseCheckboxes = document.querySelectorAll(".exercise"); //
-    const subtype1 = document.getElementById("subtype0"); //
+//   function updateCheckboxes() {
+//     const exerciseCheckboxes = document.querySelectorAll(".exercise"); //
+//     const subtype1 = document.getElementById("subtype0"); //
 
-    // Check if all exercise checkboxes are checked
-    const areAllExercisesChecked = Array.from(exerciseCheckboxes).every(
-      (checkbox) => checkbox.checked
-    );
+//     // Check if all exercise checkboxes are checked
+//     const areAllExercisesChecked = Array.from(exerciseCheckboxes).every(
+//       (checkbox) => checkbox.checked
+//     );
 
-    // Check or uncheck subtype1 based on all exercise checkboxes
-    subtype1.checked = areAllExercisesChecked;
+//     // Check or uncheck subtype1 based on all exercise checkboxes
+//     subtype1.checked = areAllExercisesChecked;
 
-    // Recalculate the progress
-    updateProgress();
-  }
-  // Add event listeners to exercise checkboxes to update subtype1
-  const exerciseCheckboxes = document.querySelectorAll(".exercise");
-  exerciseCheckboxes.forEach((checkbox) => {
-    checkbox.addEventListener("change", updateCheckboxes);
-  });
-  // Function to calculate progress percentage and update the circular chart
-  function updateProgress() {
-    const exerciseCheckboxes = document.querySelectorAll(".subtype");
-    const checkedCount = Array.from(exerciseCheckboxes).filter((checkbox) => checkbox.checked).length;
-    const totalCount = exerciseCheckboxes.length;
-    const percentage = (checkedCount / totalCount) * 100;
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // Update the circular chart
-    const circle = document.querySelector(".circleCategory");
-    // Calculate the stroke-dasharray values
-    const progressValue = percentage * 0.01 * (2 * Math.PI * 15.9155); // Radius is 15.9155
-    const dasharray = `${progressValue}, ${2 * Math.PI * 15.9155 - progressValue
-      }`;
+//     // Recalculate the progress
+//     updateProgress();
+//   }
+//   // Add event listeners to exercise checkboxes to update subtype1
+//   const exerciseCheckboxes = document.querySelectorAll(".exercise");
+//   exerciseCheckboxes.forEach((checkbox) => {
+//     checkbox.addEventListener("change", updateCheckboxes);
+//   });
+//   // Function to calculate progress percentage and update the circular chart
+//   function updateProgress() {
+//     const exerciseCheckboxes = document.querySelectorAll(".subtype");
+//     const checkedCount = Array.from(exerciseCheckboxes).filter((checkbox) => checkbox.checked).length;
+//     const totalCount = exerciseCheckboxes.length;
+//     const percentage = (checkedCount / totalCount) * 100;
+//     /////////////////////////////////////////////////////////////////////////////////////////////////////////
+//     // Update the circular chart
+//     const circle = document.querySelector(".circleCategory");
+//     // Calculate the stroke-dasharray values
+//     const progressValue = percentage * 0.01 * (2 * Math.PI * 15.9155); // Radius is 15.9155
+//     const dasharray = `${progressValue}, ${2 * Math.PI * 15.9155 - progressValue
+//       }`;
 
-    circle.style.strokeDasharray = dasharray;
+//     circle.style.strokeDasharray = dasharray;
 
-    // Set the stroke color to your desired color
-    circle.style.stroke = "#0fa8d6";
+//     // Set the stroke color to your desired color
+//     circle.style.stroke = "#0fa8d6";
 
-    // Update the percentage text in the SVG
-    const percentageText = document.querySelector(
-      ".percentage-text-category tspan"
-    );
-    percentageText.textContent = Math.round(percentage) + "%";
-  }
-}
+//     // Update the percentage text in the SVG
+//     const percentageText = document.querySelector(
+//       ".percentage-text-category tspan"
+//     );
+//     percentageText.textContent = Math.round(percentage) + "%";
+//   }
+// }
 
 
 /* <h2>Del A - Grunnteknikker</h2>
