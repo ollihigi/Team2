@@ -118,7 +118,7 @@
 
 
 .progress {
-	background-color: #ffffff;
+  background: linear-gradient(to right, #ffffff, #ffffff,  #ffffff, #ffffff);
 	border-radius: 20px;
 	position: relative;
 	margin: 15px 0;
@@ -130,14 +130,37 @@
 	background: linear-gradient(to left, #f6d207, #bcb418);
 	box-shadow: 0 3px 3px -5px #c5c508, 0 2px 5px #837d0a;
 	border-radius: 20px;
-	color: #000000;
+	color: #313131;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100%;
 	width: 0;
 	opacity: 0;
-	transition: 1s ease 0.3s;
+}
+
+.knot {
+  width: 5rem;
+  height: 5rem;
+  background: #313131;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: solid rgb(93, 93, 93) 4px;
+}
+
+
+.knot-center {
+  width: 2rem;
+  height: 2rem;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
   
 
