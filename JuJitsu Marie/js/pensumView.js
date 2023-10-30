@@ -6,9 +6,9 @@ function pensumView() {
   <div class="row">
     <div class="col-md-6 ">
       <div class="detail-box">
-        <h1 id="pensumTitle">5 KYU GULT BELTE</h1>
+        <h1 id="pensumTitle">5 KYU GULT BELTE PENSUM</h1>
         <p id="pensumText">
-         Oversikt over gult pensum
+         Oversikt over hva du må mestre før du kan gå opp til prøve i gult belte. Huk av hva du mestrer, oversikt på "Min Side"
         </p>
         <a onclick="userGradeView()" id="pensumMyPage">Min Side</a>
       </div>
