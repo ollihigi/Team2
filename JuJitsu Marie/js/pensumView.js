@@ -20,32 +20,34 @@ function pensumView() {
     </div>
   </div>
 </div>
-</section>
-<!-- end main section -->
 </div>
-
-<!-- feature section -->
+</section>
 <section class="pensum_section">
 <div class="container">
 <div class="pensum_container">
+
   <div class="box active">
     <div class="img-box">
     <img src="images/yellowBelt.png" alt="">
-    </div>
     <h5 class="name">Gult Belte</h5>
+    </div>
   </div>
+
   <div class="box">
-  <div class="img-box"><img src="images/orangeBelt.png" alt=""></div>
-    <h5 class="name">Orange Belte</h5>
+    <div class="img-box">
+      <img src="images/orangeBelt.png" alt="">
+      <h5 class="name">Orange Belte</h5>
+    </div>
   </div>
+
   <div class="box">
-    <div class="img-box"><img src="images/greenBelt.png" alt=""></div>
+    <div class="img-box"><img src="images/greenBelt.png" alt="">
     <h5 class="name">Grønt Belte</h5>
   </div>
 </div>
-</div>
+
 </section>
-<section class="display_section layout_padding-bottom">
+<section class="display_section">
 <div class="container">
 <div class="rightSideExercise">
 <div class="exerciseContent">

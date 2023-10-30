@@ -1,3 +1,7 @@
+.display_section{
+  margin-top: -6rem;
+}
+
 .pensum_section {
   transform: translateY(-50%);
 }
@@ -14,15 +18,25 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 0 10px;
   padding: 1rem 1rem;
   background-color: inherit;
-  border: solid 5px var(--body-color);
   color: #ffffff;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
+.pensum_section .pensum_container {
+  border: solid 3px var(--body-color);
+}
+
+.box {
+  border: 3px solid transparent;
+}
 .pensum_section .pensum_container .box .img-box {
-  width: 10rem;
+  width: 9rem;
   background-color: inherit;
 }
 
@@ -32,7 +46,7 @@
 
 .pensum_section .pensum_container .box:hover,
 .pensum_section .pensum_container .box.active {
-  border: 5px solid #ff8a1d;
+  border-bottom: 7px double #ff8a1d;
   background-color: inherit;
   color: #ffffff;
 }
@@ -61,7 +75,7 @@
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 3rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
   padding: 2rem;
   border: 5px solid var(--body-color);
   height: 100%;
