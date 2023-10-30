@@ -104,12 +104,30 @@
   width: 100%;
 }
 
-.main_settings .card_settings table {
+.main_settings .card_settings .card-body table {
   border: none;
   font-size: 16px;
   height: 270px;
   width: 80%;
+  border: none;
+  color: white;
 }
+
+.main_settings .card_settings .card-body ul {
+  list-style: none;
+  padding: 0;
+  border: none;
+}
+.main_settings .card_settings .card-body li {
+  margin: 10px 0;
+  border: none;
+}
+
+.main_settings .card_settings .card-body td {
+  margin: 10px 0;
+  border: none;
+}
+
 
 .edit {
   position: absolute;
@@ -132,17 +150,6 @@
     margin: 20px;
     text-align: left;
   }
-  
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    margin: 10px 0;
-  }
-  
   
   #progressPercentage {
     font-size: 0.4rem;
