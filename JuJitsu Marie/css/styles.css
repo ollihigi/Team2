@@ -14,10 +14,9 @@ html{
 
 .main_section .detail-box a {
   display: inline-block;
-  position:static;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
-  padding: 10px 45px;
+  padding: 10px 70px;
   background-color: transparent;
   border: 1px solid #ff8a1d;
   border-radius: 5px;
