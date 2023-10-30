@@ -29,11 +29,11 @@
 }
 
 .pensum_section .pensum_container {
-  border: solid 3px var(--body-color);
+  border: solid 5px var(--body-color);
 }
 
 .box {
-  border: 3px solid transparent;
+  border: 5px solid transparent;
 }
 .pensum_section .pensum_container .box .img-box {
   width: 9rem;
@@ -46,7 +46,7 @@
 
 .pensum_section .pensum_container .box:hover,
 .pensum_section .pensum_container .box.active {
-  border-bottom: 7px double #ff8a1d;
+  border: 5px double #ff8a1d;
   background-color: inherit;
   color: #ffffff;
 }
