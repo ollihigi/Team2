@@ -74,8 +74,9 @@ function pensumView() {
 function createSubtypeHtml(categoryId) {
   let optionsHtml = '';
   for (let subtype of model.subtypes) {
-    if(subtype.categoryId === categoryId){
-    optionsHtml += `<li><a href="#" class="subtypeLink" data-subtype-index="${subtype.id}">${subtype.name}</a></li>`;}
+    if (subtype.categoryId === categoryId) {
+      optionsHtml += `<li><a class="subtypeLink" onclick="selectSubtype(${subtype.id})">${subtype.name}</a></li>`;
+    }
   }
 
   return /*HTML*/` <ul>${optionsHtml}</ul>`;
@@ -85,17 +86,17 @@ function createExerciseHtml() {
   if (model.selectedSubtype == null) return '';
   let html = '';
   for (let exercise of model.exercises) {
-      if (exercise.subtypesId == model.selectedSubtype) {
-          let medialinkHtml = '';
-          if (exercise.medialink) {
-              medialinkHtml = `
+    if (exercise.subtypesId == model.selectedSubtype) {
+      let medialinkHtml = '';
+      if (exercise.medialink) {
+        medialinkHtml = `
             
                   <div class="card_video">
-                      <iframe width="600" height="315" src="${exercise.medialink}" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="600" height="315" src="${exercise.medialink}" frameborder="0" allowfullscreen></iframe>
                   </div>
-              `;
-          }
-          html += /*HTML*/`
+                  `;
+      }
+      html += /*HTML*/`
           <div class="card-container">
           <div class="card">
               <div class="card_title"> 
@@ -117,7 +118,7 @@ function createExerciseHtml() {
               <br>
  
           `;
-      }
+    }
   }
   return html;
 }
