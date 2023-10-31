@@ -75,24 +75,11 @@ function createSubtypeHtml(start, end) {
   let subType = model.subtypes;
   let optionsHtml = '';
   for (let i = start; i < end; i++) {
-    optionsHtml += `<li><a href="#" class="subtypeLink" data-subtype-index="${i}">${subType[i].name}</a></li>`;
+    optionsHtml += `<li><a class="subtypeLink" onclick="selectSubtype(${i})">${subType[i].name}</a></li>`;
   }
 
   return /*HTML*/` <ul>${optionsHtml}</ul>`;
 }
-
-document.addEventListener('click', function (event) {
-  if (event.target.classList.contains('subtypeLink')) {
-    event.preventDefault(); 
-    const subtypeIndex = event.target.getAttribute('data-subtype-index');
-    if (subtypeIndex !== null) {
-      selectSubtype(parseInt(subtypeIndex, 10)); 
-    }
-  }
-});
-
-
-
 
 function createExerciseHtml() {
   if (model.selectedSubtype == null) return '';
