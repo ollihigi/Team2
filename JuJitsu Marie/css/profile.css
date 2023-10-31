@@ -84,10 +84,17 @@
   margin-left: 29%;
   font-size: 2rem;
   padding: 0 10px;
-  width: 65%;
+  width: 50%;
 }
 
 .main_settings h2 {
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.main_settings a {
   color: #ffffff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 24px;
@@ -139,6 +146,7 @@
 #checklist {
   margin: 20px;
   text-align: left;
+  font-size: 1.3rem;
 }
 
 #progress{

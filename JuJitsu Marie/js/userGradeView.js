@@ -71,7 +71,7 @@ function userGradeView() {
       if (subtype.categoryId === categoryId) {
         // for (let i = start; i < end; i++) {
         html += /*HTML*/`
-                    <span style="font-size:300%; user-select: none">
+                    <span style="font-size:200%; user-select: none">
                             ${isDoneSubtype(subtype.id) ? '☑' : '☐'}
                     </span>                
                     ${subtype.name}

@@ -48,9 +48,9 @@ const model = {
     { id: 5, name: 'Svart belte' },
   ],
   categories: [
-    { id: 1, name: 'Del A - Grunnteknikker' },
-    { id: 2, name: 'Del B - Teknikktrening' },
-    { id: 3, name: 'Del C - Selvforsvarstrening' },
+    { id: 1, name: 'Grunnteknikker' },
+    { id: 2, name: 'Teknikktrening' },
+    { id: 3, name: 'Selvforsvarstrening' },
     { id: 4, name: 'Skadeforebyggende øvelser' },
   ],
   selectedSubtype: 0,
