@@ -1,3 +1,5 @@
+// media link er kommenter ut - Stian
+
 "use strict";
 
 function ExerciseCollectionView() {
