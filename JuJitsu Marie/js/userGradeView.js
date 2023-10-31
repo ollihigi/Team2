@@ -36,8 +36,8 @@ function userGradeView() {
                 <div class="progress">
                 <div class="knot"></div>
                 <div class="knot-center"></div>
-                  <div class="progress-done" data-done="${createProgressPercent(13)}">
-                  ${createProgressPercent(13)}%         
+                  <div class="progress-done" data-done="${createProgressPercent()}">
+                  ${createProgressPercent()}%         
                   </div>
                 </div>
        
@@ -132,14 +132,15 @@ function userGradeView() {
 
 
 
-function createProgressPercent(subtypeId){
+function createProgressPercent(){
   let progress = 0;
   let exersiseDone = 0;
   let totalExersices = 0;
+  const cathegoryNr = 13; // Kategoriene som telles i pensum
   for(let exercise of model.exercises){
-    if(exercise.subtypesId < subtypeId) 
+    if(exercise.subtypesId < cathegoryNr) 
     totalExersices++;
-    if (exercise.isDone && exercise.subtypesId < subtypeId){
+    if (exercise.isDone && exercise.subtypesId < cathegoryNr){
       exersiseDone++;
     }
     progress = (exersiseDone/totalExersices)*100
