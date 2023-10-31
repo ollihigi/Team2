@@ -82,7 +82,14 @@
   height: 100%;
   overflow: hidden;
   border-radius: 0.5rem;
-  font-size: 2rem;
+  font-size: 2.4rem;
+  color: rgb(255, 140, 0);
+}
+
+.pensumSelect a {
+
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .pensumContent {
@@ -107,7 +114,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 0.5rem;
-  width: 51rem;
+  width: 45rem;
   height: 100%;
   border-radius: 0.5rem;
   padding: 1rem;

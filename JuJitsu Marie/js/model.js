@@ -55,7 +55,7 @@ const model = {
   ],
   selectedSubtype: 0,
   subtypes: [
-    { id: 0, categoryId: 1, beltId: 1, name: "Guardstillinger / Benstillinger", nameJapanese: "Kamae / Ashi-Tachi",   },
+    { id: 0, categoryId: 1, beltId: 1, name: "Guard / Benstillinger", nameJapanese: "Kamae / Ashi-Tachi",   },
     { id: 1, categoryId: 1, beltId: 1, name: "Forflytninger", nameJapanese: "Tai-sabaki",    },
     { id: 2, categoryId: 1, beltId: 1, name: "Fallteknikk", nameJapanese: "Ukemi-waza",    },
     { id: 3, categoryId: 1, beltId: 1, name: "Kast / Fellinger", nameJapanese: "Nage waza",    },
