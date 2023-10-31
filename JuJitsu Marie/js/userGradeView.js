@@ -151,16 +151,16 @@ function userGradeView() {
 
 function createProgressPercent() {
   let progress = 0;
-  let exersiseDone = 0;
-  let totalExersices = 0;
+  let exerciseDone = 0;
+  let totalExercises = 0;
   const categoryNr = 13; // Kategoriene som telles i pensum
   for (let exercise of model.exercises) {
     if (exercise.subtypesId < categoryNr)
-      totalExersices++;
+      totalExercises++;
     if (exercise.isDone && exercise.subtypesId < categoryNr) {
-      exersiseDone++;
+      exerciseDone++;
     }
-    progress = (exersiseDone / totalExersices) * 100
+    progress = (exerciseDone / totalExercises) * 100
   }
   if (progress >= 1) {
     return Math.round(progress) + "%";
