@@ -66,7 +66,7 @@ function userGradeView() {
   }
 
   function createSubtypeCheckbox(categoryId) {
-    let html = `<h3>Subtypes ${isCategoryDone(categoryId)}</h3>`;
+    let html = `<h3> ${isCategoryDone(categoryId)}</h3>`;
     for (subtype of model.subtypes)
       if (subtype.categoryId === categoryId) {
         // for (let i = start; i < end; i++) {
