@@ -153,11 +153,11 @@ function createProgressPercent() {
   let progress = 0;
   let exersiseDone = 0;
   let totalExersices = 0;
-  const cathegoryNr = 13; // Kategoriene som telles i pensum
+  const categoryNr = 13; // Kategoriene som telles i pensum
   for (let exercise of model.exercises) {
-    if (exercise.subtypesId < cathegoryNr)
+    if (exercise.subtypesId < categoryNr)
       totalExersices++;
-    if (exercise.isDone && exercise.subtypesId < cathegoryNr) {
+    if (exercise.isDone && exercise.subtypesId < categoryNr) {
       exersiseDone++;
     }
     progress = (exersiseDone / totalExersices) * 100
