@@ -113,7 +113,7 @@ function createExerciseHtml() {
           <div class="card">
               <div class="card_title"> 
               <h2>${exercise.name}</h2>
-              <h3>"${exercise.nameJapanese || ''}"</h3>   
+              <h3>${exercise.nameJapanese || ''}</h3>   
               </div>
               <div class="card_media">
               ${medialinkHtml}

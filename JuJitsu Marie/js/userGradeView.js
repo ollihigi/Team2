@@ -1,4 +1,3 @@
-updateSubtypeCheckboxState();
 function userGradeView() {
   let trainingCategory = model.categories;
   const app = document.getElementById("app");
@@ -37,8 +36,8 @@ function userGradeView() {
                 <div class="progress">
                 <div class="knot"></div>
                 <div class="knot-center"></div>
-                  <div class="progress-done" data-done="10">
-                  10%               
+                  <div class="progress-done" data-done="${createProgressPercent()}">
+                  ${createProgressPercent()}%         
                   </div>
                 </div>
        
@@ -105,8 +104,25 @@ function userGradeView() {
       // console.log(exerciseTotalCount,exerciseDoneCount,exercise)
     }
     html = exerciseDoneCount + '/' + exerciseTotalCount;
+    if ( exerciseDoneCount === exerciseTotalCount){
+      html = '';
+    }
     return html;
   }
+
+  function isSubtypeDone(subtypeId) {
+    let exerciseDoneCount = 0;
+    let exerciseTotalCount = 0;
+    for (let exercise of model.exercises) {
+      if (exercise.subtypesId != subtypeId) continue
+      exerciseTotalCount++;
+      if (exercise.isDone) {
+        exerciseDoneCount++;
+      }
+   
+    return exerciseDoneCount == exerciseTotalCount;
+  }
+}
 
 
   const progress = document.querySelector('.progress-done');
@@ -116,7 +132,21 @@ function userGradeView() {
 
 
 
-
+function createProgressPercent(){
+  let progress = 0;
+  let exersiseDone = 0;
+  let totalExersices = 0;
+  const cathegoryNr = 13; // Kategoriene som telles i pensum
+  for(let exercise of model.exercises){
+    if(exercise.subtypesId < cathegoryNr) 
+    totalExersices++;
+    if (exercise.isDone && exercise.subtypesId < cathegoryNr){
+      exersiseDone++;
+    }
+    progress = (exersiseDone/totalExersices)*100
+  }
+  return Math.round(progress);
+}
 
 
 
