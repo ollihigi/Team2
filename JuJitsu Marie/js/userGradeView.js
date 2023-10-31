@@ -56,7 +56,7 @@ function userGradeView() {
            </div>
            
            <div class="category3" id="checklist">
-           <h2>${trainingCategory[2].name}</h2>
+           <h2>${trainingCategory[2].name}</h2> 
            ${createSubtypeCheckbox(3)}
            </div>
            
@@ -66,7 +66,7 @@ function userGradeView() {
   }
 
   function createSubtypeCheckbox(categoryId) {
-    let html = '';
+    let html = `<h3>Subtypes ${isCategoryDone(categoryId)}</h3>`;
     for (subtype of model.subtypes)
       if (subtype.categoryId === categoryId) {
         // for (let i = start; i < end; i++) {
@@ -78,12 +78,25 @@ function userGradeView() {
                     ${createExerciseProgressHtml(subtype.id)}
                     <br/>
                 `;
-              }
-              return html;
+      }
+    return html;
+  }
+
+  function isCategoryDone(categoryId) {
+    const result = { total: 0, done: 0 };
+    for (let subtype of model.subtypes) {
+      if (subtype.categoryId === categoryId) {
+        result.total++;
+        if (isSubtypeDone(subtype.id)) {
+          result.done++
+        }
+      }
     }
+    return `${result.done} / ${result.total}`;
+  }
 
 
-  
+
 
 
   function isDoneSubtype(subtypeId) {
