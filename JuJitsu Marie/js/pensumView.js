@@ -53,11 +53,11 @@ function pensumView() {
 <div class="exerciseContent">
 <div class="pensumSelect">
 <pre hidden>selectedSubType = ${model.selectedSubtype}</pre>
-  <h3>${trainingCategoryHtml[0].name}</h3><br/>
+  <h6>${trainingCategoryHtml[0].name}</h6><br/>
   ${createSubtypeHtml(1)}<br/>
-  <h3>${trainingCategoryHtml[1].name}</h3><br/>
+  <h6>${trainingCategoryHtml[1].name}</h6><br/>
   ${createSubtypeHtml(2)}<br/>
-  <h3>${trainingCategoryHtml[2].name}</h3><br/>
+  <h6>${trainingCategoryHtml[2].name}</h6><br/>
   ${createSubtypeHtml(3)}<br/>
 </div>
 

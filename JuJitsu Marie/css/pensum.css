@@ -82,6 +82,7 @@
   height: 100%;
   overflow: hidden;
   border-radius: 0.5rem;
+  font-size: 2rem;
 }
 
 .pensumContent {
