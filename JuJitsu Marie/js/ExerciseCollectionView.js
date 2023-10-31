@@ -61,7 +61,7 @@ function createCollectionHtml(exercises) {
                     <td>id=${exercise.subtypesId}</td>
                     <td>${exercise.withPartner}</td>
                     <td>${exercise.withRubberband}</td>
-                    <td><iframe width="150" height="50" src="${exercise.medialink}" frameborder="0" allowfullscreen="true"></iframe></td>
+                    <!--<td><iframe width="150" height="50" src="${exercise.medialink}" frameborder="0" allowfullscreen="true"></iframe></td><!---->
                     <td>Legg til "Min trening"</td>
                     <td>${exercise.isDone}</td>
                 </tr>

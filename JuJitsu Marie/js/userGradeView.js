@@ -66,12 +66,12 @@ function userGradeView() {
   }
 
   function createSubtypeCheckbox(start, end) {
-    let html = '<h3>Subtypes</h3>';
+    let html = '';
     for (let i = start; i < end; i++) {
       let subtype = model.subtypes[i];
       html += /*HTML*/`
-                    <span style="font-size:300%; user-select: none">
-                            ${isDoneSubtype(subtype.id) ? '☑' : '□'}
+                    <span style="font-size:200%; user-select: none">
+                            ${isDoneSubtype(subtype.id) ? '☑' : '☐'}
                     </span>                
                     ${subtype.name}
                     ${createExerciseProgressHtml(subtype.id)}
@@ -134,16 +134,16 @@ function userGradeView() {
 
 function createProgressPercent(){
   let progress = 0;
-  let exersiseDone = 0;
-  let totalExersices = 0;
-  const cathegoryNr = 13; // Kategoriene som telles i pensum
+  let exerciseDone = 0;
+  let totalExercises = 0;
+  const categoryNr = 13; // Kategoriene som telles i pensum
   for(let exercise of model.exercises){
-    if(exercise.subtypesId < cathegoryNr) 
-    totalExersices++;
-    if (exercise.isDone && exercise.subtypesId < cathegoryNr){
-      exersiseDone++;
+    if(exercise.subtypesId < categoryNr) 
+    totalExercises++;
+    if (exercise.isDone && exercise.subtypesId < categoryNr){
+      exerciseDone++;
     }
-    progress = (exersiseDone/totalExersices)*100
+    progress = (exerciseDone/totalExercises)*100
   }
   return Math.round(progress);
 }

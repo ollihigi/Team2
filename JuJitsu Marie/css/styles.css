@@ -32,6 +32,10 @@ th > span{
   cursor: pointer;
 }
 
+ul{
+  list-style: none;
+}
+
 .main_section .row {
   align-items: center;
   border: 5px solid var(--body-color);
