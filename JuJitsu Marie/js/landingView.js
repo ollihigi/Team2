@@ -7,7 +7,7 @@ function landingView() {
         <div class="detail-box">
           <h1 id="pensumTitle">KYU Pensum Oversikt</h1>
           <p id="pensumText">
-           Lag en bruker og se hvor mye du <br>mestrer eller trenger å forbedre
+           Lag en bruker og se hvor mye du allerede<br>mestrer eller har behov for å forbedre
           </p>
           <a onclick="authView()" id="pensumMyPage">Lag Bruker</a>
         </div>
