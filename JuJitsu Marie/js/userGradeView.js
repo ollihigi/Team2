@@ -47,17 +47,17 @@ function userGradeView() {
            </div>
            <div class="category1" id="checklist">
            <h2>${trainingCategory[0].name}</h2>
-           ${createSubtypeCheckbox(0, 8)}
+           ${createSubtypeCheckbox(1)}
            </div>
            
            <div class="category2" id="checklist">
            <h2>${trainingCategory[1].name}</h2>
-           ${createSubtypeCheckbox(8, 12)}
+           ${createSubtypeCheckbox(2)}
            </div>
            
            <div class="category3" id="checklist">
            <h2>${trainingCategory[2].name}</h2>
-           ${createSubtypeCheckbox(12, 13)}
+           ${createSubtypeCheckbox(3)}
            </div>
            
          </div>
@@ -66,20 +66,21 @@ function userGradeView() {
   }
 
   function createSubtypeCheckbox(start, end) {
-    let html = '';
+    let html = '<h3>Subtypes</h3>';
     for (let i = start; i < end; i++) {
       let subtype = model.subtypes[i];
       html += /*HTML*/`
-                    <span style="font-size:200%; user-select: none">
-                            ${isDoneSubtype(subtype.id) ? '☑' : '☐'}
+                    <span style="font-size:300%; user-select: none">
+                            ${isDoneSubtype(subtype.id) ? '☑' : '□'}
                     </span>                
                     ${subtype.name}
                     ${createExerciseProgressHtml(subtype.id)}
                     <br/>
                 `;
+              }
+              return html;
     }
-    return html;
-  }
+  
 
 
   function isDoneSubtype(subtypeId) {
@@ -97,14 +98,14 @@ function userGradeView() {
     let exerciseTotalCount = 0;
     for (let exercise of model.exercises) {
       if (exercise.subtypesId != subtypeId) continue
-      exerciseTotalCount ++;
-      if (exercise.isDone){
+      exerciseTotalCount++;
+      if (exercise.isDone) {
         exerciseDoneCount++;
       }
       // console.log(exerciseTotalCount,exerciseDoneCount,exercise)
     }
     html = exerciseDoneCount + '/' + exerciseTotalCount;
-    if ( exerciseDoneCount === exerciseTotalCount){
+    if (exerciseDoneCount === exerciseTotalCount) {
       html = '';
     }
     return html;
@@ -119,10 +120,10 @@ function userGradeView() {
       if (exercise.isDone) {
         exerciseDoneCount++;
       }
-   
-    return exerciseDoneCount == exerciseTotalCount;
+
+      return exerciseDoneCount == exerciseTotalCount;
+    }
   }
-}
 
 
   const progress = document.querySelector('.progress-done');
@@ -132,18 +133,18 @@ function userGradeView() {
 
 
 
-function createProgressPercent(){
+function createProgressPercent() {
   let progress = 0;
-  let exerciseDone = 0;
-  let totalExercises = 0;
-  const categoryNr = 13; // Kategoriene som telles i pensum
+  let exersiseDone = 0;
+  let totalExersices = 0;
+  const cathegoryNr = 13; // Kategoriene som telles i pensum
   for(let exercise of model.exercises){
-    if(exercise.subtypesId < categoryNr) 
-    totalExercises++;
-    if (exercise.isDone && exercise.subtypesId < categoryNr){
-      exerciseDone++;
+    if(exercise.subtypesId < cathegoryNr) 
+    totalExersices++;
+    if (exercise.isDone && exercise.subtypesId < cathegoryNr){
+      exersiseDone++;
     }
-    progress = (exerciseDone/totalExercises)*100
+    progress = (exersiseDone/totalExersices)*100
   }
   return Math.round(progress);
 }
@@ -163,8 +164,8 @@ function createProgressPercent(){
 
 
 
-  //-----------------Visuelt------------------
-  // Function to update the bottom checkboxes based on the top checkboxes
+//-----------------Visuelt------------------
+// Function to update the bottom checkboxes based on the top checkboxes
 //   function updateCheckboxes() {
 //     const exerciseCheckboxes = document.querySelectorAll(".exercise"); //
 //     const subtype1 = document.getElementById("subtype0"); //

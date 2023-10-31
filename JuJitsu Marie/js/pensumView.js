@@ -53,18 +53,12 @@ function pensumView() {
 <div class="exerciseContent">
 <div class="pensumSelect">
 <pre hidden>selectedSubType = ${model.selectedSubtype}</pre>
-  <h3>${trainingCategoryHtml[0].name}</h3>
-  <br>
+  <h2>${trainingCategoryHtml[0].name}</h2><br/>
   ${createSubtypeHtml(0, 8)}
-  <br>
-  <h3>${trainingCategoryHtml[1].name}</h3>
-  <br>
+  <h2>${trainingCategoryHtml[1].name}</h2>
   ${createSubtypeHtml(8, 12)}
-  <br>
-  <h3>${trainingCategoryHtml[2].name}</h3>
-  <br>
+  <h2>${trainingCategoryHtml[2].name}</h2>
   ${createSubtypeHtml(12, 13)}
-  <br>
 </div>
 
   <div class="pensumContent" id="exerciseContent">
@@ -77,11 +71,10 @@ function pensumView() {
 }
 // categories and subtypes
 
-function createSubtypeHtml(start, end) {
-  let subType = model.subtypes;
+function createSubtypeHtml(categoryId) {
   let optionsHtml = '';
   for (let i = start; i < end; i++) {
-    optionsHtml += `<li><a class="subtypeLink" onclick="selectSubtype(${id}, event)">${subType[i].name}</a></li>`;
+    optionsHtml += `<li><a class="subtypeLink" onclick="selectSubtype(${i})">${subType[i].name}</a></li>`;
   }
 
   return /*HTML*/` <ul>${optionsHtml}</ul>`;
