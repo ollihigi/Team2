@@ -1,5 +1,4 @@
-function selectSubtype(id, event) {
-    event.preventDefault();
+function selectSubtype(id) {
     model.selectedSubtype = id;
     pensumView();
 }

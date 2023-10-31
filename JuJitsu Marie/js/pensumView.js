@@ -54,11 +54,11 @@ function pensumView() {
 <div class="pensumSelect">
 <pre hidden>selectedSubType = ${model.selectedSubtype}</pre>
   <h2>${trainingCategoryHtml[0].name}</h2><br/>
-  ${createSubtypeHtml(0, 8)}
+  ${createSubtypeHtml(1)}
   <h2>${trainingCategoryHtml[1].name}</h2>
-  ${createSubtypeHtml(8, 12)}
+  ${createSubtypeHtml(2)}
   <h2>${trainingCategoryHtml[2].name}</h2>
-  ${createSubtypeHtml(12, 13)}
+  ${createSubtypeHtml(3)}
 </div>
 
   <div class="pensumContent" id="exerciseContent">
@@ -73,11 +73,13 @@ function pensumView() {
 
 function createSubtypeHtml(categoryId) {
   let optionsHtml = '';
-  for (let i = start; i < end; i++) {
-    optionsHtml += `<li><a class="subtypeLink" onclick="selectSubtype(${i})">${subType[i].name}</a></li>`;
+  for (let subtype of model.subtypes) {
+    if (subtype.categoryId === categoryId) {
+      optionsHtml += `<li><a class="subtypeLink" onclick="selectSubtype(${subtype.id})">${subtype.name}</a></li>`;
+    }
   }
 
-  return /*HTML*/` <ul>${optionsHtml}</ul>`;
+  return /*HTML*/ `<ul>${optionsHtml}</ul>`;
 }
 
 function createExerciseHtml() {
