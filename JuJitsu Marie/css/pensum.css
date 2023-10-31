@@ -85,6 +85,7 @@
 }
 
 .pensumContent {
+  min-height: 100rem; /* Adjust this value as needed */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -93,6 +94,7 @@
   cursor: pointer;
   scroll-behavior: smooth;
   height: 100%;
+  transition: height 0.2s ease-out;
 }
 
 .card-container {
@@ -104,7 +106,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 0.5rem;
-  width: 51rem;
+  width: 45rem;
   height: 100%;
   border-radius: 0.5rem;
   padding: 1rem;
