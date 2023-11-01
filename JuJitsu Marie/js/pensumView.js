@@ -1,5 +1,4 @@
 function pensumView() {
-  footer();
   let trainingCategoryHtml = model.categories;
   document.getElementById('app').innerHTML = /*HTML*/`
 <section class="main_section ">
