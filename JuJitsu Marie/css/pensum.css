@@ -13,18 +13,14 @@
 
 .pensum_section .pensum_container .box {
   -webkit-box-flex: 1;
-  display: flex;
   padding: 1rem 1rem;
-  background-color: inherit;
   color: #ffffff;
   width: 100%;
-  width: 9rem;
   background-color: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 auto;
 }
 
 .pensum_section .pensum_container {
@@ -33,16 +29,20 @@
 
 .box {
   border: 5px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .pensum_section .pensum_container .box .img-box {
   width: 9rem;
   background-color: inherit;
+  display: flex;
   justify-content: center;
-  align-self: center;
-  text-align: center;
-  display: block;
-  margin: 0;
+  align-items: center;
+  flex-direction: column;
 }
+
 
 .pensum_section img{
   height: 9rem;
