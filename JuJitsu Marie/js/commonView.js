@@ -1,7 +1,7 @@
 function navBar(){
     document.getElementById('header').innerHTML += /*HTML*/`
     <header>
-    <img class="logo" src="images/logo.png" alt="logo">
+    <img class="logo" src="images/logo.png" alt="logo" onclick="landingView()">
     <nav>
         <ul class="nav__links">
             <li>
@@ -10,12 +10,10 @@ function navBar(){
             <a onclick="ExerciseCollectionView()">Øvelsesamling</a>
             <a onclick="trainingView()">Min trening</a>
             <a onclick="userGradeView()">Min Side</a>
+            <a class="regLog"onclick="authView()">Bli Medlem</a>
             </li>
         </ul>
     </nav>
-    <a href="#logginn" class="regLogBtn">
-        <button onclick="authView()">Bli Medlem</button>
-    </a>
 </header>
 `;
 }
