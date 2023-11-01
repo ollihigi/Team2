@@ -46,7 +46,7 @@
 }
 
 .url a {
-    color: #818181;
+    color: #ffffff;
     display: block;
     font-size: 20px;
     margin: 10px 0;
@@ -55,11 +55,10 @@
 }
 
 .url a:hover, .url .active {
-  color: black;
     margin-left: 25%;
     width: 50%;
-    background-color: var(--white);
     border-radius: 20px;
+    color: var(--accent);
 }
 
 .main_grade {
