@@ -34,12 +34,12 @@
     border: #282828 3px solid; 
   }
   .tab-group li a:hover {
-    background: #dc830e;;
+    background: var(--accent);
     color: #ffffff;
   }
   .tab-group .active a {
     background-color: inherit;
-    border: #dc830e 3px solid; 
+    border: var(--accent) 3px solid; 
     color: #ffffff;
   }
   
@@ -59,7 +59,7 @@
   }
   label .req {
     margin: 2px;
-    color: #dc830e;;
+    color: var(--accent);
   }
   
   label.active {
@@ -89,7 +89,7 @@
   }
   input:focus, textarea:focus {
     outline: 0;
-    border-color: #dc830e;
+    border-color: var(--accent);
   }
   
   textarea {
@@ -126,14 +126,14 @@
     text-transform: uppercase;
     letter-spacing: .1em;
     background: inherit;
-    border: #dc830e solid 3px;
+    border: var(--accent) solid 3px;
     border-radius: 3px;
     color: #ffffff;
     transition: all 0.5s ease;
 
   }
   .buttonForm:hover, .buttonForm:focus {
-    background: #dc830e;
+    background: var(--accent);
   }
   
   .buttonForm-block {

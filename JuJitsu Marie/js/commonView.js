@@ -19,3 +19,15 @@ function navBar(){
 </header>
 `;
 }
+
+function footer(){
+    document.getElementById('footer').innerHTML += /*HTML*/`
+    <footer>
+    <div class="footer">
+        <div class="footer__text">
+            <p>© 2021 Ju Jitsu Pensum Oversikt</p>
+        </div>
+    </div>
+</footer>
+`;
+}

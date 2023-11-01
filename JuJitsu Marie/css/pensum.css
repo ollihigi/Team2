@@ -71,7 +71,7 @@
 
 .pensumSelect {
   position: sticky;
-  top: 15rem;
+  top: 21rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -84,7 +84,8 @@
   border-radius: 0.5rem;
   font-size: 2.4rem;
   width: 25rem;
-  color: rgb(255, 140, 0);
+  color: var(--accent);
+  margin-bottom: 17.5rem; /* Adjust as needed */
 }
 
 .pensumSelect a {
