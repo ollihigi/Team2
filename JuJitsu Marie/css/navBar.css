@@ -26,10 +26,33 @@ header {
 }
 
 .logo {
+  display: flex;
+  cursor: pointer;
+  margin-right: auto;
+  height: 7rem;
+  width: 20rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center; /* Add this line */
+  
+}
+
+.logo img {
+  display: flex;
   cursor: pointer;
   margin-right: auto;
   height: 7rem;
   width: 7rem;
+}
+
+.logo p {
+  font-size: 3rem;
+  text-align: center; /* Add this line */
+}
+
+
+.logo span {
+  color: var(--accent);
 }
 
 .nav__links {

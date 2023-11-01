@@ -102,6 +102,17 @@ ul{
   color: #ffffff;
 }
 
+#landingTitle {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.5rem;
+  font-weight: bolder;
+  padding: 1rem;
+}
+
+#landingTitle span {
+  color: var(--accent);
+}
+
 
 .exerciseImg {
   justify-content: center;

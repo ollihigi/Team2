@@ -1,16 +1,18 @@
 function navBar(){
     document.getElementById('header').innerHTML += /*HTML*/`
     <header>
-    <img class="logo" src="images/logo.png" alt="logo" onclick="landingView()">
+    <div class="logo" onclick="landingView()">
+    <img src="images/logo.png" alt="logo">
+    <p id="siteTitle"><span>Ju</span>Jit<span>su</span>%</p></div>
     <nav>
         <ul class="nav__links">
             <li>
             <a onclick="landingView()">Startside</a>
-            <a onclick="pensumView()">Pensum</a>
-            <a onclick="ExerciseCollectionView()">Øvelsesamling</a>
-            <a onclick="trainingView()">Min trening</a>
-            <a onclick="userGradeView()">Min Side</a>
-            <a class="regLog"onclick="authView()">Bli Medlem</a>
+            <a onclick="pensumView(), navBar()">Pensum</a>
+            <a onclick="ExerciseCollectionView(), navBar()">Øvelsesamling</a>
+            <a onclick="trainingView(), navBar()">Min trening</a>
+            <a onclick="userGradeView(), navBar()">Min Side</a>
+            <a class="regLog"onclick="authView(), navBar()">Bli Medlem</a>
             </li>
         </ul>
     </nav>
@@ -29,3 +31,4 @@ function footer(){
 </footer>
 `;
 }
+// Add this line

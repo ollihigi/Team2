@@ -13,19 +13,18 @@
 
 .pensum_section .pensum_container .box {
   -webkit-box-flex: 1;
-  flex: 1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   padding: 1rem 1rem;
   background-color: inherit;
   color: #ffffff;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 0;
-  margin-bottom: 0;
+  width: 9rem;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .pensum_section .pensum_container {
@@ -38,16 +37,31 @@
 .pensum_section .pensum_container .box .img-box {
   width: 9rem;
   background-color: inherit;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  display: block;
+  margin: 0;
+}
+
+.pensum_section img{
+  height: 9rem;
+  background-color: inherit;
 }
 
 .pensum_section img {
-  width: 100%;
+  width: 130%;
+  justify-content: center;
+  align-self: center;
 }
 
 .pensum_section .pensum_container .box:hover,
 .pensum_section .pensum_container .box.active {
-  filter: brightness(1.2);
   background-color: inherit;
+}
+
+.pensum_section .pensum_container .box.active {
+  border: 2px solid var(--white);
 }
 
 #pensumTitle {
@@ -58,7 +72,7 @@
   }
 
 #pensumTitle span {
-    color: var(--accent);
+    color: var(--yellow);
   }
   
   #pensumText {
@@ -67,10 +81,21 @@
     font-size: 2rem;
   }
 
-  #pensumMyPage {
+  #pensumText span {
+    color: var(--yellow);
+    text-transform: uppercase;
+
+  }
+
+  #makeUser {
     font-size: 2rem;
     margin-left: 1rem;
-    margin-top: 3rem;
+  }
+
+  #pensumMyPage {
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
   }
 
 .pensumSelect {
