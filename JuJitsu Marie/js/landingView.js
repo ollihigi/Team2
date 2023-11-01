@@ -5,7 +5,7 @@ function landingView() {
     <div class="row">
       <div class="col-md-6 ">
         <div class="detail-box">
-          <h1 id="pensumTitle">Ju Jitsu Pensum Oversikt</h1>
+          <h1 id="pensumTitle"><span>Ju</span>Jit<span>su</span>%</h1>
           <p id="pensumText">
           Velkommen til nettstedet vårt for Ju Jitsu-fremdriftssporing.<br><br>
           Her kan du se fremgangen din mot neste beltegradering prøve på en enkel og effektiv måte.
