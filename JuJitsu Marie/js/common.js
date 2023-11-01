@@ -1,6 +1,6 @@
 function init() {
   navBar();
-  landingView();
+  trainingView();
   hideTitle();
 
 }

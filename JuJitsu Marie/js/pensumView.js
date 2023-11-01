@@ -61,6 +61,7 @@ function pensumView() {
 </div>
 
   <div class="pensumContent" id="exerciseContent">
+      ${tempPensumImg()}
       ${createExerciseHtml()}
       </div>
 </div>
@@ -120,4 +121,12 @@ function createExerciseHtml() {
     }
   }
   return html;
+}
+
+function tempPensumImg() {
+  if (model.selectedSubtype === null) {
+    return '<img src="images/pensumBanner.png" alt="404" style="min-width: 45rem; min-height: 33rem;">';
+  } else {
+    return '';
+  }
 }
