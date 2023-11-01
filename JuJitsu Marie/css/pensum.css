@@ -6,6 +6,8 @@
   transform: translateY(-50%);
 }
 
+
+
 .pensum_section .pensum_container {
   display: -webkit-box;
 
@@ -28,7 +30,7 @@
 }
 
 .box {
-  border: 5px solid transparent;
+  border: 3px solid transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,10 +60,15 @@
 .pensum_section .pensum_container .box:hover,
 .pensum_section .pensum_container .box.active {
   background-color: inherit;
+
+}
+
+.pensum_section .pensum_container .box:hover{
+  filter: brightness(1.2);
 }
 
 .pensum_section .pensum_container .box.active {
-  border: 2px solid var(--white);
+  border: 3px solid var(--accent);
 }
 
 #pensumTitle {

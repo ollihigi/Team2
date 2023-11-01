@@ -125,7 +125,7 @@ function createExerciseHtml() {
 
 function tempPensumImg() {
   if (model.selectedSubtype === null) {
-    return '<img src="images/pensumBanner.png" alt="404" style="min-width: 45rem; min-height: 33rem;">';
+    return '<div class="card"><img src="images/pensumBanner.png" alt="404" style="min-width: 42.5rem; min-height: 33rem;"></div>';
   } else {
     return '';
   }

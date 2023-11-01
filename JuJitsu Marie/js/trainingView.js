@@ -1,10 +1,35 @@
 function trainingView() {
-    let trainingCategoryHtml = model.categories;
-    let subtypes = model.subtypes;
-    let exercises = model.exercises;
-    let selectedSubtype = model.selectedSubtype;
-    
-    document.getElementById('app').innerHTML = /*HTML*/`
+  let trainingCategoryHtml = model.categories;
+  let subtypes = model.subtypes;
+  let exercises = model.exercises;
+  let selectedSubtype = model.selectedSubtype;
+
+  document.getElementById("app").innerHTML = /*HTML*/ `
+  <section class="training_section">
+  <div class="container">
+  <div class="training_container">
+  
+    <div class="box active">
+      <div class="img-box">
+      <img src="images/profile2.png" alt="">
+      <h5 class="name" style="color: var(--yellow)">smthing</h5>
+      </div>
+    </div>
+  
+    <div class="box">
+      <div class="img-box">
+        <img src="images/profile2.png" alt="">
+        <h5 class="name" style="color: var(--orange)"">smthing</h5>
+      </div>
+    </div>
+  
+    <div class="box">
+      <div class="img-box"><img src="images/profile2.png" alt="">
+      <h5 class="name" style="color: var(--green)">smthing</h5>
+    </div>
+  </div>
+  
+  </section>
         <section class="display_section">
             <div class="container">
                 <div class="rightSideExercise">
@@ -29,25 +54,20 @@ function trainingView() {
        `;
 }
 
-
-  function tempTrainingImg() {
-    if (model.selectedSubtype === null) {
-      return '<img src="images/banner.png" alt="404" style="min-width: 33rem; min-height: 33rem;">';
-    } else {
-      return '';
-    }
+function tempTrainingImg() {
+  if (model.selectedSubtype === null) {
+    return '<div class="card"><img src="images/banner.png" alt="404" style="min-width: 42.5rem; min-height: 33rem;"></div>';
+  } else {
+    return "";
   }
-
-
-
-
+}
 
 // function trainingView() {
 //     let treningsopplegg = {
 //         bein: [
 //             {
 //                 knebøy: 'Knebøy 10 x 3',
-//                 knebøyMedialink: "https://player.vimeo.com/video/222059954", 
+//                 knebøyMedialink: "https://player.vimeo.com/video/222059954",
 //                 knebøyMVekt: 'Knebøy 8 x 2',
 //                 knebøySumo: 'Knebøy med ben spredt 12 x 3',
 //             }

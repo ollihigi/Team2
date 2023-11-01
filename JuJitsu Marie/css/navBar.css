@@ -15,8 +15,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 1% 5%;
-  filter: brightness(0.9);
-  filter: drop-shadow(var(--body-color) 10px 10px 10px);
+  filter: drop-shadow(var(--body-color) 3px 3px 3px);
   position: fixed; /* Change to "fixed" */
   top: 0;
   width: 100%;
