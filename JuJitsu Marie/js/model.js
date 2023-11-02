@@ -51,8 +51,10 @@ const model = {
     { id: 3, name: 'Selvforsvarstrening' },
     { id: 4, name: 'Skadeforebyggende øvelser' },
     { id: 5, name: 'Styrke øvelser' },
+    { id: 6, name: 'Mitt Program' },
   ],
   selectedSubtype: null,
+  selectedTraining: null,
   subtypes: [
     { id: 0, categoryId: 1, beltId: 1, name: "Guard / Benstillinger", nameJapanese: "Kamae / Ashi-Tachi",   },
     { id: 1, categoryId: 1, beltId: 1, name: "Forflytninger", nameJapanese: "Tai-sabaki",    },
@@ -75,6 +77,7 @@ const model = {
     { id: 16, categoryId: 5, name: "Overkropp" },
     { id: 17, categoryId: 5, name: "Bein" },
     { id: 18, categoryId: 5, name: "Kjerne" },
+    { id: 19, categoryId: 6, name: "Øvelser" },
   ],
   exercises: [
     // Katagori 1 har 8 subtyper med totalt 27 øvelser: id 1 til 27
