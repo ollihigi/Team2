@@ -1,9 +1,9 @@
-function authView() {
+function registerView() {
   document.getElementById("app").innerHTML = /*HTML*/ `
     <div class="form">
       <ul class="tab-group">
-        <li class="tab active"><a href="#lagbruker">Lag Bruker</a></li>
-        <li class="tab"><a href="#logginn">Logg Inn</a></li>
+        <li class="tab active"><a onclick="registerView()">Lag Bruker</a></li>
+        <li class="tab"><a onclick="loginView()">Logg Inn</a></li>
       </ul>
       <div class="tab-content">
         <div id="lagbruker">
@@ -38,8 +38,19 @@ function authView() {
             <button type="submit" class="buttonForm buttonForm-block">Bli Medlem</button>
           </form>
         </div>
+        `;
+      }       
+        
+        function loginView() {
+          document.getElementById("app").innerHTML = /*HTML*/ `        
+          <div class="form">
+          <ul class="tab-group">
+            <li class="tab"><a onclick="registerView()">Lag Bruker</a></li>
+            <li class="tab active"><a onclick="loginView()">Logg Inn</a></li>
+          </ul>
+          <div class="tab-content">
         <div id="logginn">
-          <form action="/" method="post">
+          <form>
             <div class="field-wrap">
               <label>
                 Email<span class="req">*</span>
@@ -53,11 +64,21 @@ function authView() {
               <input type="password" required autocomplete="off" />
             </div>
             <p class="forgot"><a href="mailto:marie@getacademy.no">Glemt passordet?</a></p>
-            <button class="buttonForm buttonForm-block">Logg Inn</button>
+            <button class="buttonForm buttonForm-block" onclick="loginUser(model.loginPage.email, model.loginPage.password);">Logg Inn</button>
           </form>
         </div>
       </div>
     </div>
   `;
-  initializeFormEvents() ;
 }
+
+
+function register(event) {
+  event.preventDefault();
+  registerUser(model.registrationPage.name, model.registrationPage.email, model.registrationPage.password);
+};
+
+function login(event) {
+  event.preventDefault();
+  loginUser(model.loginPage.email, model.loginPage.password);
+};

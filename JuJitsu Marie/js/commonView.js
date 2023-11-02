@@ -12,7 +12,7 @@ function navBar(){
             <a onclick="ExerciseCollectionView(), navBar()">Øvelsesamling</a>
             <a onclick="trainingView(), navBar()">Min trening</a>
             <a onclick="userGradeView(), navBar()">Min Side</a>
-            <a class="regLog"onclick="authView(), navBar()">Bli Medlem</a>
+            <a class="regLog"onclick="registerView(), navBar()">Bli Medlem</a>
             </li>
         </ul>
     </nav>

@@ -1,70 +1,28 @@
-function initializeFormEvents() {
-  const form = document.querySelector(".form");
-  const formElements = form.querySelectorAll("input, textarea");
 
-  formElements.forEach(function (element) {
-    element.addEventListener("keyup", function (e) {
-      const label = element.previousElementSibling;
+function registerUser(name, email, password) {
+  // Check if a user with the same email already exists
+  const existingUser = model.users.find(user => user.email === email);
+  if (existingUser) {
+    console.log('A user with this email already exists.');
+    return;
+  }
 
-      if (e.type === "keyup") {
-        if (element.value === "") {
-          label.classList.remove("active", "highlight");
-        } else {
-          label.classList.add("active", "highlight");
-        }
-      }
-    });
-
-    element.addEventListener("blur", function () {
-      const label = element.previousElementSibling;
-
-      if (element.value === "") {
-        label.classList.remove("active", "highlight");
-      } else {
-        label.classList.remove("highlight");
-      }
-    });
-
-    element.addEventListener("focus", function () {
-      const label = element.previousElementSibling;
-
-      if (element.value === "") {
-        label.classList.remove("highlight");
-      } else if (element.value !== "") {
-        label.classList.add("highlight");
-      }
-    });
-  });
-
-  const tabLinks = document.querySelectorAll(".form .tab a");
-
-  tabLinks.forEach(function (link) {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-
-      const parent = link.parentElement;
-      parent.classList.add("active");
-
-      const siblings = parent.parentElement.querySelectorAll("li.tab");
-      siblings.forEach(function (sibling) {
-        if (sibling !== parent) {
-          sibling.classList.remove("active");
-        }
-      });
-
-      const target = document.querySelector(link.getAttribute("href"));
-      const tabContents = form.querySelectorAll(".form .tab-content > div");
-
-      tabContents.forEach(function (content) {
-        if (content !== target) {
-          content.style.display = "none";
-        }
-      });
-
-      target.style.display = "block";
-    });
-  });
+  // Add the new user to the users array
+  const newUser = { id: model.users.length + 1, name, email, password };
+  model.users.push(newUser);
+  console.log('User registered successfully.');
 }
 
+function loginUser(email, password) {
+  // Find the user with the provided email and password
+  const user = model.users.find(user => user.email === email && user.password === password);
+  if (user) {
+    model.user.id = user.id;
+    model.user.loggedIn = true;
+    console.log('User logged in successfully.');
+  } else {
+    console.log('Invalid email or password.');
+  }
+}
 
 
