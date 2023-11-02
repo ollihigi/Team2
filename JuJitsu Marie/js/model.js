@@ -10,21 +10,20 @@ const model = {
     loggedIn: false,
   },
 
-
-
-  registrationPage: {
-    pageId: 2,
-    date: '',
-    name: '',
-    email: '',
-    password: '',
-  },
-  loginPage: {
-    pageId: 3,
-    email: '',
-    password: '',
-  },
-
+  users:[
+    {
+      id: 1,
+      name: "demo",
+      email: "demo@example.com",
+      password: "password123"
+    },
+    {
+      id: 2,
+      name: "demo demo",
+      email: "demodemo@example.com",
+      password: "password456"
+    }
+  ],
 
 
   userPage: {
