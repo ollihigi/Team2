@@ -1,28 +1,36 @@
+function checkUserLoggedIn(viewLoad) {
+  const loggedIn = model.user.loggedIn;
+  if (loggedIn === true) {
+    viewLoad;
+    return;
+  } else {
+    loginView();
+  }
+}
 
-function registerUser(name, email, password) {
-  // Check if a user with the same email already exists
-  const existingUser = model.users.find(user => user.email === email);
-  if (existingUser) {
+window.onload = function() {
+  checkUserLoggedIn();
+};
+
+function addUser(firstName, lastName, email, password) {
+  // Check if a user with the provided email already exists
+  const emailExists = model.users.some(user => user.email === email);
+  if (emailExists) {
     console.log('A user with this email already exists.');
     return;
   }
 
-  // Add the new user to the users array
-  const newUser = { id: model.users.length + 1, name, email, password };
+  const highestId = Math.max(...model.users.map(user => user.id));
+  const newUser = {
+    id: highestId + 1,
+    firstName: firstName,
+    lastName: lastName,
+    email: email,
+    password: password
+  };
+
   model.users.push(newUser);
-  console.log('User registered successfully.');
+  model.user.id = newUser.id;
+  model.user.loggedIn = true;
+  landingView();
 }
-
-function loginUser(email, password) {
-  // Find the user with the provided email and password
-  const user = model.users.find(user => user.email === email && user.password === password);
-  if (user) {
-    model.user.id = user.id;
-    model.user.loggedIn = true;
-    console.log('User logged in successfully.');
-  } else {
-    console.log('Invalid email or password.');
-  }
-}
-
-

@@ -6,79 +6,110 @@ function registerView() {
         <li class="tab"><a onclick="loginView()">Logg Inn</a></li>
       </ul>
       <div class="tab-content">
-        <div id="lagbruker">
+        <div id="createUser">
           <br>
-          <form action="/" method="post">
+          <form id="registrationForm" method="post">
             <div class="top-row">
               <div class="field-wrap">
-                <label>
-                  Fornavn<span class="req">*</span>
-                </label>
-                <input type="text" required autocomplete="off" />
+                <input id="firstName" type="text" required autocomplete="off" placeholder="Fornavn" />
               </div>
               <div class="field-wrap">
-                <label>
-                  Etternavn<span class="req">*</span>
-                </label>
-                <input type="text" required autocomplete="off" />
+                <input id="lastName" type="text" required autocomplete="off" placeholder="Etternavn" />
               </div>
             </div>
             <div class="field-wrap">
-              <label>
-                Email<span class="req">*</span>
-              </label>
-              <input type="email" required autocomplete="off" />
+              <input id="email" type="email" required autocomplete="off" placeholder="Email" />
             </div>
             <div class="field-wrap">
-              <label>
-                Passord<span class="req">*</span>
-              </label>
-              <input type="password" required autocomplete="off" />
+              <input id="password" type="password" required autocomplete="off" placeholder="Passord" />
             </div>
-            <button type="submit" class="buttonForm buttonForm-block">Bli Medlem</button>
-          </form>
-        </div>
-        `;
-      }       
-        
-        function loginView() {
-          document.getElementById("app").innerHTML = /*HTML*/ `        
-          <div class="form">
-          <ul class="tab-group">
-            <li class="tab"><a onclick="registerView()">Lag Bruker</a></li>
-            <li class="tab active"><a onclick="loginView()">Logg Inn</a></li>
-          </ul>
-          <div class="tab-content">
-        <div id="logginn">
-          <form>
-            <div class="field-wrap">
-              <label>
-                Email<span class="req">*</span>
-              </label>
-              <input type="email" required autocomplete="off" />
-            </div>
-            <div class="field-wrap">
-              <label>
-                Password<span class="req">*</span>
-              </label>
-              <input type="password" required autocomplete="off" />
-            </div>
-            <p class="forgot"><a href="mailto:marie@getacademy.no">Glemt passordet?</a></p>
-            <button class="buttonForm buttonForm-block" onclick="loginUser(model.loginPage.email, model.loginPage.password);">Logg Inn</button>
+            <button type="submit" class="buttonForm buttonForm-block">Register</button>
           </form>
         </div>
       </div>
     </div>
-  `;
+    `;
+
+  document.getElementById("registrationForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Retrieve form field values
+    const firstName = document.getElementById("firstName").value;
+    const lastName = document.getElementById("lastName").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    // Call the addUser function
+    addUser(firstName, lastName, email, password);
+    console.log(model.users); // Log the updated model.users array
+  });
 }
 
+function loginView() {
+  document.getElementById("app").innerHTML = /*HTML*/ `
+    <div class="form" id="loginForm">
+      <ul class="tab-group">
+        <li class="tab"><a onclick="registerView()">Lag Bruker</a></li>
+        <li class="tab active"><a onclick="loginView()">Logg Inn</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="loginUser">
+        <div id="loginMessage"></div>
+          <form id="loginForm"> <!-- Add an id to the form for easier access -->
+            <div class="field-wrap">
+              <input id="email" type="email" required autocomplete="off" placeholder="Email" />
+            </div>
+            <div class="field-wrap">
+              <input id="password" type="password" required autocomplete="off" placeholder="Passord" />
+            </div>
+            <p class="forgot"><a href="mailto:marie@getacademy.no">Glemt passordet?</a></p>
+            <button class="buttonForm buttonForm-block">Logg Inn</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    `;
 
-function register(event) {
-  event.preventDefault();
-  registerUser(model.registrationPage.name, model.registrationPage.email, model.registrationPage.password);
-};
+    document.getElementById("loginForm").addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent the default form submission behavior
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const user = model.users.find(user => user.email === email && user.password === password);
+    
+      if (user) {
+        model.user.id = user.id;
+        model.user.loggedIn = true;
+        landingView();
+        console.log('Logged in successfully.');
+      } else if (!user) {
+        loginView();
+        console.log('Incorrect email or password');
+      }
+    });
+  }
 
-function login(event) {
-  event.preventDefault();
-  loginUser(model.loginPage.email, model.loginPage.password);
-};
+function autofillForms() {
+  const firstName = document.getElementById('firstName');
+  const lastName = document.getElementById('lastName');
+  const email = document.getElementById('email');
+  const password = document.getElementById('password');
+
+  if (firstName && lastName && email && password) {
+    firstName.value = 'Test';
+    lastName.value = 'User';
+    email.value = 'terje@getacademy.no';
+    password.value = 'terje123';
+    console.log('Autofilled forms.');
+  } else if (email && password) {
+    email.value = 'marie@getacademy.no';
+    password.value = 'terje123';
+    console.log('Autofilled forms.');
+  }
+}
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === '|') { // Replace '|' with the key you want to use
+    autofillForms();
+    console.log('Autofill initiated.');
+  }
+});

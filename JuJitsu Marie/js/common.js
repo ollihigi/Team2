@@ -1,6 +1,6 @@
 function init() {
   navBar();
-  landingView();
+  registerView();
   hideTitle();
 
 }
@@ -42,10 +42,10 @@ function hideTitle(){
         <ul class="nav__links">
             <li>
             <a onclick="landingView()">Startside</a>
-            <a onclick="pensumView(), navBar()">Pensum</a>
+            <a onclick="checkUserLoggedIn(pensumView()), navBar()">Pensum</a>
             <a onclick="ExerciseCollectionView(), navBar()">Øvelsesamling</a>
-            <a onclick="trainingView(), navBar()">Min trening</a>
-            <a onclick="userGradeView(), navBar()">Min Side</a>
+            <a onclick="checkUserLoggedIn(trainingView()), navBar()">Min trening</a>
+            <a onclick="checkUserLoggedIn(userGradeView()), navBar()">Min Side</a>
             <a class="regLog"onclick="registerView(), navBar()">Bli Medlem</a>
             </li>
         </ul>

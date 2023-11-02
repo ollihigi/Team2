@@ -8,20 +8,12 @@ const model = {
   users:[
     {
       id: 1,
-      name: "demo",
-      email: "demo@example.com",
-      password: "password123",
-      beltGrade: 6,
+      name: "marie",
+      email: "marie@getacademy.no",
+      password: "terje123",
+      beltGrade: 0,
       admin: true
     },
-    {
-      id: 2,
-      name: "demo demo",
-      email: "demodemo@example.com",
-      password: "password456",
-      beltGrade: 0,
-      admin: false
-    }
   ],
 
   userPage: {
