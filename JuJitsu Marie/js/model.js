@@ -1,8 +1,8 @@
 const model = {
   //? INPUTS
   user: {
-    id: null,
-    loggedIn: false,
+    id: 1,
+    loggedIn: true,
   },
 
   users:[
