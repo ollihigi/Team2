@@ -1,10 +1,5 @@
 const model = {
   //? INPUTS
-  app: {
-    currentPage: 1,
-    currentBelt: '',
-    exercisePreference: '',
-  },
   user: {
     id: null,
     loggedIn: false,
@@ -15,22 +10,24 @@ const model = {
       id: 1,
       name: "demo",
       email: "demo@example.com",
-      password: "password123"
+      password: "password123",
+      beltGrade: 6,
+      admin: true
     },
     {
       id: 2,
       name: "demo demo",
       email: "demodemo@example.com",
-      password: "password456"
+      password: "password456",
+      beltGrade: 0,
+      admin: false
     }
   ],
 
-
   userPage: {
     pageId: 4,
-    currentBelt: "Gult belte",
+    currentBelt: '',
     exercisesFinished: [],
-    trainingPreference: [],
   },
 
   sort: {
@@ -40,11 +37,13 @@ const model = {
 
   //* DATA
   belts: [
+    { id: 0, name: 'Hvitt belte' },
     { id: 1, name: 'Gult belte' },
     { id: 2, name: 'Oransje belte' },
-    { id: 3, name: 'Blått belte' },
-    { id: 4, name: 'Brunt belte' },
-    { id: 5, name: 'Svart belte' },
+    { id: 3, name: 'Grønt belte' },
+    { id: 4, name: 'Blått belte' },
+    { id: 5, name: 'Brunt belte' },
+    { id: 6, name: 'Svart belte' },
   ],
   categories: [
     { id: 1, name: 'Grunnteknikker' },
