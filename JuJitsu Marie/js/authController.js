@@ -1,8 +1,7 @@
-function checkUserLoggedIn(viewLoad) {
+function checkUserLoggedIn(callback) {
   const loggedIn = model.user.loggedIn;
   if (loggedIn === true) {
-    viewLoad;
-    return;
+    callback();
   } else {
     loginView();
   }

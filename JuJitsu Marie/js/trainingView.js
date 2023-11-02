@@ -1,4 +1,5 @@
 function trainingView() {
+  updateNavBar('trainingView');
   let trainingCategoryHtml = model.categories;
   let subtypes = model.subtypes;
   let exercises = model.exercises;
