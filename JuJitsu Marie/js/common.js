@@ -2,6 +2,7 @@ function init() {
   navBar();
   landingView();
   hideTitle();
+  loadModelFromLocalStorage()
 
 }
 
@@ -66,3 +67,13 @@ function footer(){
 `;
 }
 
+function saveModelToLocalStorage() {
+  localStorage.setItem('model', JSON.stringify(model));
+}
+
+function loadModelFromLocalStorage() {
+  const storedModel = localStorage.getItem('model');
+  if (storedModel) {
+    model = JSON.parse(storedModel);
+  }
+}

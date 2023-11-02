@@ -33,4 +33,5 @@ function addUser(firstName, lastName, email, password) {
   model.user.id = newUser.id;
   model.user.loggedIn = true;
   landingView();
+  saveModelToLocalStorage();
 }

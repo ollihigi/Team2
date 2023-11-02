@@ -1,4 +1,4 @@
-const model = {
+let model = {
   //? INPUTS
   user: {
     id: 1,
