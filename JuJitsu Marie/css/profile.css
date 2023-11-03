@@ -2,7 +2,7 @@
     color: #ffffff;
     border-bottom-right-radius: 25px;
     top: 20rem;
-    left: 10%;
+    left: 15%;
     overflow-x: hidden;
     padding-top: 20px;
     position: absolute;
@@ -80,7 +80,7 @@
 
 .main_settings {
   margin-top: 10%;
-  margin-left: 29%;
+  margin-left: 28.1%;
   font-size: 2rem;
   padding: 0 10px;
   width: 57%;
