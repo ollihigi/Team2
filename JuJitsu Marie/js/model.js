@@ -82,8 +82,7 @@ let model = {
       name: 'Forsvarsguard, åpne hender',
       nameJapanese: 'Shuto',
       withPartner: '',
-      description: 
-      "<br>Posisjon: Lær å ta en god posisjon i guarden, med beina godt plantet i bakken og armene beskyttende for hodet og halsen. Lær å bruke beina til å kontrollere motstanderen.<br><br>Bevegelser: Lær å blokkere og avverge angrep fra motstanderen. Lær å bruke bevegelser for å komme deg ut av guarden.<br><br>Teknikker:<br><br>Armbar: En armbar er en teknikk der du bøyer motstanderens arm bak ryggen.<br><br>Ezekiel choke: En Ezekiel choke er en teknikk der du plasserer armen din rundt motstanderens hals og kveler ham.<br><br>Guillotine choke: En guillotine choke er en teknikk der du plasserer armen din rundt motstanderens hals og kveler ham.",
+      description: "",
       medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
       
     },
@@ -94,7 +93,7 @@ let model = {
       name: 'Angrepsguard, lukkede hender',
       nameJapanese: 'Seiken',
       withPartner: '',
-      description: 'medialenke er kanskje feil, men er med for å illustrere funksjonen med film',
+      description: '',
       //Denne peker til en øvelse som ikke finnnes i TJK gult pensum
       medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
@@ -107,7 +106,7 @@ let model = {
       nameJapanese: 'Zenkutsu-dachi',
       withPartner: '',
       description: '',
-       
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
     },
     // 1 / 1 Forflytninger (Tai-sabaki)
     {
@@ -118,6 +117,7 @@ let model = {
       nameJapanese: 'Yoko-ashi',
       withPartner: '',
       description: '',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     {
@@ -128,6 +128,7 @@ let model = {
       nameJapanese: 'Sha-tenkan',
       withPartner: '',
       description: '',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     {
@@ -138,6 +139,7 @@ let model = {
       nameJapanese: 'Han-tenkan',
       withPartner: '',
       description: '',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     {
@@ -148,6 +150,7 @@ let model = {
       nameJapanese: 'Zen-tenkan',
       withPartner: '',
       description: '',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     // 2 / 1 Fallteknikk (Ukemi-waza)
@@ -169,7 +172,8 @@ let model = {
       name: 'Forover fall',
       nameJapanese: 'Mae ukemi',
       withPartner: false,
-      description: ''
+      description: '',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
     },
     {
       id: 9,
@@ -179,6 +183,7 @@ let model = {
       nameJapanese: 'Ushiro ukemi',
       withPartner: false,
       description: 'https://youtube.com/embed/zo77Oka-Fdc',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     {
@@ -235,6 +240,7 @@ let model = {
       nameJapanese: 'Tobikomi zuki',
       withPartner: '',
       description: '',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     {
@@ -256,6 +262,7 @@ let model = {
       nameJapanese: 'Tobikomi zuki / Gyaku zuki',
       withPartner: '',
       description: '',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     // 5 / 1 Spark (Keri waza)
@@ -278,6 +285,7 @@ let model = {
       nameJapanese: 'Tsurikomi mae geri',
       withPartner: '',
       description: '',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     // 6 / 1 Mønster (Kata)
@@ -289,6 +297,7 @@ let model = {
       nameJapanese: 'Zenkutsu-dachi / Shuto',
       withPartner: '',
       description: '',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     // 7 / 1 Blokkeringer (Uke waza)
@@ -310,6 +319,7 @@ let model = {
       nameJapanese: 'Uchi-uke',
       withPartner: '',
       description: '',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     {
@@ -320,6 +330,7 @@ let model = {
       nameJapanese: 'Age-uke',
       withPartner: '',
       description: '',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     {
@@ -330,6 +341,7 @@ let model = {
       nameJapanese: 'Soto-uke',
       withPartner: '',
       description: '',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     {
@@ -351,6 +363,7 @@ let model = {
       nameJapanese: 'Gedan juji-uke',
       withPartner: '',
       description: '',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     {
@@ -377,7 +390,8 @@ let model = {
       numberTJK: '511a',
       withPartner: true,
       description: '511a Forsvar mot hårtak Høyre hånd holder motstanders høyre hånd. Venstre hånd på motstanders høyre albue. Gå først fram og så til siden. slik at motstander står bøyd framover. NB: Forsvarer står ikke med bøyd rygg!  Frigjøring her og gå deretter et steg fram og i fra.',
-      medialink: 'images/Exercises/511a.png',
+      // medialink: 'images/Exercises/511a.png',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     {
@@ -388,7 +402,8 @@ let model = {
       numberTJK: '511b',
       withPartner: true,
       description: '511b Forsvar mot klestak Venstre hånd på albue. Høyre hånd mot kroppen. Samtidig balansebrytning ut mot siden. Hoftene svinges bort fra Motstander (beskyttelse). Felling med Stor ytre benfelling.',
-      medialink: 'images/Exercises/511b.png',
+      // medialink: 'images/Exercises/511b.png',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     {
@@ -399,8 +414,8 @@ let model = {
       numberTJK: '511d',
       withPartner: true,
       description: '511d Forsvar mot handleddstak nedenfra Strekk ut armene og vri hendene utover mens du går ifra. Siden til. Husk å være avslappet i handledd.',
-      medialink: 'images/Exercises/511d.png',
-       
+      // medialink: 'images/Exercises/511d.png',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",       
     },
     {
       id: 30,
@@ -410,7 +425,8 @@ let model = {
       numberTJK: '511e',
       withPartner: true,
       description: '511e Forsvar mot håndleddstak ovenfra Høyre hånd over motstanders høyre håndledd, frigjør venstre hånd v.h.a. minste motstands vei • vektstangprinsippet. Venstre hånd holder igjen motstanders venstre hånd og frigjør høyre hånd v.h.a. minste motstands vei.',
-      medialink: 'images/Exercises/511e.png',
+      // medialink: 'images/Exercises/511e.png',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     {
@@ -421,7 +437,8 @@ let model = {
       numberTJK: '512a',
       withPartner: true,
       description: '512a Forsvar mot strupetak Begge hender mot motstanders håndledd og press i sammen mens høyre bein på tå frem (beskyttelse) for så å skyve egen kropp i fra.',
-      medialink: 'images/Exercises/512a.png',
+      // medialink: 'images/Exercises/512a.png',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     {
@@ -432,7 +449,8 @@ let model = {
       numberTJK: '512b',
       withPartner: true,
       description: '512b Forsvar mot strupetak mot vegg Høyre hånd går over motstanders venstre hånd og under Motstanders høyre hånd. Kroppsvending samtidig som en vipper med begge armer. Avstand.',
-      medialink: 'images/Exercises/512b.png',
+      // medialink: 'images/Exercises/512b.png',
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
     },
     {
@@ -618,7 +636,8 @@ let model = {
       subtypesId: 12,
       name: "Sirkeltrening",
       WithPartner: true,
-      description: ": Forsvar mot uavtalte kontaktgrep fra gult pensum."
+      description: ": Forsvar mot uavtalte kontaktgrep fra gult pensum.",
+      medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
     },
 
 

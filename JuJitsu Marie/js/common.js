@@ -46,7 +46,7 @@ function hideTitle(){
               <a onclick="checkUserLoggedIn(userGradeView)">${model.user.name}</a>
             </li>
        
-            <select id="theme" onchange="updateAccentColor(this.value)">
+            <select class="theme" onchange="updateAccentColor(this.value)">
             <option id="current"value="#ffc107"></option>
             <option value="#ffc107">🟡</option>
             <option value="#fc6623">🟠</option>
