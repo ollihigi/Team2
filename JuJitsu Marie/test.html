@@ -39,6 +39,7 @@ QUnit.module('authController', function() {
   addUser('', '', '', '');
   assert.equal(model.users.length, initialUsersLength, 'No user should be added to the model.users array if not all fields are filled in');
 });
+
   QUnit.test('addUser Success with filled out fields', function(assert) {
     const initialUsersLength = model.users.length;
     addUser('John', 'Doe', 'john.doe@example.com', 'password');
@@ -52,5 +53,26 @@ QUnit.module('authController', function() {
     addUser('Jane', 'Doe', 'john.doe@example.com', 'password');
     assert.equal(model.users.length, initialUsersLength, 'No user should be added to the model.users array');
   });
+
+    QUnit.test('auth Success navigate to page', function(assert) {
+    model.user = { loggedIn: true };
+    const mockFunction = function() {
+      assert.ok(true, 'checkUserLoggedIn should call the callback when a user is logged in');
+    };
+    checkUserLoggedIn(mockFunction);
+    model.user = { loggedIn: false };
+  });
+
+  QUnit.test('auth Failure with no user logged in, navigate to authView', function(assert) {
+    model.user = { loggedIn: false };
+    const originalLoginView = loginView;
+    loginView = function() {
+      assert.ok(true, 'loginView should be called when no user is logged in');
+      loginView = originalLoginView;
+    };
+    checkUserLoggedIn(function() {
+      assert.ok(false, 'Callback should not be called when no user is logged in');
+    });
+}); 
 });
 </script>
