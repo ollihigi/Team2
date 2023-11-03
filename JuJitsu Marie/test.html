@@ -37,20 +37,20 @@ QUnit.module('authController', function() {
   QUnit.test('addUser Failure with missing fields', function(assert) {
   const initialUsersLength = model.users.length;
   addUser('', '', '', '');
-  assert.equal(model.users.length, initialUsersLength, 'No user should be added to the model.users array if not all fields are filled in');
+  assert.equal(model.users.length, initialUsersLength, 'No user should be added to the model.users array unless all fields are filled in');
 });
 
   QUnit.test('addUser Success with filled out fields', function(assert) {
     const initialUsersLength = model.users.length;
-    addUser('John', 'Doe', 'john.doe@example.com', 'password');
+    addUser('Get', 'Academy', 'fagskolen@getacademy.no', 'terje123');
     assert.equal(model.users.length, initialUsersLength + 1, 'One user should be added to the model.users array');
-    assert.equal(model.user.name, 'John', 'The name of the logged in user should be John');
+    assert.equal(model.user.name, 'Get', 'The name of the logged in user should be Get');
     assert.equal(model.user.loggedIn, true, 'The user should be logged in');
   });
 
   QUnit.test('addUser Failure with existing email', function(assert) {
     const initialUsersLength = model.users.length;
-    addUser('Jane', 'Doe', 'john.doe@example.com', 'password');
+    addUser('Get', 'Academy', 'fagskolen@getacademy.no', 'terje123');
     assert.equal(model.users.length, initialUsersLength, 'No user should be added to the model.users array');
   });
 
