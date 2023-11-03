@@ -49,7 +49,18 @@ function hideTitle(){
               <a onclick="checkUserLoggedIn(trainingView)">Trening</a>
               <a onclick="checkUserLoggedIn(userGradeView)">${model.user.name}</a>
             </li>
+       
+            <select id="theme" onchange="updateAccentColor(this.value)">
+            <option id="current"value="#ffc107">⚙️</option>
+            <option value="#fc6623">🟠</option>
+            <option value="#00cf69">🟢</option>
+            <option value="#0073b8">🔵</option>
+            <option value="#6c4433">🟤</option>
+            <option value="#f5302e">🔴</option>
+            <option value="#8b64c3">🟣</option>
+          </select>
           </ul>
+        </select>
         </nav>
       </header>
     `;
@@ -87,5 +98,46 @@ function loadModelFromLocalStorage() {
   if (storedModel) {
     model = JSON.parse(storedModel);
   }
+}
+
+function updateAccentColor(color) {
+
+  document.documentElement.style.setProperty('--accent', color);
+  localStorage.setItem('themeColor', color);
+  switch (color) {
+    case '#ffc107':
+      colorEmoji = '🟡';
+      break;
+    case '#fc6623':
+      colorEmoji = '🟠';
+      break;
+    case '#00cf69':
+      colorEmoji = '🟢';
+      break;
+    case '#0073b8':
+      colorEmoji = '🔵';
+      break;
+    case '#6c4433':
+      colorEmoji = '🟤';
+      break;
+    case '#f5302e':
+      colorEmoji = '🔴';
+      break;
+    case '#8b64c3':
+      colorEmoji = '🟣';
+      break;
+  }
+}
+
+
+let colorEmoji = '';
+updateEmoji();
+function updateEmoji(){
+
+let storedColor = localStorage.getItem('themeColor');
+
+if (storedColor) {
+  updateAccentColor(storedColor);
+}
 }
 
