@@ -1,4 +1,5 @@
 function init() {
+  
   navBar();
   landingView();
   hideTitle();
@@ -23,12 +24,11 @@ function hideTitle(){
   function setExerciseIsDone(id){
     const exercise = model.exercises.find(e=>e.id==id);
     exercise.isDone = !exercise.isDone;
-    if (id > 12) {
-      trainingView();
-    } else {
       pensumView();
-    }
+ 
   }
+
+  
   
   function navBar() {
     document.getElementById('header').innerHTML += /*HTML*/`
@@ -43,7 +43,7 @@ function hideTitle(){
               <a onclick="landingView(landingView)">Startside</a>
               <a onclick="checkUserLoggedIn(pensumView)">Pensum</a>
               <a onclick="checkUserLoggedIn(trainingView)">Trening</a>
-              <a onclick="checkUserLoggedIn(userGradeView)">${model.user.name}</a>
+              <a onclick="checkUserLoggedIn(userGradeView)">${updateUser()}</a>
             </li>
        
             <select class="theme" onchange="updateAccentColor(this.value)">
@@ -139,4 +139,11 @@ if (storedColor) {
   updateAccentColor(storedColor);
 }
 }
+
+
+function updateUser(){
+  loadModelFromLocalStorage();
+  return model.user.name;
+}
+
 
