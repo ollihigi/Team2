@@ -1,18 +1,15 @@
 function init() {
-  loadModelFromLocalStorage();
   navBar();
   landingView();
   hideTitle();
+  loadModelFromLocalStorage();
 
 }
 
 function hideTitle(){
-  let siteTitleElement = document.getElementById("siteTitle");
-  if (siteTitleElement) {
-      siteTitleElement.innerHTML = "";
-  } 
-  }
-
+  const title = document.getElementById('siteTitle');
+  title.style.visibility = 'hidden';
+}
   function selectSubtype(event, id) {
     event.preventDefault();
     model.selectedSubtype = id;
@@ -43,7 +40,6 @@ function hideTitle(){
         <nav>
           <ul class="nav__links">
             <li>
-              <a onclick="ExerciseCollectionView()">Ole</a>
               <a onclick="landingView(landingView)">Startside</a>
               <a onclick="checkUserLoggedIn(pensumView)">Pensum</a>
               <a onclick="checkUserLoggedIn(trainingView)">Trening</a>
@@ -67,6 +63,8 @@ function hideTitle(){
   }
 
 function updateNavBar(currentView) {
+  const title = document.getElementById('siteTitle');
+  title.style.visibility = 'visible';
   const links = document.querySelectorAll('.nav__links a');
   links.forEach(link => {
     if (link.onclick.toString().includes(currentView)) {
