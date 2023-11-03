@@ -47,7 +47,8 @@ function hideTitle(){
             </li>
        
             <select id="theme" onchange="updateAccentColor(this.value)">
-            <option id="current"value="#ffc107">⚙️</option>
+            <option id="current"value="#ffc107"></option>
+            <option value="#ffc107">🟡</option>
             <option value="#fc6623">🟠</option>
             <option value="#00cf69">🟢</option>
             <option value="#0073b8">🔵</option>
