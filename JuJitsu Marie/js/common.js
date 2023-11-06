@@ -1,9 +1,10 @@
+
 function init() {
-  
   navBar();
   landingView();
   hideTitle();
   loadModelFromLocalStorage();
+  loadCurrentTheme();
 
 }
 
@@ -46,8 +47,9 @@ function hideTitle(){
               <a onclick="checkUserLoggedIn(userGradeView)">${updateUser()}</a>
             </li>
        
-            <select class="theme" onchange="updateAccentColor(this.value)">
+            <select class="theme" onchange="updateAccentColor(this.value), loadCurrentTheme()">
             <option id="current"value="#ffc107"></option>
+            <option disabled></option>
             <option value="#ffc107">🟡</option>
             <option value="#fc6623">🟠</option>
             <option value="#00cf69">🟢</option>
@@ -97,6 +99,16 @@ function loadModelFromLocalStorage() {
   if (storedModel) {
     model = JSON.parse(storedModel);
   }
+}
+
+function loadCurrentTheme() {
+  const themeDisplay = document.getElementById('current');
+  const storedTheme = localStorage.getItem('themeColor');
+  if (storedTheme) {
+    updateAccentColor(storedTheme);
+    themeDisplay.textContent = colorEmoji;
+  }
+  return '';
 }
 
 function updateAccentColor(color) {
