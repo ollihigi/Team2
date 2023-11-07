@@ -26,6 +26,14 @@ function userGradeView() {
                     <a onclick="userSettingsView()">Innstillinger</a>
                     <hr align="center">
                 </div>
+        <div class="url">
+        <a onclick="reset()">Reset</a>
+        <hr align="center">
+        </div>
+        <div class="url">
+        <a onclick="userLogOut()">Logg Ut</a>
+        <hr align="center">
+    </div>
             </div>
         </div>
 
@@ -166,6 +174,25 @@ function createProgressPercent() {
   } else {
     return "⠀"; // or whatever you want to return when progress is less than 1
   }
+}
+
+function userLogOut() {
+  localStorage.removeItem('user');
+  model.user.id = 0;
+  model.user.loggedIn = false;
+  model.user.name = 'Logg inn';
+  userGradeView();
+  navBar();
+}
+
+function reset() {
+  localStorage.removeItem('model');
+  localStorage.removeItem('themeColor')
+  model.user.id = 0;
+  model.user.loggedIn = false;
+  model.user.name = 'Logg inn';
+  userGradeView();
+  navBar();
 }
 
 

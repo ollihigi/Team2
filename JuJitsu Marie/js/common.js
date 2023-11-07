@@ -1,7 +1,7 @@
 
 function init() {
   navBar();
-  landingView();
+  userGradeView();
   hideTitle();
   loadModelFromLocalStorage();
   loadCurrentTheme();
@@ -44,7 +44,7 @@ function hideTitle(){
               <a onclick="landingView(landingView)">Startside</a>
               <a onclick="checkUserLoggedIn(pensumView)">Pensum</a>
               <a onclick="checkUserLoggedIn(trainingView)">Trening</a>
-              <a onclick="checkUserLoggedIn(userGradeView)">${updateUser()}</a>
+              <a onclick="checkUserLoggedIn(userGradeView)">${model.user.name}</a>
             </li>
        
             <select class="theme" onchange="updateAccentColor(this.value), loadCurrentTheme()">
@@ -107,6 +107,8 @@ function loadCurrentTheme() {
   if (storedTheme) {
     updateAccentColor(storedTheme);
     themeDisplay.textContent = colorEmoji;
+  } else {
+    themeDisplay.textContent = '🟡';
   }
   return '';
 }
