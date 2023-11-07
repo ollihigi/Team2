@@ -3,7 +3,6 @@ function init() {
   navBar();
   userGradeView();
   hideTitle();
-  loadModelFromLocalStorage();
   loadCurrentTheme();
 
 }
@@ -32,6 +31,7 @@ function hideTitle(){
   
   
   function navBar() {
+    loadModelFromLocalStorage();
     document.getElementById('header').innerHTML += /*HTML*/`
       <header>
         <div class="logo" onclick="landingView()">
