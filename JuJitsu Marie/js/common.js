@@ -1,7 +1,7 @@
 
 function init() {
   navBar();
-  userGradeView();
+  trainingView();
   hideTitle();
   loadCurrentTheme();
 
@@ -21,17 +21,11 @@ function hideTitle(){
     }
   }
   
-  function setExerciseIsDone(id){
-    const exercise = model.exercises.find(e=>e.id==id);
-    exercise.isDone = !exercise.isDone;
-      pensumView();
- 
-  }
 
   
   
   function navBar() {
-    loadModelFromLocalStorage();
+    // loadModelFromLocalStorage();
     document.getElementById('header').innerHTML += /*HTML*/`
       <header>
         <div class="logo" onclick="landingView()">

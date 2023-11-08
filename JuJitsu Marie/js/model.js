@@ -42,9 +42,8 @@ let model = {
     { id: 1, name: 'Grunnteknikker' },
     { id: 2, name: 'Teknikktrening' },
     { id: 3, name: 'Selvforsvarstrening' },
-    { id: 4, name: 'Skadeforebyggende øvelser' },
-    { id: 5, name: 'Styrke øvelser' },
-    { id: 6, name: 'Mitt Program' },
+    { id: 4, name: 'Trening Øvelser' },
+    { id: 5, name: 'Mittd Program' },
   ],
   selectedSubtype: null,
   subtypes: [
@@ -67,12 +66,8 @@ let model = {
     { id: 13, categoryId: 4, name: "Overkropp" },
     { id: 14, categoryId: 4, name: "Bein" },
     { id: 15, categoryId: 4, name: "Kjerne" },
-    //Styrkeøvelser
-    { id: 16, categoryId: 5, name: "Overkropp" },
-    { id: 17, categoryId: 5, name: "Bein" },
-    { id: 18, categoryId: 5, name: "Kjerne" },
     //Mitt Program
-    { id: 19, categoryId: 6, name: "Øvelser" },
+    { id: 19, categoryId: 5, name: "Øvelser" },
   ],
   exercises: [
     // Katagori 1 har 8 subtyper med totalt 27 øvelser: id 1 til 27
@@ -649,7 +644,7 @@ let model = {
     // 
     {
       id: 50,
-      subtypeID: 14,
+      subtypeId: 14,
       categoryId: 4,
       name: 'Knebøy',
       // ved inspisering av koden på skadefri.no fant jeg følgende: 
@@ -672,7 +667,7 @@ let model = {
     },
     {
       id: 51,
-      subtypeID: 14,
+      subtypeId: 14,
       categoryId: 4,
       name: 'Utfall forover',
       withPartner: false,
@@ -706,7 +701,7 @@ let model = {
     },
     {
       id: 53,
-      subtypeID: 14,
+      subtypeId: 14,
       categoryId: 4,
       name: 'Utfall sideveis',
       withPartner: false,
@@ -722,7 +717,7 @@ let model = {
     },
     {
       id: 54,
-      subtypeID: 14,
+      subtypeId: 13,
       categoryId: 4,
       name: 'Stående roing',
       withPartner: true,
@@ -740,7 +735,7 @@ let model = {
     },
     {
       id: 55,
-      subtypeID: 14,
+      subtypeId: 13,
       categoryId: 4,
       name: 'Y oppover',
       withPartner: true,
@@ -758,7 +753,7 @@ let model = {
     },
     {
       id: 56,
-      subtypeID: 14,
+      subtypeId: 13,
       categoryId: 4,
       name: 'Utadrotasjon skulder',
       withPartner: true,
@@ -795,12 +790,12 @@ let model = {
     {
       // Tawkwondo nivå 1
       id: 58,
-      subtypeID: 14,
+      subtypeId: 15,
       categoryId: 4,
       name: 'Stående rotasjon',
       withPartner: false,
       withRubberband: false,
-      medialink: "https://player.vimeo.com/video/",
+      medialink: "https://player.vimeo.com/video/237298613",
       repetitions: '2 x 8 repetisjoner, hold ca 3-4 sekunder',
       purpose: 'Bedre mobiliteten på baksiden av lårene og i overkroppen',
       description: [
@@ -813,12 +808,12 @@ let model = {
     },
     {
       id: 59,
-      subtypeID: 14,
+      subtypeId: 13,
       categoryId: 4,
       name: 'Nedtrekk',
       withPartner: false,
       withRubberband: false,
-      medialink: "https://player.vimeo.com/video/",
+      medialink: "https://player.vimeo.com/video/236526892",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
       description: [
@@ -830,31 +825,13 @@ let model = {
        
     },
     {
-      id: 60,
-      subtypeID: 14,
-      categoryId: 4,
-      name: 'Y oppover',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      description: [
-        'Hev armene i Y-mønster',
-        'Hold armene strake',
-        'Hold overkroppen rett og skulderbuen lav',
-        'Press skulderbladene sammen og ned i sluttstilling',
-      ],
-       
-    },
-    {
       id: 61,
-      subtypeID: 14,
+      subtypeId: 13,
       categoryId: 4,
       name: 'Pil og bue',
       withPartner: false,
       withRubberband: false,
-      medialink: "https://player.vimeo.com/video/",
+      medialink: "https://player.vimeo.com/video/237298579",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
       description: [
@@ -884,477 +861,475 @@ let model = {
     },
     {
       id: 63,
-      subtypeID: 14,
+      subtypeId: 15,
       categoryId: 4,
-      name: 'Dyp sumo-knebøy',
+      name: 'Rotasjon +',
       withPartner: false,
       withRubberband: false,
-      medialink: "https://player.vimeo.com/video/",
+      medialink: "https://player.vimeo.com/video/173355331",
       repetitions: '2 x 8 repetisjoner',
       purpose: 'Bedre mobilitet i hofter',
       description: [
-        'Gjør dyp knebøy med hoftene rotert utover',
-        'Skyv knærne ut og brystet frem',
-        'Hold ryggen rett mens du strekker ut knærne så godt som mulig',
       ],
-       
-    },
-    {
-      //Judo nivå 2
-      // Y 66 + Utad 65 + Nordic 70 finnes på nivå 1 
-      id: 64,
-      subtypeId: 15,
-      categoryId: 4,
-      name: 'Utadrotasjon skulder',
-      withPartner: true,
-      withRubberband: true,
-      medialink: "https://player.vimeo.com/video/222059832",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre kraft og kontroll i rotatorcuffen',
-      description: [
-        'Albue og skulder i 90 grader',
-        'Beveg armene rolig nedover og oppover',
-        'Utfordre deg med ulike typer baller og vekter',
-      ],
-       
-    },
-    {
-      id: 65,
-      subtypeID: 15,
-      categoryId: 4,
-      name: 'Y oppover',
-      withPartner: true,
-      withRubberband: true,
-      medialink: "https://player.vimeo.com/video/222059816",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      description: [
-        'Hev armene i Y-mønster',
-        'Hold armene strake',
-        'Hold overkroppen rett og skulderbuen lav',
-        'Press skulderbladene sammen og ned i sluttstilling',
-      ],
-       
-    },
-    {
-      id: 66,
-      subtypeId: 15,
-      categoryId: 4,
-      name: 'Stående roing',
-      withPartner: true,
-      withRubberband: true,
-      medialink: "https://player.vimeo.com/video/222059829",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      description: [
-        'Dra strikken bakover',
-        'Ha lave skuldre',
-        'Albuene inntil kroppen',
-        'Klem skulderbladene sammen',
-      ],
-       
-    },
-    {
-      id: 67,
-      subtypeID: 15,
-      categoryId: 4,
-      name: 'Tobens innhopp',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/222060099",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre aktivering av hamstringsmuskulatur',
-      description: [
-        'Sats fra begge ben og hopp fremover',
-        'Landing i knebøyposisjon',
-        'Hold kne over tå',
-      ],
-       
-    },
-    {
-      id: 68,
-      subtypeID: 15,
-      categoryId: 4,
-      name: 'Push up +',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/222059941",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre styrken og kontrollen i skulderen',
-      description: [
-        'Gjør push up',
-        'Hold albuer strake',
-        'Hev øvre del av overkroppen mot taket',
-      ],
-       
-    },
-    {
-      id: 69,
-      subtypeID: 15,
-      categoryId: 4,
-      name: 'Nordic Hamstrings',
-      withPartner: true,
-      withRubberband: true,
-      medialink: "https://player.vimeo.com/video/173355238",
-      repetitions: '3 x 6-8 repetisjoner',
-      purpose: 'Styrke baksiden av lårene',
-      description: [
-        'Stå på knærne på en matte eller pute',
-        'Hold kroppen rett',
-        'Senk deg fremover, brems bevegelsen med baksiden av lårene',
-        'Bruk armene for å skyve deg tilbake til utgangsstillingen',
-      ],
-       
-    },
-    {
-      id: 70,
-      subtypeID: 15,
-      categoryId: 4,
-      name: 'Nedtrekk',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      description: [
-        'Hold strikken med en skulderbreddes avstand',
-        'Tommelen skal peke oppover',
-        'Stabiliser i magen og ryggen',
-        'Strekk strikken og klem skulderbladene sammen',
-      ],
-       
-    },
-    {
-      id: 71,
-      subtypeID: 15,
-      categoryId: 4,
-      name: 'Y oppover',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      description: [
-        'Hev armene i Y-mønster',
-        'Hold armene strake',
-        'Hold overkroppen rett og skulderbuen lav',
-        'Press skulderbladene sammen og ned i sluttstilling',
-      ],
-       
-    },
-    {
-      id: 72,
-      subtypeId: 15,
-      categoryId: 4,
-      name: 'Pil og bue',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      description: [
-        'Trekk strikken ved å skyve skulderen bakover og roter kroppen',
-        'Start bevegelsen med albuen, hold den motsatte armen strak frem',
-      ],
-       
-    },
-    {
-      id: 73,
-      subtypeID: 15,
-      categoryId: 4,
-      name: 'Knebøy',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Innarbeide god knebøyteknikk',
-      description: [
-        'Ha hoftebreddes avstand mellom føttene',
-        'Start bevegelsen fra hofta',
-        'Ha kne over tå',
-        'Tenk at du skal sette deg på en stol',
-        'Hold ryggen rett',
-      ],
-       
-    },
-    {
-      id: 74,
-      subtypeID: 15,
-      categoryId: 4,
-      name: 'Dyp sumo-knebøy',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/",
-      repetitions: '2 x 8 repetisjoner',
-      purpose: 'Bedre mobilitet i hofter',
-      description: [
-        'Gjør dyp knebøy med hoftene rotert utover',
-        'Skyv knærne ut og brystet frem',
-        'Hold ryggen rett mens du strekker ut knærne så godt som mulig',
-      ],
-       
-    },
-    {
-      id: 75,
-      subtypeID: 15,
-      categoryId: 4,
-      name: 'Utfall i forskjellige retninger',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre forflytninger og stabiliteten i bena',
-      description: [
-        'Gjør utfall ut i ulike posisjoner',
-        'Ha kne over tå på det fremre benet',
-        'Gjøres evt. med dytt fra partner',
-      ],
-       
-    },
-    {
-      id: 76,
-      subtypeID: 15,
-      categoryId: 4,
-      name: 'Stuperen',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/",
-      repetitions: '3 x 5 repetisjoner på hvert ben',
-      purpose: 'Bedre ryggstabiliteten og styrken i baksiden av lårene',
-      description: [
-        'Finn balansen på ett ben, med kneet lett bøyd',
-        'Overkroppen bøyes frem samtidig som benet holdes i lett bøy',
-        'Hold ryggen på linje med det utstrakte kneet',
-        'Strekk armene frem i den samme linjen',
-        'Bruk vekt eller en medisinball for å øke utfordringen',
-      ],
-       
-    },
-    {
-      // Judo nivå 3
-      id: 77,
-      subtypeID: 16,
-      categoryId: 4,
-      name: 'Knebøy +',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/222059991",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre stabiliteten i bena',
-      description: [
-        'Stå på bosu',
-        'Ha hoftebreddes avstand mellom føttene',
-        'Start bevegelsen fra hofta',
-        'Ha kne over tå',
-        'Tenk at du skal sette deg på en stol med rett rygg',
-      ],
-       
-    },
-    {
-      // kopi på nivå 1 og 2 og 3
-      id: 78,
-      subtypeID: 16,
-      categoryId: 4,
-      name: 'Y oppover',
-      withPartner: true,
-      withRubberband: true,
-      medialink: "https://player.vimeo.com/video/222059816",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      description: [
-        'Hev armene i Y-mønster',
-        'Hold armene strake',
-        'Press skulderbladene sammen og ned i sluttstilling',
-      ],
-       
-    },
-    {
-      //kopi nivå 2
-      id: 79,
-      subtypeID: 16,
-      categoryId: 4,
-      name: 'Push up +',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/222059941",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre styrken og kontrollen i skulderen',
-      description: [
-        'Gjør push up',
-        'Hold albuer strake',
-        'Hev øvre del av overkroppen mot taket',
-      ],
-       
-    },
-    {
-      //kopi nivå 2
-      id: 80,
-      subtypeID: 16,
-      categoryId: 4,
-      name: 'Tobens innhopp',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/222060099",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre aktivering av hamstringsmuskulatur',
-      description: [
-        'Sats fra begge ben og hopp fremover',
-        'Landing i knebøyposisjon',
-        'Hold kne over tå',
-      ],
-       
-    },
-    {
-      id: 81,
-      subtypeID: 16,
-      categoryId: 4,
-      name: 'Firkanthopp',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/222060109",
-      repetitions: '3 x 30 sekunder',
-      purpose: 'Bedre eksplosiviteten i retningsendringer',
-      description: [
-        'Hopp i ulike retninger; frem, tilbake, diagonalt',
-        'Land mykt på forfoten med kne over tå',
-        'Vær nøyaktig og prøv å lande på et bestemt punkt',
-      ],
-       
-    },
-    {
-      // kopi nivå 1 og 2 og 3
-      id: 82,
-      subtypeID: 16,
-      categoryId: 4,
-      name: 'Nordic Hamstrings',
-      withPartner: true,
-      withRubberband: true,
-      medialink: "https://player.vimeo.com/video/173355238",
-      repetitions: '3 x 8-12 repetisjoner',
-      purpose: 'Styrke baksiden av lårene',
-      description: [
-        'Stå på knærne på en matte eller pute',
-        'Hold kroppen rett',
-        'Senk deg fremover, brems bevegelsen med baksiden av lårene',
-        'Bruk armene for å skyve deg tilbake til utgangsstillingen',
-      ],
-       
-    },
-    {
-      id: 83,
-      subtypeID: 16,
-      categoryId: 4,
-      name: 'Planke med rotasjon',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/",
-      repetitions: 'Så mange du klarer med god kontroll',
-      purpose: 'Bedre stabiliteten i skulder, skrå mage og rygg',
-      description: [
-        'Hvil kroppen på underarm',
-        'Hold kropp og det øverste benet rett',
-        'Roter overkroppen',
-        'Så mange du klarer med god kontroll',
-      ],
-       
-    },
-    {
-      id: 84,
-      subtypeID: 16,
-      categoryId: 4,
-      name: 'Utfall med rotasjon',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre mobiliteten i ryggsøylen og skulderen',
-      description: [
-        'Stå i utfallsposisjon',
-        'Plasser armen på innsiden av det fremste benet',
-      ],
-       
-    },
-    {
-      id: 85,
-      subtypeId: 16,
-      categoryId: 4,
-      name: 'Ettbens knebøy',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/",
-      repetitions: 'Så mange du klarer med god kontroll',
-      purpose: 'Styrke muskulatur og stabiliteten i bena',
-      description: [
-        'Gjør knebøy på ett ben',
-        'Ha kne over tå',
-        'Unngå at hoften sklir ut til siden',
-      ],
-       
-    },
-    {
-      id: 86,
-      subtypeId: 16,
-      categoryId: 4,
-      name: 'Sidehopp',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre styrken og kontrollen i hoftene og knær',
-      description: [
-        'Bruk strikk når du klarer øvelsen uten motstand',
-        'Land mykt på tærne',
-        'Ha kne over tå',
-      ],
-       
-    },
-    {
-      id: 87,
-      subtypeID: 16,
-      categoryId: 4,
-      name: 'Vendinger',
-      withPartner: false,
-      withRubberband: false,
-      medialink: "https://player.vimeo.com/video/",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre stabiliteten i landinger',
-      description: [
-        'Hopp 45 grader til siden, frem, tilbake',
-        'Hold kne over tå i landinger',
-        'Bruk strikk som motstand',
-      ],
-       
-    },
-  ],
-  // Trolig fjerner vi hele model.media, og legger media (video > img) under hver exercise
-  media: [
-    // 12 øvelser under katagori 2, subtype 1 FORFRA med id fra 1 til 12, med ExerciseID 28 til 39
-    {
-      id: 1, exerciseId: 28,
-      caption: '511a', type: 'img',
-      src: "images/Exercises/511a.png"
-    },
+    }
+  ]
+}
 
-    // + 11 øvelser til 
+//    {    //Judo nivå 2
+//       // Y 66 + Utad 65 + Nordic 70 finnes på nivå 1 
+//       id: 64,
+//       subtypeId: 15,
+//       categoryId: 4,
+//       name: 'Utadrotasjon skulder',
+//       withPartner: true,
+//       withRubberband: true,
+//       medialink: "https://player.vimeo.com/video/222059832",
+//       repetitions: '3 x 8-16 repetisjoner',
+//       purpose: 'Bedre kraft og kontroll i rotatorcuffen',
+//       description: [
+//         'Albue og skulder i 90 grader',
+//         'Beveg armene rolig nedover og oppover',
+//         'Utfordre deg med ulike typer baller og vekter',
+//       ],
+       
+//     },
+//     {
+//       id: 65,
+//       subtypeID: 15,
+//       categoryId: 4,
+//       name: 'Y oppover',
+//       withPartner: true,
+//       withRubberband: true,
+//       medialink: "https://player.vimeo.com/video/222059816",
+//       repetitions: '3 x 8-16 repetisjoner',
+//       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
+//       description: [
+//         'Hev armene i Y-mønster',
+//         'Hold armene strake',
+//         'Hold overkroppen rett og skulderbuen lav',
+//         'Press skulderbladene sammen og ned i sluttstilling',
+//       ],
+       
+//     },
+//     {
+//       id: 66,
+//       subtypeId: 15,
+//       categoryId: 4,
+//       name: 'Stående roing',
+//       withPartner: true,
+//       withRubberband: true,
+//       medialink: "https://player.vimeo.com/video/222059829",
+//       repetitions: '3 x 8-16 repetisjoner',
+//       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
+//       description: [
+//         'Dra strikken bakover',
+//         'Ha lave skuldre',
+//         'Albuene inntil kroppen',
+//         'Klem skulderbladene sammen',
+//       ],
+       
+//     },
+//     {
+//       id: 67,
+//       subtypeID: 15,
+//       categoryId: 4,
+//       name: 'Tobens innhopp',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/222060099",
+//       repetitions: '3 x 8-16 repetisjoner',
+//       purpose: 'Bedre aktivering av hamstringsmuskulatur',
+//       description: [
+//         'Sats fra begge ben og hopp fremover',
+//         'Landing i knebøyposisjon',
+//         'Hold kne over tå',
+//       ],
+       
+//     },
+//     {
+//       id: 68,
+//       subtypeID: 15,
+//       categoryId: 4,
+//       name: 'Push up +',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/222059941",
+//       repetitions: '3 x 8-16 repetisjoner',
+//       purpose: 'Bedre styrken og kontrollen i skulderen',
+//       description: [
+//         'Gjør push up',
+//         'Hold albuer strake',
+//         'Hev øvre del av overkroppen mot taket',
+//       ],
+       
+//     },
+//     {
+//       id: 69,
+//       subtypeID: 15,
+//       categoryId: 4,
+//       name: 'Nordic Hamstrings',
+//       withPartner: true,
+//       withRubberband: true,
+//       medialink: "https://player.vimeo.com/video/173355238",
+//       repetitions: '3 x 6-8 repetisjoner',
+//       purpose: 'Styrke baksiden av lårene',
+//       description: [
+//         'Stå på knærne på en matte eller pute',
+//         'Hold kroppen rett',
+//         'Senk deg fremover, brems bevegelsen med baksiden av lårene',
+//         'Bruk armene for å skyve deg tilbake til utgangsstillingen',
+//       ],
+       
+//     },
+//     {
+//       id: 70,
+//       subtypeID: 15,
+//       categoryId: 4,
+//       name: 'Nedtrekk',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/",
+//       repetitions: '3 x 8-16 repetisjoner',
+//       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
+//       description: [
+//         'Hold strikken med en skulderbreddes avstand',
+//         'Tommelen skal peke oppover',
+//         'Stabiliser i magen og ryggen',
+//         'Strekk strikken og klem skulderbladene sammen',
+//       ],
+       
+//     },
+//     {
+//       id: 71,
+//       subtypeID: 15,
+//       categoryId: 4,
+//       name: 'Y oppover',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/",
+//       repetitions: '3 x 8-16 repetisjoner',
+//       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
+//       description: [
+//         'Hev armene i Y-mønster',
+//         'Hold armene strake',
+//         'Hold overkroppen rett og skulderbuen lav',
+//         'Press skulderbladene sammen og ned i sluttstilling',
+//       ],
+       
+//     },
+//     {
+//       id: 72,
+//       subtypeId: 15,
+//       categoryId: 4,
+//       name: 'Pil og bue',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/",
+//       repetitions: '3 x 8-16 repetisjoner',
+//       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
+//       description: [
+//         'Trekk strikken ved å skyve skulderen bakover og roter kroppen',
+//         'Start bevegelsen med albuen, hold den motsatte armen strak frem',
+//       ],
+       
+//     },
+//     {
+//       id: 73,
+//       subtypeID: 15,
+//       categoryId: 4,
+//       name: 'Knebøy',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/",
+//       repetitions: '3 x 8-16 repetisjoner',
+//       purpose: 'Innarbeide god knebøyteknikk',
+//       description: [
+//         'Ha hoftebreddes avstand mellom føttene',
+//         'Start bevegelsen fra hofta',
+//         'Ha kne over tå',
+//         'Tenk at du skal sette deg på en stol',
+//         'Hold ryggen rett',
+//       ],
+       
+//     },
+//     {
+//       id: 74,
+//       subtypeID: 15,
+//       categoryId: 4,
+//       name: 'Dyp sumo-knebøy',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/",
+//       repetitions: '2 x 8 repetisjoner',
+//       purpose: 'Bedre mobilitet i hofter',
+//       description: [
+//         'Gjør dyp knebøy med hoftene rotert utover',
+//         'Skyv knærne ut og brystet frem',
+//         'Hold ryggen rett mens du strekker ut knærne så godt som mulig',
+//       ],
+       
+//     },
+//     {
+//       id: 75,
+//       subtypeID: 15,
+//       categoryId: 4,
+//       name: 'Utfall i forskjellige retninger',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/",
+//       repetitions: '3 x 8-16 repetisjoner',
+//       purpose: 'Bedre forflytninger og stabiliteten i bena',
+//       description: [
+//         'Gjør utfall ut i ulike posisjoner',
+//         'Ha kne over tå på det fremre benet',
+//         'Gjøres evt. med dytt fra partner',
+//       ],
+       
+//     },
+//     {
+//       id: 76,
+//       subtypeID: 15,
+//       categoryId: 4,
+//       name: 'Stuperen',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/",
+//       repetitions: '3 x 5 repetisjoner på hvert ben',
+//       purpose: 'Bedre ryggstabiliteten og styrken i baksiden av lårene',
+//       description: [
+//         'Finn balansen på ett ben, med kneet lett bøyd',
+//         'Overkroppen bøyes frem samtidig som benet holdes i lett bøy',
+//         'Hold ryggen på linje med det utstrakte kneet',
+//         'Strekk armene frem i den samme linjen',
+//         'Bruk vekt eller en medisinball for å øke utfordringen',
+//       ],
+       
+//     },
+//     {
+//       // Judo nivå 3
+//       id: 77,
+//       subtypeID: 16,
+//       categoryId: 4,
+//       name: 'Knebøy +',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/222059991",
+//       repetitions: '3 x 8-16 repetisjoner',
+//       purpose: 'Bedre stabiliteten i bena',
+//       description: [
+//         'Stå på bosu',
+//         'Ha hoftebreddes avstand mellom føttene',
+//         'Start bevegelsen fra hofta',
+//         'Ha kne over tå',
+//         'Tenk at du skal sette deg på en stol med rett rygg',
+//       ],
+       
+//     },
+//     {
+//       // kopi på nivå 1 og 2 og 3
+//       id: 78,
+//       subtypeID: 16,
+//       categoryId: 4,
+//       name: 'Y oppover',
+//       withPartner: true,
+//       withRubberband: true,
+//       medialink: "https://player.vimeo.com/video/222059816",
+//       repetitions: '3 x 8-16 repetisjoner',
+//       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
+//       description: [
+//         'Hev armene i Y-mønster',
+//         'Hold armene strake',
+//         'Press skulderbladene sammen og ned i sluttstilling',
+//       ],
+       
+//     },
+//     {
+//       //kopi nivå 2
+//       id: 79,
+//       subtypeID: 16,
+//       categoryId: 4,
+//       name: 'Push up +',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/222059941",
+//       repetitions: '3 x 8-16 repetisjoner',
+//       purpose: 'Bedre styrken og kontrollen i skulderen',
+//       description: [
+//         'Gjør push up',
+//         'Hold albuer strake',
+//         'Hev øvre del av overkroppen mot taket',
+//       ],
+       
+//     },
+//     {
+//       //kopi nivå 2
+//       id: 80,
+//       subtypeID: 16,
+//       categoryId: 4,
+//       name: 'Tobens innhopp',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/222060099",
+//       repetitions: '3 x 8-16 repetisjoner',
+//       purpose: 'Bedre aktivering av hamstringsmuskulatur',
+//       description: [
+//         'Sats fra begge ben og hopp fremover',
+//         'Landing i knebøyposisjon',
+//         'Hold kne over tå',
+//       ],
+       
+//     },
+//     {
+//       id: 81,
+//       subtypeID: 16,
+//       categoryId: 4,
+//       name: 'Firkanthopp',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/222060109",
+//       repetitions: '3 x 30 sekunder',
+//       purpose: 'Bedre eksplosiviteten i retningsendringer',
+//       description: [
+//         'Hopp i ulike retninger; frem, tilbake, diagonalt',
+//         'Land mykt på forfoten med kne over tå',
+//         'Vær nøyaktig og prøv å lande på et bestemt punkt',
+//       ],
+       
+//     },
+//     {
+//       // kopi nivå 1 og 2 og 3
+//       id: 82,
+//       subtypeID: 16,
+//       categoryId: 4,
+//       name: 'Nordic Hamstrings',
+//       withPartner: true,
+//       withRubberband: true,
+//       medialink: "https://player.vimeo.com/video/173355238",
+//       repetitions: '3 x 8-12 repetisjoner',
+//       purpose: 'Styrke baksiden av lårene',
+//       description: [
+//         'Stå på knærne på en matte eller pute',
+//         'Hold kroppen rett',
+//         'Senk deg fremover, brems bevegelsen med baksiden av lårene',
+//         'Bruk armene for å skyve deg tilbake til utgangsstillingen',
+//       ],
+       
+//     },
+//     {
+//       id: 83,
+//       subtypeID: 16,
+//       categoryId: 4,
+//       name: 'Planke med rotasjon',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/",
+//       repetitions: 'Så mange du klarer med god kontroll',
+//       purpose: 'Bedre stabiliteten i skulder, skrå mage og rygg',
+//       description: [
+//         'Hvil kroppen på underarm',
+//         'Hold kropp og det øverste benet rett',
+//         'Roter overkroppen',
+//         'Så mange du klarer med god kontroll',
+//       ],
+       
+//     },
+//     {
+//       id: 84,
+//       subtypeID: 16,
+//       categoryId: 4,
+//       name: 'Utfall med rotasjon',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/",
+//       repetitions: '3 x 8-16 repetisjoner',
+//       purpose: 'Bedre mobiliteten i ryggsøylen og skulderen',
+//       description: [
+//         'Stå i utfallsposisjon',
+//         'Plasser armen på innsiden av det fremste benet',
+//       ],
+       
+//     },
+//     {
+//       id: 85,
+//       subtypeId: 16,
+//       categoryId: 4,
+//       name: 'Ettbens knebøy',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/",
+//       repetitions: 'Så mange du klarer med god kontroll',
+//       purpose: 'Styrke muskulatur og stabiliteten i bena',
+//       description: [
+//         'Gjør knebøy på ett ben',
+//         'Ha kne over tå',
+//         'Unngå at hoften sklir ut til siden',
+//       ],
+       
+//     },
+//     {
+//       id: 86,
+//       subtypeId: 16,
+//       categoryId: 4,
+//       name: 'Sidehopp',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/",
+//       repetitions: '3 x 8-16 repetisjoner',
+//       purpose: 'Bedre styrken og kontrollen i hoftene og knær',
+//       description: [
+//         'Bruk strikk når du klarer øvelsen uten motstand',
+//         'Land mykt på tærne',
+//         'Ha kne over tå',
+//       ],
+       
+//     },
+//     {
+//       id: 87,
+//       subtypeID: 16,
+//       categoryId: 4,
+//       name: 'Vendinger',
+//       withPartner: false,
+//       withRubberband: false,
+//       medialink: "https://player.vimeo.com/video/",
+//       repetitions: '3 x 8-16 repetisjoner',
+//       purpose: 'Bedre stabiliteten i landinger',
+//       description: [
+//         'Hopp 45 grader til siden, frem, tilbake',
+//         'Hold kne over tå i landinger',
+//         'Bruk strikk som motstand',
+//       ],
+       
+//     },
+//   ],
+//   // Trolig fjerner vi hele model.media, og legger media (video > img) under hver exercise
+//   media: [
+//     // 12 øvelser under katagori 2, subtype 1 FORFRA med id fra 1 til 12, med ExerciseID 28 til 39
+//     {
+//       id: 1, exerciseId: 28,
+//       caption: '511a', type: 'img',
+//       src: "images/Exercises/511a.png"
+//     },
 
-    //1 øvelse under katagori 2, subtype 2 SIDEN med id 13
-    {
-      id: 13, exerciseId: 40,
-      caption: '522a', type: 'img',
-      src: "images/Exercises/522a.png"
-    },
-    // 5 øvelser under katagori 2, subtype 3 BAKFRA med id fra 14 til 18 og ExerciseID fra 41 til 45
-    {
-      id: 14, exerciseId: 41,
-      caption: '531a', type: 'img',
-      src: "images/Exercises/531a.png"
-    },
-    // 4 øvelser under katagori 2, subtype 4 BAKKETEKNIKKER med id fra 1 til 12
-    {
-      id: 19, exerciseId: 46,
-      caption: '541f', type: 'img',
-      src: "images/Exercises/541f.png"
-    },
-  ],
-};
+//     // + 11 øvelser til 
+
+//     //1 øvelse under katagori 2, subtype 2 SIDEN med id 13
+//     {
+//       id: 13, exerciseId: 40,
+//       caption: '522a', type: 'img',
+//       src: "images/Exercises/522a.png"
+//     },
+//     // 5 øvelser under katagori 2, subtype 3 BAKFRA med id fra 14 til 18 og ExerciseID fra 41 til 45
+//     {
+//       id: 14, exerciseId: 41,
+//       caption: '531a', type: 'img',
+//       src: "images/Exercises/531a.png"
+//     },
+//     // 4 øvelser under katagori 2, subtype 4 BAKKETEKNIKKER med id fra 1 til 12
+//     {
+//       id: 19, exerciseId: 46,
+//       caption: '541f', type: 'img',
+//       src: "images/Exercises/541f.png"
+//     },
+//   ],
+// };
 

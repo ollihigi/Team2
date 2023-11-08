@@ -131,3 +131,11 @@ function tempPensumImg() {
     return '';
   }
 }
+
+function setExerciseIsDone(id){
+  const exercise = model.exercises.find(e=>e.id==id);
+  exercise.isDone = !exercise.isDone;
+    pensumView();
+
+}
+
