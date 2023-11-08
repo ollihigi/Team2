@@ -77,8 +77,8 @@ let model = {
     // 0 / 1 Guardstillinger / Benstillinger (Kamae / Ashi-Tachi)
     {
       id: 0,
-      subtypesId: 0,
-      CategoryId: 1,
+      subtypeId: 0,
+      categoryId: 1,
       name: 'Forsvarsguard, åpne hender',
       nameJapanese: 'Shuto',
       withPartner: '',
@@ -88,8 +88,8 @@ let model = {
     },
     {
       id: 1,
-      subtypesId: 0,
-      CategoryId: 1,
+      subtypeId: 0,
+      categoryId: 1,
       name: 'Angrepsguard, lukkede hender',
       nameJapanese: 'Seiken',
       withPartner: '',
@@ -100,8 +100,8 @@ let model = {
     },
     {
       id: 2,
-      subtypesId: 0,
-      CategoryId: 1,
+      subtypeId: 0,
+      categoryId: 1,
       name: 'Grunnleggende stilling',
       nameJapanese: 'Zenkutsu-dachi',
       withPartner: '',
@@ -111,8 +111,8 @@ let model = {
     // 1 / 1 Forflytninger (Tai-sabaki)
     {
       id: 3,
-      subtypesId: 1,
-      CategoryId: 1,
+      subtypeId: 1,
+      categoryId: 1,
       name: 'Sideforflytning',
       nameJapanese: 'Yoko-ashi',
       withPartner: '',
@@ -122,8 +122,8 @@ let model = {
     },
     {
       id: 4,
-      subtypesId: 1,
-      CategoryId: 1,
+      subtypeId: 1,
+      categoryId: 1,
       name: 'Kroppsvending',
       nameJapanese: 'Sha-tenkan',
       withPartner: '',
@@ -133,8 +133,8 @@ let model = {
     },
     {
       id: 5,
-      subtypesId: 1,
-      CategoryId: 1,
+      subtypeId: 1,
+      categoryId: 1,
       name: '90 grader dreining',
       nameJapanese: 'Han-tenkan',
       withPartner: '',
@@ -144,8 +144,8 @@ let model = {
     },
     {
       id: 6,
-      subtypesId: 1,
-      CategoryId: 1,
+      subtypeId: 1,
+      categoryId: 1,
       name: '180 grader dreining',
       nameJapanese: 'Zen-tenkan',
       withPartner: '',
@@ -156,8 +156,8 @@ let model = {
     // 2 / 1 Fallteknikk (Ukemi-waza)
     {
       id: 7,
-      subtypesId: 2,
-      CategoryId: 1,
+      subtypeId: 2,
+      categoryId: 1,
       name: 'Sideveis fall',
       nameJapanese: 'Yoko ukemi',
       withPartner: false,
@@ -167,8 +167,8 @@ let model = {
     },
     {
       id: 8,
-      subtypesId: 2,
-      CategoryId: 1,
+      subtypeId: 2,
+      categoryId: 1,
       name: 'Forover fall',
       nameJapanese: 'Mae ukemi',
       withPartner: false,
@@ -177,8 +177,8 @@ let model = {
     },
     {
       id: 9,
-      subtypesId: 2,
-      CategoryId: 1,
+      subtypeId: 2,
+      categoryId: 1,
       name: 'Bakover fall',
       nameJapanese: 'Ushiro ukemi',
       withPartner: false,
@@ -188,8 +188,8 @@ let model = {
     },
     {
       id: 10,
-      subtypesId: 2,
-      CategoryId: 1,
+      subtypeId: 2,
+      categoryId: 1,
       name: 'Forover volt',
       nameJapanese: 'Kaiten mae ukemi',
       withPartner: false,
@@ -199,8 +199,8 @@ let model = {
     },
     {
       id: 11,
-      subtypesId: 2,
-      CategoryId: 1,
+      subtypeId: 2,
+      categoryId: 1,
       name: 'Bakover volt',
       nameJapanese: 'Kaiten ushiro ukemi',
       withPartner: false,
@@ -211,8 +211,8 @@ let model = {
     // 3 / 1 Kast / Fellinger (Nage waza)
     {
       id: 12,
-      subtypesId: 3,
-      CategoryId: 1,
+      subtypeId: 3,
+      categoryId: 1,
       name: 'Stor ytre benfelling',
       nameJapanese: 'O soto o toshi',
       withPartner: true,
@@ -222,8 +222,8 @@ let model = {
     },
     {
       id: 13,
-      subtypesId: 3,
-      CategoryId: 1,
+      subtypeId: 3,
+      categoryId: 1,
       name: 'Stort hoftekast',
       nameJapanese: 'O goshi',
       withPartner: true,
@@ -234,8 +234,8 @@ let model = {
     // 4 / 1 Slag (Tsuki waza)
     {
       id: 14,
-      subtypesId: 4,
-      CategoryId: 1,
+      subtypeId: 4,
+      categoryId: 1,
       name: 'Rett slag med fremste hånd',
       nameJapanese: 'Tobikomi zuki',
       withPartner: '',
@@ -245,8 +245,8 @@ let model = {
     },
     {
       id: 15,
-      subtypesId: 4,
-      CategoryId: 1,
+      subtypeId: 4,
+      categoryId: 1,
       name: 'Rett slag med bakerste hånd',
       nameJapanese: 'Gyaku zuki',
       withPartner: '',
@@ -256,8 +256,8 @@ let model = {
     },
     {
       id: 16,
-      subtypesId: 4,
-      CategoryId: 1,
+      subtypeId: 4,
+      categoryId: 1,
       name: 'Slagkombinasjon med rette slag',
       nameJapanese: 'Tobikomi zuki / Gyaku zuki',
       withPartner: '',
@@ -268,8 +268,8 @@ let model = {
     // 5 / 1 Spark (Keri waza)
     {
       id: 17,
-      subtypesId: 5,
-      CategoryId: 1,
+      subtypeId: 5,
+      categoryId: 1,
       name: 'Grunnleggende rett spark med bakerste ben',
       nameJapanese: 'Gyaku mae geri',
       withPartner: '',
@@ -279,8 +279,8 @@ let model = {
     },
     {
       id: 18,
-      subtypesId: 5,
-      CategoryId: 1,
+      subtypeId: 5,
+      categoryId: 1,
       name: 'Grunnleggende rett spark med fremste ben',
       nameJapanese: 'Tsurikomi mae geri',
       withPartner: '',
@@ -291,8 +291,8 @@ let model = {
     // 6 / 1 Mønster (Kata)
     {
       id: 19,
-      subtypesId: 6,
-      CategoryId: 1,
+      subtypeId: 6,
+      categoryId: 1,
       name: 'Go kyu kata - Guard, fem retninger',
       nameJapanese: 'Zenkutsu-dachi / Shuto',
       withPartner: '',
@@ -303,8 +303,8 @@ let model = {
     // 7 / 1 Blokkeringer (Uke waza)
     {
       id: 20,
-      subtypesId: 7,
-      CategoryId: 1,
+      subtypeId: 7,
+      categoryId: 1,
       name: 'Lav blokk, innenfra og ut',
       nameJapanese: 'Gedan barai',
       withPartner: '',
@@ -313,8 +313,8 @@ let model = {
     },
     {
       id: 21,
-      subtypesId: 7,
-      CategoryId: 1,
+      subtypeId: 7,
+      categoryId: 1,
       name: 'Mellom blokk, innenfra og ut',
       nameJapanese: 'Uchi-uke',
       withPartner: '',
@@ -324,8 +324,8 @@ let model = {
     },
     {
       id: 22,
-      subtypesId: 7,
-      CategoryId: 1,
+      subtypeId: 7,
+      categoryId: 1,
       name: 'Høy blokk, nedenfra og opp',
       nameJapanese: 'Age-uke',
       withPartner: '',
@@ -335,8 +335,8 @@ let model = {
     },
     {
       id: 23,
-      subtypesId: 7,
-      CategoryId: 1,
+      subtypeId: 7,
+      categoryId: 1,
       name: 'Mellom blokk, utenfra og inn',
       nameJapanese: 'Soto-uke',
       withPartner: '',
@@ -346,8 +346,8 @@ let model = {
     },
     {
       id: 24,
-      subtypesId: 7,
-      CategoryId: 1,
+      subtypeId: 7,
+      categoryId: 1,
       name: 'Lav blokk, unenfra og inn',
       nameJapanese: 'Sukui-uke',
       withPartner: '',
@@ -357,8 +357,8 @@ let model = {
     },
     {
       id: 25,
-      subtypesId: 7,
-      CategoryId: 1,
+      subtypeId: 7,
+      categoryId: 1,
       name: 'Lav kryssblokk, ovenfra og ned',
       nameJapanese: 'Gedan juji-uke',
       withPartner: '',
@@ -368,8 +368,8 @@ let model = {
     },
     {
       id: 26,
-      subtypesId: 7,
-      CategoryId: 1,
+      subtypeId: 7,
+      categoryId: 1,
       name: 'Høy kryssblokk, nedenfra and opp',
       nameJapanese: 'Jodan juji-uke',
       withPartner: '',
@@ -384,8 +384,8 @@ let model = {
     // 4 subtyper 
     {
       id: 27,
-      subtypesId: 8,
-      CategoryId: 2,
+      subtypeId: 8,
+      categoryId: 2,
       name: 'Forsvar mot hårtak',
       numberTJK: '511a',
       withPartner: true,
@@ -396,8 +396,8 @@ let model = {
     },
     {
       id: 28,
-      subtypesId: 8,
-      CategoryId: 2,
+      subtypeId: 8,
+      categoryId: 2,
       name: 'Forsvar mot klestak',
       numberTJK: '511b',
       withPartner: true,
@@ -408,8 +408,8 @@ let model = {
     },
     {
       id: 29,
-      subtypesId: 8,
-      CategoryId: 2,
+      subtypeId: 8,
+      categoryId: 2,
       name: 'Forsvar mot håndleddstak nedenfra',
       numberTJK: '511d',
       withPartner: true,
@@ -419,8 +419,8 @@ let model = {
     },
     {
       id: 30,
-      subtypesId: 8,
-      CategoryId: 2,
+      subtypeId: 8,
+      categoryId: 2,
       name: 'Forsvar mot håndleddstak ovenfra',
       numberTJK: '511e',
       withPartner: true,
@@ -431,8 +431,8 @@ let model = {
     },
     {
       id: 31,
-      subtypesId: 8,
-      CategoryId: 2,
+      subtypeId: 8,
+      categoryId: 2,
       name: 'Forsvar mot strupetak',
       numberTJK: '512a',
       withPartner: true,
@@ -443,8 +443,8 @@ let model = {
     },
     {
       id: 32,
-      subtypesId: 8,
-      CategoryId: 2,
+      subtypeId: 8,
+      categoryId: 2,
       name: 'Forsvar mot strupetak mot vegg',
       numberTJK: '512b',
       withPartner: true,
@@ -455,8 +455,8 @@ let model = {
     },
     {
       id: 33,
-      subtypesId: 8,
-      CategoryId: 2,
+      subtypeId: 8,
+      categoryId: 2,
       name: 'Forsvar mot omfavning over armene (stor ytre benfelling)',
       numberTJK: '513a',
       withPartner: true,
@@ -466,8 +466,8 @@ let model = {
     },
     {
       id: 34,
-      subtypesId: 8,
-      CategoryId: 2,
+      subtypeId: 8,
+      categoryId: 2,
       name: 'Forsvar mot omfavning over armene (stort hoftekast)',
       numberTJK: '513A',
       withPartner: true,
@@ -477,8 +477,8 @@ let model = {
     },
     {
       id: 35,
-      subtypesId: 8,
-      CategoryId: 2,
+      subtypeId: 8,
+      categoryId: 2,
       name: 'Forsvar mot rett slag, kroppsvending',
       numberTJK: '514a',
       withPartner: true,
@@ -488,8 +488,8 @@ let model = {
     },
     {
       id: 36,
-      subtypesId: 8,
-      CategoryId: 2,
+      subtypeId: 8,
+      categoryId: 2,
       name: 'Forsvar mot rett salg, sideforflytning',
       numberTJK: '514A',
       withPartner: true,
@@ -499,8 +499,8 @@ let model = {
     },
     {
       id: 37,
-      subtypesId: 8,
-      CategoryId: 2,
+      subtypeId: 8,
+      categoryId: 2,
       name: 'Forsvar mot rett spark, kroppsvending',
       numberTJK: '515a',
       withPartner: true,
@@ -510,8 +510,8 @@ let model = {
     },
     {
       id: 38,
-      subtypesId: 8,
-      CategoryId: 2,
+      subtypeId: 8,
+      categoryId: 2,
       name: 'Forsvar mot rett spark, sideforflytning',
       numberTJK: '515A',
       withPartner: true,
@@ -521,8 +521,8 @@ let model = {
     },
     {
       id: 39,
-      subtypesId: 9,
-      CategoryId: 2,
+      subtypeId: 9,
+      categoryId: 2,
       name: 'Forsvar mot strupetak',
       numberTJK: '522a',
       withPartner: true,
@@ -532,8 +532,8 @@ let model = {
     },
     {
       id: 40,
-      subtypesId: 10,
-      CategoryId: 2,
+      subtypeId: 10,
+      categoryId: 2,
       name: 'Forsvar mot hårtak',
       numberTJK: '531a',
       withPartner: true,
@@ -543,8 +543,8 @@ let model = {
     },
     {
       id: 41,
-      subtypesId: 10,
-      CategoryId: 2,
+      subtypeId: 10,
+      categoryId: 2,
       name: 'Forsvar mot håndleddstak',
       numberTJK: '531e',
       withPartner: true,
@@ -554,8 +554,8 @@ let model = {
     },
     {
       id: 42,
-      subtypesId: 10,
-      CategoryId: 2,
+      subtypeId: 10,
+      categoryId: 2,
       name: 'Forsvar mot strupetak',
       numberTJK: '532a',
       withPartner: true,
@@ -565,8 +565,8 @@ let model = {
     },
     {
       id: 43,
-      subtypesId: 10,
-      CategoryId: 2,
+      subtypeId: 10,
+      categoryId: 2,
       name: 'Forsvar mot strangulering med armen',
       numberTJK: '532c',
       withPartner: true,
@@ -576,8 +576,8 @@ let model = {
     },
     {
       id: 44,
-      subtypesId: 10,
-      CategoryId: 2,
+      subtypeId: 10,
+      categoryId: 2,
       name: 'Forsvar mot omfavning over armene',
       numberTJK: '533a',
       withPartner: true,
@@ -587,8 +587,8 @@ let model = {
     },
     {
       id: 45,
-      subtypesId: 11,
-      CategoryId: 2,
+      subtypeId: 11,
+      categoryId: 2,
       name: 'Forsvar mot håndleddstak, sittende skrevs over',
       numberTJK: '541f',
       withPartner: true,
@@ -598,8 +598,8 @@ let model = {
     },
     {
       id: 46,
-      subtypesId: 11,
-      CategoryId: 2,
+      subtypeId: 11,
+      categoryId: 2,
       name: 'Forsvar mot strupetak, på kne ved siden av',
       numberTJK: '542e',
       withPartner: true,
@@ -609,8 +609,8 @@ let model = {
     },
     {
       id: 47,
-      subtypesId: 11,
-      CategoryId: 2,
+      subtypeId: 11,
+      categoryId: 2,
       name: 'Forsvar mot strupetak, sittende skrevs over',
       numberTJK: '542f',
       withPartner: true,
@@ -620,8 +620,8 @@ let model = {
     },
     {
       id: 48,
-      subtypesId: 11,
-      CategoryId: 2,
+      subtypeId: 11,
+      categoryId: 2,
       name: 'Forsvar mot strupetak, sittende mellom bena',
       numberTJK: '542g',
       withPartner: true,
@@ -633,7 +633,7 @@ let model = {
     // Kategori 3 har 1 subtyper med totalt 1 øvelse med id 50
     {
       id: 49,
-      subtypesId: 12,
+      subtypeId: 12,
       name: "Sirkeltrening",
       WithPartner: true,
       description: ": Forsvar mot uavtalte kontaktgrep fra gult pensum.",
@@ -647,7 +647,7 @@ let model = {
     {
       id: 50,
       subtypeID: 14,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Knebøy',
       // ved inspisering av koden på skadefri.no fant jeg følgende: 
       //A)  https://vimeo.com/222059954 (denne går til Vimeo)
@@ -670,7 +670,7 @@ let model = {
     {
       id: 51,
       subtypeID: 14,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Utfall forover',
       withPartner: false,
       withRubberband: false,
@@ -686,8 +686,8 @@ let model = {
     },
     {
       id: 52,
-      subtypesId: 14,
-      categoryID: 4,
+      subtypeId: 14,
+      categoryId: 4,
       name: 'Utfall bakover',
       withPartner: false,
       withRubberband: false,
@@ -704,7 +704,7 @@ let model = {
     {
       id: 53,
       subtypeID: 14,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Utfall sideveis',
       withPartner: false,
       withRubberband: false,
@@ -720,7 +720,7 @@ let model = {
     {
       id: 54,
       subtypeID: 14,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Stående roing',
       withPartner: true,
       withRubberband: true,
@@ -738,7 +738,7 @@ let model = {
     {
       id: 55,
       subtypeID: 14,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Y oppover',
       withPartner: true,
       withRubberband: true,
@@ -756,7 +756,7 @@ let model = {
     {
       id: 56,
       subtypeID: 14,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Utadrotasjon skulder',
       withPartner: true,
       withRubberband: true,
@@ -772,8 +772,8 @@ let model = {
     },
     {
       id: 57,
-      subtypesId: 14,
-      categoryID: 4,
+      subtypeId: 14,
+      categoryId: 4,
       name: 'Nordic Hamstrings',
       withPartner: true,
       withRubberband: true,
@@ -793,7 +793,7 @@ let model = {
       // Tawkwondo nivå 1
       id: 58,
       subtypeID: 14,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Stående rotasjon',
       withPartner: false,
       withRubberband: false,
@@ -811,7 +811,7 @@ let model = {
     {
       id: 59,
       subtypeID: 14,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Nedtrekk',
       withPartner: false,
       withRubberband: false,
@@ -829,7 +829,7 @@ let model = {
     {
       id: 60,
       subtypeID: 14,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Y oppover',
       withPartner: false,
       withRubberband: false,
@@ -847,7 +847,7 @@ let model = {
     {
       id: 61,
       subtypeID: 14,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Pil og bue',
       withPartner: false,
       withRubberband: false,
@@ -863,7 +863,7 @@ let model = {
     {
       id: 62,
       subtypeID: 14,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Knebøy',
       withPartner: false,
       withRubberband: false,
@@ -882,7 +882,7 @@ let model = {
     {
       id: 63,
       subtypeID: 14,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Dyp sumo-knebøy',
       withPartner: false,
       withRubberband: false,
@@ -900,8 +900,8 @@ let model = {
       //Judo nivå 2
       // Y 66 + Utad 65 + Nordic 70 finnes på nivå 1 
       id: 64,
-      subtypesId: 15,
-      categoryID: 4,
+      subtypeId: 15,
+      categoryId: 4,
       name: 'Utadrotasjon skulder',
       withPartner: true,
       withRubberband: true,
@@ -918,7 +918,7 @@ let model = {
     {
       id: 65,
       subtypeID: 15,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Y oppover',
       withPartner: true,
       withRubberband: true,
@@ -935,8 +935,8 @@ let model = {
     },
     {
       id: 66,
-      subtypesId: 15,
-      categoryID: 4,
+      subtypeId: 15,
+      categoryId: 4,
       name: 'Stående roing',
       withPartner: true,
       withRubberband: true,
@@ -954,7 +954,7 @@ let model = {
     {
       id: 67,
       subtypeID: 15,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Tobens innhopp',
       withPartner: false,
       withRubberband: false,
@@ -971,7 +971,7 @@ let model = {
     {
       id: 68,
       subtypeID: 15,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Push up +',
       withPartner: false,
       withRubberband: false,
@@ -988,7 +988,7 @@ let model = {
     {
       id: 69,
       subtypeID: 15,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Nordic Hamstrings',
       withPartner: true,
       withRubberband: true,
@@ -1006,7 +1006,7 @@ let model = {
     {
       id: 70,
       subtypeID: 15,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Nedtrekk',
       withPartner: false,
       withRubberband: false,
@@ -1024,7 +1024,7 @@ let model = {
     {
       id: 71,
       subtypeID: 15,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Y oppover',
       withPartner: false,
       withRubberband: false,
@@ -1041,8 +1041,8 @@ let model = {
     },
     {
       id: 72,
-      subtypesId: 15,
-      categoryID: 4,
+      subtypeId: 15,
+      categoryId: 4,
       name: 'Pil og bue',
       withPartner: false,
       withRubberband: false,
@@ -1058,7 +1058,7 @@ let model = {
     {
       id: 73,
       subtypeID: 15,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Knebøy',
       withPartner: false,
       withRubberband: false,
@@ -1077,7 +1077,7 @@ let model = {
     {
       id: 74,
       subtypeID: 15,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Dyp sumo-knebøy',
       withPartner: false,
       withRubberband: false,
@@ -1094,7 +1094,7 @@ let model = {
     {
       id: 75,
       subtypeID: 15,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Utfall i forskjellige retninger',
       withPartner: false,
       withRubberband: false,
@@ -1111,7 +1111,7 @@ let model = {
     {
       id: 76,
       subtypeID: 15,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Stuperen',
       withPartner: false,
       withRubberband: false,
@@ -1131,7 +1131,7 @@ let model = {
       // Judo nivå 3
       id: 77,
       subtypeID: 16,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Knebøy +',
       withPartner: false,
       withRubberband: false,
@@ -1151,7 +1151,7 @@ let model = {
       // kopi på nivå 1 og 2 og 3
       id: 78,
       subtypeID: 16,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Y oppover',
       withPartner: true,
       withRubberband: true,
@@ -1169,7 +1169,7 @@ let model = {
       //kopi nivå 2
       id: 79,
       subtypeID: 16,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Push up +',
       withPartner: false,
       withRubberband: false,
@@ -1187,7 +1187,7 @@ let model = {
       //kopi nivå 2
       id: 80,
       subtypeID: 16,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Tobens innhopp',
       withPartner: false,
       withRubberband: false,
@@ -1204,7 +1204,7 @@ let model = {
     {
       id: 81,
       subtypeID: 16,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Firkanthopp',
       withPartner: false,
       withRubberband: false,
@@ -1222,7 +1222,7 @@ let model = {
       // kopi nivå 1 og 2 og 3
       id: 82,
       subtypeID: 16,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Nordic Hamstrings',
       withPartner: true,
       withRubberband: true,
@@ -1240,7 +1240,7 @@ let model = {
     {
       id: 83,
       subtypeID: 16,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Planke med rotasjon',
       withPartner: false,
       withRubberband: false,
@@ -1258,7 +1258,7 @@ let model = {
     {
       id: 84,
       subtypeID: 16,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Utfall med rotasjon',
       withPartner: false,
       withRubberband: false,
@@ -1273,8 +1273,8 @@ let model = {
     },
     {
       id: 85,
-      subtypesId: 16,
-      categoryID: 4,
+      subtypeId: 16,
+      categoryId: 4,
       name: 'Ettbens knebøy',
       withPartner: false,
       withRubberband: false,
@@ -1290,8 +1290,8 @@ let model = {
     },
     {
       id: 86,
-      subtypesId: 16,
-      categoryID: 4,
+      subtypeId: 16,
+      categoryId: 4,
       name: 'Sidehopp',
       withPartner: false,
       withRubberband: false,
@@ -1308,7 +1308,7 @@ let model = {
     {
       id: 87,
       subtypeID: 16,
-      categoryID: 4,
+      categoryId: 4,
       name: 'Vendinger',
       withPartner: false,
       withRubberband: false,

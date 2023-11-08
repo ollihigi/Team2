@@ -87,7 +87,7 @@ function createExerciseHtml() {
   if (model.selectedSubtype == null) return '';
   let html = '';
   for (let exercise of model.exercises) {
-    if (exercise.subtypesId == model.selectedSubtype) {
+    if (exercise.subtypeId == model.selectedSubtype) {
       let medialinkHtml = '';
       if (exercise.medialink) {
         medialinkHtml = `

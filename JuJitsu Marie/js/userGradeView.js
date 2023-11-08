@@ -101,7 +101,7 @@ function userGradeView() {
 
   function isDoneSubtype(subtypeId) {
     for (let exercise of model.exercises) {
-      if (exercise.subtypesId == subtypeId && !exercise.isDone) {
+      if (exercise.subtypeId == subtypeId && !exercise.isDone) {
         return false;
       }
     }
@@ -113,7 +113,7 @@ function userGradeView() {
     let exerciseDoneCount = 0;
     let exerciseTotalCount = 0;
     for (let exercise of model.exercises) {
-      if (exercise.subtypesId != subtypeId) continue
+      if (exercise.subtypeId != subtypeId) continue
       exerciseTotalCount++;
       if (exercise.isDone) {
         exerciseDoneCount++;
@@ -130,7 +130,7 @@ function userGradeView() {
     let exerciseDoneCount = 0;
     let exerciseTotalCount = 0;
     for (let exercise of model.exercises) {
-      if (exercise.subtypesId != subtypeId) continue
+      if (exercise.subtypeId != subtypeId) continue
       exerciseTotalCount++;
       if (exercise.isDone) {
         exerciseDoneCount++;
@@ -154,9 +154,9 @@ function createProgressPercent() {
   let totalExercises = 0;
   const categoryNr = 13; // Kategoriene som telles i pensum
   for (let exercise of model.exercises) {
-    if (exercise.subtypesId < categoryNr)
+    if (exercise.subtypeId < categoryNr)
       totalExercises++;
-    if (exercise.isDone && exercise.subtypesId < categoryNr) {
+    if (exercise.isDone && exercise.subtypeId < categoryNr) {
       exerciseDone++;
     }
     progress = (exerciseDone / totalExercises) * 100
