@@ -658,7 +658,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/222059954",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Innarbeide god knebøyteknikk',
-      instructions: [
+      description: [
         'Ha hoftebreddes avstand mellom føttene',
         'Start bevegelsen fra hofta',
         'Ha kne over tå',
@@ -677,7 +677,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/222060022",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre stabiliteten i bena',
-      instructions: [
+      description: [
         'Gjør utfall forover',
         'Ha kne over tå',
         'Hold en oppreist stilling gjennom hele øvelsen',
@@ -694,7 +694,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/222060048",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre stabiliteten i bena',
-      instructions: [
+      description: [
         'Gjør utfall bakover',
         'Ha kne over tå',
         'Hold en oppreist stilling gjennom hele øvelsen',
@@ -711,7 +711,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/222060139",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre forflytninger og stabiliteten i bena',
-      instructions: [
+      description: [
         'Gjør dype sidesteg til hver side',
         'Ha kne over tå',
       ],
@@ -727,7 +727,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/222059829",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      instructions: [
+      description: [
         'Dra strikken bakover',
         'Ha lave skuldre',
         'Albuene inntil kroppen',
@@ -745,7 +745,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/222059816",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      instructions: [
+      description: [
         'Hev armene i Y-mønster',
         'Hold armene strake',
         'Hold overkroppen rett og skulderbuen lav',
@@ -763,7 +763,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/222059832",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre kraft og kontroll i rotatorcuffen',
-      instructions: [
+      description: [
         'Albue og skulder i 90 grader',
         'Beveg armene rolig nedover og oppover',
         'Utfordre deg med ulike typer baller og vekter',
@@ -781,7 +781,7 @@ let model = {
       //siste jeg sjekket
       repetitions: '3 x 3-5 repetisjoner',
       purpose: 'Styrke baksiden av lårene',
-      instructions: [
+      description: [
         'Stå på knærne på en matte eller pute',
         'Hold kroppen rett',
         'Senk deg fremover, brems bevegelsen med baksiden av lårene',
@@ -800,7 +800,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: '2 x 8 repetisjoner, hold ca 3-4 sekunder',
       purpose: 'Bedre mobiliteten på baksiden av lårene og i overkroppen',
-      instructions: [
+      description: [
         'Ha en rett linje gjennom hele kroppen, gjør deg så lang som mulig',
         'Hold motsatt arm på foten',
         'Roter hele overkroppen så langt du kommer',
@@ -818,7 +818,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      instructions: [
+      description: [
         'Hold strikken med en skulderbreddes avstand',
         'Tommelen skal peke oppover',
         'Stabiliser i magen og ryggen',
@@ -836,7 +836,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      instructions: [
+      description: [
         'Hev armene i Y-mønster',
         'Hold armene strake',
         'Hold overkroppen rett og skulderbuen lav',
@@ -854,7 +854,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      instructions: [
+      description: [
         'Trekk strikken ved å skyve skulderen bakover og roter kroppen',
         'Start bevegelsen med albuen, hold den motsatte armen strak frem',
       ],
@@ -870,7 +870,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Innarbeide god knebøyteknikk',
-      instructions: [
+      description: [
         'Ha hoftebreddes avstand mellom føttene',
         'Start bevegelsen fra hofta',
         'Ha kne over tå',
@@ -889,7 +889,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: '2 x 8 repetisjoner',
       purpose: 'Bedre mobilitet i hofter',
-      instructions: [
+      description: [
         'Gjør dyp knebøy med hoftene rotert utover',
         'Skyv knærne ut og brystet frem',
         'Hold ryggen rett mens du strekker ut knærne så godt som mulig',
@@ -908,7 +908,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/222059832",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre kraft og kontroll i rotatorcuffen',
-      instructions: [
+      description: [
         'Albue og skulder i 90 grader',
         'Beveg armene rolig nedover og oppover',
         'Utfordre deg med ulike typer baller og vekter',
@@ -925,7 +925,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/222059816",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      instructions: [
+      description: [
         'Hev armene i Y-mønster',
         'Hold armene strake',
         'Hold overkroppen rett og skulderbuen lav',
@@ -943,7 +943,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/222059829",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      instructions: [
+      description: [
         'Dra strikken bakover',
         'Ha lave skuldre',
         'Albuene inntil kroppen',
@@ -961,7 +961,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/222060099",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre aktivering av hamstringsmuskulatur',
-      instructions: [
+      description: [
         'Sats fra begge ben og hopp fremover',
         'Landing i knebøyposisjon',
         'Hold kne over tå',
@@ -978,7 +978,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/222059941",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken og kontrollen i skulderen',
-      instructions: [
+      description: [
         'Gjør push up',
         'Hold albuer strake',
         'Hev øvre del av overkroppen mot taket',
@@ -995,7 +995,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/173355238",
       repetitions: '3 x 6-8 repetisjoner',
       purpose: 'Styrke baksiden av lårene',
-      instructions: [
+      description: [
         'Stå på knærne på en matte eller pute',
         'Hold kroppen rett',
         'Senk deg fremover, brems bevegelsen med baksiden av lårene',
@@ -1013,7 +1013,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      instructions: [
+      description: [
         'Hold strikken med en skulderbreddes avstand',
         'Tommelen skal peke oppover',
         'Stabiliser i magen og ryggen',
@@ -1031,7 +1031,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      instructions: [
+      description: [
         'Hev armene i Y-mønster',
         'Hold armene strake',
         'Hold overkroppen rett og skulderbuen lav',
@@ -1049,7 +1049,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      instructions: [
+      description: [
         'Trekk strikken ved å skyve skulderen bakover og roter kroppen',
         'Start bevegelsen med albuen, hold den motsatte armen strak frem',
       ],
@@ -1065,7 +1065,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Innarbeide god knebøyteknikk',
-      instructions: [
+      description: [
         'Ha hoftebreddes avstand mellom føttene',
         'Start bevegelsen fra hofta',
         'Ha kne over tå',
@@ -1084,7 +1084,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: '2 x 8 repetisjoner',
       purpose: 'Bedre mobilitet i hofter',
-      instructions: [
+      description: [
         'Gjør dyp knebøy med hoftene rotert utover',
         'Skyv knærne ut og brystet frem',
         'Hold ryggen rett mens du strekker ut knærne så godt som mulig',
@@ -1101,7 +1101,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre forflytninger og stabiliteten i bena',
-      instructions: [
+      description: [
         'Gjør utfall ut i ulike posisjoner',
         'Ha kne over tå på det fremre benet',
         'Gjøres evt. med dytt fra partner',
@@ -1118,7 +1118,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: '3 x 5 repetisjoner på hvert ben',
       purpose: 'Bedre ryggstabiliteten og styrken i baksiden av lårene',
-      instructions: [
+      description: [
         'Finn balansen på ett ben, med kneet lett bøyd',
         'Overkroppen bøyes frem samtidig som benet holdes i lett bøy',
         'Hold ryggen på linje med det utstrakte kneet',
@@ -1138,7 +1138,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/222059991",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre stabiliteten i bena',
-      instructions: [
+      description: [
         'Stå på bosu',
         'Ha hoftebreddes avstand mellom føttene',
         'Start bevegelsen fra hofta',
@@ -1158,7 +1158,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/222059816",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
-      instructions: [
+      description: [
         'Hev armene i Y-mønster',
         'Hold armene strake',
         'Press skulderbladene sammen og ned i sluttstilling',
@@ -1176,7 +1176,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/222059941",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken og kontrollen i skulderen',
-      instructions: [
+      description: [
         'Gjør push up',
         'Hold albuer strake',
         'Hev øvre del av overkroppen mot taket',
@@ -1194,7 +1194,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/222060099",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre aktivering av hamstringsmuskulatur',
-      instructions: [
+      description: [
         'Sats fra begge ben og hopp fremover',
         'Landing i knebøyposisjon',
         'Hold kne over tå',
@@ -1211,7 +1211,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/222060109",
       repetitions: '3 x 30 sekunder',
       purpose: 'Bedre eksplosiviteten i retningsendringer',
-      instructions: [
+      description: [
         'Hopp i ulike retninger; frem, tilbake, diagonalt',
         'Land mykt på forfoten med kne over tå',
         'Vær nøyaktig og prøv å lande på et bestemt punkt',
@@ -1229,7 +1229,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/173355238",
       repetitions: '3 x 8-12 repetisjoner',
       purpose: 'Styrke baksiden av lårene',
-      instructions: [
+      description: [
         'Stå på knærne på en matte eller pute',
         'Hold kroppen rett',
         'Senk deg fremover, brems bevegelsen med baksiden av lårene',
@@ -1247,7 +1247,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: 'Så mange du klarer med god kontroll',
       purpose: 'Bedre stabiliteten i skulder, skrå mage og rygg',
-      instructions: [
+      description: [
         'Hvil kroppen på underarm',
         'Hold kropp og det øverste benet rett',
         'Roter overkroppen',
@@ -1265,7 +1265,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre mobiliteten i ryggsøylen og skulderen',
-      instructions: [
+      description: [
         'Stå i utfallsposisjon',
         'Plasser armen på innsiden av det fremste benet',
       ],
@@ -1281,7 +1281,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: 'Så mange du klarer med god kontroll',
       purpose: 'Styrke muskulatur og stabiliteten i bena',
-      instructions: [
+      description: [
         'Gjør knebøy på ett ben',
         'Ha kne over tå',
         'Unngå at hoften sklir ut til siden',
@@ -1298,7 +1298,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken og kontrollen i hoftene og knær',
-      instructions: [
+      description: [
         'Bruk strikk når du klarer øvelsen uten motstand',
         'Land mykt på tærne',
         'Ha kne over tå',
@@ -1315,7 +1315,7 @@ let model = {
       medialink: "https://player.vimeo.com/video/",
       repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre stabiliteten i landinger',
-      instructions: [
+      description: [
         'Hopp 45 grader til siden, frem, tilbake',
         'Hold kne over tå i landinger',
         'Bruk strikk som motstand',
