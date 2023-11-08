@@ -63,12 +63,15 @@ let model = {
 
     { id: 12, categoryId: 3, beltId: 1, name: "Forsvar under press",    },
 
+    //Skadeforebyggende
     { id: 13, categoryId: 4, name: "Overkropp" },
     { id: 14, categoryId: 4, name: "Bein" },
     { id: 15, categoryId: 4, name: "Kjerne" },
+    //Styrkeøvelser
     { id: 16, categoryId: 5, name: "Overkropp" },
     { id: 17, categoryId: 5, name: "Bein" },
     { id: 18, categoryId: 5, name: "Kjerne" },
+    //Mitt Program
     { id: 19, categoryId: 6, name: "Øvelser" },
   ],
   exercises: [
