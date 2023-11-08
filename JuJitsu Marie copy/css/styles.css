@@ -1,0 +1,139 @@
+html{
+  scroll-padding: 0px 0px 0px 0px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid orange;
+  padding: 6px;
+}
+td{
+  text-align: right;
+}
+
+td:first-child{
+  text-align: left;
+}
+
+tr:first-child{
+background-color: rgb(184, 115, 11);  
+color: white;
+}
+
+tr:nth-child(even){
+  background-color: rgb(11, 11, 138);
+}
+
+th > span{
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+}
+
+.main_section .row {
+  align-items: center;
+  border: 5px solid var(--body-color);
+  width: 100%;
+  margin: 9rem 0;
+  padding: 2rem;
+  margin-top: 12rem;
+}
+
+
+.main_section .detail-box a {
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  padding: 10px 70px;
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  color: var(--accent);
+}
+
+.main_section .detail-box a:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.main_section .img-box img {
+  width: 100%;
+}
+
+.landing_section .detail-box {
+  position: fixed;
+  width: 31rem;
+  top:30%;
+  left:23%;
+  height: 100%;
+  
+
+
+}
+
+.landing_section .img-box img {
+  position: fixed;
+  bottom:-3rem;
+  right:0;
+  border-left: var(--body-color) 5px solid;
+  }
+
+
+.landing_section .detail-box a {
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 5px;
+  color: var(--accent);
+}
+
+.landing_section .detail-box a:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+#landingTitle {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.5rem;
+  font-weight: bolder;
+  padding: 1rem;
+}
+
+#landingTitle span {
+  color: var(--accent);
+}
+
+#landingUser {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.5rem;
+  font-weight: bolder;
+  padding: 1rem;
+  font-size: 400%;
+  cursor: pointer;
+}
+
+#landingUser span {
+  color: var(--accent);
+}
+
+
+.exerciseImg {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+.exerciseContent {
+  display: flex;
+  flex-direction: row;
+  height: 500%;
+  width: auto;
+}
+
+
