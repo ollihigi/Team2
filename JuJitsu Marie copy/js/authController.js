@@ -39,5 +39,4 @@ function addUser(firstName, lastName, email, password) {
   navBar();
   userGradeView();
   saveModelToLocalStorage();
-  window.location.reload();
 }

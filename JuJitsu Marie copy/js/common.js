@@ -1,9 +1,10 @@
 
 function init() {
   navBar();
-  trainingView();
-  hideTitle();
   loadCurrentTheme();
+  landingView();
+  hideTitle();
+
 
 }
 
@@ -25,7 +26,8 @@ function hideTitle(){
   
   
   function navBar() {
-    // loadModelFromLocalStorage();
+
+    loadModelFromLocalStorage();
     document.getElementById('header').innerHTML += /*HTML*/`
       <header>
         <div class="logo" onclick="landingView()">
@@ -42,7 +44,7 @@ function hideTitle(){
             </li>
        
             <select class="theme" onchange="updateAccentColor(this.value), loadCurrentTheme()">
-            <option id="current"value="#ffc107"></option>
+            <option id="current">🟡</option>
             <option disabled></option>
             <option value="#ffc107">🟡</option>
             <option value="#fc6623">🟠</option>
@@ -57,6 +59,7 @@ function hideTitle(){
         </nav>
       </header>
     `;
+    loadCurrentTheme();
   }
 
 function updateNavBar(currentView) {
@@ -95,22 +98,8 @@ function loadModelFromLocalStorage() {
   }
 }
 
-function loadCurrentTheme() {
-  const themeDisplay = document.getElementById('current');
-  const storedTheme = localStorage.getItem('themeColor');
-  if (storedTheme) {
-    updateAccentColor(storedTheme);
-    themeDisplay.textContent = colorEmoji;
-  } else {
-    themeDisplay.textContent = '🟡';
-  }
-  return '';
-}
-
 function updateAccentColor(color) {
-
   document.documentElement.style.setProperty('--accent', color);
-  localStorage.setItem('themeColor', color);
   switch (color) {
     case '#ffc107':
       colorEmoji = '🟡';
@@ -133,6 +122,19 @@ function updateAccentColor(color) {
     case '#8b64c3':
       colorEmoji = '🟣';
       break;
+  }
+  localStorage.setItem('themeColor', color);
+  localStorage.setItem('colorEmoji', colorEmoji); // Store colorEmoji in local storage
+}
+
+function loadCurrentTheme() {
+  const themeDisplay = document.getElementById('current');
+  const storedTheme = localStorage.getItem('themeColor');
+  const storedEmoji = localStorage.getItem('colorEmoji'); // Retrieve colorEmoji from local storage
+  if (storedTheme) {
+    themeDisplay.textContent = storedEmoji; // Use storedEmoji instead of colorEmoji
+  } else {
+    themeDisplay.textContent = '🟡';
   }
 }
 
