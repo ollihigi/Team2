@@ -43,7 +43,7 @@ let model = {
     { id: 2, name: 'Teknikktrening' },
     { id: 3, name: 'Selvforsvarstrening' },
     { id: 4, name: 'Trening Øvelser' },
-    { id: 5, name: 'Mittd Program' },
+    { id: 5, name: 'Mitt Program' },
   ],
   selectedSubtype: null,
   subtypes: [
