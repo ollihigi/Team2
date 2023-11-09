@@ -387,7 +387,7 @@ let model = {
       name: 'Forsvar mot hårtak',
       numberTJK: '511a',
       withPartner: true,
-      description: '511a Forsvar mot hårtak Høyre hånd holder motstanders høyre hånd. Venstre hånd på motstanders høyre albue. Gå først fram og så til siden. slik at motstander står bøyd framover. NB: Forsvarer står ikke med bøyd rygg!  Frigjøring her og gå deretter et steg fram og i fra.',
+      description: 'Forsvar mot hårtak Høyre hånd holder motstanders høyre hånd. Venstre hånd på motstanders høyre albue. Gå først fram og så til siden. slik at motstander står bøyd framover. NB: Forsvarer står ikke med bøyd rygg!  Frigjøring her og gå deretter et steg fram og i fra.',
       // medialink: 'images/Exercises/511a.png',
       medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
@@ -399,7 +399,7 @@ let model = {
       name: 'Forsvar mot klestak',
       numberTJK: '511b',
       withPartner: true,
-      description: '511b Forsvar mot klestak Venstre hånd på albue. Høyre hånd mot kroppen. Samtidig balansebrytning ut mot siden. Hoftene svinges bort fra Motstander (beskyttelse). Felling med Stor ytre benfelling.',
+      description: 'Forsvar mot klestak Venstre hånd på albue. Høyre hånd mot kroppen. Samtidig balansebrytning ut mot siden. Hoftene svinges bort fra Motstander (beskyttelse). Felling med Stor ytre benfelling.',
       // medialink: 'images/Exercises/511b.png',
       medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
@@ -411,7 +411,7 @@ let model = {
       name: 'Forsvar mot håndleddstak nedenfra',
       numberTJK: '511d',
       withPartner: true,
-      description: '511d Forsvar mot handleddstak nedenfra Strekk ut armene og vri hendene utover mens du går ifra. Siden til. Husk å være avslappet i handledd.',
+      description: 'Forsvar mot handleddstak nedenfra Strekk ut armene og vri hendene utover mens du går ifra. Siden til. Husk å være avslappet i handledd.',
       // medialink: 'images/Exercises/511d.png',
       medialink: "https://www.youtube.com/embed/ItWZnTdwemg",       
     },
@@ -422,7 +422,7 @@ let model = {
       name: 'Forsvar mot håndleddstak ovenfra',
       numberTJK: '511e',
       withPartner: true,
-      description: '511e Forsvar mot håndleddstak ovenfra Høyre hånd over motstanders høyre håndledd, frigjør venstre hånd v.h.a. minste motstands vei • vektstangprinsippet. Venstre hånd holder igjen motstanders venstre hånd og frigjør høyre hånd v.h.a. minste motstands vei.',
+      description: 'Forsvar mot håndleddstak ovenfra Høyre hånd over motstanders høyre håndledd, frigjør venstre hånd v.h.a. minste motstands vei • vektstangprinsippet. Venstre hånd holder igjen motstanders venstre hånd og frigjør høyre hånd v.h.a. minste motstands vei.',
       // medialink: 'images/Exercises/511e.png',
       medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
@@ -434,7 +434,7 @@ let model = {
       name: 'Forsvar mot strupetak',
       numberTJK: '512a',
       withPartner: true,
-      description: '512a Forsvar mot strupetak Begge hender mot motstanders håndledd og press i sammen mens høyre bein på tå frem (beskyttelse) for så å skyve egen kropp i fra.',
+      description: 'Forsvar mot strupetak Begge hender mot motstanders håndledd og press i sammen mens høyre bein på tå frem (beskyttelse) for så å skyve egen kropp i fra.',
       // medialink: 'images/Exercises/512a.png',
       medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
@@ -446,7 +446,7 @@ let model = {
       name: 'Forsvar mot strupetak mot vegg',
       numberTJK: '512b',
       withPartner: true,
-      description: '512b Forsvar mot strupetak mot vegg Høyre hånd går over motstanders venstre hånd og under Motstanders høyre hånd. Kroppsvending samtidig som en vipper med begge armer. Avstand.',
+      description: 'Forsvar mot strupetak mot vegg Høyre hånd går over motstanders venstre hånd og under Motstanders høyre hånd. Kroppsvending samtidig som en vipper med begge armer. Avstand.',
       // medialink: 'images/Exercises/512b.png',
       medialink: "https://www.youtube.com/embed/ItWZnTdwemg",
        
@@ -458,7 +458,7 @@ let model = {
       name: 'Forsvar mot omfavning over armene (stor ytre benfelling)',
       numberTJK: '513a',
       withPartner: true,
-      description: '513a Hendene på hoftene, skyv i fra 45 grader til siden. Balansebrytning. Gå inn med stor ytre benfelling.',
+      description: 'Hendene på hoftene, skyv i fra 45 grader til siden. Balansebrytning. Gå inn med stor ytre benfelling.',
       medialink: 'images/Exercises/513a.png',
        
     },
@@ -469,7 +469,7 @@ let model = {
       name: 'Forsvar mot omfavning over armene (stort hoftekast)',
       numberTJK: '513A',
       withPartner: true,
-      description: '513 A Hendene på hoftene, skyv ifra 90 grader bakover. Balansebrytning. Inn og fell med stort hoftekast.',
+      description: 'Hendene på hoftene, skyv ifra 90 grader bakover. Balansebrytning. Inn og fell med stort hoftekast.',
       medialink: 'images/Exercises/513bigA.png',
        
     },
@@ -480,7 +480,7 @@ let model = {
       name: 'Forsvar mot rett slag, kroppsvending',
       numberTJK: '514a',
       withPartner: true,
-      description: '514 a Rett slag, kroppsvending',
+      description: 'Rett slag, kroppsvending',
       medialink: 'images/Exercises/514a.png',
        
     },
@@ -491,7 +491,7 @@ let model = {
       name: 'Forsvar mot rett salg, sideforflytning',
       numberTJK: '514A',
       withPartner: true,
-      description: '514 A Rett slag, sideforflytning',
+      description: 'Rett slag, sideforflytning',
       medialink: 'images/Exercises/514bigA.png',
        
     },
@@ -502,7 +502,7 @@ let model = {
       name: 'Forsvar mot rett spark, kroppsvending',
       numberTJK: '515a',
       withPartner: true,
-      description: '515 a Rett spark, kroppsvending. Kun forflytninger med god avstand. Knyttneve ved spark-blokk.',
+      description: 'Rett spark, kroppsvending. Kun forflytninger med god avstand. Knyttneve ved spark-blokk.',
       medialink: 'images/Exercises/515a.png',
        
     },
@@ -513,7 +513,7 @@ let model = {
       name: 'Forsvar mot rett spark, sideforflytning',
       numberTJK: '515A',
       withPartner: true,
-      description: '515 A Rett spark, sideforflyttning. Kun forflytninger med god avstand. Knyttneve ved spark-blokk.',
+      description: 'Rett spark, sideforflyttning. Kun forflytninger med god avstand. Knyttneve ved spark-blokk.',
       medialink: 'images/Exercises/515bigA.png',
        
     },
@@ -524,7 +524,7 @@ let model = {
       name: 'Forsvar mot strupetak',
       numberTJK: '522a',
       withPartner: true,
-      description: '522a Høyre hånd på skrått over bryst/skuldrer. Venstre hånd frigjør luftveiene. Glid i fra.',
+      description: 'Høyre hånd på skrått over bryst/skuldrer. Venstre hånd frigjør luftveiene. Glid i fra.',
       medialink: 'images/Exercises/522a.png',
        
     },
@@ -535,7 +535,7 @@ let model = {
       name: 'Forsvar mot hårtak',
       numberTJK: '531a',
       withPartner: true,
-      description: '531a Begge hender på Motstanders hånd, samtidig gå frem med venstre fot, bøy ned og rundt skarpt og raskt bend i Motstanders håndledd. og gå ifra.',
+      description: 'Begge hender på Motstanders hånd, samtidig gå frem med venstre fot, bøy ned og rundt skarpt og raskt bend i Motstanders håndledd. og gå ifra.',
       medialink: 'images/Exercises/531a.png',
        
     },
@@ -546,7 +546,7 @@ let model = {
       name: 'Forsvar mot håndleddstak',
       numberTJK: '531e',
       withPartner: true,
-      description: '531e Gå fram til siden. Frigjør høyre hånd og gå videre mens en frigjør venstre hånd.',
+      description: 'Gå fram til siden. Frigjør høyre hånd og gå videre mens en frigjør venstre hånd.',
       medialink: 'images/Exercises/531e.png',
        
     },
@@ -557,7 +557,7 @@ let model = {
       name: 'Forsvar mot strupetak',
       numberTJK: '532a',
       withPartner: true,
-      description: '532a Høyre hånd høyt opp samtidig en slags kroppsvending fram (45°) til siden.',
+      description: 'Høyre hånd høyt opp samtidig en slags kroppsvending fram (45°) til siden.',
       medialink: 'images/Exercises/532a.png',
        
     },
@@ -568,7 +568,7 @@ let model = {
       name: 'Forsvar mot strangulering med armen',
       numberTJK: '532c',
       withPartner: true,
-      description: '532c Få luft med begge hender. Albuene inn til kroppen (ikke synke ned!) Ta med motstanders albue/skulder 180° ut til siden i tre halvsirkler, avstand.',
+      description: 'Få luft med begge hender. Albuene inn til kroppen (ikke synke ned!) Ta med motstanders albue/skulder 180° ut til siden i tre halvsirkler, avstand.',
       medialink: 'images/Exercises/532c.png',
        
     },
@@ -579,7 +579,7 @@ let model = {
       name: 'Forsvar mot omfavning over armene',
       numberTJK: '533a',
       withPartner: true,
-      description: '533a Synke ned og samtidig låse med begge hender. Så smyge bakover og samtidig holde Motstanders høyre arm. Avstand.',
+      description: 'Synke ned og samtidig låse med begge hender. Så smyge bakover og samtidig holde Motstanders høyre arm. Avstand.',
       medialink: 'images/Exercises/533a.png',
        
     },
@@ -590,7 +590,7 @@ let model = {
       name: 'Forsvar mot håndleddstak, sittende skrevs over',
       numberTJK: '541f',
       withPartner: true,
-      description: '541f Hoftestøt samtidig som armene frigjør seg ved en sirkelbevegelse. Begge hendene på hoftene for å ta imot, ansiktet til siden. 1) Skyv Motstander direkte til siden med begge under, eller 2) Skyv kneet ned med en hånd og dytt til siden med den andre hånden, samtidig med hoftestøt.',
+      description: 'Hoftestøt samtidig som armene frigjør seg ved en sirkelbevegelse. Begge hendene på hoftene for å ta imot, ansiktet til siden. 1) Skyv Motstander direkte til siden med begge under, eller 2) Skyv kneet ned med en hånd og dytt til siden med den andre hånden, samtidig med hoftestøt.',
       medialink: 'images/Exercises/541f.png',
        
     },
@@ -601,7 +601,7 @@ let model = {
       name: 'Forsvar mot strupetak, på kne ved siden av',
       numberTJK: '542e',
       withPartner: true,
-      description: '542e Venstre hånd pa motstanders høyre hånd. Høyre hånd i motsatt armhule, samtidig skyver knærne til motstanderen oppover og ned til siden (45°), stå opp og avstand.',
+      description: 'Venstre hånd pa motstanders høyre hånd. Høyre hånd i motsatt armhule, samtidig skyver knærne til motstanderen oppover og ned til siden (45°), stå opp og avstand.',
       medialink: 'images/Exercises/542e.png',
        
     },
@@ -612,7 +612,7 @@ let model = {
       name: 'Forsvar mot strupetak, sittende skrevs over',
       numberTJK: '542f',
       withPartner: true,
-      description: '542f Høyre hånd under Motstanders hender. Venstre hånd pa albue. Hoftestøt og skyv. Venstre hånd på hofte og høyre hånd på håndledd og et nytt hoftestøt mens en skyver og trekker',
+      description: 'Høyre hånd under Motstanders hender. Venstre hånd pa albue. Hoftestøt og skyv. Venstre hånd på hofte og høyre hånd på håndledd og et nytt hoftestøt mens en skyver og trekker',
       medialink: 'images/Exercises/542f.png',
        
     },
@@ -623,7 +623,7 @@ let model = {
       name: 'Forsvar mot strupetak, sittende mellom bena',
       numberTJK: '542g',
       withPartner: true,
-      description: '542g  Venstre hånd på Motstanders høyre hånd. Høyre hand i motsatt armhule. samtidig hoftene til side og enten: 1) Sakse med beina eller 2) Venstre fot på Motstanders høyre kne og strekk ut mens høyre fot skyver over',
+      description: 'Venstre hånd på Motstanders høyre hånd. Høyre hand i motsatt armhule. samtidig hoftene til side og enten: 1) Sakse med beina eller 2) Venstre fot på Motstanders høyre kne og strekk ut mens høyre fot skyver over',
       medialink: 'images/Exercises/542g.png',
        
     },
@@ -654,9 +654,8 @@ let model = {
       withPartner: false,
       withRubberband: false,
       medialink: "https://player.vimeo.com/video/222059954",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Innarbeide god knebøyteknikk',
       description: [
+        '3 x 8-16 repetisjoner',
         'Ha hoftebreddes avstand mellom føttene',
         'Start bevegelsen fra hofta',
         'Ha kne over tå',
@@ -673,9 +672,8 @@ let model = {
       withPartner: false,
       withRubberband: false,
       medialink: "https://player.vimeo.com/video/222060022",
-      repetitions: '3 x 8-16 repetisjoner',
-      purpose: 'Bedre stabiliteten i bena',
       description: [
+        '3 x 8-16 repetisjoner',
         'Gjør utfall forover',
         'Ha kne over tå',
         'Hold en oppreist stilling gjennom hele øvelsen',
@@ -690,9 +688,9 @@ let model = {
       withPartner: false,
       withRubberband: false,
       medialink: "https://player.vimeo.com/video/222060048",
-      repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre stabiliteten i bena',
       description: [
+        '3 x 8-16 repetisjoner',
         'Gjør utfall bakover',
         'Ha kne over tå',
         'Hold en oppreist stilling gjennom hele øvelsen',
@@ -707,9 +705,9 @@ let model = {
       withPartner: false,
       withRubberband: false,
       medialink: "https://player.vimeo.com/video/222060139",
-      repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre forflytninger og stabiliteten i bena',
       description: [
+        '3 x 8-16 repetisjoner',
         'Gjør dype sidesteg til hver side',
         'Ha kne over tå',
       ],
@@ -723,9 +721,9 @@ let model = {
       withPartner: true,
       withRubberband: true,
       medialink: "https://player.vimeo.com/video/222059829",
-      repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
       description: [
+        '3 x 8-16 repetisjoner',
         'Dra strikken bakover',
         'Ha lave skuldre',
         'Albuene inntil kroppen',
@@ -741,9 +739,9 @@ let model = {
       withPartner: true,
       withRubberband: true,
       medialink: "https://player.vimeo.com/video/222059816",
-      repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
       description: [
+        '3 x 8-16 repetisjoner',
         'Hev armene i Y-mønster',
         'Hold armene strake',
         'Hold overkroppen rett og skulderbuen lav',
@@ -759,9 +757,9 @@ let model = {
       withPartner: true,
       withRubberband: true,
       medialink: "https://player.vimeo.com/video/222059832",
-      repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre kraft og kontroll i rotatorcuffen',
       description: [
+        '3 x 8-16 repetisjoner',
         'Albue og skulder i 90 grader',
         'Beveg armene rolig nedover og oppover',
         'Utfordre deg med ulike typer baller og vekter',
@@ -777,9 +775,9 @@ let model = {
       withRubberband: true,
       medialink: "https://player.vimeo.com/video/210810547",
       //siste jeg sjekket
-      repetitions: '3 x 3-5 repetisjoner',
       purpose: 'Styrke baksiden av lårene',
       description: [
+        '3 x 3-5 repetisjoner',
         'Stå på knærne på en matte eller pute',
         'Hold kroppen rett',
         'Senk deg fremover, brems bevegelsen med baksiden av lårene',
@@ -796,9 +794,9 @@ let model = {
       withPartner: false,
       withRubberband: false,
       medialink: "https://player.vimeo.com/video/237298613",
-      repetitions: '2 x 8 repetisjoner, hold ca 3-4 sekunder',
       purpose: 'Bedre mobiliteten på baksiden av lårene og i overkroppen',
       description: [
+        '2 x 8 repetisjoner, hold ca 3-4 sekunder',
         'Ha en rett linje gjennom hele kroppen, gjør deg så lang som mulig',
         'Hold motsatt arm på foten',
         'Roter hele overkroppen så langt du kommer',
@@ -814,9 +812,9 @@ let model = {
       withPartner: false,
       withRubberband: false,
       medialink: "https://player.vimeo.com/video/236526892",
-      repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
       description: [
+        '3 x 8-16 repetisjoner',
         'Hold strikken med en skulderbreddes avstand',
         'Tommelen skal peke oppover',
         'Stabiliser i magen og ryggen',
@@ -832,9 +830,9 @@ let model = {
       withPartner: false,
       withRubberband: false,
       medialink: "https://player.vimeo.com/video/237298579",
-      repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
       description: [
+        '3 x 8-16 repetisjoner',
         'Trekk strikken ved å skyve skulderen bakover og roter kroppen',
         'Start bevegelsen med albuen, hold den motsatte armen strak frem',
       ],
@@ -848,9 +846,9 @@ let model = {
       withPartner: false,
       withRubberband: false,
       medialink: "https://player.vimeo.com/video/",
-      repetitions: '3 x 8-16 repetisjoner',
       purpose: 'Innarbeide god knebøyteknikk',
       description: [
+        '3 x 8-16 repetisjoner',
         'Ha hoftebreddes avstand mellom føttene',
         'Start bevegelsen fra hofta',
         'Ha kne over tå',
@@ -867,9 +865,9 @@ let model = {
       withPartner: false,
       withRubberband: false,
       medialink: "https://player.vimeo.com/video/173355331",
-      repetitions: '2 x 8 repetisjoner',
       purpose: 'Bedre mobilitet i hofter',
       description: [
+        '2 x 8 repetisjoner',
       ],
     }
   ]
@@ -884,7 +882,7 @@ let model = {
 //       withPartner: true,
 //       withRubberband: true,
 //       medialink: "https://player.vimeo.com/video/222059832",
-//       repetitions: '3 x 8-16 repetisjoner',
+//       '3 x 8-16 repetisjoner',
 //       purpose: 'Bedre kraft og kontroll i rotatorcuffen',
 //       description: [
 //         'Albue og skulder i 90 grader',
@@ -901,7 +899,7 @@ let model = {
 //       withPartner: true,
 //       withRubberband: true,
 //       medialink: "https://player.vimeo.com/video/222059816",
-//       repetitions: '3 x 8-16 repetisjoner',
+//       '3 x 8-16 repetisjoner',
 //       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
 //       description: [
 //         'Hev armene i Y-mønster',
@@ -919,7 +917,7 @@ let model = {
 //       withPartner: true,
 //       withRubberband: true,
 //       medialink: "https://player.vimeo.com/video/222059829",
-//       repetitions: '3 x 8-16 repetisjoner',
+//       '3 x 8-16 repetisjoner',
 //       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
 //       description: [
 //         'Dra strikken bakover',
@@ -937,7 +935,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/222060099",
-//       repetitions: '3 x 8-16 repetisjoner',
+//       '3 x 8-16 repetisjoner',
 //       purpose: 'Bedre aktivering av hamstringsmuskulatur',
 //       description: [
 //         'Sats fra begge ben og hopp fremover',
@@ -954,7 +952,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/222059941",
-//       repetitions: '3 x 8-16 repetisjoner',
+//       '3 x 8-16 repetisjoner',
 //       purpose: 'Bedre styrken og kontrollen i skulderen',
 //       description: [
 //         'Gjør push up',
@@ -971,7 +969,7 @@ let model = {
 //       withPartner: true,
 //       withRubberband: true,
 //       medialink: "https://player.vimeo.com/video/173355238",
-//       repetitions: '3 x 6-8 repetisjoner',
+//       '3 x 6-8 repetisjoner',
 //       purpose: 'Styrke baksiden av lårene',
 //       description: [
 //         'Stå på knærne på en matte eller pute',
@@ -989,7 +987,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/",
-//       repetitions: '3 x 8-16 repetisjoner',
+//       '3 x 8-16 repetisjoner',
 //       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
 //       description: [
 //         'Hold strikken med en skulderbreddes avstand',
@@ -1007,7 +1005,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/",
-//       repetitions: '3 x 8-16 repetisjoner',
+//       '3 x 8-16 repetisjoner',
 //       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
 //       description: [
 //         'Hev armene i Y-mønster',
@@ -1025,7 +1023,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/",
-//       repetitions: '3 x 8-16 repetisjoner',
+//       '3 x 8-16 repetisjoner',
 //       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
 //       description: [
 //         'Trekk strikken ved å skyve skulderen bakover og roter kroppen',
@@ -1041,7 +1039,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/",
-//       repetitions: '3 x 8-16 repetisjoner',
+//       '3 x 8-16 repetisjoner',
 //       purpose: 'Innarbeide god knebøyteknikk',
 //       description: [
 //         'Ha hoftebreddes avstand mellom føttene',
@@ -1060,7 +1058,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/",
-//       repetitions: '2 x 8 repetisjoner',
+//       '2 x 8 repetisjoner',
 //       purpose: 'Bedre mobilitet i hofter',
 //       description: [
 //         'Gjør dyp knebøy med hoftene rotert utover',
@@ -1077,7 +1075,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/",
-//       repetitions: '3 x 8-16 repetisjoner',
+//       '3 x 8-16 repetisjoner',
 //       purpose: 'Bedre forflytninger og stabiliteten i bena',
 //       description: [
 //         'Gjør utfall ut i ulike posisjoner',
@@ -1094,7 +1092,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/",
-//       repetitions: '3 x 5 repetisjoner på hvert ben',
+//       '3 x 5 repetisjoner på hvert ben',
 //       purpose: 'Bedre ryggstabiliteten og styrken i baksiden av lårene',
 //       description: [
 //         'Finn balansen på ett ben, med kneet lett bøyd',
@@ -1114,7 +1112,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/222059991",
-//       repetitions: '3 x 8-16 repetisjoner',
+//       '3 x 8-16 repetisjoner',
 //       purpose: 'Bedre stabiliteten i bena',
 //       description: [
 //         'Stå på bosu',
@@ -1134,7 +1132,7 @@ let model = {
 //       withPartner: true,
 //       withRubberband: true,
 //       medialink: "https://player.vimeo.com/video/222059816",
-//       repetitions: '3 x 8-16 repetisjoner',
+//       '3 x 8-16 repetisjoner',
 //       purpose: 'Bedre styrken i skulderen og øvre del av ryggen',
 //       description: [
 //         'Hev armene i Y-mønster',
@@ -1152,7 +1150,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/222059941",
-//       repetitions: '3 x 8-16 repetisjoner',
+//       '3 x 8-16 repetisjoner',
 //       purpose: 'Bedre styrken og kontrollen i skulderen',
 //       description: [
 //         'Gjør push up',
@@ -1170,7 +1168,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/222060099",
-//       repetitions: '3 x 8-16 repetisjoner',
+//       '3 x 8-16 repetisjoner',
 //       purpose: 'Bedre aktivering av hamstringsmuskulatur',
 //       description: [
 //         'Sats fra begge ben og hopp fremover',
@@ -1187,7 +1185,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/222060109",
-//       repetitions: '3 x 30 sekunder',
+//       '3 x 30 sekunder',
 //       purpose: 'Bedre eksplosiviteten i retningsendringer',
 //       description: [
 //         'Hopp i ulike retninger; frem, tilbake, diagonalt',
@@ -1205,7 +1203,7 @@ let model = {
 //       withPartner: true,
 //       withRubberband: true,
 //       medialink: "https://player.vimeo.com/video/173355238",
-//       repetitions: '3 x 8-12 repetisjoner',
+//       '3 x 8-12 repetisjoner',
 //       purpose: 'Styrke baksiden av lårene',
 //       description: [
 //         'Stå på knærne på en matte eller pute',
@@ -1223,7 +1221,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/",
-//       repetitions: 'Så mange du klarer med god kontroll',
+//       'Så mange du klarer med god kontroll',
 //       purpose: 'Bedre stabiliteten i skulder, skrå mage og rygg',
 //       description: [
 //         'Hvil kroppen på underarm',
@@ -1241,7 +1239,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/",
-//       repetitions: '3 x 8-16 repetisjoner',
+//       '3 x 8-16 repetisjoner',
 //       purpose: 'Bedre mobiliteten i ryggsøylen og skulderen',
 //       description: [
 //         'Stå i utfallsposisjon',
@@ -1257,7 +1255,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/",
-//       repetitions: 'Så mange du klarer med god kontroll',
+//       'Så mange du klarer med god kontroll',
 //       purpose: 'Styrke muskulatur og stabiliteten i bena',
 //       description: [
 //         'Gjør knebøy på ett ben',
@@ -1274,7 +1272,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/",
-//       repetitions: '3 x 8-16 repetisjoner',
+//       '3 x 8-16 repetisjoner',
 //       purpose: 'Bedre styrken og kontrollen i hoftene og knær',
 //       description: [
 //         'Bruk strikk når du klarer øvelsen uten motstand',
@@ -1291,7 +1289,7 @@ let model = {
 //       withPartner: false,
 //       withRubberband: false,
 //       medialink: "https://player.vimeo.com/video/",
-//       repetitions: '3 x 8-16 repetisjoner',
+//       '3 x 8-16 repetisjoner',
 //       purpose: 'Bedre stabiliteten i landinger',
 //       description: [
 //         'Hopp 45 grader til siden, frem, tilbake',
